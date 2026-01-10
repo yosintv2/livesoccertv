@@ -1,46 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{TITLE}} | tv.cricfoot.net</title>
-    <link rel="stylesheet" href="http://cdn.livesoccertv.com/styles.css?v=267">
+    <meta charset="UTF-8"><title>{{TITLE}}</title>
+    <link rel="stylesheet" href="https://cdn.livesoccertv.com/styles.css?v=267">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .active-day { background: #00447c !important; color: white !important; border-bottom: 4px solid #f90; }
-        .date-tab { flex: 1; text-align: center; padding: 12px; color: #ccc; font-size: 13px; text-decoration: none; background: #002d56; }
-        .league-header { background: #eee; padding: 8px 15px; font-weight: 800; text-transform: uppercase; font-size: 11px; color: #555; }
-        .m-row { display: flex; align-items: center; background: #fff; border-bottom: 1px solid #eee; text-decoration: none; color: #333; }
-        .m-time { width: 70px; font-weight: 800; color: #00447c; text-align: center; padding: 15px 0; border-right: 1px solid #eee; }
-        .m-fixture { padding-left: 15px; font-weight: 600; }
-    </style>
+    <style>.active-day { background: #00447c !important; color: white !important; font-weight: bold; border-bottom: 3px solid #f90; }</style>
 </head>
-<body class="bg-slate-100">
-    <header class="bg-[#002d56] p-5 border-b-4 border-[#f90]">
-        <div class="container mx-auto"><a href="{{DOMAIN}}/" class="text-white text-2xl font-black">CRICFOOT<span class="text-[#f90]">TV</span></a></div>
-    </header>
-    <nav class="flex overflow-x-auto">{{WEEKLY_NAV}}</nav>
-    <div class="p-4 bg-white border-b">
-        <input type="text" id="search" placeholder="Quick find team..." class="w-full p-3 border rounded shadow-inner">
-    </div>
-    <main class="container mx-auto my-6 shadow-xl bg-white rounded-lg overflow-hidden">
-        {{MATCH_LISTING}}
-    </main>
-    <footer class="bg-[#002d56] p-10 text-center text-slate-400 text-xs">
-        &copy; 2026 TV.CRICFOOT.NET - ALL TIMES CONVERTED TO YOUR LOCAL TIME
-    </footer>
-    <script>
-        // Local Time Conversion
-        const formatter = new Intl.DateTimeFormat([], {hour:'2-digit', minute:'2-digit', hour12:false});
-        document.querySelectorAll('[data-unix]').forEach(el => {
-            el.innerText = formatter.format(new Date(el.dataset.unix * 1000));
-        });
-        // Search Filter
-        document.getElementById('search').addEventListener('input', e => {
-            const val = e.target.value.toLowerCase();
-            document.querySelectorAll('.m-row').forEach(r => {
-                r.style.display = r.innerText.toLowerCase().includes(val) ? 'flex' : 'none';
-            });
-        });
-    </script>
+<body class="bg-gray-100">
+    <header class="bg-blue-900 p-6 border-b-4 border-orange-500 text-white font-black text-2xl">CRICFOOTTV</header>
+    <nav class="flex overflow-x-auto bg-blue-800">{{WEEKLY_NAV}}</nav>
+    <main class="container mx-auto my-8 bg-white shadow-lg">{{MATCH_LISTING}}</main>
 </body>
 </html>
