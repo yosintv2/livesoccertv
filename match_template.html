@@ -2,34 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{FIXTURE}} Live TV Guide | tv.cricfoot.net</title>
-    <link rel="stylesheet" href="http://cdn.livesoccertv.com/styles.css?v=267">
+    <title>{{FIXTURE}} Live TV | tv.cricfoot.net</title>
+    <link rel="stylesheet" href="http://cdn.livesoccertv.com/styles.css?v=267" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .ch-pill { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 5px 12px; border-radius: 4px; font-weight: 700; margin: 3px; font-size: 12px; text-decoration: none; border: 1px solid #bae6fd; }
-        .ch-pill:hover { background: #0369a1; color: white; }
-    </style>
 </head>
-<body class="bg-slate-50">
-    <header class="bg-[#001529] p-4"><a href="{{DOMAIN}}/" class="text-white font-black italic">CRICFOOTTV</a></header>
-    <div class="bg-white border-b py-12 text-center shadow-sm">
-        <div class="text-blue-500 font-bold uppercase text-xs tracking-widest">{{LEAGUE}}</div>
-        <h1 class="text-4xl font-black my-4 text-slate-800">{{FIXTURE}}</h1>
-        <div class="text-slate-400 font-bold uppercase text-xs">
-            🕒 <span id="m-time" data-unix="{{TIME_UNIX}}"></span> | 🏟️ {{VENUE}}
+<body class="match-details-page">
+    <header style="background:#002d56; padding: 15px;"><a href="{{DOMAIN}}/" style="color:#fff; font-weight:900;">CRICFOOTTV</a></header>
+    
+    <div class="match-hero p-10 bg-gray-900 text-white text-center">
+        <div class="text-orange-400 font-bold uppercase text-xs mb-2">{{LEAGUE}}</div>
+        <h1 class="text-4xl font-extrabold mb-4">{{FIXTURE}}</h1>
+        <div class="text-sm opacity-70">🕒 Kickoff: {{TIME}} | 🏟️ Venue: {{VENUE}}</div>
+    </div>
+
+    <div class="container mx-auto py-10 max-w-4xl">
+        <h3 class="font-bold border-b-2 border-orange-400 pb-2 mb-6 uppercase text-sm">International Broadcasters</h3>
+        <div class="broadcaster-table bg-white shadow-lg rounded">
+            {{BROADCAST_ROWS}}
         </div>
     </div>
-    <main class="max-w-4xl mx-auto my-10 bg-white shadow-2xl rounded-xl overflow-hidden border border-slate-200">
-        <table class="w-full text-left">
-            <thead class="bg-slate-100 border-b">
-                <tr><th class="p-4 text-[10px] text-slate-500 uppercase">Country</th><th class="p-4 text-[10px] text-slate-500 uppercase">Broadcasters</th></tr>
-            </thead>
-            <tbody>{{BROADCAST_ROWS}}</tbody>
-        </table>
-    </main>
-    <script>
-        const el = document.getElementById('m-time');
-        el.innerText = new Intl.DateTimeFormat([], {hour:'2-digit', minute:'2-digit', timeZoneName:'short', day:'numeric', month:'short'}).format(new Date(el.dataset.unix * 1000));
-    </script>
+
+    <footer style="background:#002d56; color:#999; padding:30px; text-align:center;">&copy; 2026 TV.CRICFOOT.NET</footer>
 </body>
 </html>
