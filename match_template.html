@@ -2,28 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{TITLE}}</title>
-    <meta name="description" content="Official global broadcast guide for {{FIXTURE}}. TV channels and live stream providers for {{LEAGUE}} on {{DATE}}.">
+    <meta name="description" content="Official global broadcast guide for {{FIXTURE}}. Find TV channels and live stream providers for {{LEAGUE}} on {{DATE}}.">
+    <meta name="keywords" content="{{FIXTURE}} live, {{LEAGUE}} tv channels, how to watch {{FIXTURE}}, live soccer tv guide 2026">
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "{{FIXTURE}}",
+      "startDate": "{{ISO_DATE}}",
+      "location": { "@type": "Place", "name": "{{VENUE}}" },
+      "description": "Live broadcast of {{FIXTURE}} in {{LEAGUE}}.",
+      "organizer": { "@type": "Organization", "name": "{{LEAGUE}}" }
+    }
+    </script>
+    {{FAQ_SCHEMA}}
+
     <style>
         body { background: #e5e7eb; font-family: 'Inter', sans-serif; }
         .nav-blue { background: #001529; border-bottom: 3px solid #00a0e9; }
-        .detail-card { background: white; border: 1px solid #d1d5db; border-radius: 4px; }
-        .country-header { background: #f8f9fa; border-left: 4px solid #00a0e9; font-weight: bold; padding: 8px 12px; font-size: 0.9rem; }
-        .channel-pill { background: #eee; padding: 3px 10px; border-radius: 3px; font-size: 0.75rem; border: 1px solid #ccc; font-weight: 600; color: #444; }
+        .broadcast-table { display: grid; grid-template-columns: 1fr; border: 1px solid #d1d5db; background: white; }
+        @media (min-width: 768px) { .broadcast-table { grid-template-columns: 30% 70%; } }
+        .country-col { background: #f8f9fa; border-right: 1px solid #d1d5db; padding: 12px; font-weight: 800; color: #444; border-bottom: 1px solid #d1d5db; }
+        .channel-col { padding: 12px; display: flex; flex-wrap: wrap; gap: 8px; border-bottom: 1px solid #d1d5db; }
+        .channel-link { background: #eee; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; border: 1px solid #ccc; font-weight: 700; color: #004d99; text-decoration: none; transition: 0.2s; }
+        .channel-link:hover { background: #004d99; color: white; border-color: #004d99; }
     </style>
 </head>
 <body>
     <nav class="nav-blue p-4 text-white"><div class="max-w-5xl mx-auto"><a href="/" class="text-xl font-black italic uppercase">LIVE<span class="text-sky-400">SOCCER</span>TV</a></div></nav>
-    <main class="max-w-5xl mx-auto p-4 lg:p-8">
-        <div class="detail-card p-6 mb-6">
-            <h1 class="text-2xl md:text-3xl font-bold text-[#004d99]">{{FIXTURE}}</h1>
-            <p class="text-gray-500 font-bold mt-1 uppercase text-xs">{{LEAGUE}} — {{DATE}}</p>
-            <div class="mt-4 p-3 bg-blue-50 text-blue-800 text-sm rounded border border-blue-100 font-medium italic">How to Watch Live | TV Channels & Broadcast Details</div>
+    
+    <main class="max-w-5xl mx-auto p-4">
+        <nav class="text-xs font-bold text-gray-500 mb-4 uppercase">
+            <a href="/" class="text-sky-600">Home</a> / <a href="#" class="text-sky-600">{{LEAGUE}}</a> / {{FIXTURE}}
+        </nav>
+
+        <div class="bg-white p-6 border rounded shadow-sm mb-6">
+            <h1 class="text-3xl font-bold text-[#004d99]">{{FIXTURE}}</h1>
+            <p class="text-gray-500 font-bold mt-1">{{LEAGUE}} — {{DATE}}</p>
+            <p class="text-xs text-gray-400 mt-2 uppercase tracking-widest">Venue: {{VENUE}}</p>
         </div>
-        <div class="detail-card overflow-hidden">
-            <div class="bg-gray-800 text-white px-4 py-2 text-xs font-bold uppercase tracking-wider">Global TV Broadcasters</div>
-            {{TV_LIST}}
+
+        <h2 class="bg-gray-800 text-white px-4 py-2 text-xs font-bold uppercase tracking-widest">Official TV Broadcasters</h2>
+        <div class="broadcast-table">
+            {{BROADCAST_ROWS}}
+        </div>
+
+        <div class="mt-8 bg-white p-6 border rounded">
+            <h3 class="text-lg font-bold mb-4 border-b pb-2">Frequently Asked Questions</h3>
+            <div class="space-y-4 text-sm">
+                <div>
+                    <p class="font-bold">Where to watch {{FIXTURE}} live?</p>
+                    <p class="text-gray-600">You can watch {{FIXTURE}} on various official channels like {{TOP_CHANNELS}} depending on your region.</p>
+                </div>
+                <div>
+                    <p class="font-bold">What time does {{FIXTURE}} start?</p>
+                    <p class="text-gray-600">The match kicks off at {{TIME}} local time on {{DATE}}.</p>
+                </div>
+            </div>
         </div>
     </main>
 </body>
