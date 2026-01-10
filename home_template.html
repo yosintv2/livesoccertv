@@ -1,52 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>{{PAGE_TITLE}} | tv.cricfoot.net</title>
-    <link rel="stylesheet" href="http://cdn.livesoccertv.com/styles.css?v=267" type="text/css">
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}} | tv.cricfoot.net</title>
+    <link rel="stylesheet" href="http://cdn.livesoccertv.com/styles.css?v=267">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .active-day { background: #00447c !important; color: #fff !important; font-weight: 800; border-bottom: 3px solid #f90; }
-        .weekly-nav { display: flex; overflow-x: auto; background: #002d56; border-bottom: 2px solid #001529; }
-        .date-item { padding: 15px; text-align: center; color: #9ab; text-decoration: none; flex: 1; min-width: 100px; font-size: 13px; transition: 0.3s; }
-        .date-item:hover { background: #003a6b; color: #fff; }
-        .league-hdr { background: #f3f3f3; color: #333; font-weight: 800; padding: 10px 15px; border-bottom: 1px solid #ddd; text-transform: uppercase; font-size: 11px; }
-        .match-row { display: flex; align-items: center; background: #fff; border-bottom: 1px solid #eee; text-decoration: none; color: #333; }
-        .match-row:hover { background: #f9f9f9; }
-        .m-time { width: 80px; text-align: center; font-weight: bold; color: #00447c; padding: 15px 0; border-right: 1px solid #eee; }
-        .m-fixture { padding: 0 20px; font-weight: 600; flex-grow: 1; }
+        .active-day { background: #00447c !important; color: white !important; border-bottom: 4px solid #f90; }
+        .date-tab { flex: 1; text-align: center; padding: 12px; color: #ccc; font-size: 13px; text-decoration: none; background: #002d56; }
+        .league-header { background: #eee; padding: 8px 15px; font-weight: 800; text-transform: uppercase; font-size: 11px; color: #555; }
+        .m-row { display: flex; align-items: center; background: #fff; border-bottom: 1px solid #eee; text-decoration: none; color: #333; }
+        .m-time { width: 70px; font-weight: 800; color: #00447c; text-align: center; padding: 15px 0; border-right: 1px solid #eee; }
+        .m-fixture { padding-left: 15px; font-weight: 600; }
     </style>
 </head>
-<body class="lstv-layout">
-    <header style="background: #002d56; border-bottom: 4px solid #f90; padding: 20px;">
-        <div class="container mx-auto">
-            <a href="{{DOMAIN}}/" style="color: #fff; font-size: 30px; font-weight: 900; letter-spacing: -1px;">CRICFOOT<span style="color:#f90;">TV</span></a>
-        </div>
+<body class="bg-slate-100">
+    <header class="bg-[#002d56] p-5 border-b-4 border-[#f90]">
+        <div class="container mx-auto"><a href="{{DOMAIN}}/" class="text-white text-2xl font-black">CRICFOOT<span class="text-[#f90]">TV</span></a></div>
     </header>
-
-    <nav class="weekly-nav">{{WEEKLY_MENU}}</nav>
-
-    <div class="search-bar p-4 bg-gray-50 border-b">
-        <div class="container mx-auto">
-            <input type="text" id="mSearch" placeholder="Search League or Team..." class="w-full p-4 border-2 border-gray-200 rounded-lg outline-none focus:border-blue-500 font-bold">
-        </div>
+    <nav class="flex overflow-x-auto">{{WEEKLY_NAV}}</nav>
+    <div class="p-4 bg-white border-b">
+        <input type="text" id="search" placeholder="Quick find team..." class="w-full p-3 border rounded shadow-inner">
     </div>
-
-    <main class="container mx-auto my-8">
-        <div class="listing-wrapper bg-white shadow-xl rounded-lg overflow-hidden border">
-            {{MATCH_LISTING}}
-        </div>
+    <main class="container mx-auto my-6 shadow-xl bg-white rounded-lg overflow-hidden">
+        {{MATCH_LISTING}}
     </main>
-
-    <footer class="p-12 mt-12 text-center text-gray-400 bg-gray-900">
-        <p class="font-bold text-xs uppercase tracking-widest">&copy; 2026 TV.CRICFOOT.NET</p>
+    <footer class="bg-[#002d56] p-10 text-center text-slate-400 text-xs">
+        &copy; 2026 TV.CRICFOOT.NET - ALL TIMES CONVERTED TO YOUR LOCAL TIME
     </footer>
-
     <script>
-        document.getElementById('mSearch').addEventListener('input', function(e) {
-            const term = e.target.value.toLowerCase();
-            document.querySelectorAll('.match-row').forEach(row => {
-                row.style.display = row.textContent.toLowerCase().includes(term) ? 'flex' : 'none';
+        // Local Time Conversion
+        const formatter = new Intl.DateTimeFormat([], {hour:'2-digit', minute:'2-digit', hour12:false});
+        document.querySelectorAll('[data-unix]').forEach(el => {
+            el.innerText = formatter.format(new Date(el.dataset.unix * 1000));
+        });
+        // Search Filter
+        document.getElementById('search').addEventListener('input', e => {
+            const val = e.target.value.toLowerCase();
+            document.querySelectorAll('.m-row').forEach(r => {
+                r.style.display = r.innerText.toLowerCase().includes(val) ? 'flex' : 'none';
             });
         });
     </script>
