@@ -3,175 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="meta-title">Live Football on TV - Broadcast Guide</title>
+    <title id="meta-title">Live Football Broadcast Guide</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Inter:wght@400;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background: #f3f4f6; color: #111827; }
         
-        body { font-family: 'Inter', sans-serif; background: #e5e7eb; color: #1a1a1a; }
-        
-        /* Date Bar Styling */
-        .date-bar { background: #001529; display: flex; overflow-x: auto; border-bottom: 3px solid #00a0e9; }
-        .date-item { 
-            flex: 1; min-width: 80px; padding: 10px 5px; text-align: center; 
-            color: #ccc; cursor: pointer; border-right: 1px solid #1e293b;
-            font-family: 'Roboto Condensed', sans-serif; transition: 0.2s;
+        /* Compact Date Bar */
+        .date-strip { background: #fff; border-bottom: 1px solid #d1d5db; display: flex; justify-content: center; overflow-x: auto; gap: 8px; padding: 8px; }
+        .date-btn { 
+            padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600;
+            color: #4b5563; border: 1px solid #d1d5db; white-space: nowrap; transition: 0.2s;
         }
-        .date-item:hover { background: #002140; color: white; }
-        .date-item.active { background: #00a0e9; color: white; font-weight: bold; }
-        .date-item .day { font-size: 0.75rem; text-transform: uppercase; }
-        .date-item .num { font-size: 1.1rem; display: block; }
+        .date-btn:hover { background: #f9fafb; }
+        .date-btn.active { background: #004d99; color: white; border-color: #004d99; }
 
-        /* Match List Styling */
-        .league-row { background: #333; color: white; padding: 6px 12px; font-weight: bold; font-size: 0.8rem; }
-        .match-row { background: white; border-bottom: 1px solid #ddd; display: flex; align-items: center; padding: 10px; font-size: 0.85rem; cursor: pointer; }
-        .match-row:hover { background: #f0f9ff; }
-        .match-time { width: 60px; font-weight: bold; color: #444; }
-        .match-fixture { flex: 1; font-weight: 700; color: #004d99; }
+        /* Listing Styles */
+        .league-title { background: #001529; color: #fff; padding: 6px 15px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; }
+        .match-card { background: #fff; border-bottom: 1px solid #e5e7eb; display: grid; grid-template-columns: 60px 1fr 40px; align-items: center; padding: 12px; transition: 0.2s; cursor: pointer; }
+        .match-card:hover { background: #f0f7ff; }
+        .time { font-size: 0.75rem; font-weight: 700; color: #6b7280; }
+        .teams { font-size: 0.875rem; font-weight: 700; color: #004d99; }
         
-        /* TV Guide Styling */
-        .tv-section { background: #fff; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .country-name { background: #f8f9fa; border-left: 4px solid #00a0e9; padding: 8px 12px; font-weight: bold; font-size: 0.9rem; margin-top: 10px; }
-        .channel-list { padding: 8px 20px; display: flex; flex-wrap: wrap; gap: 8px; }
-        .channel-item { background: #eee; padding: 3px 10px; border-radius: 3px; font-size: 0.75rem; border: 1px solid #ccc; }
+        /* TV Details */
+        .country-block { background: #fff; margin-bottom: 1px; border-left: 3px solid #004d99; }
+        .country-header { padding: 8px 15px; font-size: 0.8rem; font-weight: 800; color: #374151; background: #f9fafb; }
+        .channels { padding: 8px 15px 12px; display: flex; flex-wrap: wrap; gap: 6px; }
+        .channel-pill { background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; }
     </style>
 </head>
 <body>
 
-<nav class="bg-[#001529] text-white py-3 px-4 border-b border-slate-700">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-        <h1 class="text-xl font-900 italic tracking-tighter" onclick="location.href='/'" style="cursor:pointer">
-            LIVE<span class="text-sky-400">SOCCER</span>TV<span class="text-xs ml-1 font-normal opacity-50 text-white">CLONE</span>
+<header class="bg-[#001529] py-3 px-4 border-b border-white/10">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
+        <h1 class="text-lg font-800 text-white tracking-tighter cursor-pointer" onclick="location.href='/'">
+            YOSIN<span class="text-sky-400">TV</span> <span class="text-[10px] font-normal opacity-50 ml-1">DATA ENGINE</span>
         </h1>
     </div>
-</nav>
+</header>
 
-<div class="date-bar" id="date-nav">
-    </div>
+<div class="date-strip" id="date-nav"></div>
 
-<div class="max-w-6xl mx-auto p-4 lg:p-6">
-    <div id="content">
-        <div class="text-center py-20 animate-pulse text-slate-500 font-bold">LOADING GLOBAL TV GUIDE...</div>
+<main class="max-w-4xl mx-auto p-4 min-h-screen" id="main-content">
+    <div class="text-center py-20 text-slate-400 text-xs font-bold uppercase tracking-widest animate-pulse">
+        Loading Broadcast Schedule...
     </div>
-</div>
+</main>
 
 <script>
-    const API_URL = 'matches.json'; // Your Bulk API File
-    let allData = [];
+    const API_URL = 'matches.json';
+    let database = [];
 
-    async function init() {
-        renderDateBar();
+    async function start() {
+        renderDateStrip();
         try {
-            const response = await fetch(API_URL);
-            allData = await response.json();
+            const res = await fetch(API_URL);
+            database = await res.json();
             
-            const params = new URLSearchParams(window.location.search);
-            const matchId = params.get('m');
-            const selectedDate = params.get('d') || new Date().toISOString().split('T')[0];
+            const urlParams = new URLSearchParams(window.location.search);
+            const mid = urlParams.get('m');
+            const dStr = urlParams.get('d') || new Date().toISOString().split('T')[0];
 
-            if (matchId) {
-                renderMatchDetail(matchId);
-            } else {
-                renderHome(selectedDate);
-            }
+            if (mid) renderDetails(mid); else renderList(dStr);
         } catch (e) {
-            document.getElementById('content').innerHTML = "Error loading data. Make sure matches.json exists.";
+            document.getElementById('main-content').innerHTML = "JSON Data not found.";
         }
     }
 
-    function renderDateBar() {
+    function renderDateStrip() {
         const nav = document.getElementById('date-nav');
-        const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-        
         const params = new URLSearchParams(window.location.search);
         const activeDate = params.get('d') || new Date().toISOString().split('T')[0];
-
-        // Generate 7 days starting from today
+        
+        // Render 7 small pill buttons
         for (let i = 0; i < 7; i++) {
             let d = new Date();
             d.setDate(d.getDate() + i);
             let iso = d.toISOString().split('T')[0];
+            let label = i === 0 ? "Today" : d.toLocaleDateString('en-GB', {day:'numeric', month:'short'});
             
-            const div = document.createElement('div');
-            div.className = `date-item ${iso === activeDate ? 'active' : ''}`;
-            div.innerHTML = `
-                <span class="day">${days[d.getDay()]}</span>
-                <span class="num">${months[d.getMonth()]} ${d.getDate()}</span>
-            `;
-            div.onclick = () => window.location.href = `?d=${iso}`;
-            nav.appendChild(div);
+            const btn = document.createElement('button');
+            btn.className = `date-btn ${iso === activeDate ? 'active' : ''}`;
+            btn.innerText = label;
+            btn.onclick = () => window.location.href = `?d=${iso}`;
+            nav.appendChild(btn);
         }
     }
 
-    function renderHome(date) {
-        // Filter by date (comparing YYYY-MM-DD)
-        const filtered = allData.filter(m => new Date(m.kickoff * 1000).toISOString().split('T')[0] === date);
-        
+    function renderList(date) {
+        const filtered = database.filter(m => new Date(m.kickoff * 1000).toISOString().split('T')[0] === date);
         if (filtered.length === 0) {
-            document.getElementById('content').innerHTML = `<div class="bg-white p-10 text-center rounded border">No matches found for this date.</div>`;
+            document.getElementById('main-content').innerHTML = `<div class="p-10 text-center text-gray-500 text-sm italic">No matches scheduled for this date.</div>`;
             return;
         }
 
-        // Group by league
         const grouped = filtered.reduce((acc, m) => {
-            if (!acc[m.league]) acc[m.league] = [];
-            acc[m.league].push(m);
+            (acc[m.league] = acc[m.league] || []).push(m);
             return acc;
         }, {});
 
-        let html = '<div class="space-y-4">';
+        let html = '';
         for (const league in grouped) {
-            html += `<div class="overflow-hidden border border-gray-300 rounded shadow-sm">
-                        <div class="league-row">${league}</div>`;
+            html += `<div class="rounded-lg border border-gray-200 overflow-hidden mb-4 shadow-sm">
+                        <div class="league-title">${league}</div>`;
             grouped[league].forEach(m => {
-                const time = new Date(m.kickoff * 1000).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false});
+                const time = new Date(m.kickoff * 1000).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
                 html += `
-                <div class="match-row" onclick="location.href='?m=${m.match_id}'">
-                    <div class="match-time">${time}</div>
-                    <div class="match-fixture">${m.fixture}</div>
-                    <div class="text-[10px] text-sky-600 font-bold pr-2">TV »</div>
+                <div class="match-card" onclick="location.href='?m=${m.match_id}'">
+                    <span class="time">${time}</span>
+                    <span class="teams">${m.fixture}</span>
+                    <span class="text-sky-600 font-bold text-[10px]">TV »</span>
                 </div>`;
             });
             html += `</div>`;
         }
-        document.getElementById('content').innerHTML = html + '</div>';
+        document.getElementById('main-content').innerHTML = html;
     }
 
-    function renderMatchDetail(id) {
-        const m = allData.find(x => x.match_id == id);
+    function renderDetails(id) {
+        const m = database.find(x => x.match_id == id);
         if (!m) return (location.href = "/");
 
-        const fullDate = new Date(m.kickoff * 1000).toLocaleDateString('en-GB', {day:'2-digit', month:'short', year:'numeric'});
-        
-        // Dynamic SEO Update
-        document.title = `${m.fixture} - How to Watch Live | TV Channels & Broadcast Details | ${fullDate}`;
+        const dateStr = new Date(m.kickoff * 1000).toLocaleDateString('en-GB', {day:'2-digit', month:'short', year:'numeric'});
+        document.title = `${m.fixture} - How to Watch Live | TV Channels & Broadcast Details | ${dateStr}`;
 
         let tvHtml = '';
         m.tv_channels.forEach(country => {
             tvHtml += `
-            <div class="country-name">${country.country}</div>
-            <div class="channel-list">
-                ${country.channels.map(c => `<span class="channel-item">${c}</span>`).join('')}
+            <div class="country-block">
+                <div class="country-header">${country.country}</div>
+                <div class="channels">
+                    ${country.channels.map(c => `<span class="channel-pill">${c}</span>`).join('')}
+                </div>
             </div>`;
         });
 
-        document.getElementById('content').innerHTML = `
-            <div class="mb-4 text-sm font-bold"><a href="/" class="text-blue-700">« Back to List</a></div>
-            <div class="bg-white border p-6 rounded mb-6">
-                <h1 class="text-2xl font-bold text-blue-900">${m.fixture}</h1>
-                <p class="text-gray-500 font-semibold">${m.league} — ${fullDate}</p>
-                <p class="text-gray-400 text-xs mt-1">Venue: ${m.venue}</p>
+        document.getElementById('main-content').innerHTML = `
+            <div class="mb-4"><button onclick="history.back()" class="text-xs font-bold text-sky-700">← Back to List</button></div>
+            <div class="bg-white border border-gray-200 p-6 rounded-xl mb-4">
+                <h1 class="text-2xl font-bold text-gray-900">${m.fixture}</h1>
+                <p class="text-sm font-semibold text-gray-500">${m.league} — ${dateStr}</p>
+                <div class="mt-4 text-[11px] text-gray-400 uppercase tracking-widest font-bold">Venue: ${m.venue}</div>
             </div>
-            
-            <div class="tv-section">
-                <div class="bg-gray-800 text-white p-2 text-xs font-bold uppercase tracking-wider pl-4">International TV Broadcasters</div>
-                <div class="pb-6">${tvHtml || '<div class="p-10 text-center">Data updating...</div>'}</div>
+            <div class="rounded-xl overflow-hidden border border-gray-200">
+                <div class="bg-gray-800 text-white p-2 text-[10px] font-bold uppercase text-center">Global Broadcasters</div>
+                ${tvHtml || '<div class="p-10 bg-white text-center text-xs">Information not available yet</div>'}
             </div>
         `;
     }
 
-    init();
+    start();
 </script>
 </body>
 </html>
