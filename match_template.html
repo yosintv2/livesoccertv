@@ -1,73 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" class="dark"> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{TITLE}}</title>
-    <meta name="description" content="Watch {{FIXTURE}} live. TV channels and broadcast details for {{LEAGUE}} at {{VENUE}} on {{DATE}}.">
+    <meta name="description" content="Watch {{FIXTURE}} live on TV. Official broadcast partners for {{LEAGUE}} on {{DATE}}.">
     <script src="https://cdn.tailwindcss.com"></script>
     {{SCHEMA}}
-    <script>
-        if (localStorage.getItem('theme') === 'light') document.documentElement.classList.remove('dark');
-    </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; @apply bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300; }
-        .glass-nav { @apply sticky top-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800; }
-        .bento-card { @apply bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-sm; }
-        .broadcast-grid { display: grid; grid-template-columns: 1fr; @apply border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden; }
-        @media (min-width: 768px) { .broadcast-grid { grid-template-columns: 30% 70%; } }
-        .country-cell { @apply bg-slate-50 dark:bg-slate-800/50 p-4 font-800 text-sm border-b border-slate-200 dark:border-slate-800 flex items-center; }
-        .channel-cell { @apply bg-white dark:bg-slate-900 p-4 flex flex-wrap gap-2 border-b border-slate-200 dark:border-slate-800; }
-        .ch-pill { @apply bg-slate-100 dark:bg-slate-800 text-sky-600 dark:text-sky-400 px-3 py-1.5 rounded-lg text-xs font-700 border border-slate-200 dark:border-slate-700 hover:scale-105 transition-all; }
+        body { background-color: #f1f5f9; font-family: 'Inter', sans-serif; }
+        .nav-top { background-color: #001529; }
+        .hero { background: linear-gradient(180deg, #001e3c 0%, #001529 100%); color: white; padding: 40px 20px; }
+        .broadcast-table { background: white; border: 1px solid #cbd5e1; border-radius: 4px; overflow: hidden; }
+        .row { display: grid; grid-template-columns: 1fr; border-bottom: 1px solid #e2e8f0; }
+        @media (min-width: 768px) { .row { grid-template-columns: 30% 70%; } }
+        .c-name { background: #f8fafc; padding: 12px 20px; font-weight: 800; color: #475569; font-size: 0.85rem; border-right: 1px solid #e2e8f0; }
+        .ch-list { padding: 12px 20px; display: flex; flex-wrap: wrap; gap: 8px; }
+        .pill { background: #f1f5f9; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 3px; font-size: 0.75rem; font-weight: 700; color: #0369a1; text-decoration: none; }
+        .pill:hover { background: #00a0e9; color: white; }
     </style>
 </head>
-<body class="min-h-screen">
-    <nav class="glass-nav">
-        <div class="max-w-5xl mx-auto px-4 h-16 flex justify-between items-center">
-            <a href="/" class="text-2xl font-800 italic uppercase tracking-tighter">LIVE<span class="text-sky-500">SOCCER</span>TV</a>
-            <button onclick="toggleTheme()" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">🌓</button>
-        </div>
-    </nav>
+<body>
+    <header class="nav-top p-4 text-center md:text-left">
+        <a href="/" class="text-white text-2xl font-black italic uppercase">LIVE<span class="text-[#00a0e9]">SOCCER</span>TV</a>
+    </header>
 
-    <main class="max-w-5xl mx-auto p-4 lg:p-10">
-        <div class="bento-card p-8 mb-8">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-                <div>
-                    <span class="bg-sky-500/10 text-sky-500 px-3 py-1 rounded-full text-[10px] font-800 uppercase tracking-widest">{{LEAGUE}}</span>
-                    <h1 class="text-3xl md:text-5xl font-800 mt-4 leading-tight text-slate-900 dark:text-white">{{FIXTURE}}</h1>
-                    <p class="text-slate-500 dark:text-slate-400 mt-2 font-medium">Kickoff: {{TIME}} • {{VENUE}}</p>
-                </div>
-                <div class="p-6 bg-slate-100 dark:bg-slate-800 rounded-2xl text-center min-w-[140px] border border-slate-200 dark:border-slate-700">
-                    <p class="text-[10px] font-800 text-slate-400 uppercase mb-1">{{DATE}}</p>
-                    <p class="text-3xl font-800 text-sky-500">{{TIME}}</p>
-                </div>
+    <div class="hero">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <div class="text-[#00a0e9] font-bold uppercase text-xs tracking-widest mb-2">{{LEAGUE}}</div>
+                <h1 class="text-3xl md:text-5xl font-black mb-2">{{FIXTURE}}</h1>
+                <p class="text-gray-400 font-medium italic">At {{VENUE}}</p>
+            </div>
+            <div class="bg-[#00a0e9] p-6 rounded text-center min-w-[150px] shadow-xl">
+                <div class="text-3xl font-black">{{TIME}}</div>
+                <div class="text-xs font-bold uppercase mt-1 opacity-80">{{DATE}}</div>
             </div>
         </div>
+    </div>
 
-        <h2 class="text-xs font-900 uppercase tracking-widest text-slate-400 mb-4 ml-2">Official TV Broadcasters</h2>
-        <div class="broadcast-grid">{{BROADCAST_ROWS}}</div>
+    <main class="max-w-5xl mx-auto p-4 py-10">
+        <div class="bg-[#334155] text-white px-4 py-2 text-[10px] font-bold uppercase tracking-widest">Official Broadcasters</div>
+        <div class="broadcast-table mb-10">{{BROADCAST_ROWS}}</div>
 
-        <div class="mt-12 bento-card p-8">
-            <h3 class="text-xl font-800 mb-6">Match Broadcast FAQ</h3>
-            <div class="grid md:grid-cols-2 gap-8 text-sm">
-                <div>
-                    <p class="font-bold text-sky-500 italic">Where can I watch {{FIXTURE}} live?</p>
-                    <p class="text-slate-500 dark:text-slate-400 mt-2">Watch live on official channels like {{TOP_CHANNELS}}. Specific channels depend on your region.</p>
-                </div>
-                <div>
-                    <p class="font-bold text-sky-500 italic">What league is this match in?</p>
-                    <p class="text-slate-500 dark:text-slate-400 mt-2">This match is part of the {{LEAGUE}} taking place at {{VENUE}}.</p>
-                </div>
-            </div>
+        <div class="bg-white p-6 rounded shadow-sm border">
+            <h3 class="font-bold border-b pb-2 mb-4">Frequently Asked Questions</h3>
+            <p class="text-sm font-bold text-[#00a0e9]">Where to watch {{FIXTURE}} live?</p>
+            <p class="text-sm text-gray-600 mb-4">Official broadcasters include: {{TOP_CHANNELS}}.</p>
         </div>
     </main>
-
-    <script>
-        function toggleTheme() {
-            const isDark = document.documentElement.classList.toggle('dark');
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        }
-    </script>
 </body>
 </html>
