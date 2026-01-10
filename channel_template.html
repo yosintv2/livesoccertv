@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <title>{{CHANNEL_NAME}} Schedule | tv.cricfoot.net</title>
+    <link rel="stylesheet" href="http://cdn.livesoccertv.com/styles.css?v=267" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap'); body { background: #f8fafc; font-family: 'Plus Jakarta Sans', sans-serif; }</style>
 </head>
 <body>
-    <header class="bg-[#001529] p-4"><a href="{{DOMAIN}}/" class="text-white text-xl font-black italic uppercase">CRICFOOT<span class="text-[#00a0e9]">TV</span></a></header>
-    <div class="bg-[#001e3c] py-12 text-center text-white">
-        <h1 class="text-4xl font-black uppercase">{{CHANNEL_NAME}}</h1>
+    <header style="background:#002d56; padding: 15px;"><a href="{{DOMAIN}}/" style="color:#fff; font-weight:900;">CRICFOOTTV</a></header>
+    <div class="bg-blue-900 py-16 text-center text-white">
+        <h1 class="text-5xl font-black">{{CHANNEL_NAME}}</h1>
     </div>
-    <main class="max-w-4xl mx-auto p-4 py-10">
-        <div class="bg-white rounded border border-slate-200 overflow-hidden">{{MATCH_LISTING}}</div>
+    <main class="container mx-auto py-10 max-w-5xl">
+        <div class="match-list-container bg-white rounded shadow-md">
+            {{MATCH_LISTING}}
+        </div>
     </main>
-    <footer class="bg-[#001529] p-10 text-center text-slate-500 text-[10px] font-bold uppercase">&copy; 2026 TV.CRICFOOT.NET</footer>
+    <footer style="background:#002d56; color:#999; padding:30px; text-align:center;">&copy; 2026 TV.CRICFOOT.NET</footer>
 </body>
 </html>
