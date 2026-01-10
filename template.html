@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}}</title>
+    <meta name="description" content="Watch {{FIXTURE}} live. Full list of official TV channels, broadcasters, and kickoff details for {{LEAGUE}} on {{DATE}}.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background: #f3f4f6; }
+        .league-tag { background: #001529; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; }
+        .country-row { background: white; border-bottom: 1px solid #e5e7eb; padding: 12px 20px; }
+        .channel-pill { background: #eff6ff; color: #1e40af; border: 1px solid #bfdbfe; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <nav class="bg-[#001529] p-4 text-white shadow-lg">
+        <div class="max-w-4xl mx-auto"><a href="/" class="font-900 italic">YOSIN<span class="text-sky-400">TV</span></a></div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto p-4 lg:p-8">
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 mb-6">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="league-tag">{{LEAGUE}}</span>
+                <span class="text-xs font-bold text-gray-400">{{DATE}}</span>
+            </div>
+            <h1 class="text-2xl md:text-4xl font-800 text-gray-900 mb-2">{{FIXTURE}}</h1>
+            <p class="text-gray-500 font-semibold">How to Watch Live | TV Channels & Broadcast Details</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+            <div class="bg-gray-50 px-6 py-3 border-b border-gray-200">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-gray-500">Official Global Broadcasters</h2>
+            </div>
+            {{TV_CHANNELS_LIST}}
+        </div>
+
+        <div class="mt-8 p-6 bg-gray-800 rounded-2xl text-white text-sm">
+            <h3 class="font-bold mb-2">Match Information</h3>
+            <p><strong>Tournament:</strong> {{LEAGUE}}</p>
+            <p><strong>Venue:</strong> {{VENUE}}</p>
+            <p><strong>Kickoff:</strong> {{TIME}}</p>
+        </div>
+    </main>
+</body>
+</html>
