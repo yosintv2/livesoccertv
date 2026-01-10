@@ -1,81 +1,61 @@
 import json, os, re
 from datetime import datetime
 
-# CONFIG
 DOMAIN = "https://tv.cricfoot.net" # Change this!
 
-with open('matches.json', 'r') as f:
-    matches = json.load(f)
-with open('match_template.html', 'r') as f:
-    match_temp = f.read()
+# Load templates
+with open('matches.json', 'r') as f: matches = json.load(f)
+with open('home_template.html', 'r') as f: home_temp = f.read()
+with open('match_template.html', 'r') as f: match_temp = f.read()
 
-def slugify(t):
-    return re.sub(r'[^a-z0-9]+', '-', t.lower()).strip('-')
+def slugify(t): return re.sub(r'[^a-z0-9]+', '-', t.lower()).strip('-')
 
-channel_map = {} # To track which matches are on which channel
+channel_map = {}
+leagues = {}
 
-# 1. PROCESS MATCHES
+# 1. Create Match Pages
 for m in matches:
     dt = datetime.fromtimestamp(m['kickoff'])
-    d_display = dt.strftime('%d %b %Y')
-    d_path = dt.strftime('%d-%b-%Y').lower()
-    slug = slugify(m['fixture'])
-    rel_path = f"match/{slug}/{d_path}"
-    os.makedirs(rel_path, exist_ok=True)
+    time_str = dt.strftime('%H:%M')
+    date_str = dt.strftime('%d %b %Y')
+    slug = f"match/{slugify(m['fixture'])}/{dt.strftime('%d-%b-%Y').lower()}"
+    os.makedirs(slug, exist_ok=True)
 
-    rows_html = ""
-    top_channels = []
+    rows = ""
+    top_ch = []
+    for c in m['tv_channels']:
+        btns = "".join([f'<a href="/channel/{slugify(ch)}/" class="channel-btn">{ch}</a>' for ch in c['channels']])
+        rows += f'<div class="country-cell">{c["country"]}</div><div class="channel-cell">{btns}</div>'
+        top_ch.extend(c['channels'][:2])
+        for ch in c['channels']: channel_map.setdefault(ch, []).append(m)
+
+    # Inject Match Data
+    content = match_temp.replace("{{FIXTURE}}", m['fixture']).replace("{{LEAGUE}}", m['league']) \
+                        .replace("{{TIME}}", time_str).replace("{{DATE}}", date_str) \
+                        .replace("{{BROADCAST_ROWS}}", rows).replace("{{TOP_CHANNELS}}", ", ".join(top_ch[:3])) \
+                        .replace("{{TITLE}}", f"{m['fixture']} TV Channels - Live Broadcast Guide")
     
-    for country in m.get('tv_channels', []):
-        c_links = ""
-        for ch in country['channels']:
-            ch_slug = slugify(ch)
-            c_links += f'<a href="/channel/{ch_slug}/" class="channel-link">{ch}</a>'
-            # Update channel map for SEO cross-linking
-            channel_map.setdefault(ch, []).append(m)
-            if len(top_channels) < 3: top_channels.append(ch)
+    with open(f"{slug}/index.html", "w") as f: f.write(content)
+    leagues.setdefault(m['league'], []).append({"time": time_str, "fixture": m['fixture'], "url": f"/{slug}/"})
 
-        rows_html += f'<div class="country-col">{country["country"]}</div><div class="channel-col">{c_links}</div>'
-
-    # Build FAQ Schema
-    faq_schema = f"""
-    <script type="application/ld+json">
-    {{
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {{ "@type": "Question", "name": "Where to watch {m['fixture']} live?", "acceptedAnswer": {{ "@type": "Answer", "text": "Official broadcasters include {', '.join(top_channels)}." }} }}
-      ]
-    }}
-    </script>
-    """
-
-    # Inject into template
-    page = match_temp.replace("{{TITLE}}", f"{m['fixture']} - TV Channels & Live Stream | {d_display}") \
-                     .replace("{{FIXTURE}}", m['fixture']) \
-                     .replace("{{LEAGUE}}", m['league']) \
-                     .replace("{{DATE}}", d_display) \
-                     .replace("{{TIME}}", dt.strftime('%H:%M')) \
-                     .replace("{{ISO_DATE}}", dt.isoformat()) \
-                     .replace("{{VENUE}}", m.get('venue', 'TBA')) \
-                     .replace("{{BROADCAST_ROWS}}", rows_html) \
-                     .replace("{{TOP_CHANNELS}}", ", ".join(top_channels)) \
-                     .replace("{{FAQ_SCHEMA}}", faq_schema)
-
-    with open(f"{rel_path}/index.html", "w") as f:
-        f.write(page)
-
-# 2. GENERATE CHANNEL PAGES (Crucial for SEO)
-for ch_name, m_list in channel_map.items():
-    ch_slug = slugify(ch_name)
-    path = f"channel/{ch_slug}"
-    os.makedirs(path, exist_ok=True)
-    
-    ch_html = f"<html><head><title>Matches on {ch_name} - Live Guide</title><script src='https://cdn.tailwindcss.com'></script></head><body class='bg-gray-100 p-8'>"
-    ch_html += f"<h1 class='text-2xl font-bold mb-6'>Upcoming Matches on {ch_name}</h1><div class='grid gap-4'>"
+# 2. Create Home Page
+listing = ""
+for league, m_list in leagues.items():
+    listing += f'<div class="league-card"><div class="league-header">{league}</div>'
     for match in m_list:
-        ch_html += f"<div class='p-4 bg-white border rounded shadow-sm'><p class='font-bold'>{match['fixture']}</p><p class='text-xs text-gray-500'>{match['league']}</p></div>"
-    ch_html += "</div><a href='/' class='mt-6 block text-blue-600'>Back to Home</a></body></html>"
+        listing += f'<a href="{match["url"]}" class="match-row"><span class="match-time">{match["time"]}</span><span class="match-fixture">{match["fixture"]}</span></a>'
+    listing += '</div>'
+
+with open("index.html", "w") as f: f.write(home_temp.replace("{{MATCH_LISTING}}", listing))
+
+# 3. Create Channel Pages (Modern Grid)
+for ch, ch_matches in channel_map.items():
+    path = f"channel/{slugify(ch)}"
+    os.makedirs(path, exist_ok=True)
+    ch_list = "".join([f'<div class="p-4 bg-[#1e293b] rounded-lg border border-white/5"><p class="text-sky-400 font-bold">{datetime.fromtimestamp(x["kickoff"]).strftime("%H:%M")}</p><p class="font-bold">{x["fixture"]}</p></div>' for x in ch_matches])
     
-    with open(f"{path}/index.html", "w") as f:
-        f.write(ch_html)
+    # Simple Modern Channel Page Template
+    ch_html = home_temp.replace("{{MATCH_LISTING}}", f'<h1 class="text-3xl font-black mb-8">Matches on {ch}</h1><div class="grid grid-cols-1 md:grid-cols-2 gap-4">{ch_list}</div>')
+    with open(f"{path}/index.html", "w") as f: f.write(ch_html)
+
+print("Site built successfully.")
