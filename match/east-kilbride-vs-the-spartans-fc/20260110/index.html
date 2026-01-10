@@ -2,48 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>East Kilbride vs The Spartans FC Live Channels | tv.cricfoot.net</title>
+    <title>East Kilbride vs The Spartans FC Live TV Guide | tv.cricfoot.net</title>
     <link rel="stylesheet" href="http://cdn.livesoccertv.com/styles.css?v=267">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .match-header { background: #001529; color: white; border-bottom: 4px solid #00a0e9; }
-        .country-cell { font-weight: 800; padding: 15px; background: #f8fafc; color: #64748b; text-transform: uppercase; font-size: 11px; width: 30%; border-bottom: 1px solid #e2e8f0; }
-        .channel-cell { padding: 15px; border-bottom: 1px solid #e2e8f0; }
-        .ch-pill { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 4px 10px; border-radius: 4px; font-weight: 700; margin: 2px; font-size: 13px; text-decoration: none; }
+        .ch-pill { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 5px 12px; border-radius: 4px; font-weight: 700; margin: 3px; font-size: 12px; text-decoration: none; border: 1px solid #bae6fd; }
+        .ch-pill:hover { background: #0369a1; color: white; }
     </style>
 </head>
-<body class="bg-slate-100 font-sans">
-    <header class="match-header p-8 text-center">
-        <div class="text-[#00a0e9] uppercase font-black text-xs tracking-widest">League Two</div>
-        <h1 class="text-3xl font-black italic uppercase my-4">East Kilbride vs The Spartans FC</h1>
-        <div class="text-slate-400 font-bold">
-            🕒 <span id="localtime" data-unix="1768057200"></span> | 🏟️ TBA
+<body class="bg-slate-50">
+    <header class="bg-[#001529] p-4"><a href="https://tv.cricfoot.net/" class="text-white font-black italic">CRICFOOTTV</a></header>
+    <div class="bg-white border-b py-12 text-center shadow-sm">
+        <div class="text-blue-500 font-bold uppercase text-xs tracking-widest">League Two</div>
+        <h1 class="text-4xl font-black my-4 text-slate-800">East Kilbride vs The Spartans FC</h1>
+        <div class="text-slate-400 font-bold uppercase text-xs">
+            🕒 <span id="m-time" data-unix="1768057200"></span> | 🏟️ TBA
         </div>
-    </header>
-
-    <main class="max-w-4xl mx-auto my-10 p-4">
-        <div class="bg-white rounded-xl shadow-2xl overflow-hidden border border-slate-200">
-            <table class="w-full text-left border-collapse">
-                <thead>
-                    <tr class="bg-slate-200 text-slate-500 text-[10px] uppercase font-black tracking-widest">
-                        <th class="p-4">Country</th>
-                        <th class="p-4">Official Channels</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    
-                </tbody>
-            </table>
-        </div>
+    </div>
+    <main class="max-w-4xl mx-auto my-10 bg-white shadow-2xl rounded-xl overflow-hidden border border-slate-200">
+        <table class="w-full text-left">
+            <thead class="bg-slate-100 border-b">
+                <tr><th class="p-4 text-[10px] text-slate-500 uppercase">Country</th><th class="p-4 text-[10px] text-slate-500 uppercase">Broadcasters</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
     </main>
-
     <script>
-        const el = document.getElementById('localtime');
-        const date = new Date(el.dataset.unix * 1000);
-        el.innerText = new Intl.DateTimeFormat([], { 
-            hour: '2-digit', minute: '2-digit', day: 'numeric', month: 'short', hour12: false, timeZoneName: 'short' 
-        }).format(date);
+        const el = document.getElementById('m-time');
+        el.innerText = new Intl.DateTimeFormat([], {hour:'2-digit', minute:'2-digit', timeZoneName:'short', day:'numeric', month:'short'}).format(new Date(el.dataset.unix * 1000));
     </script>
 </body>
 </html>
