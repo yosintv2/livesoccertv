@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{PAGE_TITLE}} | tv.cricfoot.net</title>
+    <link rel="stylesheet" href="http://cdn.livesoccertv.com/styles.css?v=267" type="text/css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
-        body { background: #f8fafc; font-family: 'Plus Jakarta Sans', sans-serif; color: #1e293b; }
-        .nav-top { background: #001529; border-bottom: 3px solid #00a0e9; }
-        .date-btn { min-width: 100px; transition: 0.2s; border-bottom: 4px solid transparent; }
-        .date-btn.active { background: #00a0e9; color: white !important; border-bottom-color: #0077b3; }
-        .league-header { background: #334155; color: white; padding: 8px 15px; font-weight: 800; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
-        .match-row { background: white; border-bottom: 1px solid #e2e8f0; display: grid; grid-template-columns: 80px 1fr; align-items: center; text-decoration: none; color: inherit; }
-        .match-row:hover { background: #f1f5f9; border-left: 4px solid #00a0e9; }
-        .match-time { font-weight: 800; color: #00a0e9; text-align: center; font-size: 13px; }
-        .match-info { padding: 14px; font-weight: 700; font-size: 14px; border-left: 1px solid #f1f5f9; }
-        .top-match { background: #fffbeb; }
+        /* Small overrides to ensure consistency with our custom logic */
+        .date-btn.active { background: #00447c !important; color: #fff !important; }
+        .weekly-nav { background: #002d56; display: flex; overflow-x: auto; }
+        .date-btn { padding: 12px; text-align: center; color: #ccc; text-decoration: none; border-right: 1px solid #00447c; flex: 1; min-width: 90px; }
     </style>
 </head>
-<body>
-    <header class="nav-top p-4 text-center md:text-left shadow-lg">
-        <a href="{{DOMAIN}}/" class="text-white text-2xl font-black italic uppercase">CRICFOOT<span class="text-[#00a0e9]">TV</span></a>
-    </header>
-    <div class="bg-[#001529] overflow-x-auto flex border-t border-slate-800">{{WEEKLY_MENU}}</div>
-    <div class="bg-white p-4 border-b border-slate-200">
-        <div class="max-w-5xl mx-auto">
-            <input type="text" id="matchSearch" placeholder="Search teams or leagues..." class="w-full p-3 rounded-md border border-slate-300 outline-none focus:border-[#00a0e9] font-bold">
+<body class="lstv-body">
+    <header class="lstv-header" style="background:#002d56; padding: 20px; border-bottom: 4px solid #f90;">
+        <div class="container">
+            <a href="{{DOMAIN}}/" style="color:#fff; font-size:28px; font-weight:900; text-transform:uppercase;">CRICFOOT<span style="color:#f90;">TV</span></a>
         </div>
+    </header>
+
+    <div class="weekly-nav">{{WEEKLY_MENU}}</div>
+
+    <div class="search-container p-4 bg-gray-100">
+        <input type="text" id="matchSearch" placeholder="Search matches..." class="w-full p-3 border rounded">
     </div>
-    <main class="max-w-5xl mx-auto p-4 min-h-screen">
-        <div class="bg-white rounded shadow-sm border border-slate-200 overflow-hidden">{{MATCH_LISTING}}</div>
+
+    <main class="container py-8">
+        <div class="match-listings-wrapper">
+            {{MATCH_LISTING}}
+        </div>
     </main>
-    <footer class="bg-[#001529] p-10 text-center text-slate-500 text-[10px] font-bold uppercase">&copy; 2026 TV.CRICFOOT.NET</footer>
+
+    <footer class="lstv-footer" style="background:#002d56; color:#aaa; padding:40px; text-align:center; font-size:12px;">
+        &copy; 2026 TV.CRICFOOT.NET - ALL RIGHTS RESERVED
+    </footer>
+
     <script>
         document.getElementById('matchSearch').addEventListener('input', function(e) {
             let term = e.target.value.toLowerCase();
             document.querySelectorAll('.match-row').forEach(row => {
-                row.style.display = row.textContent.toLowerCase().includes(term) ? 'grid' : 'none';
+                row.style.display = row.textContent.toLowerCase().includes(term) ? 'flex' : 'none';
             });
         });
     </script>
