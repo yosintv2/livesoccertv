@@ -1,42 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{TITLE}} | LiveSoccerTV</title>
-<meta name="keywords" content="live soccer tv, football on tv, soccer broadcast, watch football live, {{FIXTURE}}, {{CHANNEL_NAME}}">
-<script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <title>{{TITLE}} | CricFoot TV</title>
+    <meta name="description" content="Watch {{FIXTURE}} live. Official TV channels, kickoff times, and broadcast info for {{LEAGUE}}.">
+    <meta name="keywords" content="{{FIXTURE}}, watch {{FIXTURE}} live, {{LEAGUE}} tv guide, cricfoot tv, football on tv today">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="canonical" href="https://tv.cricfoot.net/match/{{FIXTURE}}">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsEvent",
+      "name": "{{FIXTURE}}",
+      "startDate": "{{DATE}}T{{TIME}}:00",
+      "location": {"@type": "Place", "name": "{{VENUE}}"},
+      "competitor": [{"@type": "SportsTeam", "name": "Home Team"}, {"@type": "SportsTeam", "name": "Away Team"}]
+    }
+    </script>
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
-    body { background-color: #f8fafc; font-family: 'Plus Jakarta Sans', sans-serif; color: #1e293b; }
-    .nav-top { background-color: #001529; }
+    body { background-color: #f1f5f9; font-family: 'Plus Jakarta Sans', sans-serif; color: #0f172a; margin: 0; }
+    .nav-top { background-color: #001529; border-bottom: 1px solid #1e293b; }
     .nav-leagues { background-color: #001e3c; border-bottom: 4px solid #00a0e9; }
-    .league-title { background: #334155; color: white; padding: 8px 15px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; border-radius: 4px 4px 0 0; }
-    .match-card { background: white; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center; padding: 15px; text-decoration: none; color: inherit; transition: all 0.2s; }
-    .match-card:hover { background: #f1f5f9; border-left: 4px solid #00a0e9; }
-    .time-col { width: 60px; font-weight: 800; color: #00a0e9; font-size: 0.9rem; }
-    /* Match Page Table */
-    .row { display: grid; grid-template-columns: 1fr; border-bottom: 1px solid #e2e8f0; background: white; }
+    .date-bar { background-color: #001529; }
+    .league-title { background: #334155; color: white; padding: 10px 15px; font-size: 0.7rem; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; border-radius: 6px 6px 0 0; }
+    .match-card { background: white; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center; padding: 16px; text-decoration: none; color: inherit; transition: 0.2s; }
+    .match-card:hover { border-left: 4px solid #00a0e9; background: #f8fafc; }
+    .time-col { width: 70px; font-weight: 800; color: #00a0e9; }
+    .broadcast-table { background: white; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; }
+    .row { display: grid; grid-template-columns: 1fr; border-bottom: 1px solid #f1f5f9; }
     @media (min-width: 768px) { .row { grid-template-columns: 30% 70%; } }
-    .c-name { background: #f1f5f9; padding: 12px 20px; font-weight: 800; font-size: 0.8rem; border-right: 1px solid #e2e8f0; }
+    .c-name { background: #f8fafc; padding: 15px 20px; font-weight: 800; font-size: 0.8rem; border-right: 1px solid #f1f5f9; }
     .ch-list { padding: 12px 20px; display: flex; flex-wrap: wrap; gap: 8px; }
-    .pill { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; padding: 4px 10px; border-radius: 4px; font-size: 0.7rem; font-weight: 700; }
+    .pill { background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; padding: 6px 12px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; text-decoration: none; }
     .pill:hover { background: #00a0e9; color: white; }
+    footer { background: #001529; color: #94a3b8; padding: 40px 20px; font-size: 0.8rem; margin-top: 50px; }
 </style>
 </head>
 <body>
-    <header class="nav-top p-4">
-        <div class="max-w-5xl mx-auto"><a href="/" class="text-white text-2xl font-black italic uppercase">LIVE<span class="text-[#00a0e9]">SOCCER</span>TV</a></div>
-    </header>
-    <div class="bg-[#001e3c] py-12 px-4 text-center">
-        <h1 class="text-white text-4xl font-black uppercase mb-2">{{CHANNEL_NAME}}</h1>
-        <p class="text-sky-400 font-bold tracking-widest text-xs">OFFICIAL BROADCAST SCHEDULE</p>
+    <header class="nav-top p-4"><a href="/" class="text-white text-2xl font-black italic uppercase">CRICFOOT<span class="text-[#00a0e9]">TV</span></a></header>
+    <div class="hero p-12 bg-[#001e3c] text-white text-center">
+        <div class="text-[#00a0e9] font-bold uppercase text-xs mb-2 tracking-widest">{{LEAGUE}}</div>
+        <h1 class="text-4xl md:text-6xl font-black mb-6">{{FIXTURE}}</h1>
+        <div class="inline-block bg-[#00a0e9] px-8 py-3 rounded-lg font-black text-3xl shadow-xl">{{TIME}}</div>
+        <p class="mt-4 text-slate-400 font-bold uppercase text-sm">{{DATE}} • {{VENUE}}</p>
     </div>
+
     <main class="max-w-5xl mx-auto p-4 py-10">
-        <h2 class="text-sm font-black uppercase text-slate-400 mb-4">Upcoming Matches on {{CHANNEL_NAME}}</h2>
-        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-            {{MATCH_LISTING}}
-        </div>
+        <h2 class="bg-[#334155] text-white px-4 py-2 text-[10px] font-black uppercase tracking-widest rounded-t-lg">Official TV Broadcasters</h2>
+        <div class="broadcast-table mb-12">{{BROADCAST_ROWS}}</div>
+
+        <section class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+            <h3 class="text-2xl font-black mb-6 text-slate-800">Frequently Asked Questions</h3>
+            <div class="grid md:grid-cols-2 gap-6 text-sm">
+                <div class="faq-item"><strong>1. Where can I watch {{FIXTURE}} live?</strong><p>You can watch the match on {{TOP_CHANNELS}}.</p></div>
+                <div class="faq-item"><strong>2. What time is kickoff?</strong><p>The match starts at {{TIME}} local time.</p></div>
+                <div class="faq-item"><strong>3. Is there a mobile stream?</strong><p>Yes, through official apps of the broadcasters listed above.</p></div>
+                <div class="faq-item"><strong>4. Which league is this?</strong><p>This fixture is part of the {{LEAGUE}}.</p></div>
+                <div class="faq-item"><strong>5. Is this broadcast official?</strong><p>Yes, we only list official rights holders.</p></div>
+                <div class="faq-item"><strong>6. Where is the match played?</strong><p>At {{VENUE}}.</p></div>
+                <div class="faq-item"><strong>7. Can I watch in the USA?</strong><p>Check the USA entry in our table for local channels.</p></div>
+                <div class="faq-item"><strong>8. Can I watch in the UK?</strong><p>Check the UK entry for Sky/TNT/BBC listings.</p></div>
+                <div class="faq-item"><strong>9. Is the match free to watch?</strong><p>Depends on the channel. Some are Free-to-Air, others require subscription.</p></div>
+                <div class="faq-item"><strong>10. How often is this guide updated?</strong><p>Our data for {{LEAGUE}} is updated daily.</p></div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div><h4 class="text-white font-black mb-4 uppercase">CricFoot TV</h4><p>Official Football TV Guide and Streaming Directory.</p></div>
+            <div><h4 class="text-white font-black mb-4 uppercase">Leagues</h4><ul><li>Premier League</li><li>Champions League</li><li>La Liga</li></ul></div>
+            <div><h4 class="text-white font-black mb-4 uppercase">Links</h4><ul><li>Home</li><li>Channels</li><li>Live Scores</li></ul></div>
+            <div><h4 class="text-white font-black mb-4 uppercase">Support</h4><ul><li>Contact Us</li><li>Privacy Policy</li></ul></div>
+        </div>
+    </footer>
 </body>
 </html>
