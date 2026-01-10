@@ -1,9 +1,8 @@
 import json, os, re
-from datetime import datetime, timedelta
+from datetime import datetime
 
-# --- CONFIGURATION ---
-DOMAIN = "https://tv.cricfoot.net" # Change this!
-TOP_LEAGUES = ["Premier League", "La Liga", "Serie A", "Bundesliga", "Ligue 1", "Champions League"]
+# --- CONFIG ---
+DOMAIN = "https://yourdomain.com"
 
 with open('matches.json', 'r') as f: matches = json.load(f)
 with open('home_template.html', 'r') as f: home_temp = f.read()
@@ -11,42 +10,50 @@ with open('match_template.html', 'r') as f: match_temp = f.read()
 
 def slugify(t): return re.sub(r'[^a-z0-9]+', '-', t.lower()).strip('-')
 
-# --- GENERATE DATE MENU ---
-today = datetime.now()
-date_menu_html = ""
-for i in range(-2, 5):  # 2 days ago to 4 days ahead
-    date_target = today + timedelta(days=i)
-    active_class = "bg-[#00a0e9] text-white" if i == 0 else "bg-[#1e293b] text-gray-300 hover:bg-[#334155]"
-    date_menu_html += f'<a href="/date-{date_target.strftime("%Y-%m-%d")}.html" class="px-3 py-2 rounded text-xs font-bold transition {active_class}">{date_target.strftime("%b %d")}</a>'
+leagues_listing = {}
+channel_set = set()
 
-# --- PROCESS DATA ---
-leagues_data = {}
-all_channels = set()
+# 1. PROCESS EACH MATCH
 for m in matches:
-    league = m.get('league', 'Other')
-    leagues_data.setdefault(league, []).append(m)
+    dt = datetime.fromtimestamp(m['kickoff'])
+    time_str, date_str = dt.strftime('%H:%M'), dt.strftime('%d %b %Y')
+    venue, league = m.get('venue', 'TBA'), m.get('league', 'Other')
+    
+    # Path: match/team-a-vs-team-b/11-jan-2026/index.html
+    slug = f"match/{slugify(m['fixture'])}/{dt.strftime('%d-%b-%Y').lower()}"
+    os.makedirs(slug, exist_ok=True)
+
+    rows_html, top_ch = "", []
     for c in m.get('tv_channels', []):
-        for ch in c.get('channels', []): all_channels.add(ch)
+        pills = ""
+        for ch in c['channels']:
+            pills += f'<a href="/channel/{slugify(ch)}/" class="pill">{ch}</a>'
+            channel_set.add(ch)
+            if ch not in top_ch: top_ch.append(ch)
+        rows_html += f'<div class="row"><div class="c-name">{c["country"]}</div><div class="ch-list">{pills}</div></div>'
 
-# --- GENERATE MATCH LISTING ---
-listing_html = ""
-for league, m_list in leagues_data.items():
-    listing_html += f'<div class="mb-4 shadow-sm"><div class="bg-[#334155] text-white px-4 py-1.5 text-xs font-bold uppercase tracking-wider">{league}</div>'
-    for m in m_list:
-        dt = datetime.fromtimestamp(m['kickoff'])
-        slug = f"match/{slugify(m['fixture'])}/{dt.strftime('%d-%b-%Y').lower()}"
-        os.makedirs(slug, exist_ok=True)
-        
-        listing_html += f'''
-        <a href="/{slug}/" class="flex items-center bg-white dark:bg-[#1e293b] p-3 border-b border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-[#2d3748]">
-            <div class="w-16 text-sm font-bold text-[#00a0e9]">{dt.strftime('%H:%M')}</div>
-            <div class="flex-1 text-sm font-semibold">{m['fixture']}</div>
-            <div class="text-[10px] text-gray-400 uppercase font-bold">{m.get('venue', 'TBA')}</div>
-        </a>'''
-        
-        # Build individual match page (similar logic to previous, using match_template.html)
-        # ... (Template replacement code here) ...
+    # Inject into Match Template
+    match_page = match_temp.replace("{{FIXTURE}}", m['fixture']).replace("{{LEAGUE}}", league) \
+                          .replace("{{TIME}}", time_str).replace("{{DATE}}", date_str) \
+                          .replace("{{VENUE}}", venue).replace("{{BROADCAST_ROWS}}", rows_html) \
+                          .replace("{{TOP_CHANNELS}}", ", ".join(top_ch[:3])) \
+                          .replace("{{TITLE}}", f"{m['fixture']} - TV Channels - {date_str}") \
+                          .replace("{{SCHEMA}}", "") # Add Schema JSON here if needed
 
-# Save Home Page
-final_home = home_temp.replace("{{DATE_MENU}}", date_menu_html).replace("{{MATCH_LISTING}}", listing_html)
-with open("index.html", "w") as f: f.write(final_home)
+    with open(f"{slug}/index.html", "w") as f: f.write(match_page)
+    leagues_listing.setdefault(league, []).append({"time": time_str, "fixture": m['fixture'], "url": f"/{slug}/"})
+
+# 2. BUILD HOME LISTING
+final_listing = ""
+for l_name, m_list in leagues_listing.items():
+    final_listing += f'<div class="mb-4"><div class="league-title">{l_name}</div>'
+    for match in m_list:
+        final_listing += f'<a href="{match["url"]}" class="match-card"><div class="w-16 font-bold text-[#00a0e9]">{match["time"]}</div><div class="font-bold">{match["fixture"]}</div></a>'
+    final_listing += '</div>'
+
+# 3. SAVE HOME
+chan_pills = "".join([f'<span class="bg-gray-100 px-2 py-1 rounded text-[10px] font-bold">{c}</span>' for c in list(channel_set)[:10]])
+with open("index.html", "w") as f:
+    f.write(home_temp.replace("{{MATCH_LISTING}}", final_listing).replace("{{DATE_MENU}}", "").replace("{{CHANNEL_LIST}}", chan_pills))
+
+print("Build Successful!")
