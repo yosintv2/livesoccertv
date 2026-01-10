@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{CHANNEL_NAME}} Schedule | tv.cricfoot.net</title>
+    <title>{{CHANNEL_NAME}} Football Schedule | tv.cricfoot.net</title>
     <link rel="stylesheet" href="http://cdn.livesoccertv.com/styles.css?v=267" type="text/css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header style="background:#002d56; padding: 15px;"><a href="{{DOMAIN}}/" style="color:#fff; font-weight:900;">CRICFOOTTV</a></header>
-    <div class="bg-blue-900 py-16 text-center text-white">
-        <h1 class="text-5xl font-black">{{CHANNEL_NAME}}</h1>
+<body class="bg-gray-50">
+    <header class="p-4 bg-blue-900"><a href="{{DOMAIN}}/" class="text-white font-black">CRICFOOTTV</a></header>
+    <div class="bg-blue-800 py-16 text-center text-white">
+        <h1 class="text-5xl font-black uppercase">{{CHANNEL_NAME}}</h1>
+        <p class="mt-4 opacity-60">Complete Live TV Schedule</p>
     </div>
-    <main class="container mx-auto py-10 max-w-5xl">
-        <div class="match-list-container bg-white rounded shadow-md">
-            {{MATCH_LISTING}}
-        </div>
+    <main class="max-w-5xl mx-auto my-12 p-4">
+        <div class="bg-white rounded shadow-xl border overflow-hidden">{{MATCH_LISTING}}</div>
     </main>
-    <footer style="background:#002d56; color:#999; padding:30px; text-align:center;">&copy; 2026 TV.CRICFOOT.NET</footer>
+    <footer class="p-10 text-center text-gray-500 font-bold uppercase text-xs">&copy; 2026 TV.CRICFOOT.NET</footer>
 </body>
 </html>
