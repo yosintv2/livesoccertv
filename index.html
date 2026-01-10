@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="meta-title">Live Football on TV - Broadcast Guide</title>
+    <meta id="meta-desc" name="description" content="Official global broadcast guide for live football matches.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background: #f1f5f9; color: #1e293b; }
+        .league-header { background: #1e293b; color: white; padding: 10px 15px; font-weight: 800; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .match-row { background: white; border-bottom: 1px solid #e2e8f0; transition: 0.2s; cursor: pointer; }
+        .match-row:hover { background: #f8fafc; }
+        .tv-card { background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); overflow: hidden; }
+        .channel-tag { background: #e0f2fe; color: #0369a1; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+<nav class="bg-[#001529] text-white p-4 shadow-xl">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+        <a href="/" class="text-2xl font-900 tracking-tighter">LIVE<span class="text-sky-500">SOCCER</span>DATA</a>
+        <div class="text-xs font-bold text-slate-400">Date: 11 Jan 2026</div>
+    </div>
+</nav>
+
+<main class="max-w-5xl mx-auto py-8 px-4" id="app">
+    <div class="text-center py-20 text-slate-400 animate-pulse font-bold">LOADING BROADCAST DATA...</div>
+</main>
+
+<script>
+    // Configuration
+    const API_URL = 'matches.json'; // This is the JSON you generate with your Bulk Engine
+
+    async function init() {
+        try {
+            const response = await fetch(API_URL);
+            const data = await response.json();
+            
+            // Check if we are on a specific match page or home page
+            const params = new URLSearchParams(window.location.search);
+            const matchId = params.get('m');
+
+            if (matchId) {
+                renderMatchDetail(data, matchId);
+            } else {
+                renderHome(data);
+            }
+        } catch (e) {
+            document.getElementById('app').innerHTML = `<div class="text-center text-red-500">Failed to load match data.</div>`;
+        }
+    }
+
+    function renderHome(data) {
+        // Group matches by League
+        const grouped = data.reduce((acc, match) => {
+            if (!acc[match.league]) acc[match.league] = [];
+            acc[match.league].push(match);
+            return acc;
+        }, {});
+
+        let html = '<h1 class="text-xl font-800 mb-6">Live Football Broadcast Schedule</h1>';
+        
+        for (const league in grouped) {
+            html += `<div class="mb-6 rounded-lg overflow-hidden border border-slate-200">
+                        <div class="league-header">${league}</div>`;
+            grouped[league].forEach(m => {
+                const time = new Date(m.kickoff * 1000).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                html += `
+                <div class="match-row p-4 flex justify-between items-center" onclick="window.location.search = '?m=${m.match_id}'">
+                    <div class="flex items-center gap-4">
+                        <span class="text-xs font-bold text-slate-500">${time}</span>
+                        <span class="font-bold text-sm">${m.fixture}</span>
+                    </div>
+                    <div class="text-[10px] bg-sky-100 text-sky-700 px-2 py-1 rounded font-bold">TV GUIDE »</div>
+                </div>`;
+            });
+            html += `</div>`;
+        }
+        document.getElementById('app').innerHTML = html;
+    }
+
+    function renderMatchDetail(data, id) {
+        const m = data.find(x => x.match_id == id);
+        if (!m) return renderHome(data);
+
+        const dateStr = new Date(m.kickoff * 1000).toLocaleDateString('en-GB', {day:'2-digit', month:'short', year:'numeric'});
+        
+        // Dynamic SEO Update
+        const pageTitle = `${m.fixture} - How to Watch Live | TV Channels & Broadcast Details | ${dateStr}`;
+        document.title = pageTitle;
+        document.getElementById('meta-title').innerText = pageTitle;
+        document.getElementById('meta-desc').setAttribute('content', `Live broadcast guide for ${m.fixture}. Find official TV channels and live stream providers for ${m.league}.`);
+
+        let tvHtml = '';
+        m.tv_channels.forEach(country => {
+            tvHtml += `
+            <div class="p-4 border-b border-slate-100 last:border-0 flex flex-col md:flex-row md:items-center justify-between gap-3">
+                <span class="font-bold text-sm text-slate-700">${country.country}</span>
+                <div class="flex flex-wrap gap-2">
+                    ${country.channels.map(c => `<span class="channel-tag">${c}</span>`).join('')}
+                </div>
+            </div>`;
+        });
+
+        document.getElementById('app').innerHTML = `
+            <div class="mb-4">
+                <a href="/" class="text-xs font-bold text-sky-600">« Back to Schedule</a>
+            </div>
+            <h1 class="text-2xl md:text-3xl font-900 mb-2">${m.fixture}</h1>
+            <p class="text-slate-500 text-sm mb-6">${m.league} • ${dateStr} • Venue: ${m.venue}</p>
+            
+            <div class="tv-card">
+                <div class="bg-sky-600 p-4 text-white font-bold text-sm uppercase tracking-widest">Official TV Broadcasters</div>
+                <div>${tvHtml || '<p class="p-8 text-center text-slate-400">Broadcaster info being updated...</p>'}</div>
+            </div>
+
+            <div class="mt-10 p-6 bg-slate-200 rounded-xl text-xs leading-relaxed text-slate-600">
+                <h3 class="font-bold mb-2 uppercase">Match SEO Summary</h3>
+                Looking for where to watch <strong>${m.fixture}</strong>? Our live soccer data provides a complete 
+                list of TV channels and broadcast details for this <strong>${m.league}</strong> fixture on <strong>${dateStr}</strong>.
+            </div>
+        `;
+    }
+
+    init();
+</script>
+</body>
+</html>
