@@ -1,38 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>{{FIXTURE}} Live TV Channels | tv.cricfoot.net</title>
-    <link rel="stylesheet" href="http://cdn.livesoccertv.com/styles.css?v=267" type="text/css">
+    <meta charset="UTF-8"><title>{{FIXTURE}} Live TV Channels</title>
+    <link rel="stylesheet" href="http://cdn.livesoccertv.com/styles.css?v=267">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .channel-table { width: 100%; border-collapse: collapse; }
-        .channel-table tr { border-bottom: 1px solid #eee; }
-        .country-name { width: 30%; background: #fcfcfc; padding: 20px; font-weight: 800; font-size: 11px; color: #888; text-transform: uppercase; border-right: 1px solid #eee; }
-        .channel-pills { padding: 15px; display: flex; flex-wrap: wrap; gap: 8px; }
-        .ch-link { background: #f0f7ff; color: #00447c; padding: 6px 12px; border-radius: 4px; font-weight: 700; font-size: 12px; border: 1px solid #cce3f6; }
-    </style>
 </head>
-<body class="bg-gray-100">
-    <header class="p-4 bg-blue-900 border-b-4 border-orange-500">
-        <a href="{{DOMAIN}}/" class="text-white font-black text-xl">CRICFOOTTV</a>
-    </header>
-    
-    <div class="bg-white border-b py-12 text-center">
-        <div class="text-blue-600 font-bold uppercase text-xs mb-2 tracking-widest">{{LEAGUE}}</div>
-        <h1 class="text-4xl font-black text-gray-800 mb-6">{{FIXTURE}}</h1>
-        <div class="flex justify-center gap-8 text-sm font-bold text-gray-500">
-            <span>🕒 KICKOFF: <span class="text-black">{{TIME}}</span></span>
-            <span>🏟️ STADIUM: <span class="text-black">{{VENUE}}</span></span>
+<body class="bg-gray-50">
+    <header class="bg-blue-900 p-4 text-white"><a href="{{DOMAIN}}/" class="font-bold">CRICFOOTTV</a></header>
+    <div class="bg-white border-b py-10 text-center">
+        <div class="text-blue-500 font-bold text-xs uppercase">{{LEAGUE}}</div>
+        <h1 class="text-4xl font-black py-4">{{FIXTURE}}</h1>
+        <div class="text-gray-500 font-bold">
+            🕒 KICKOFF: <span id="time" data-unix="{{TIME_UNIX}}"></span> | 🏟️ {{VENUE}}
         </div>
     </div>
-
-    <main class="max-w-4xl mx-auto my-12 p-4">
-        <h3 class="font-black text-gray-400 uppercase text-xs mb-4">Official TV Listings</h3>
-        <div class="bg-white rounded-xl shadow-lg border overflow-hidden">
-            <table class="channel-table">{{BROADCAST_ROWS}}</table>
-        </div>
+    <main class="max-w-4xl mx-auto my-10 bg-white shadow-2xl rounded-xl overflow-hidden">
+        <table class="w-full text-left">
+            <thead><tr class="bg-gray-100 text-[10px] uppercase text-gray-400"><th class="p-4">Country</th><th class="p-4">Broadcasters</th></tr></thead>
+            <tbody class="divide-y divide-gray-100">{{BROADCAST_ROWS}}</tbody>
+        </table>
     </main>
-    <footer class="p-10 text-center text-gray-400 uppercase text-[10px] font-bold">&copy; 2026 TV.CRICFOOT.NET</footer>
+    <script>
+        const el = document.getElementById('time');
+        el.innerText = new Intl.DateTimeFormat([], {hour:'2-digit', minute:'2-digit', hour12:false, timeZoneName:'short'}).format(new Date(el.dataset.unix * 1000));
+    </script>
 </body>
 </html>
