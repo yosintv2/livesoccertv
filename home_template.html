@@ -60,16 +60,34 @@
     </main>
 
     <script>
-        function convertLocalTimes() {
-            document.querySelectorAll('.local-time').forEach(el => {
-                const unix = el.getAttribute('data-unix');
-                if (unix) {
-                    const date = new Date(unix * 1000);
-                    el.innerText = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
-                }
+function autoDetectTimezone() {
+    // Update the Time (HH:MM)
+    document.querySelectorAll('.auto-time').forEach(el => {
+        const unix = el.getAttribute('data-unix');
+        if (unix) {
+            const date = new Date(unix * 1000);
+            el.innerText = date.toLocaleTimeString([], { 
+                hour: '2-digit', 
+                minute: '2-digit', 
+                hour12: false 
             });
         }
-        convertLocalTimes();
+    });
+
+    // Update the Date (e.g., 12 Jan)
+    document.querySelectorAll('.auto-date').forEach(el => {
+        const unix = el.getAttribute('data-unix');
+        if (unix) {
+            const date = new Date(unix * 1000);
+            el.innerText = date.toLocaleDateString([], { 
+                day: 'numeric', 
+                month: 'short' 
+            });
+        }
+    });
+}
+// Run once on load
+autoDetectTimezone();
 
         document.getElementById('matchSearch').addEventListener('input', function(e) {
             let term = e.target.value.toLowerCase();
