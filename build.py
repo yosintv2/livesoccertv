@@ -71,7 +71,6 @@ for i in range(7):
     listing_html, last_league = "", ""
     for m in day_matches:
         league = m.get('league', 'Other Football')
-        
         if league != last_league:
             listing_html += f'<div class="league-header">{league}</div>'
             last_league = league
@@ -93,14 +92,13 @@ for i in range(7):
             </div>
         </a>'''
 
-        # --- 4. MATCH PAGES (UPDATED ROW FORMATTING) ---
+        # --- 4. MATCH PAGES ---
         m_path = f"match/{m_slug}/{m_date_folder}"
         os.makedirs(m_path, exist_ok=True)
         venue_val = m.get('venue') or m.get('stadium') or "To Be Announced"
         
         rows = ""
         for c in m.get('tv_channels', []):
-            # Formatted channel pills with background and borders
             channel_links = [f'<a href="{DOMAIN}/channel/{slugify(ch)}/" style="display: inline-block; background: #f1f5f9; color: #2563eb; padding: 2px 8px; border-radius: 4px; margin: 2px; text-decoration: none; font-weight: 600; border: 1px solid #e2e8f0;">{ch}</a>' for ch in c['channels']]
             pills = "".join(channel_links)
             
@@ -109,7 +107,6 @@ for i in range(7):
                 if not any(x['m']['match_id'] == m['match_id'] for x in channels_data[ch]):
                     channels_data[ch].append({'m': m, 'dt': m_dt_local, 'league': league})
             
-            # Table-like row using Flexbox for responsiveness
             rows += f'''
             <div style="display: flex; align-items: flex-start; padding: 12px; border-bottom: 1px solid #edf2f7; background: #fff;">
                 <div style="flex: 0 0 100px; font-weight: 800; color: #475569; font-size: 13px; padding-top: 4px;">{c["country"]}</div>
@@ -119,26 +116,20 @@ for i in range(7):
         with open(f"{m_path}/index.html", "w", encoding='utf-8') as mf:
             m_html = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
             m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
-            
-            plain_date = m_dt_local.strftime("%d %b %Y")
-            plain_time = m_dt_local.strftime("%H:%M")
-            
-            m_html = m_html.replace("{{DATE}}", plain_date)
-            m_html = m_html.replace("{{TIME}}", plain_time)
-            m_html = m_html.replace("{{LOCAL_DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{plain_date}</span>')
-            m_html = m_html.replace("{{LOCAL_TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{plain_time}</span>')
-            m_html = m_html.replace("{{UNIX}}", str(m['kickoff']))
-            m_html = m_html.replace("{{VENUE}}", venue_val) 
+            m_html = m_html.replace("{{DATE}}", m_dt_local.strftime("%d %b %Y")).replace("{{TIME}}", m_dt_local.strftime("%H:%M"))
+            m_html = m_html.replace("{{LOCAL_DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%d %b %Y")}</span>')
+            m_html = m_html.replace("{{LOCAL_TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%H:%M")}</span>')
+            m_html = m_html.replace("{{UNIX}}", str(m['kickoff'])).replace("{{VENUE}}", venue_val) 
             mf.write(m_html)
 
-    # Home/Date Page output
+    # Save Home/Date Pages
     with open(fname, "w", encoding='utf-8') as df:
         output = templates['home'].replace("{{MATCH_LISTING}}", listing_html).replace("{{WEEKLY_MENU}}", current_page_menu)
         output = output.replace("{{DOMAIN}}", DOMAIN).replace("{{SELECTED_DATE}}", day.strftime("%A, %b %d, %Y"))
         output = output.replace("{{PAGE_TITLE}}", f"Soccer TV Channels For {day.strftime('%A, %b %d, %Y')}")
         df.write(output)
 
-# --- 5. CHANNEL PAGES ---
+# --- 5. CHANNEL PAGES (FIXED & FORMATTED) ---
 for ch_name, matches in channels_data.items():
     c_slug = slugify(ch_name)
     c_dir = f"channel/{c_slug}"
@@ -153,15 +144,16 @@ for ch_name, matches in channels_data.items():
         m_slug = slugify(m['fixture'])
         m_date_folder = dt.strftime('%Y%m%d')
         
+        # Matches in the channel list now have the same professional look as the home page
         c_listing += f'''
-        <a href="{DOMAIN}/match/{m_slug}/{m_date_folder}/" class="match-row flex items-center p-4 bg-white border-b group">
-            <div class="time-box" style="min-width: 95px; text-align: center; border-right: 1px solid #edf2f7; margin-right: 10px;">
-                <div class="text-[10px] uppercase text-slate-400 font-bold auto-date" data-unix="{m['kickoff']}">{dt.strftime('%d %b')}</div>
-                <div class="font-bold text-blue-600 text-sm auto-time" data-unix="{m['kickoff']}">{dt.strftime('%H:%M')}</div>
+        <a href="{DOMAIN}/match/{m_slug}/{m_date_folder}/" style="display: flex; align-items: center; padding: 16px; background: white; border-bottom: 1px solid #f1f5f9; text-decoration: none; color: inherit;">
+            <div style="min-width: 90px; text-align: center; border-right: 1px solid #edf2f7; margin-right: 15px;">
+                <div class="auto-date" data-unix="{m['kickoff']}" style="font-size: 10px; color: #94a3b8; font-weight: 700; text-transform: uppercase;">{dt.strftime('%d %b')}</div>
+                <div class="auto-time" data-unix="{m['kickoff']}" style="font-size: 15px; color: #2563eb; font-weight: 800;">{dt.strftime('%H:%M')}</div>
             </div>
-            <div class="flex-1">
-                <span class="text-slate-800 font-semibold text-sm md:text-base">{m['fixture']}</span>
-                <div class="text-[10px] text-gray-400 uppercase font-bold">{m_league}</div>
+            <div style="flex: 1;">
+                <div style="font-weight: 600; font-size: 15px; color: #1e293b;">{m['fixture']}</div>
+                <div style="font-size: 10px; color: #64748b; font-weight: 700; text-transform: uppercase; margin-top: 2px;">{m_league}</div>
             </div>
         </a>'''
 
@@ -169,7 +161,7 @@ for ch_name, matches in channels_data.items():
         c_html = templates['channel'].replace("{{CHANNEL_NAME}}", ch_name)
         c_html = c_html.replace("{{MATCH_LISTING}}", c_listing)
         c_html = c_html.replace("{{DOMAIN}}", DOMAIN)
-        c_html = c_html.replace("{{WEEKLY_MENU}}", current_page_menu)
+        c_html = c_html.replace("{{WEEKLY_MENU}}", current_page_menu) # Keeps navigation working
         cf.write(c_html)
 
 # --- 6. SITEMAP ---
