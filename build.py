@@ -130,9 +130,8 @@ for i in range(7):
         output = output.replace("{{WEEKLY_MENU}}", current_page_menu)
         output = output.replace("{{DOMAIN}}", DOMAIN)
         output = output.replace("{{SELECTED_DATE}}", day.strftime("%A, %b %d, %Y"))
-        output = output.replace("{{PAGE_TITLE}}", f"SocccerTV Live Streaming & TV Channels For {formatted_date_title} - CricFootTV")
+        output = output.replace("{{PAGE_TITLE}}", f"SocccerTV Live Streaming TV Channels For {formatted_date_title} - CricFootTV")
         df.write(output)
-
 
 # --- 6. CHANNELS ---
 for ch_name, ms in channels_data.items():
