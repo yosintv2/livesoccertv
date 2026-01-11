@@ -23,6 +23,14 @@
     <link href='https://www.hls-player.net/fav.png' rel='icon' type='image/x-icon'/>
     <script src="https://cdn.tailwindcss.com"></script>
     
+   <script>
+  // Automatically creates a canonical link based on the current page URL
+  var link = document.createElement('link');
+  link.setAttribute('rel', 'canonical');
+  link.setAttribute('href', window.location.protocol + '//' + window.location.host + window.location.pathname);
+  document.head.appendChild(link);
+   </script>
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
         body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; }
