@@ -3,13 +3,11 @@ from datetime import datetime, timedelta, timezone
 
 # --- CONFIGURATION ---
 DOMAIN = "https://tv.cricfoot.net"
-# Local offset for South Asia (GMT+5)
 LOCAL_OFFSET = timezone(timedelta(hours=5)) 
 
 NOW = datetime.now(LOCAL_OFFSET)
 TODAY_DATE = NOW.date()
 
-# Friday to Thursday Logic
 days_since_friday = (TODAY_DATE.weekday() - 4) % 7
 START_WEEK = TODAY_DATE - timedelta(days=days_since_friday)
 
@@ -50,7 +48,6 @@ for i in range(7):
     fname = "index.html" if day == TODAY_DATE else f"{day.strftime('%Y-%m-%d')}.html"
     if fname != "index.html": sitemap_urls.append(f"{DOMAIN}/{fname}")
 
-    # Build Menu
     current_page_menu = ""
     for j in range(7):
         m_day = START_WEEK + timedelta(days=j)
@@ -58,7 +55,6 @@ for i in range(7):
         active_class = "active" if m_day == day else ""
         current_page_menu += f'<a href="{DOMAIN}/{m_fname}" class="date-btn {active_class}"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
 
-    # Filter by Local Date
     day_matches = []
     for m in all_matches:
         m_dt_local = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
@@ -94,8 +90,6 @@ for i in range(7):
         # --- 4. MATCH PAGES ---
         m_path = f"match/{m_slug}/{m_date_folder}"
         os.makedirs(m_path, exist_ok=True)
-        
-        # Correct Venue Logic
         venue_val = m.get('venue') or m.get('stadium') or "To Be Announced"
         
         rows = ""
@@ -109,38 +103,31 @@ for i in range(7):
         with open(f"{m_path}/index.html", "w", encoding='utf-8') as mf:
             m_html = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
             m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
-            m_html = m_html.replace("{{DATE}}", m_dt_local.strftime('%d %b %Y'))
-            m_html = m_html.replace("{{TIME}}", m_dt_local.strftime('%H:%M'))
-            m_html = m_html.replace("{{UNIX}}", str(m['kickoff']))
-            m_html = m_html.replace("{{VENUE}}", venue_val) # Fixed Venue
+            # FIX: Added auto-date and auto-time classes for match.html
+            m_html = m_html.replace("{{DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%d %b %Y")}</span>')
+            m_html = m_html.replace("{{TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%H:%M")}</span>')
+            m_html = m_html.replace("{{VENUE}}", venue_val)
             mf.write(m_html)
 
-    # Home/Date Page output
     with open(fname, "w", encoding='utf-8') as df:
         output = templates['home'].replace("{{MATCH_LISTING}}", listing_html).replace("{{WEEKLY_MENU}}", current_page_menu)
         output = output.replace("{{DOMAIN}}", DOMAIN).replace("{{SELECTED_DATE}}", day.strftime("%A, %b %d, %Y"))
         output = output.replace("{{PAGE_TITLE}}", f"Soccer TV Channels For {day.strftime('%A, %b %d, %Y')}")
         df.write(output)
 
-# --- 5. FIXED CHANNEL PAGES ---
+# --- 5. CHANNEL PAGES ---
 for ch_name, matches in channels_data.items():
     c_slug = slugify(ch_name)
     c_dir = f"channel/{c_slug}"
     os.makedirs(c_dir, exist_ok=True)
-    sitemap_urls.append(f"{DOMAIN}/{c_dir}/")
-
     c_listing = ""
-    # Sort matches for this channel by time
     matches.sort(key=lambda x: x['m']['kickoff'])
     
     for item in matches:
         m, dt, m_league = item['m'], item['dt'], item['league']
-        m_slug = slugify(m['fixture'])
-        m_date_folder = dt.strftime('%Y%m%d')
-        
-        # Added League name and Home-style layout
+        # FIX: Same layout as homepage with auto-classes
         c_listing += f'''
-        <a href="{DOMAIN}/match/{m_slug}/{m_date_folder}/" class="match-row flex items-center p-4 bg-white border-b group">
+        <a href="{DOMAIN}/match/{slugify(m['fixture'])}/{dt.strftime('%Y%m%d')}/" class="match-row flex items-center p-4 bg-white border-b group">
             <div class="time-box" style="min-width: 95px; text-align: center; border-right: 1px solid #edf2f7; margin-right: 10px;">
                 <div class="text-[10px] uppercase text-slate-400 font-bold auto-date" data-unix="{m['kickoff']}">{dt.strftime('%d %b')}</div>
                 <div class="font-bold text-blue-600 text-sm auto-time" data-unix="{m['kickoff']}">{dt.strftime('%H:%M')}</div>
@@ -152,17 +139,13 @@ for ch_name, matches in channels_data.items():
         </a>'''
 
     with open(f"{c_dir}/index.html", "w", encoding='utf-8') as cf:
-        c_html = templates['channel'].replace("{{CHANNEL_NAME}}", ch_name)
-        c_html = c_html.replace("{{MATCH_LISTING}}", c_listing)
-        c_html = c_html.replace("{{DOMAIN}}", DOMAIN)
-        c_html = c_html.replace("{{WEEKLY_MENU}}", current_page_menu)
+        c_html = templates['channel'].replace("{{CHANNEL_NAME}}", ch_name).replace("{{MATCH_LISTING}}", c_listing)
+        c_html = c_html.replace("{{DOMAIN}}", DOMAIN).replace("{{WEEKLY_MENU}}", current_page_menu)
         cf.write(c_html)
 
 # --- 6. SITEMAP ---
 sitemap_content = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-for url in sitemap_urls:
+for url in list(set(sitemap_urls)):
     sitemap_content += f'<url><loc>{url}</loc><lastmod>{NOW.strftime("%Y-%m-%d")}</lastmod></url>'
 sitemap_content += '</urlset>'
 with open("sitemap.xml", "w", encoding='utf-8') as sm: sm.write(sitemap_content)
-
-print(f"Success! {len(sitemap_urls)} URLs generated.")
