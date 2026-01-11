@@ -47,21 +47,33 @@
         </div>
     </footer>
 
-    <script>
-        function convertLocalTimes() {
-            const timeElements = document.querySelectorAll('.local-time');
-            for (let i = 0; i < timeElements.length; i++) {
-                const unix = timeElements[i].getAttribute('data-unix');
-                if (unix && !isNaN(unix)) {
-                    const date = new Date(unix * 1000);
-                    timeElements[i].innerText = date.toLocaleTimeString([], { 
-                        hour: '2-digit', minute: '2-digit', hour12: false 
-                    });
-                }
+<script>
+    function convertLocalTimes() {
+        const timeElements = document.querySelectorAll('.local-time');
+        for (let i = 0; i < timeElements.length; i++) {
+            const unix = timeElements[i].getAttribute('data-unix');
+            if (unix && !isNaN(unix)) {
+                const date = new Date(unix * 1000);
+                
+                // Format: Jan 11, 14:30
+                const formattedDate = date.toLocaleString([], {
+                    month: 'short',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    hour12: false
+                });
+                
+                timeElements[i].innerText = formattedDate;
             }
         }
-        convertLocalTimes();
-        window.addEventListener('DOMContentLoaded', convertLocalTimes);
-    </script>
+    }
+    // Run immediately for performance
+    convertLocalTimes();
+    // Re-run once DOM is fully parsed
+    window.addEventListener('DOMContentLoaded', convertLocalTimes);
+</script>
+
+    
 </body>
 </html>
