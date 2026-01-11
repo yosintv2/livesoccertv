@@ -62,11 +62,18 @@ for i in range(7):
         if m_dt_local.date() == day:
             day_matches.append(m)
 
-    day_matches.sort(key=lambda x: (x.get('league_id') not in TOP_LEAGUE_IDS, x['kickoff']))
+    # UPDATED SORTING: Group by Top League status, then alphabetical League Name, then Time
+    day_matches.sort(key=lambda x: (
+        x.get('league_id') not in TOP_LEAGUE_IDS, 
+        x.get('league', 'Other Football'), 
+        x['kickoff']
+    ))
 
     listing_html, last_league = "", ""
     for m in day_matches:
         league = m.get('league', 'Other Football')
+        
+        # This creates one header for the entire league group
         if league != last_league:
             listing_html += f'<div class="league-header">{league}</div>'
             last_league = league
@@ -106,17 +113,13 @@ for i in range(7):
             m_html = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
             m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
             
-            # --- FIXED LOGIC TO PREVENT Syntax Error in Meta Tags ---
             plain_date = m_dt_local.strftime("%d %b %Y")
             plain_time = m_dt_local.strftime("%H:%M")
             
             m_html = m_html.replace("{{DATE}}", plain_date)
             m_html = m_html.replace("{{TIME}}", plain_time)
-            
-            # Match Detail Page Local Time Support
             m_html = m_html.replace("{{LOCAL_DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{plain_date}</span>')
             m_html = m_html.replace("{{LOCAL_TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{plain_time}</span>')
-            
             m_html = m_html.replace("{{UNIX}}", str(m['kickoff']))
             m_html = m_html.replace("{{VENUE}}", venue_val) 
             mf.write(m_html)
