@@ -106,14 +106,19 @@ for i in range(7):
             m_html = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
             m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
             
-            # --- THE CRITICAL FIX ---
-            # 1. Plain text for Meta/Title (No spans)
-            m_html = m_html.replace("{{DATE}}", m_dt_local.strftime("%d %b %Y"))
-            m_html = m_html.replace("{{TIME}}", m_dt_local.strftime("%H:%M"))
+            # --- FIXED LOGIC TO PREVENT Syntax Error in Meta Tags ---
+            # Replace standard placeholders with PLAIN TEXT first for SEO/Meta compatibility
+            plain_date = m_dt_local.strftime("%d %b %Y")
+            plain_time = m_dt_local.strftime("%H:%M")
             
-            # 2. Dynamic Spans for visible timing in body
-            m_html = m_html.replace("{{LOCAL_DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%d %b %Y")}</span>')
-            m_html = m_html.replace("{{LOCAL_TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%H:%M")}</span>')
+            # Replace these with plain text so they don't break <title> or <meta>
+            m_html = m_html.replace("{{DATE}}", plain_date)
+            m_html = m_html.replace("{{TIME}}", plain_time)
+            
+            # Provide the local-detect versions separately
+            # If your template has these tags, they will show auto-detecting time
+            m_html = m_html.replace("{{LOCAL_DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{plain_date}</span>')
+            m_html = m_html.replace("{{LOCAL_TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{plain_time}</span>')
             
             m_html = m_html.replace("{{UNIX}}", str(m['kickoff']))
             m_html = m_html.replace("{{VENUE}}", venue_val) 
