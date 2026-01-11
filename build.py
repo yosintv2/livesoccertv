@@ -101,7 +101,6 @@ for i in range(7):
             pills = "".join([f'<a href="{DOMAIN}/channel/{slugify(ch)}/" class="mx-1 text-blue-600 underline text-xs">{ch}</a>' for ch in c['channels']])
             for ch in c['channels']:
                 if ch not in channels_data: channels_data[ch] = []
-                # Check for duplicates before adding to channel data
                 if not any(x['m']['match_id'] == m['match_id'] for x in channels_data[ch]):
                     channels_data[ch].append({'m': m, 'dt': m_dt_local, 'league': league})
             rows += f'<div class="flex justify-between p-4 border-b"><b>{c["country"]}</b><div>{pills}</div></div>'
@@ -109,9 +108,16 @@ for i in range(7):
         with open(f"{m_path}/index.html", "w", encoding='utf-8') as mf:
             m_html = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
             m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
-            # Match Detail Page Local Time Support
-            m_html = m_html.replace("{{DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%d %b %Y")}</span>')
-            m_html = m_html.replace("{{TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%H:%M")}</span>')
+            
+            # FIXED: Plain text for metadata/headers to avoid the ">" error
+            m_html = m_html.replace("{{DATE}}", m_dt_local.strftime("%d %b %Y"))
+            m_html = m_html.replace("{{TIME}}", m_dt_local.strftime("%H:%M"))
+            
+            # NEW: HTML Spans for visible display only
+            time_display = f'<span class="auto-date" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%d %b %Y")}</span> '
+            time_display += f'<span class="auto-time" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%H:%M")}</span>'
+            m_html = m_html.replace("{{LOCAL_TIME_DISPLAY}}", time_display)
+            
             m_html = m_html.replace("{{UNIX}}", str(m['kickoff']))
             m_html = m_html.replace("{{VENUE}}", venue_val) 
             mf.write(m_html)
