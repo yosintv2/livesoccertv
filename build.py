@@ -151,7 +151,7 @@ for ch_name, matches in channels_data.items():
             </div>
         </a>'''
 
-    with open(f"{c_dir}/", "w", encoding='utf-8') as cf:
+    with open(f"{c_dir}/index.html", "w", encoding='utf-8') as cf:
         c_html = templates['channel'].replace("{{CHANNEL_NAME}}", ch_name)
         c_html = c_html.replace("{{MATCH_LISTING}}", c_listing)
         c_html = c_html.replace("{{DOMAIN}}", DOMAIN)
