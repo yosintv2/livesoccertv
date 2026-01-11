@@ -13,21 +13,20 @@
         body { font-family: 'Inter', sans-serif; background-color: #f1f5f9; }
         
         /* Navigation Styling */
-        .date-btn.active { background: #00447c !important; color: #fff !important; border-bottom: 3px solid #f90; }
+        .date-btn.active { background: #00447c !important; color: #fff !important; border-bottom: 3px solid #f90; font-weight: 800; }
         .weekly-nav { background: #002d56; display: flex; overflow-x: auto; scrollbar-width: none; position: sticky; top: 0; z-index: 50; }
         .weekly-nav::-webkit-scrollbar { display: none; }
         .date-btn { padding: 12px; text-align: center; color: #ccc; text-decoration: none; border-right: 1px solid #00447c; flex: 1; min-width: 90px; transition: 0.2s; }
         .date-btn:hover { background: #003a6e; color: #fff; }
         
-        /* Black League Header Style */
         .league-header { background: #1a202c; color: #ffffff; padding: 12px 16px; font-weight: 800; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; border-left: 4px solid #f90; }
         
-        /* Match Row Styles */
         .match-row { transition: all 0.2s; border-bottom: 1px solid #edf2f7; text-decoration: none; display: flex; align-items: center; background: #fff; }
         .match-row:hover { background-color: #f8fafc; transform: translateX(4px); }
         .time-box { min-width: 75px; font-variant-numeric: tabular-nums; border-right: 1px solid #edf2f7; height: 100%; display: flex; align-items: center; justify-content: center; }
         
         .search-container { position: sticky; top: 55px; z-index: 40; }
+        .selected-date-banner { background: #f8fafc; color: #64748b; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
     </style>
 </head>
 <body class="bg-slate-100">
@@ -47,6 +46,12 @@
         <div class="max-w-4xl mx-auto p-4">
             <input type="text" id="matchSearch" placeholder="Search team or league..." class="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg outline-none focus:bg-white focus:ring-2 focus:ring-blue-500 transition-all">
         </div>
+        <div class="selected-date-banner border-t px-8 py-2">
+            <div class="max-w-4xl mx-auto flex items-center">
+                <span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                Showing Matches for: <span class="text-slate-900 ml-1">{{DISPLAY_DATE}}</span>
+            </div>
+        </div>
     </div>
 
     <main class="max-w-4xl mx-auto p-4 py-8">
@@ -62,7 +67,6 @@
     </footer>
 
     <script>
-        // INSTANT LOCAL TIME CONVERSION
         function convertLocalTimes() {
             const timeElements = document.querySelectorAll('.local-time');
             for (let i = 0; i < timeElements.length; i++) {
@@ -70,18 +74,14 @@
                 if (unix) {
                     const date = new Date(unix * 1000);
                     timeElements[i].innerText = date.toLocaleTimeString([], { 
-                        hour: '2-digit', 
-                        minute: '2-digit', 
-                        hour12: false 
+                        hour: '2-digit', minute: '2-digit', hour12: false 
                     });
                 }
             }
         }
 
-        // Run instantly
         convertLocalTimes();
 
-        // Filter Logic
         document.getElementById('matchSearch').addEventListener('input', function(e) {
             let term = e.target.value.toLowerCase();
             document.querySelectorAll('.match-row').forEach(row => {
