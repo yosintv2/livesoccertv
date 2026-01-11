@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>{{PAGE_TITLE}} | CricFootTV - Football & Cricket Schedule</title>
-    <meta name="description" content="View the full live sports schedule for {{SELECTED_DATE}}. Get kickoff times, TV channels, and streaming guide for today's football and cricket matches on CricFootTV.">
+    <meta name="description" content="Check the full live sports schedule for {{SELECTED_DATE}}. Get kickoff times, TV channels, and streaming guide for today's football and cricket matches on CricFootTV.">
     <meta name="keywords" content="sports schedule, live football today, cricket match timings, watch sports live, {{SELECTED_DATE}} matches">
     
     <script>
@@ -18,8 +18,9 @@
     </script>
 
     <meta property="og:title" content="{{PAGE_TITLE}} | CricFootTV">
-    <meta property="og:description" content="Check the live broadcast schedule for football and cricket on {{SELECTED_DATE}}.">
+    <meta property="og:description" content="View today's full broadcasting schedule for football and cricket on CricFootTV.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="{{DOMAIN}}">
     <meta property="og:image" content="https://www.hls-player.net/fav.png">
 
     <script type="application/ld+json">
@@ -41,6 +42,14 @@
       },
       {
         "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Live Sports Schedule {{SELECTED_DATE}}",
+        "itemListElement": [
+            {{MATCH_SCHEMA_ITEMS}}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
           {
@@ -48,63 +57,39 @@
             "name": "What matches are live today on {{SELECTED_DATE}}?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Today's schedule includes various football and cricket fixtures. Use our search tool to find specific team kickoff times."
+              "text": "Today's schedule includes a wide range of football and cricket fixtures. Use our search tool to find specific team kickoff times and channel listings."
             }
           },
           {
             "@type": "Question",
-            "name": "How do I see match times in my local time?",
+            "name": "How can I see matches in my local timezone?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Our schedule automatically detects your timezone and converts all match times to your local clock."
+              "text": "Our website automatically detects your device's timezone and converts all match kickoff times to your local time."
             }
           },
           {
             "@type": "Question",
-            "name": "Where can I watch these matches?",
+            "name": "Where can I watch these matches live?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Click on any match row to see the specific TV channels and official streaming platforms available for that game."
+              "text": "By clicking on a specific match, you will see a list of official TV channels and streaming platforms available for that game in your region."
             }
           },
           {
             "@type": "Question",
-            "name": "Is the schedule updated in real-time?",
+            "name": "Is the schedule updated frequently?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, we update our listings 24/7 to include the latest broadcasting changes and tournament additions."
+              "text": "Yes, we update our sports listings in real-time to reflect the latest changes from broadcasters and tournament organizers."
             }
           },
           {
             "@type": "Question",
-            "name": "Can I filter matches by league?",
+            "name": "Can I filter the schedule by league?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, you can use the search bar at the top to type in a league name (like Premier League) to filter results instantly."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Are there cricket matches on the schedule?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "CricFootTV covers all major cricket events including IPL, ICC tournaments, and bilateral series."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does this schedule work on mobile?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, our site is fully responsive and optimized for viewing on all Android and iOS devices."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why is a match missing from the list?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We display confirmed broadcasts. If a match is missing, TV rights may not have been assigned or announced yet."
+              "text": "Absolutely. Use the search bar to type in any league name like 'Premier League' or 'IPL' to filter the matches instantly."
             }
           }
         ]
@@ -123,21 +108,24 @@
         .date-btn:hover { background: #003a6e; color: #fff; }
         .date-btn.active { background: #f90 !important; color: #002d56 !important; font-weight: 800; }
         .league-header { background: #1a202c; color: #fff; padding: 12px 16px; font-weight: 800; font-size: 11px; text-transform: uppercase; border-left: 4px solid #f90; }
-        .match-row { transition: all 0.2s; border-bottom: 1px solid #edf2f7; background: #fff; text-decoration: none; }
+        .match-row { transition: all 0.2s; border-bottom: 1px solid #edf2f7; background: #fff; text-decoration: none; display: flex; align-items: center; }
         .match-row:hover { background-color: #f8fafc; transform: translateX(4px); }
-        .time-box { min-width: 75px; border-right: 1px solid #edf2f7; text-align: center; }
+        .time-box { min-width: 75px; border-right: 1px solid #edf2f7; text-align: center; padding: 10px; }
         .search-container { position: sticky; top: 55px; z-index: 40; }
         .selected-banner { background: #f8fafc; color: #64748b; font-size: 12px; font-weight: 700; text-transform: uppercase; border-top: 1px solid #e2e8f0; }
-        .faq-section { background: #fff; margin-top: 2rem; border-radius: 8px; border: 1px solid #e2e8f0; overflow: hidden; }
+        .faq-section { background: #fff; margin-top: 2.5rem; border-radius: 8px; border: 1px solid #e2e8f0; overflow: hidden; }
         .faq-item { padding: 16px; border-bottom: 1px solid #f1f5f9; }
-        .faq-question { font-weight: 700; color: #002d56; margin-bottom: 4px; display: block; }
+        .faq-question { font-weight: 700; color: #002d56; margin-bottom: 4px; display: block; font-size: 15px; }
         .faq-answer { color: #64748b; font-size: 14px; line-height: 1.5; }
     </style>
 </head>
+
 <body class="bg-slate-100">
     <header class="bg-[#002d56] py-4 border-b-4 border-[#f90]">
-        <div class="max-w-4xl mx-auto px-4">
-            <a href="{{DOMAIN}}/" class="text-white text-2xl font-black italic tracking-tighter">CRICFOOT<span class="text-[#f90]">TV</span></a>
+        <div class="max-w-4xl mx-auto px-4 text-center sm:text-left">
+            <a href="{{DOMAIN}}/" class="text-white text-2xl font-black italic tracking-tighter uppercase">
+                CRICFOOT<span class="text-[#f90]">TV</span>
+            </a>
         </div>
     </header>
 
@@ -149,12 +137,12 @@
 
     <div class="search-container bg-white shadow-sm">
         <div class="max-w-4xl mx-auto p-4">
-            <input type="text" id="matchSearch" placeholder="Search team or league..." class="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+            <input type="text" id="matchSearch" placeholder="Search team, league, or country..." class="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg outline-none focus:ring-2 focus:ring-orange-400 transition-all">
         </div>
         <div class="selected-banner py-2 px-8">
             <div class="max-w-4xl mx-auto flex items-center">
-                <span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                Matches for: <span class="text-slate-900 ml-1">{{SELECTED_DATE}}</span>
+                <span class="w-2 h-2 bg-orange-500 rounded-full animate-pulse mr-2"></span>
+                Schedules for: <span class="text-slate-900 ml-1 font-extrabold">{{SELECTED_DATE}}</span>
             </div>
         </div>
     </div>
@@ -165,30 +153,34 @@
         </div>
 
         <div class="faq-section shadow-sm">
-            <div class="bg-slate-900 text-white px-4 py-3 text-xs font-bold uppercase tracking-widest">Schedule Information & FAQ</div>
-            <div class="faq-item">
-                <span class="faq-question">What matches are live today?</span>
-                <p class="faq-answer">Check our real-time listing above for all football and cricket matches scheduled for {{SELECTED_DATE}}.</p>
+            <div class="bg-slate-900 text-white px-4 py-3 text-[10px] font-black uppercase tracking-widest">
+                Sports Broadcast Guide & Help
             </div>
             <div class="faq-item">
-                <span class="faq-question">How do I find a specific team?</span>
-                <p class="faq-answer">Use the search bar at the top of the page to instantly filter by team name, country, or league.</p>
+                <span class="faq-question">How can I find a specific match?</span>
+                <p class="faq-answer">Use the search box above to filter by team names (e.g., Real Madrid) or competition (e.g., Champions League).</p>
             </div>
             <div class="faq-item">
-                <span class="faq-question">Is the time correct for my country?</span>
-                <p class="faq-answer">Yes! Our system detects your local timezone and automatically adjusts all kickoff times for you.</p>
+                <span class="faq-question">What does "Local Time" mean?</span>
+                <p class="faq-answer">We automatically convert the match kickoff time to the timezone of your current device so you never miss a game.</p>
+            </div>
+            <div class="faq-item">
+                <span class="faq-question">Where are the streaming links?</span>
+                <p class="faq-answer">Click on any match row to visit the dedicated match page, where you'll find official broadcaster details and stream information.</p>
             </div>
         </div>
     </main>
 
-    <footer class="bg-[#002d56] text-slate-400 py-12 px-4 text-center text-xs font-semibold">
+    <footer class="bg-[#002d56] text-slate-400 py-16 px-4 text-center text-xs font-bold uppercase tracking-widest">
         <div class="max-w-4xl mx-auto">
-            &copy; 2026 TV.CRICFOOT.NET - YOUR ULTIMATE LIVE SPORTS GUIDE
+            <p class="mb-2">CricFootTV - Your Global Sports Broadcast Directory</p>
+            <p>&copy; 2026 TV.CRICFOOT.NET</p>
         </div>
     </footer>
 
     <script>
     function autoDetectTimezone() {
+        // Handle Times
         document.querySelectorAll('.auto-time').forEach(el => {
             const unix = el.getAttribute('data-unix');
             if (unix) {
@@ -196,6 +188,7 @@
                 el.innerText = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
             }
         });
+        // Handle Dates
         document.querySelectorAll('.auto-date').forEach(el => {
             const unix = el.getAttribute('data-unix');
             if (unix) {
@@ -204,18 +197,28 @@
             }
         });
     }
+
+    // Run on load
     autoDetectTimezone();
 
+    // Live Search Logic
     document.getElementById('matchSearch').addEventListener('input', function(e) {
         let term = e.target.value.toLowerCase();
+        
+        // Hide/Show Rows
         document.querySelectorAll('.match-row').forEach(row => {
             row.style.display = row.textContent.toLowerCase().includes(term) ? 'flex' : 'none';
         });
+
+        // Hide League Headers if all matches under them are hidden
         document.querySelectorAll('.league-header').forEach(header => {
             let next = header.nextElementSibling;
             let visible = false;
             while(next && next.classList.contains('match-row')) {
-                if(next.style.display !== 'none') { visible = true; break; }
+                if(next.style.display !== 'none') { 
+                    visible = true; 
+                    break; 
+                }
                 next = next.nextElementSibling;
             }
             header.style.display = visible ? 'block' : 'none';
