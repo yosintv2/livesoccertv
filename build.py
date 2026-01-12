@@ -1,4 +1,4 @@
-import json, os, re, glob
+import json, os, re, glob, shutil
 from datetime import datetime, timedelta, timezone
 
 # --- CONFIGURATION ---
@@ -17,7 +17,15 @@ TOP_LEAGUE_IDS = [7, 35, 23, 17]
 def slugify(t): 
     return re.sub(r'[^a-z0-9]+', '-', str(t).lower()).strip('-')
 
-# --- 1. LOAD TEMPLATES ---
+# --- 1. CLEANUP OLD DATA (To prevent 404s on stale links) ---
+# This ensures that if a match is moved or deleted in the JSON, 
+# the old empty folder doesn't stick around.
+if os.path.exists("match"): shutil.rmtree("match")
+if os.path.exists("channel"): shutil.rmtree("channel")
+os.makedirs("match", exist_ok=True)
+os.makedirs("channel", exist_ok=True)
+
+# --- 2. LOAD TEMPLATES ---
 templates = {}
 for name in ['home', 'match', 'channel']:
     try:
@@ -25,11 +33,18 @@ for name in ['home', 'match', 'channel']:
             templates[name] = f.read()
     except FileNotFoundError:
         print(f"CRITICAL ERROR: {name}_template.html not found.")
+        exit() # Stop if templates are missing
 
-# --- 2. LOAD DATA ---
+# --- 3. LOAD DATA ---
 all_matches = []
 seen_match_ids = set()
-for f in glob.glob("date/*.json"):
+# Search in the 'date' folder for any .json files
+json_files = glob.glob("date/*.json")
+
+if not json_files:
+    print("WARNING: No JSON files found in 'date/' folder.")
+
+for f in json_files:
     with open(f, 'r', encoding='utf-8') as j:
         try:
             data = json.load(j)
@@ -38,17 +53,28 @@ for f in glob.glob("date/*.json"):
                 if mid and mid not in seen_match_ids:
                     all_matches.append(m)
                     seen_match_ids.add(mid)
-        except: continue
+        except Exception as e: 
+            print(f"Error skipping file {f}: {e}")
+            continue
 
 channels_data = {}
 sitemap_urls = [DOMAIN + "/"]
 
-# --- 3. GENERATE DAILY PAGES ---
+# --- 4. GENERATE DAILY PAGES ---
+# Pre-calculate the weekly menu to use across all pages
+global_menu = ""
+for j in range(7):
+    m_day = START_WEEK + timedelta(days=j)
+    m_fname = "index.html" if m_day == TODAY_DATE else f"{m_day.strftime('%Y-%m-%d')}.html"
+    # We leave the "active" class logic for inside the loop
+    pass
+
 for i in range(7):
     day = START_WEEK + timedelta(days=i)
     fname = "index.html" if day == TODAY_DATE else f"{day.strftime('%Y-%m-%d')}.html"
     if fname != "index.html": sitemap_urls.append(f"{DOMAIN}/{fname}")
 
+    # Generate menu for this specific day
     current_page_menu = ""
     for j in range(7):
         m_day = START_WEEK + timedelta(days=j)
@@ -58,9 +84,11 @@ for i in range(7):
 
     day_matches = []
     for m in all_matches:
-        m_dt_local = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
-        if m_dt_local.date() == day:
-            day_matches.append(m)
+        try:
+            m_dt_local = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
+            if m_dt_local.date() == day:
+                day_matches.append(m)
+        except: continue
 
     day_matches.sort(key=lambda x: (
         x.get('league_id') not in TOP_LEAGUE_IDS, 
@@ -92,7 +120,7 @@ for i in range(7):
             </div>
         </a>'''
 
-        # --- 4. MATCH PAGES ---
+        # --- 5. MATCH PAGES ---
         m_path = f"match/{m_slug}/{m_date_folder}"
         os.makedirs(m_path, exist_ok=True)
         venue_val = m.get('venue') or m.get('stadium') or "To Be Announced"
@@ -129,7 +157,7 @@ for i in range(7):
         output = output.replace("{{PAGE_TITLE}}", f"Soccer TV Channels For {day.strftime('%A, %b %d, %Y')}")
         df.write(output)
 
-# --- 5. CHANNEL PAGES (FIXED & FORMATTED) ---
+# --- 6. CHANNEL PAGES ---
 for ch_name, matches in channels_data.items():
     c_slug = slugify(ch_name)
     c_dir = f"channel/{c_slug}"
@@ -144,7 +172,6 @@ for ch_name, matches in channels_data.items():
         m_slug = slugify(m['fixture'])
         m_date_folder = dt.strftime('%Y%m%d')
         
-        # Matches in the channel list now have the same professional look as the home page
         c_listing += f'''
         <a href="{DOMAIN}/match/{m_slug}/{m_date_folder}/" style="display: flex; align-items: center; padding: 16px; background: white; border-bottom: 1px solid #f1f5f9; text-decoration: none; color: inherit;">
             <div style="min-width: 90px; text-align: center; border-right: 1px solid #edf2f7; margin-right: 15px;">
@@ -161,10 +188,10 @@ for ch_name, matches in channels_data.items():
         c_html = templates['channel'].replace("{{CHANNEL_NAME}}", ch_name)
         c_html = c_html.replace("{{MATCH_LISTING}}", c_listing)
         c_html = c_html.replace("{{DOMAIN}}", DOMAIN)
-        c_html = c_html.replace("{{WEEKLY_MENU}}", current_page_menu) # Keeps navigation working
+        c_html = c_html.replace("{{WEEKLY_MENU}}", current_page_menu) 
         cf.write(c_html)
 
-# --- 6. SITEMAP ---
+# --- 7. SITEMAP ---
 sitemap_content = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
 for url in list(set(sitemap_urls)):
     sitemap_content += f'<url><loc>{url}</loc><lastmod>{NOW.strftime("%Y-%m-%d")}</lastmod></url>'
