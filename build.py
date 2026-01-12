@@ -2,7 +2,7 @@ import json, os, re, glob, shutil
 from datetime import datetime, timedelta, timezone
 
 # --- CONFIGURATION ---
-DOMAIN = "https://tv.cricfoot.net"
+DOMAIN = "https://tv.cricfoot.net" 
 LOCAL_OFFSET = timezone(timedelta(hours=5)) 
 
 NOW = datetime.now(LOCAL_OFFSET)
