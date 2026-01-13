@@ -1,8 +1,12 @@
 name: Deploy SEO Site
+
 on:
   push:
     branches: [ main ]
   workflow_dispatch: 
+  schedule:
+    # Runs every 30 minutes (POSIX cron syntax)
+    - cron: '*/30 * * * *'
 
 permissions:
   contents: read
@@ -27,7 +31,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # This uploads the entire repository (including the new /match/ folders)
+          # This uploads the entire repository content to GitHub Pages
           path: '.'
 
   deploy:
