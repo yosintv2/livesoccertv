@@ -43,6 +43,7 @@ MENU_CSS = '''
     .lineup-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 10px; }
     .team-col ul { list-style: none; padding: 0; margin: 0; }
     .team-col li { font-size: 13px; padding: 4px 0; border-bottom: 1px solid #f1f5f9; }
+    .form-circle { width: 18px; height: 18px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: white; font-size: 10px; font-weight: bold; margin-left: 2px; }
     @media (max-width: 480px) { .date-btn b { font-size: 8px; } .date-btn div { font-size: 7px; } }
 </style>
 '''
@@ -61,6 +62,15 @@ def get_sofa_data(data_type, date_str, match_id):
             except: return None
     return None
 
+def format_form_circles(form_list):
+    if not form_list: return ""
+    html = '<div style="display: flex;">'
+    for res in form_list:
+        bg = "#22c55e" if res == "W" else "#ef4444" if res == "L" else "#94a3b8"
+        html += f'<span class="form-circle" style="background:{bg}">{res}</span>'
+    html += '</div>'
+    return html
+
 def build_lineups_html(data):
     if not data or 'home' not in data: return "<div class='p-4 text-gray-400 italic'>Lineups not confirmed yet</div>"
     h_players = "".join([f"<li>{p['player']['name']}</li>" for p in data['home'].get('players', [])[:11]])
@@ -73,7 +83,6 @@ def build_lineups_html(data):
 def build_stats_html(data):
     if not data or 'statistics' not in data: return "<div class='p-4 text-gray-400 italic'>Stats available during live match</div>"
     rows = ""
-    # Extract 'ALL' period statistics
     period = next((p for p in data['statistics'] if p['period'] == 'ALL'), data['statistics'][0])
     for group in period['groups']:
         for item in group['statisticsItems']:
@@ -82,8 +91,10 @@ def build_stats_html(data):
 
 def build_h2h_html(data):
     if not data: return "<div class='p-4 text-gray-400 italic'>No H2H history available</div>"
-    return f'''<div class="stat-row"><span class="text-blue-600 font-bold">{data.get('homeWins',0)} Wins</span><span class="stat-label">H2H History</span><span class="text-red-600 font-bold">{data.get('awayWins',0)} Wins</span></div>
-               <div class="stat-row"><span class="stat-label" style="margin:auto">Draws: {data.get('draws',0)}</span></div>'''
+    # Format matches the 'teamDuel' structure: {"teamDuel": {"homeWins": 6...}}
+    duel = data.get('teamDuel', data)
+    return f'''<div class="stat-row"><span class="text-blue-600 font-bold">{duel.get('homeWins',0)} Wins</span><span class="stat-label">Head to Head</span><span class="text-red-600 font-bold">{duel.get('awayWins',0)} Wins</span></div>
+               <div class="stat-row" style="justify-content: center;"><span class="stat-label">Draws: {duel.get('draws',0)}</span></div>'''
 
 # --- 1. LOAD TEMPLATES ---
 templates = {}
@@ -97,7 +108,7 @@ for name in ['home', 'match', 'channel']:
 # --- 2. LOAD DATA ---
 all_matches = []
 seen_match_ids = set()
-for f in glob.glob("date/*.json"):
+for f in sorted(glob.glob("date/*.json")):
     with open(f, 'r', encoding='utf-8') as j:
         try:
             data = json.load(j)
@@ -121,7 +132,6 @@ for m in all_matches:
     league = m.get('league', 'Other Football')
     mid = m['match_id']
 
-    # --- CHANNEL DATA POPULATION ---
     for c in m.get('tv_channels', []):
         for ch in c['channels']:
             if ch not in channels_data: channels_data[ch] = []
@@ -134,11 +144,28 @@ for m in all_matches:
     stats_raw = get_sofa_data("statistics", m_date_folder, mid)
     h2h_raw = get_sofa_data("h2h", m_date_folder, mid)
     odds_raw = get_sofa_data("odds", m_date_folder, mid)
+    form_raw = get_sofa_data("form", m_date_folder, mid)
 
-    odds_text = "N/A"
-    if odds_raw and 'winningOdds' in odds_raw:
-        o = odds_raw['winningOdds']
-        odds_text = f"H: {o.get('home','-')} | D: {o.get('draw','-')} | A: {o.get('away','-')}"
+    # Calculate Winning Probability from your Format: {"home":{"expected":88...}}
+    odds_html = "<div class='p-4 text-center text-gray-400'>Odds not available</div>"
+    if odds_raw:
+        h_prob = odds_raw.get('home', {}).get('expected', '-')
+        a_prob = odds_raw.get('away', {}).get('expected', '-') if odds_raw.get('away') else '-'
+        odds_html = f'''<div class="flex justify-around p-4 items-center">
+            <div class="text-center"><div class="text-[10px] text-gray-400 uppercase font-bold">Home Prob.</div><div class="text-xl font-black text-blue-600">{h_prob}%</div></div>
+            <div class="h-8 w-[1px] bg-gray-200"></div>
+            <div class="text-center"><div class="text-[10px] text-gray-400 uppercase font-bold">Away Prob.</div><div class="text-xl font-black text-red-600">{a_prob}%</div></div>
+        </div>'''
+
+    # Form Block
+    form_html = ""
+    if form_raw:
+        h_form = format_form_circles(form_raw.get('homeTeam', {}).get('form'))
+        a_form = format_form_circles(form_raw.get('awayTeam', {}).get('form'))
+        form_html = f'''<div class="sofa-card"><div class="sofa-header">Recent Form</div>
+            <div class="stat-row"><span>Home Team</span>{h_form}</div>
+            <div class="stat-row"><span>Away Team</span>{a_form}</div>
+        </div>'''
 
     # --- GENERATE INDIVIDUAL MATCH PAGE ---
     m_path = f"match/{m_slug}/{m_date_folder}"
@@ -152,7 +179,8 @@ for m in all_matches:
 
     # Sofa Data Blocks
     sofa_blocks = f'''
-    <div class="sofa-card"><div class="sofa-header">Winning Odds</div><div class="p-4 text-center font-bold text-blue-600">{odds_text}</div></div>
+    <div class="sofa-card"><div class="sofa-header">Winning Probability</div>{odds_html}</div>
+    {form_html}
     <div class="sofa-card"><div class="sofa-header">Starting Lineups</div>{build_lineups_html(lineup_raw)}</div>
     <div class="sofa-card"><div class="sofa-header">Match Statistics</div>{build_stats_html(stats_raw)}</div>
     <div class="sofa-card"><div class="sofa-header">Head to Head</div>{build_h2h_html(h2h_raw)}</div>
@@ -161,7 +189,7 @@ for m in all_matches:
     with open(f"{m_path}/index.html", "w", encoding='utf-8') as mf:
         m_html = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
         m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
-        m_html = m_html.replace("{{SOFA_DATA}}", sofa_blocks) # Make sure this tag is in your match_template.html
+        m_html = m_html.replace("{{SOFA_DATA}}", sofa_blocks)
         m_html = m_html.replace("{{LOCAL_DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%d %b %Y")}</span>')
         m_html = m_html.replace("{{LOCAL_TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%H:%M")}</span>')
         m_html = m_html.replace("{{UNIX}}", str(m['kickoff'])).replace("{{VENUE}}", venue_val) 
@@ -236,4 +264,4 @@ for url in sorted(list(set(sitemap_urls))):
 sitemap_content += '</urlset>'
 with open("sitemap.xml", "w", encoding='utf-8') as sm: sm.write(sitemap_content)
 
-print("Success! Integrated SofaData + TV Listings generated.")
+print("Success! Full code generated with Integrated SofaData.")
