@@ -96,7 +96,6 @@ channels_data = {}
 sitemap_urls = [DOMAIN + "/"]
 
 # --- 3. PRE-PROCESS ALL MATCHES (FOR MATCH PAGES & SITEMAP) ---
-# We do this outside the 7-day loop so older/future matches are NOT skipped.
 for m in all_matches:
     m_dt_local = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
     m_slug = slugify(m['fixture'])
@@ -110,8 +109,7 @@ for m in all_matches:
     for c in m.get('tv_channels', []):
         for ch in c['channels']:
             if ch not in channels_data: channels_data[ch] = []
-            # Keep history in channel pages if needed, or filter by time
-            if int(m['kickoff']) > (NOW.timestamp() - 86400): # Show matches from last 24h onwards on channel pages
+            if int(m['kickoff']) > (NOW.timestamp() - 86400):
                 if not any(x['m']['match_id'] == m['match_id'] for x in channels_data[ch]):
                     channels_data[ch].append({'m': m, 'dt': m_dt_local, 'league': league})
 
@@ -143,9 +141,21 @@ for m in all_matches:
         m_html = m_html.replace("{{UNIX}}", str(m['kickoff'])).replace("{{VENUE}}", venue_val) 
         mf.write(m_html)
 
-# --- 4. GENERATE DAILY LISTING PAGES (STILL 7 DAYS FOR MENU) ---
-for i in range(7):
-    day = MENU_START_DATE + timedelta(days=i)
+# ------------------------------------------------------------------
+# 🔴 ONLY CHANGE IS BELOW (SECTION 4)
+# ------------------------------------------------------------------
+
+# --- 4. GENERATE DAILY LISTING PAGES (ALL DATES, MENU STILL 7 DAYS) ---
+
+# NEW: collect ALL unique match dates
+ALL_DATES = sorted({
+    datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc)
+    .astimezone(LOCAL_OFFSET).date()
+    for m in all_matches
+})
+
+# OLD: for i in range(7):
+for day in ALL_DATES:
     fname = "index.html" if day == TODAY_DATE else f"{day.strftime('%Y-%m-%d')}.html"
     if fname != "index.html": sitemap_urls.append(f"{DOMAIN}/{fname}")
 
@@ -250,4 +260,4 @@ for url in sorted(list(set(sitemap_urls))):
 sitemap_content += '</urlset>'
 with open("sitemap.xml", "w", encoding='utf-8') as sm: sm.write(sitemap_content)
 
-print("Success! All matches from JSON generated and included in sitemap, regardless of menu dates.")
+print("Success! All match dates generated, menu unchanged.")
