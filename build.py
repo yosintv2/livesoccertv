@@ -106,9 +106,9 @@ def build_h2h_html(data, teams):
     if not isinstance(duel, dict): return "<div class='p-4 text-gray-400 italic text-center'>No H2H history available</div>"
     return f'''
         <div class="stat-row">
-            <span style="font-weight:700; color:#2563eb;">{duel.get('homeWins',0)} <small>{teams[0]}</small></span>
+            <span style="font-weight:700; color:#2563eb;">{duel.get('homeWins',0)} <small>Wins</small></span>
             <span class="stat-label">Wins Comparison</span>
-            <span style="font-weight:700; color:#dc2626; text-align:right;">{duel.get('awayWins',0)} <small>{teams[1]}</small></span>
+            <span style="font-weight:700; color:#dc2626; text-align:right;">{duel.get('awayWins',0)} <small>Wins</small></span>
         </div>
         <div class="stat-row" style="justify-content: center; background: #f8fafc;">
             <span class="stat-label" style="color:#1e293b">Total Draws: <b>{duel.get('draws',0)}</b></span>
