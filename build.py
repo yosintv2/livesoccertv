@@ -248,6 +248,31 @@ for ch_name, matches in channels_data.items():
     with open(f"{c_dir}/index.html", "w", encoding='utf-8') as cf:
         cf.write(templates['channel'].replace("{{CHANNEL_NAME}}", ch_name).replace("{{MATCH_LISTING}}", c_listing).replace("{{DOMAIN}}", DOMAIN).replace("{{WEEKLY_MENU}}", channel_menu))
 
+# --- 7. GENERATE 404 PAGE ---
+# This ensures GitHub Pages knows what to show when a link is broken
+with open(f"{DIST_DIR}/404.html", "w", encoding='utf-8') as f404:
+    # Use the 'home' template so it looks like your site
+    # But replace the match listing with a 'Not Found' message
+    error_content = """
+    <div style="text-align:center; padding:50px;">
+        <h1 style="font-size:64px;">404</h1>
+        <p>Oops! The football match or page you are looking for doesn't exist.</p>
+        <a href="/" style="display:inline-block; background:#2563eb; color:#fff; padding:10px 20px; border-radius:5px; text-decoration:none;">Go Back Home</a>
+    </div>
+    """
+    # Replace placeholders in your home template to keep the header/footer consistent
+    f404_html = templates['home'].replace("{{MATCH_LISTING}}", error_content)
+    f404_html = f404_html.replace("{{WEEKLY_MENU}}", "") # Hide menu on 404
+    f404_html = f404_html.replace("{{DOMAIN}}", DOMAIN)
+    f404_html = f404_html.replace("{{PAGE_TITLE}}", "404 - Page Not Found")
+    f404_html = f404_html.replace("{{SELECTED_DATE}}", "Error")
+    
+    f404.write(f404_html)
+
+print("404.html generated in /dist folder!")
+
+
+
 # --- 6. SITEMAP ---
 sitemap_content = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
 for url in sorted(list(set(sitemap_urls))):
