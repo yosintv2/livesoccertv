@@ -3,11 +3,13 @@ from datetime import datetime, timedelta, timezone
 
 # --- CONFIGURATION ---
 DOMAIN = "https://tv.cricfoot.net"
+# Ensure your offset is exactly what you need (e.g., +5 for Pakistan/Uzbekistan)
 LOCAL_OFFSET = timezone(timedelta(hours=5)) 
 
 NOW = datetime.now(LOCAL_OFFSET)
 TODAY_DATE = NOW.date() 
 
+# The window of dates to generate listing pages for (7 days around today)
 MENU_START_DATE = TODAY_DATE - timedelta(days=3)
 MENU_END_DATE = TODAY_DATE + timedelta(days=3)
 
@@ -38,8 +40,6 @@ MENU_CSS = '''
     .team-col ul { list-style: none; padding: 0; margin: 0; }
     .team-col li { font-size: 13px; padding: 6px 0; color: #475569; border-bottom: 1px dashed #f1f5f9; }
     
-
-    
     @media (max-width: 480px) { .date-btn b { font-size: 8px; } .date-btn div { font-size: 7px; } }
 </style>
 '''
@@ -48,7 +48,6 @@ def slugify(t):
     return re.sub(r'[^a-z0-9]+', '-', str(t).lower()).strip('-')
 
 def get_team_names(fixture):
-    """Splits 'Arsenal vs Chelsea' into ['Arsenal', 'Chelsea']"""
     if " vs " in fixture:
         return [t.strip() for t in fixture.split(" vs ")]
     elif " - " in fixture:
@@ -139,7 +138,13 @@ sitemap_urls = [DOMAIN + "/"]
 
 # --- 3. PRE-PROCESS ALL MATCHES ---
 for m in all_matches:
-    m_dt_local = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
+    # SAFETY: Handle timestamps in milliseconds if they exist
+    ts = int(m['kickoff'])
+    if ts > 10000000000: ts = ts / 1000 
+    
+    # Strictly create the local time object from the timestamp
+    m_dt_local = datetime.fromtimestamp(ts, tz=timezone.utc).astimezone(LOCAL_OFFSET)
+    
     m_slug = slugify(m['fixture'])
     teams = get_team_names(m['fixture'])
     m_date_folder = m_dt_local.strftime('%Y%m%d')
@@ -151,18 +156,16 @@ for m in all_matches:
     for c in m.get('tv_channels', []):
         for ch in c['channels']:
             if ch not in channels_data: channels_data[ch] = []
-            if int(m['kickoff']) > (NOW.timestamp() - 86400):
+            if ts > (NOW.timestamp() - 86400):
                 if not any(x['m']['match_id'] == mid for x in channels_data[ch]):
                     channels_data[ch].append({'m': m, 'dt': m_dt_local, 'league': league})
 
-    # Sofa Data
     lineup_raw = get_sofa_data("lineups", m_date_folder, mid)
     stats_raw = get_sofa_data("statistics", m_date_folder, mid)
     h2h_raw = get_sofa_data("h2h", m_date_folder, mid)
     odds_raw = get_sofa_data("odds", m_date_folder, mid)
     form_raw = get_sofa_data("form", m_date_folder, mid)
 
-    # Probability
     odds_html = "<div class='p-4 text-center text-gray-400 italic'>Win Probability N/A</div>"
     if isinstance(odds_raw, dict):
         h_prob = odds_raw.get('home', {}).get('expected', '-') if odds_raw.get('home') else '-'
@@ -173,7 +176,6 @@ for m in all_matches:
             <div class="text-center"><div style="font-size:10px; color:#64748b; font-weight:700; margin-bottom:4px;">{teams[1].upper()}</div><div style="font-size:24px; font-weight:900; color:#dc2626;">{a_prob}%</div></div>
         </div>'''
 
-    # Form
     form_html = ""
     if isinstance(form_raw, dict):
         h_f = form_raw.get('homeTeam', {}).get('form')
@@ -205,8 +207,8 @@ for m in all_matches:
         m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
         m_html = m_html.replace("{{SOFA_DATA}}", sofa_blocks)
         m_html = m_html.replace("{{LOCAL_DATE}}", m_dt_local.strftime("%d %b %Y"))
-        m_html = m_html.replace("{{LOCAL_TIME}}", m_dt_local.strftime("%H:%M"))
-        m_html = m_html.replace("{{UNIX}}", str(m['kickoff'])).replace("{{VENUE}}", m.get('venue', 'TBA')) 
+        m_html = m_html.replace("{{LOCAL_TIME}}", m_dt_local.strftime("%I:%M %p")) # Uses match local time
+        m_html = m_html.replace("{{UNIX}}", str(ts)).replace("{{VENUE}}", m.get('venue', 'TBA')) 
         mf.write(m_html)
 
 # --- 4. DAILY LISTING PAGES ---
@@ -222,22 +224,28 @@ for i in range(7):
         page_specific_menu += f'<a href="{DOMAIN}/{m_fname}" class="date-btn {active_class}"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
     page_specific_menu += '</div>'
 
-    day_matches = [m for m in all_matches if datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET).date() == day]
-    day_matches.sort(key=lambda x: (x.get('league_id') not in TOP_LEAGUE_IDS, x.get('league', 'Other Football'), x['kickoff']))
+    day_matches = []
+    for m in all_matches:
+        ts = int(m['kickoff'])
+        if ts > 10000000000: ts = ts / 1000
+        match_dt = datetime.fromtimestamp(ts, tz=timezone.utc).astimezone(LOCAL_OFFSET)
+        if match_dt.date() == day:
+            day_matches.append((m, match_dt))
+
+    day_matches.sort(key=lambda x: (x[0].get('league_id') not in TOP_LEAGUE_IDS, x[0].get('league', 'Other Football'), x[0]['kickoff']))
 
     listing_html, last_league = "", ""
-    for m in day_matches:
+    for m, dt in day_matches:
         league = m.get('league', 'Other Football')
         if league != last_league:
             listing_html += f'<div class="league-header" style="background:#1e293b;color:#fff;padding:8px 15px;font-weight:bold;font-size:12px;text-transform:uppercase;">{league}</div>'
             last_league = league
         
-        m_dt = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
-        m_url = f"{DOMAIN}/match/{slugify(m['fixture'])}/{m_dt.strftime('%Y%m%d')}/"
+        m_url = f"{DOMAIN}/match/{slugify(m['fixture'])}/{dt.strftime('%Y%m%d')}/"
         listing_html += f'''<a href="{m_url}" class="match-row" style="display:flex;align-items:center;padding:14px;background:#fff;border-bottom:1px solid #f1f5f9;text-decoration:none;">
             <div style="min-width:70px;text-align:center;border-right:1px solid #eee;margin-right:15px;">
-                <div style="font-size:10px;color:#94a3b8;font-weight:bold;">{m_dt.strftime('%d %b')}</div>
-                <div style="font-weight:900;color:#2563eb;">{m_dt.strftime('%H:%M')}</div>
+                <div style="font-size:10px;color:#94a3b8;font-weight:bold;">{dt.strftime('%d %b')}</div>
+                <div style="font-weight:900;color:#2563eb;">{dt.strftime('%I:%M %p')}</div>
             </div>
             <div style="color:#1e293b;font-weight:700;font-size:15px;">{m['fixture']}</div>
         </a>'''
@@ -260,7 +268,7 @@ for ch_name, matches in channels_data.items():
         c_listing += f'''<a href="{DOMAIN}/match/{slugify(m['fixture'])}/{dt.strftime('%Y%m%d')}/" class="match-row" style="display:flex;align-items:center;padding:14px;background:#fff;border-bottom:1px solid #f1f5f9;text-decoration:none;">
             <div style="min-width:70px;text-align:center;border-right:1px solid #eee;margin-right:15px;">
                 <div style="font-size:10px;color:#94a3b8;font-weight:bold;">{dt.strftime('%d %b')}</div>
-                <div style="font-weight:900;color:#2563eb;">{dt.strftime('%H:%M')}</div>
+                <div style="font-weight:900;color:#2563eb;">{dt.strftime('%I:%M %p')}</div>
             </div>
             <div><div style="color:#1e293b;font-weight:700;font-size:15px;">{m['fixture']}</div><div style="font-size:10px;color:#6366f1;font-weight:600;">{m_league}</div></div>
         </a>'''
@@ -274,4 +282,4 @@ for url in sorted(list(set(sitemap_urls))):
 sitemap_content += '</urlset>'
 with open("sitemap.xml", "w", encoding='utf-8') as sm: sm.write(sitemap_content)
 
-print("Build Successful: Visuals Updated.")
+print("Build Successful: Match-specific time and date fixed.")
