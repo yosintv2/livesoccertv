@@ -1,14 +1,16 @@
-name: Daily Data Sync
+name: SofaData Daily Sync
 
 on:
   schedule:
-    # Runs every day at 01:00 UTC
     - cron: '0 1 * * *'
-  workflow_dispatch: # Allows manual trigger
+  workflow_dispatch:
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    # CRITICAL: Prevent the job from running for hours if it hangs
+    timeout-minutes: 10 
+    
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -22,6 +24,7 @@ jobs:
         run: pip install requests
 
       - name: Run Scraper
+        # The script now handles its own timeouts
         run: python fetch_data.py
 
       - name: Commit Data
@@ -29,5 +32,5 @@ jobs:
           git config --global user.name "CricFoot-Bot"
           git config --global user.email "bot@cricfoot.net"
           git add data/
-          git commit -m "Sync: H2H, Lineups, Stats, Odds, Form for next 3 days" || exit 0
+          git commit -m "Sync: H2H, Lineups, Stats, Odds, Form" || exit 0
           git push
