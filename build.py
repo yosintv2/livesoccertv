@@ -18,14 +18,7 @@ TOP_LEAGUE_IDS = [17, 35, 23, 7, 8, 34, 679]
 # Google Ads Code Block
 ADS_CODE = '''
 <div class="ad-container" style="margin: 20px 0; text-align: center;">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-5525538810839147"
-         data-ad-slot="4345862479"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+ 
 </div>
 '''
 
