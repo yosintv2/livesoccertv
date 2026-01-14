@@ -1,12 +1,12 @@
 import json, os, re, glob 
 from datetime import datetime, timedelta, timezone
 
-# --- CONFIGURATION --- 
+# --- CONFIGURATION ---
 DOMAIN = "https://tv.cricfoot.net"
 LOCAL_OFFSET = timezone(timedelta(hours=5)) 
 
 NOW = datetime.now(LOCAL_OFFSET)
-TODAY_DATE = NOW.date() 
+TODAY_DATE = NOW.date()
 
 # CENTER LOGIC: To make Today the 4th item, we start the menu 3 days ago
 MENU_START_DATE = TODAY_DATE - timedelta(days=3)
@@ -226,7 +226,7 @@ for ch_name, matches in channels_data.items():
 
     c_listing = ""
     matches.sort(key=lambda x: x['m']['kickoff'])
-    for item in matches: 
+    for item in matches:
         m, dt, m_league = item['m'], item['dt'], item['league']
         c_listing += f'''
         <a href="{DOMAIN}/match/{slugify(m['fixture'])}/{dt.strftime('%Y%m%d')}/" class="match-row flex items-center p-4 bg-white border-b border-slate-100 group">
