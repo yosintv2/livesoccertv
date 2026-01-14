@@ -226,7 +226,7 @@ for ch_name, matches in channels_data.items():
 
     c_listing = ""
     matches.sort(key=lambda x: x['m']['kickoff'])
-    for item in matches:
+    for item in matches: 
         m, dt, m_league = item['m'], item['dt'], item['league']
         c_listing += f'''
         <a href="{DOMAIN}/match/{slugify(m['fixture'])}/{dt.strftime('%Y%m%d')}/" class="match-row flex items-center p-4 bg-white border-b border-slate-100 group">
