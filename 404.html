@@ -34,7 +34,7 @@
             <div class="text-8xl animate-bounce-slow select-none">⚽</div>
         </div>
 
-        <h1 class="text-5xl font-800 tracking-tight mb-4 bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent uppercase font-bold">
+        <h1 class="text-5xl font-bold tracking-tight mb-4 bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent uppercase">
             Offside!
         </h1>
         <p class="text-slate-400 text-lg mb-8 leading-relaxed">
@@ -57,44 +57,23 @@
     </div>
 
     <script>
-        const MAX_ATTEMPTS = 5;
-        const EXPIRY_MS = 5 * 60 * 1000; // 5 minutes in milliseconds
+        // Configuration
         const REDIRECT_URL = "https://tv.cricfoot.net/";
-        const MAINTENANCE_URL = "maintenance.html";
+        let timeLeft = 15; // Matches the 5s progress bar animation
 
-        const now = new Date().getTime();
+        // UI Countdown Logic
+        const countdownElement = document.getElementById('countdown');
         
-        // Retrieve data from localStorage
-        let errorData = JSON.parse(localStorage.getItem('error_tracking')) || { count: 0, startTime: now };
-
-        // Logic: If current time is 5 mins past the stored startTime, reset everything
-        if (now - errorData.startTime > EXPIRY_MS) {
-            errorData = { count: 1, startTime: now };
-        } else {
-            errorData.count++;
-        }
-
-        // Save updated data
-        localStorage.setItem('error_tracking', JSON.stringify(errorData));
-
-        // Determine Destination
-        const isSpamming = errorData.count >= MAX_ATTEMPTS;
-        const finalDestination = isSpamming ? MAINTENANCE_URL : REDIRECT_URL;
-
-        if (isSpamming) {
-            document.getElementById('status-text').innerText = "Too Many Attempts";
-            // Optional: reset count so maintenance isn't permanent after the 5 mins are up
-            localStorage.removeItem('error_tracking');
-        }
-
-        // UI Countdown
-        let timeLeft = 5;
         const timer = setInterval(() => {
             timeLeft--;
-            if (timeLeft >= 0) document.getElementById('countdown').innerText = timeLeft + "s";
+            
+            if (timeLeft >= 0) {
+                countdownElement.innerText = timeLeft + "s";
+            }
+            
             if (timeLeft <= 0) {
                 clearInterval(timer);
-                window.location.href = finalDestination;
+                window.location.href = REDIRECT_URL;
             };
         }, 1000);
     </script>
