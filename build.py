@@ -13,9 +13,6 @@ NOW = datetime.now(LOCAL_OFFSET)
 DIST_DIR = "dist"
 os.makedirs(DIST_DIR, exist_ok=True)
 
-NOW = datetime.now(LOCAL_OFFSET)
-TODAY_DATE = NOW.date()
-
 # CENTER LOGIC: To make Today the 4th item, we start the menu 3 days ago
 MENU_START_DATE = TODAY_DATE - timedelta(days=3)
 # We calculate the end date of the menu as well
