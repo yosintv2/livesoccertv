@@ -12,7 +12,7 @@ on:
     branches: [ main ]
     paths:
       - 'date/**'
-  workflow_dispatch: 
+  workflow_dispatch:  
 
 permissions:
   contents: read
