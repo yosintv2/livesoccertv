@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offside! Page Not Found</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: radial-gradient(circle at top center, #003a6e 0%, #001a33 100%);
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(-10%) rotate(0deg); }
+            50% { transform: translateY(0) rotate(20deg); }
+        }
+        .animate-bounce-slow { animation: bounce-slow 3s infinite ease-in-out; }
+        .progress-bar { animation: shrink 5s linear forwards; }
+        @keyframes shrink { from { width: 100%; } to { width: 0%; } }
+    </style>
+</head>
+<body class="text-white flex items-center justify-center min-h-screen p-6 overflow-hidden">
+
+    <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-blue-600 rounded-full blur-[120px] opacity-20"></div>
+
+    <div class="glass relative z-10 text-center p-10 md:p-16 rounded-[2rem] max-w-lg w-full shadow-2xl">
+        <div class="relative inline-block mb-8">
+            <div class="text-8xl animate-bounce-slow select-none">⚽</div>
+        </div>
+
+        <h1 class="text-5xl font-800 tracking-tight mb-4 bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent uppercase font-bold">
+            Offside!
+        </h1>
+        <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+            The page isn't here. We're sending you back to the home pitch.
+        </p>
+        
+        <div class="mb-10">
+            <div class="flex justify-between text-xs font-bold uppercase tracking-widest text-blue-400 mb-2 px-1">
+                <span id="status-text">Redirecting</span>
+                <span id="countdown">5s</span>
+            </div>
+            <div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+                <div class="progress-bar h-full bg-gradient-to-r from-blue-500 to-emerald-400"></div>
+            </div>
+        </div>
+
+        <a href="https://tv.cricfoot.net/" class="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-blue-600 rounded-xl hover:bg-blue-500">
+            Go Home Now
+        </a>
+    </div>
+
+    <script>
+        const MAX_ATTEMPTS = 5;
+        const EXPIRY_MS = 5 * 60 * 1000; // 5 minutes in milliseconds
+        const REDIRECT_URL = "https://tv.cricfoot.net/";
+        const MAINTENANCE_URL = "maintenance.html";
+
+        const now = new Date().getTime();
+        
+        // Retrieve data from localStorage
+        let errorData = JSON.parse(localStorage.getItem('error_tracking')) || { count: 0, startTime: now };
+
+        // Logic: If current time is 5 mins past the stored startTime, reset everything
+        if (now - errorData.startTime > EXPIRY_MS) {
+            errorData = { count: 1, startTime: now };
+        } else {
+            errorData.count++;
+        }
+
+        // Save updated data
+        localStorage.setItem('error_tracking', JSON.stringify(errorData));
+
+        // Determine Destination
+        const isSpamming = errorData.count >= MAX_ATTEMPTS;
+        const finalDestination = isSpamming ? MAINTENANCE_URL : REDIRECT_URL;
+
+        if (isSpamming) {
+            document.getElementById('status-text').innerText = "Too Many Attempts";
+            // Optional: reset count so maintenance isn't permanent after the 5 mins are up
+            localStorage.removeItem('error_tracking');
+        }
+
+        // UI Countdown
+        let timeLeft = 5;
+        const timer = setInterval(() => {
+            timeLeft--;
+            if (timeLeft >= 0) document.getElementById('countdown').innerText = timeLeft + "s";
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+                window.location.href = finalDestination;
+            };
+        }, 1000);
+    </script>
+</body>
+</html>
