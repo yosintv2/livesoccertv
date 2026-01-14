@@ -57,9 +57,12 @@ def get_sofa_data(data_type, date_str, match_id):
     path = f"data/{data_type}/{date_str}.json"
     if os.path.exists(path):
         with open(path, 'r', encoding='utf-8') as f:
-            try: return json.load(f).get(str(match_id))
-            except: return None
-    return None
+            try:
+                data = json.load(f)
+                res = data.get(str(match_id))
+                return res if res is not None else {}
+            except: return {}
+    return {}
 
 def format_form_circles(form_list):
     if not form_list or not isinstance(form_list, list): return '<span style="color:#cbd5e1; font-size:12px; font-style:italic;">No data</span>'
@@ -70,7 +73,7 @@ def format_form_circles(form_list):
     return html + '</div>'
 
 def build_lineups_html(data, teams):
-    if not isinstance(data, dict) or 'home' not in data: return "<div class='p-4 text-gray-400 italic'>Lineups not confirmed yet</div>"
+    if not isinstance(data, dict) or not data.get('home'): return "<div class='p-4 text-gray-400 italic'>Lineups not confirmed yet</div>"
     h_players = "".join([f"<li>{p['player']['name']}</li>" for p in data['home'].get('players', [])[:11]])
     a_players = "".join([f"<li>{p['player']['name']}</li>" for p in data['away'].get('players', [])[:11]])
     return f'''<div class="lineup-grid"><div class="team-col"><b>{teams[0]} XI</b><ul>{h_players}</ul></div><div class="team-col"><b>{teams[1]} XI</b><ul>{a_players}</ul></div></div>'''
@@ -87,22 +90,27 @@ def build_stats_html(data):
     except: return "No stats"
 
 def generate_match_faqs(m, teams, h2h, odds):
-    # 15 Dynamic FAQs for SEO
+    # Safety checks for FAQ data
+    h_win = h2h.get('homeWins', 0) if isinstance(h2h, dict) else 0
+    a_win = h2h.get('awayWins', 0) if isinstance(h2h, dict) else 0
+    draws = h2h.get('draws', 0) if isinstance(h2h, dict) else 0
+    prob = odds.get('home', {}).get('expected', '-') if isinstance(odds, dict) else '-'
+
     q_a = [
         (f"Where to watch {m['fixture']} live?", f"You can watch {m['fixture']} on official channels like Sky Sports, TNT, or local broadcasters listed on our match page."),
-        (f"What time is {teams[0]} vs {teams[1]}?", f"The match is scheduled for {datetime.fromtimestamp(m['kickoff']).strftime('%H:%M')} UTC. Check our local time converter above."),
-        (f"Who is predicted to win {m['fixture']}?", f"Based on probability data, {teams[0]} has a {odds.get('home',{}).get('expected','-')}% win chance."),
-        (f"What are the {teams[0]} vs {teams[1]} lineups?", f"Official lineups are announced 1 hour before kickoff. We update them live on this page."),
-        (f"What is the head to head record for {m['fixture']}?", f"{teams[0]} has won {h2h.get('homeWins',0)} times while {teams[1]} has won {h2h.get('awayWins',0)} times."),
+        (f"What time is {teams[0]} vs {teams[1]}?", f"The match is scheduled for kickoff. Check our local time converter above for your exact timezone."),
+        (f"Who is predicted to win {m['fixture']}?", f"Based on probability data, {teams[0]} has a {prob}% win chance."),
+        (f"What are the {teams[0]} vs {teams[1]} lineups?", "Official lineups are usually announced 1 hour before kickoff. We update them live on this page."),
+        (f"What is the head to head record for {m['fixture']}?", f"{teams[0]} has won {h_win} times while {teams[1]} has won {a_win} times."),
         (f"Where is {m['fixture']} match being played?", f"The match venue is {m.get('venue', 'TBA')}."),
-        (f"What are the latest betting odds for {teams[0]}?", f"Expected winning probability for the home team is {odds.get('home',{}).get('expected','-')}%."),
-        (f"Which channel is showing {teams[1]} match today?", f"Check the 'Broadcasters' section on our site for a full list of global TV channels."),
-        (f"How many draws between {teams[0]} and {teams[1]}?", f"There have been {h2h.get('draws', 0)} draws in recent encounters."),
+        (f"What are the latest betting odds for {teams[0]}?", f"Expected winning probability for the home team is {prob}%."),
+        (f"Which channel is showing {teams[1]} match today?", "Check the 'Broadcasters' section on our site for a full list of global TV channels."),
+        (f"How many draws between {teams[0]} and {teams[1]}?", f"There have been {draws} draws in recent encounters."),
         (f"Is {teams[0]} in good form?", "You can check the 'Recent Form' bubble chart above to see the last 5 match results."),
         (f"Who are the key players in {teams[1]} lineup?", "Refer to our 'Confirmed Lineups' section for the full starting XI."),
         (f"What are the match statistics for {m['fixture']}?", "Live stats like possession and shots are updated in our Statistics card during the game."),
         (f"Are there any free streams for {m['fixture']}?", "We only list official TV broadcasters. We recommend legal viewing via local sports channels."),
-        (f"Will {teams[0]} win today?", f"Probability stats favor {teams[0]} with {odds.get('home',{}).get('expected','-')}%."),
+        (f"Will {teams[0]} win today?", f"Probability stats favor {teams[0]} with {prob}%."),
         (f"How to check live score for {m['fixture']}?", "This page updates broadcast information and key match data in real-time.")
     ]
     html_f = '<div class="sofa-card"><div class="sofa-header">Frequently Asked Questions</div><div style="padding:15px;">'
@@ -118,14 +126,17 @@ all_matches = []
 seen_ids = set()
 for f in sorted(glob.glob("date/*.json")):
     with open(f, 'r', encoding='utf-8') as j:
-        for m in json.load(j):
-            if m.get('match_id') and m['match_id'] not in seen_ids:
-                all_matches.append(m); seen_ids.add(m['match_id'])
+        try:
+            matches = json.load(j)
+            for m in matches:
+                if m.get('match_id') and m['match_id'] not in seen_ids:
+                    all_matches.append(m); seen_ids.add(m['match_id'])
+        except: continue
 
 channels_data = {}
 sitemap_urls = [DOMAIN + "/"]
 
-# --- PROCESS ALL MATCHES (INCLUDING OLD) ---
+# --- PROCESS ALL MATCHES ---
 for m in all_matches:
     m_dt = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
     teams = get_team_names(m['fixture'])
@@ -134,22 +145,23 @@ for m in all_matches:
     m_url = f"{DOMAIN}/match/{m_slug}/{m_date_folder}/"
     sitemap_urls.append(m_url)
     
-    # Sofa Data
     mid = m['match_id']
-    lineup_raw = get_sofa_data("lineups", m_date_folder, mid) or {}
-    stats_raw = get_sofa_data("statistics", m_date_folder, mid) or {}
-    h2h_raw = get_sofa_data("h2h", m_date_folder, mid) or {}
-    odds_raw = get_sofa_data("odds", m_date_folder, mid) or {}
-    form_raw = get_sofa_data("form", m_date_folder, mid) or {}
+    lineup_raw = get_sofa_data("lineups", m_date_folder, mid)
+    stats_raw = get_sofa_data("statistics", m_date_folder, mid)
+    h2h_raw = get_sofa_data("h2h", m_date_folder, mid)
+    odds_raw = get_sofa_data("odds", m_date_folder, mid)
+    form_raw = get_sofa_data("form", m_date_folder, mid)
 
     # FAQ & Schema
     faq_html, faq_schema_list = generate_match_faqs(m, teams, h2h_raw.get('teamDuel', {}), odds_raw)
     
-    # Build Sofa UI
-    odds_ui = f'<div class="flex justify-around p-6"><div>{teams[0]}: {odds_raw.get("home",{}).get("expected","-")}%</div><div>{teams[1]}: {odds_raw.get("away",{}).get("expected","-")}%</div></div>'
+    # UI Blocks with Type Checking
+    h_p = odds_raw.get("home", {}).get("expected", "-") if isinstance(odds_raw, dict) else "-"
+    a_p = odds_raw.get("away", {}).get("expected", "-") if isinstance(odds_raw, dict) else "-"
+    odds_ui = f'<div class="flex justify-around p-6"><div>{teams[0]}: {h_p}%</div><div>{teams[1]}: {a_p}%</div></div>'
     
     form_ui = ""
-    if form_raw:
+    if isinstance(form_raw, dict) and form_raw:
         form_ui = f'<div class="sofa-card"><div class="sofa-header">Recent Form</div>'
         form_ui += f'<div class="stat-row"><span>{teams[0]}</span>{format_form_circles(form_raw.get("homeTeam",{}).get("form"))}</div>'
         form_ui += f'<div class="stat-row"><span>{teams[1]}</span>{format_form_circles(form_raw.get("awayTeam",{}).get("form"))}</div></div>'
@@ -160,27 +172,23 @@ for m in all_matches:
     sofa_blocks += f'<div class="sofa-card"><div class="sofa-header">Stats</div>{build_stats_html(stats_raw)}</div>'
     sofa_blocks += faq_html
 
-    # Broadcast Rows
     rows = ""
     for idx, c in enumerate(m.get('tv_channels', [])):
         pills = "".join([f'<a href="{DOMAIN}/channel/{slugify(ch)}/" class="ch-pill" style="display:inline-block;background:#f1f5f9;color:#2563eb;padding:5px 12px;border-radius:6px;margin:3px;text-decoration:none;font-size:12px;font-weight:700;border:1px solid #cbd5e1;">{ch}</a>' for ch in c['channels']])
         rows += f'<div style="display:flex;padding:12px;border-bottom:1px solid #eee;"><b>{c["country"]}</b><div style="margin-left:auto;">{pills}</div></div>'
         if (idx+1) % 3 == 0: rows += ADS_CODE
 
-    # Schema JSON
     schema_data = {
         "@context": "https://schema.org",
         "@type": "SportsEvent",
         "name": m['fixture'],
         "startDate": m_dt.isoformat(),
         "location": {"@type": "Place", "name": m.get('venue', 'TBA')},
-        "description": f"Watch {m['fixture']} live on TV channels. Lineups, H2H, and stats.",
         "homeTeam": {"@type": "SportsTeam", "name": teams[0]},
         "awayTeam": {"@type": "SportsTeam", "name": teams[1]}
     }
     faq_schema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faq_schema_list}
 
-    # Save Match Page
     m_path = f"match/{m_slug}/{m_date_folder}"
     os.makedirs(m_path, exist_ok=True)
     with open(f"{m_path}/index.html", "w", encoding='utf-8') as mf:
@@ -189,19 +197,16 @@ for m in all_matches:
         content = content.replace("{{LOCAL_DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}"></span>')
         content = content.replace("{{LOCAL_TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}"></span>')
         content = content.replace("{{UNIX}}", str(m['kickoff'])).replace("{{VENUE}}", m.get('venue', 'TBA'))
-        # Meta & Schema
         meta = f'<script type="application/ld+json">{json.dumps(schema_data)}</script>'
         meta += f'<script type="application/ld+json">{json.dumps(faq_schema)}</script>'
-        meta += f'<meta name="description" content="Official TV channels and broadcast listings for {m["fixture"]}. {teams[0]} vs {teams[1]} live stream info, lineups and H2H.">'
         mf.write(content.replace("</head>", f"{meta}</head>"))
 
-    # Populate Channel Data
     for c in m.get('tv_channels', []):
         for ch in c['channels']:
             if ch not in channels_data: channels_data[ch] = []
             channels_data[ch].append({'m': m, 'dt': m_dt, 'league': m.get('league', 'Other')})
 
-# --- DAILY LISTINGS (7 DAY MENU) ---
+# --- DAILY LISTINGS ---
 for i in range(7):
     day = MENU_START_DATE + timedelta(days=i)
     fname = "index.html" if day == TODAY_DATE else f"{day.strftime('%Y-%m-%d')}.html"
@@ -216,9 +221,7 @@ for i in range(7):
         if league != last_league:
             listing_html += f'<div class="league-header" style="background:#1e293b;color:#fff;padding:8px 15px;font-size:12px;">{league}</div>'
             last_league = league
-        
-        m_dt = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
-        listing_html += f'''<a href="{DOMAIN}/match/{slugify(m['fixture'])}/{m_dt.strftime('%Y%m%d')}/" class="match-row" style="display:flex;padding:15px;background:#fff;border-bottom:1px solid #eee;text-decoration:none;color:#333;">
+        listing_html += f'''<a href="{DOMAIN}/match/{slugify(m['fixture'])}/{datetime.fromtimestamp(m['kickoff']).strftime('%Y%m%d')}/" class="match-row" style="display:flex;padding:15px;background:#fff;border-bottom:1px solid #eee;text-decoration:none;color:#333;">
             <div style="min-width:80px;text-align:center;">
                 <div class="auto-date" data-unix="{m['kickoff']}" style="font-size:10px;color:#888;"></div>
                 <div class="auto-time" data-unix="{m['kickoff']}" style="font-weight:bold;color:#2563eb;"></div>
@@ -233,8 +236,7 @@ for i in range(7):
             m_day = MENU_START_DATE + timedelta(days=j)
             m_fn = "index.html" if m_day == TODAY_DATE else f"{m_day.strftime('%Y-%m-%d')}.html"
             menu += f'<a href="{DOMAIN}/{m_fn}" class="date-btn {"active" if m_day==day else ""}"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
-        menu += '</div>'
-        df.write(templates['home'].replace("{{MATCH_LISTING}}", listing_html).replace("{{WEEKLY_MENU}}", menu).replace("{{DOMAIN}}", DOMAIN))
+        df.write(templates['home'].replace("{{MATCH_LISTING}}", listing_html).replace("{{WEEKLY_MENU}}", menu + '</div>').replace("{{DOMAIN}}", DOMAIN))
 
 # --- CHANNEL PAGES ---
 for ch_name, matches in channels_data.items():
@@ -245,7 +247,6 @@ for ch_name, matches in channels_data.items():
     for m_item in matches:
         m = m_item['m']
         c_listing += f'<a href="{DOMAIN}/match/{slugify(m["fixture"])}/{m_item["dt"].strftime("%Y%m%d")}/" style="display:block;padding:15px;border-bottom:1px solid #eee;text-decoration:none;color:#333;">{m["fixture"]}</a>'
-    
     with open(f"channel/{c_slug}/index.html", "w", encoding='utf-8') as cf:
         cf.write(templates['channel'].replace("{{CHANNEL_NAME}}", ch_name).replace("{{MATCH_LISTING}}", c_listing).replace("{{DOMAIN}}", DOMAIN))
 
@@ -254,5 +255,3 @@ sitemap = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitem
 for url in sorted(list(set(sitemap_urls))):
     sitemap += f'<url><loc>{url}</loc><lastmod>{NOW.strftime("%Y-%m-%d")}</lastmod></url>'
 with open("sitemap.xml", "w", encoding='utf-8') as sm: sm.write(sitemap + '</urlset>')
-
-print("Build Successful: All matches archived, Local time enabled, Ads & Schema added.")
