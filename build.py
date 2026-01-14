@@ -1,17 +1,23 @@
-import json, os, re, glob 
+import json, os, re, glob, html
 from datetime import datetime, timedelta, timezone
 
 # --- CONFIGURATION ---
 DOMAIN = "https://tv.cricfoot.net"
 LOCAL_OFFSET = timezone(timedelta(hours=5)) 
-
 NOW = datetime.now(LOCAL_OFFSET)
 TODAY_DATE = NOW.date() 
 
 MENU_START_DATE = TODAY_DATE - timedelta(days=3)
 MENU_END_DATE = TODAY_DATE + timedelta(days=3)
-
 TOP_LEAGUE_IDS = [17, 35, 23, 7, 8, 34, 679]
+
+ADS_CODE = '''
+<div class="ad-container" style="margin: 20px 0; text-align: center;">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5525538810839147" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5525538810839147" data-ad-slot="4345862479" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+'''
 
 MENU_CSS = '''
 <style>
@@ -21,38 +27,20 @@ MENU_CSS = '''
     .date-btn b { font-size: 10px; color: #1e293b; white-space: nowrap; }
     .date-btn.active { background: #2563eb; border-color: #2563eb; }
     .date-btn.active div, .date-btn.active b { color: #fff; }
-    
     .sofa-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; margin-bottom: 20px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
     .sofa-header { background: #f1f5f9; padding: 12px 16px; border-bottom: 1px solid #e2e8f0; font-weight: 800; color: #334155; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
     .stat-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; border-bottom: 1px solid #f8fafc; font-size: 14px; }
     .stat-label { color: #64748b; font-weight: 600; font-size: 12px; text-transform: uppercase; text-align: center; flex: 1; }
     .stat-value { font-weight: 700; color: #1e293b; width: 45px; }
-    
     .lineup-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 1px solid #f1f5f9; }
     .team-col { padding: 15px; }
     .team-col:first-child { border-right: 1px solid #f1f5f9; }
     .team-col b { display: block; margin-bottom: 10px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
     .team-col ul { list-style: none; padding: 0; margin: 0; }
     .team-col li { font-size: 13px; padding: 6px 0; color: #475569; border-bottom: 1px dashed #f1f5f9; }
-    
-    /* Improved Form CSS */
     .form-container { display: flex; gap: 8px; align-items: center; }
-    .form-circle { 
-        width: 24px; 
-        height: 24px; 
-        border-radius: 50%; 
-        display: inline-flex; 
-        align-items: center; 
-        justify-content: center; 
-        color: white; 
-        font-size: 12px; 
-        font-weight: 900; 
-        text-shadow: 0 1px 1px rgba(0,0,0,0.2);
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        border: 2px solid #fff;
-    }
+    .form-circle { width: 24px; height: 24px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: white; font-size: 12px; font-weight: 900; text-shadow: 0 1px 1px rgba(0,0,0,0.2); box-shadow: 0 2px 4px rgba(0,0,0,0.1); border: 2px solid #fff; }
     .team-name-label { font-weight: 700; color: #334155; max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    
     @media (max-width: 480px) { .date-btn b { font-size: 8px; } .date-btn div { font-size: 7px; } }
 </style>
 '''
@@ -61,231 +49,210 @@ def slugify(t):
     return re.sub(r'[^a-z0-9]+', '-', str(t).lower()).strip('-')
 
 def get_team_names(fixture):
-    if " vs " in fixture:
-        return [t.strip() for t in fixture.split(" vs ")]
-    elif " - " in fixture:
-        return [t.strip() for t in fixture.split(" - ")]
+    if " vs " in fixture: return [t.strip() for t in fixture.split(" vs ")]
+    elif " - " in fixture: return [t.strip() for t in fixture.split(" - ")]
     return ["Home", "Away"]
 
 def get_sofa_data(data_type, date_str, match_id):
     path = f"data/{data_type}/{date_str}.json"
     if os.path.exists(path):
         with open(path, 'r', encoding='utf-8') as f:
-            try:
-                data = json.load(f)
-                return data.get(str(match_id))
+            try: return json.load(f).get(str(match_id))
             except: return None
     return None
 
 def format_form_circles(form_list):
-    if not form_list or not isinstance(form_list, list): 
-        return '<span style="color:#cbd5e1; font-size:12px; font-style:italic;">No data</span>'
+    if not form_list or not isinstance(form_list, list): return '<span style="color:#cbd5e1; font-size:12px; font-style:italic;">No data</span>'
     html = '<div class="form-container">'
     for res in form_list:
-        # Better color palette for accessibility
         bg = "#10b981" if res == "W" else "#ef4444" if res == "L" else "#64748b"
         html += f'<span class="form-circle" style="background:{bg}">{res}</span>'
-    html += '</div>'
-    return html
+    return html + '</div>'
 
 def build_lineups_html(data, teams):
-    if not isinstance(data, dict) or 'home' not in data: 
-        return "<div class='p-4 text-gray-400 italic'>Lineups not confirmed yet</div>"
+    if not isinstance(data, dict) or 'home' not in data: return "<div class='p-4 text-gray-400 italic'>Lineups not confirmed yet</div>"
     h_players = "".join([f"<li>{p['player']['name']}</li>" for p in data['home'].get('players', [])[:11]])
     a_players = "".join([f"<li>{p['player']['name']}</li>" for p in data['away'].get('players', [])[:11]])
-    return f'''<div class="lineup-grid">
-        <div class="team-col"><b class="text-blue-600">{teams[0]} XI</b><ul>{h_players}</ul></div>
-        <div class="team-col"><b class="text-red-600">{teams[1]} XI</b><ul>{a_players}</ul></div>
-    </div>'''
+    return f'''<div class="lineup-grid"><div class="team-col"><b>{teams[0]} XI</b><ul>{h_players}</ul></div><div class="team-col"><b>{teams[1]} XI</b><ul>{a_players}</ul></div></div>'''
 
 def build_stats_html(data):
-    if not isinstance(data, dict) or 'statistics' not in data: 
-        return "<div class='p-4 text-gray-400 italic'>Stats available during live match</div>"
+    if not isinstance(data, dict) or 'statistics' not in data: return "<div class='p-4 text-gray-400 italic'>Stats available during live match</div>"
     rows = ""
     try:
         period = next((p for p in data['statistics'] if p['period'] == 'ALL'), data['statistics'][0])
         for group in period['groups']:
             for item in group['statisticsItems']:
-                rows += f'''<div class="stat-row">
-                    <span class="stat-value" style="text-align:left;">{item['home']}</span>
-                    <span class="stat-label">{item['name']}</span>
-                    <span class="stat-value" style="text-align:right;">{item['away']}</span>
-                </div>'''
+                rows += f'<div class="stat-row"><span>{item["home"]}</span><span class="stat-label">{item["name"]}</span><span>{item["away"]}</span></div>'
         return rows
-    except: return "<div class='p-4 text-gray-400 italic'>Stats format error</div>"
+    except: return "No stats"
 
-def build_h2h_html(data, teams):
-    if not isinstance(data, dict): return "<div class='p-4 text-gray-400 italic text-center'>No H2H history available</div>"
-    duel = data.get('teamDuel', data)
-    if not isinstance(duel, dict): return "<div class='p-4 text-gray-400 italic text-center'>No H2H history available</div>"
-    return f'''
-        <div class="stat-row">
-            <span style="font-weight:800; color:#2563eb;">{duel.get('homeWins',0)} <small style="font-weight:400; color:#64748b;">{teams[0]}</small></span>
-            <span class="stat-label">Wins Comparison</span>
-            <span style="font-weight:800; color:#dc2626; text-align:right;">{duel.get('awayWins',0)} <small style="font-weight:400; color:#64748b;">{teams[1]}</small></span>
-        </div>
-        <div class="stat-row" style="justify-content: center; background: #f8fafc; border-top: 1px solid #f1f5f9;">
-            <span class="stat-label" style="color:#1e293b">Total Draws: <b style="font-size:14px;">{duel.get('draws',0)}</b></span>
-        </div>'''
+def generate_match_faqs(m, teams, h2h, odds):
+    # 15 Dynamic FAQs for SEO
+    q_a = [
+        (f"Where to watch {m['fixture']} live?", f"You can watch {m['fixture']} on official channels like Sky Sports, TNT, or local broadcasters listed on our match page."),
+        (f"What time is {teams[0]} vs {teams[1]}?", f"The match is scheduled for {datetime.fromtimestamp(m['kickoff']).strftime('%H:%M')} UTC. Check our local time converter above."),
+        (f"Who is predicted to win {m['fixture']}?", f"Based on probability data, {teams[0]} has a {odds.get('home',{}).get('expected','-')}% win chance."),
+        (f"What are the {teams[0]} vs {teams[1]} lineups?", f"Official lineups are announced 1 hour before kickoff. We update them live on this page."),
+        (f"What is the head to head record for {m['fixture']}?", f"{teams[0]} has won {h2h.get('homeWins',0)} times while {teams[1]} has won {h2h.get('awayWins',0)} times."),
+        (f"Where is {m['fixture']} match being played?", f"The match venue is {m.get('venue', 'TBA')}."),
+        (f"What are the latest betting odds for {teams[0]}?", f"Expected winning probability for the home team is {odds.get('home',{}).get('expected','-')}%."),
+        (f"Which channel is showing {teams[1]} match today?", f"Check the 'Broadcasters' section on our site for a full list of global TV channels."),
+        (f"How many draws between {teams[0]} and {teams[1]}?", f"There have been {h2h.get('draws', 0)} draws in recent encounters."),
+        (f"Is {teams[0]} in good form?", "You can check the 'Recent Form' bubble chart above to see the last 5 match results."),
+        (f"Who are the key players in {teams[1]} lineup?", "Refer to our 'Confirmed Lineups' section for the full starting XI."),
+        (f"What are the match statistics for {m['fixture']}?", "Live stats like possession and shots are updated in our Statistics card during the game."),
+        (f"Are there any free streams for {m['fixture']}?", "We only list official TV broadcasters. We recommend legal viewing via local sports channels."),
+        (f"Will {teams[0]} win today?", f"Probability stats favor {teams[0]} with {odds.get('home',{}).get('expected','-')}%."),
+        (f"How to check live score for {m['fixture']}?", "This page updates broadcast information and key match data in real-time.")
+    ]
+    html_f = '<div class="sofa-card"><div class="sofa-header">Frequently Asked Questions</div><div style="padding:15px;">'
+    schema_f = []
+    for q, a in q_a:
+        html_f += f'<div style="margin-bottom:12px;"><b>{q}</b><p style="color:#64748b;font-size:13px;">{a}</p></div>'
+        schema_f.append({"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}})
+    return html_f + '</div></div>', schema_f
 
-# --- 1. LOAD TEMPLATES ---
-templates = {}
-for name in ['home', 'match', 'channel']:
-    with open(f'{name}_template.html', 'r', encoding='utf-8') as f:
-        templates[name] = f.read()
-
-# --- 2. LOAD DATA ---
+# --- LOAD DATA & TEMPLATES ---
+templates = {n: open(f'{n}_template.html', 'r', encoding='utf-8').read() for n in ['home', 'match', 'channel']}
 all_matches = []
-seen_match_ids = set()
+seen_ids = set()
 for f in sorted(glob.glob("date/*.json")):
     with open(f, 'r', encoding='utf-8') as j:
-        try:
-            data = json.load(j)
-            for m in data:
-                mid = m.get('match_id')
-                if mid and mid not in seen_match_ids:
-                    all_matches.append(m)
-                    seen_match_ids.add(mid)
-        except: continue
+        for m in json.load(j):
+            if m.get('match_id') and m['match_id'] not in seen_ids:
+                all_matches.append(m); seen_ids.add(m['match_id'])
 
 channels_data = {}
 sitemap_urls = [DOMAIN + "/"]
 
-# --- 3. PRE-PROCESS ALL MATCHES ---
+# --- PROCESS ALL MATCHES (INCLUDING OLD) ---
 for m in all_matches:
-    m_dt_local = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
-    m_slug = slugify(m['fixture'])
+    m_dt = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
     teams = get_team_names(m['fixture'])
-    m_date_folder = m_dt_local.strftime('%Y%m%d')
+    m_slug = slugify(m['fixture'])
+    m_date_folder = m_dt.strftime('%Y%m%d')
     m_url = f"{DOMAIN}/match/{m_slug}/{m_date_folder}/"
     sitemap_urls.append(m_url)
-    league = m.get('league', 'Other Football')
+    
+    # Sofa Data
     mid = m['match_id']
+    lineup_raw = get_sofa_data("lineups", m_date_folder, mid) or {}
+    stats_raw = get_sofa_data("statistics", m_date_folder, mid) or {}
+    h2h_raw = get_sofa_data("h2h", m_date_folder, mid) or {}
+    odds_raw = get_sofa_data("odds", m_date_folder, mid) or {}
+    form_raw = get_sofa_data("form", m_date_folder, mid) or {}
 
+    # FAQ & Schema
+    faq_html, faq_schema_list = generate_match_faqs(m, teams, h2h_raw.get('teamDuel', {}), odds_raw)
+    
+    # Build Sofa UI
+    odds_ui = f'<div class="flex justify-around p-6"><div>{teams[0]}: {odds_raw.get("home",{}).get("expected","-")}%</div><div>{teams[1]}: {odds_raw.get("away",{}).get("expected","-")}%</div></div>'
+    
+    form_ui = ""
+    if form_raw:
+        form_ui = f'<div class="sofa-card"><div class="sofa-header">Recent Form</div>'
+        form_ui += f'<div class="stat-row"><span>{teams[0]}</span>{format_form_circles(form_raw.get("homeTeam",{}).get("form"))}</div>'
+        form_ui += f'<div class="stat-row"><span>{teams[1]}</span>{format_form_circles(form_raw.get("awayTeam",{}).get("form"))}</div></div>'
+
+    sofa_blocks = f'<div class="sofa-card"><div class="sofa-header">Win Probability</div>{odds_ui}</div>'
+    sofa_blocks += form_ui
+    sofa_blocks += f'<div class="sofa-card"><div class="sofa-header">Lineups</div>{build_lineups_html(lineup_raw, teams)}</div>'
+    sofa_blocks += f'<div class="sofa-card"><div class="sofa-header">Stats</div>{build_stats_html(stats_raw)}</div>'
+    sofa_blocks += faq_html
+
+    # Broadcast Rows
+    rows = ""
+    for idx, c in enumerate(m.get('tv_channels', [])):
+        pills = "".join([f'<a href="{DOMAIN}/channel/{slugify(ch)}/" class="ch-pill" style="display:inline-block;background:#f1f5f9;color:#2563eb;padding:5px 12px;border-radius:6px;margin:3px;text-decoration:none;font-size:12px;font-weight:700;border:1px solid #cbd5e1;">{ch}</a>' for ch in c['channels']])
+        rows += f'<div style="display:flex;padding:12px;border-bottom:1px solid #eee;"><b>{c["country"]}</b><div style="margin-left:auto;">{pills}</div></div>'
+        if (idx+1) % 3 == 0: rows += ADS_CODE
+
+    # Schema JSON
+    schema_data = {
+        "@context": "https://schema.org",
+        "@type": "SportsEvent",
+        "name": m['fixture'],
+        "startDate": m_dt.isoformat(),
+        "location": {"@type": "Place", "name": m.get('venue', 'TBA')},
+        "description": f"Watch {m['fixture']} live on TV channels. Lineups, H2H, and stats.",
+        "homeTeam": {"@type": "SportsTeam", "name": teams[0]},
+        "awayTeam": {"@type": "SportsTeam", "name": teams[1]}
+    }
+    faq_schema = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faq_schema_list}
+
+    # Save Match Page
+    m_path = f"match/{m_slug}/{m_date_folder}"
+    os.makedirs(m_path, exist_ok=True)
+    with open(f"{m_path}/index.html", "w", encoding='utf-8') as mf:
+        content = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
+        content = content.replace("{{BROADCAST_ROWS}}", rows).replace("{{SOFA_DATA}}", sofa_blocks)
+        content = content.replace("{{LOCAL_DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}"></span>')
+        content = content.replace("{{LOCAL_TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}"></span>')
+        content = content.replace("{{UNIX}}", str(m['kickoff'])).replace("{{VENUE}}", m.get('venue', 'TBA'))
+        # Meta & Schema
+        meta = f'<script type="application/ld+json">{json.dumps(schema_data)}</script>'
+        meta += f'<script type="application/ld+json">{json.dumps(faq_schema)}</script>'
+        meta += f'<meta name="description" content="Official TV channels and broadcast listings for {m["fixture"]}. {teams[0]} vs {teams[1]} live stream info, lineups and H2H.">'
+        mf.write(content.replace("</head>", f"{meta}</head>"))
+
+    # Populate Channel Data
     for c in m.get('tv_channels', []):
         for ch in c['channels']:
             if ch not in channels_data: channels_data[ch] = []
-            if int(m['kickoff']) > (NOW.timestamp() - 86400):
-                if not any(x['m']['match_id'] == mid for x in channels_data[ch]):
-                    channels_data[ch].append({'m': m, 'dt': m_dt_local, 'league': league})
+            channels_data[ch].append({'m': m, 'dt': m_dt, 'league': m.get('league', 'Other')})
 
-    # Sofa Data
-    lineup_raw = get_sofa_data("lineups", m_date_folder, mid)
-    stats_raw = get_sofa_data("statistics", m_date_folder, mid)
-    h2h_raw = get_sofa_data("h2h", m_date_folder, mid)
-    odds_raw = get_sofa_data("odds", m_date_folder, mid)
-    form_raw = get_sofa_data("form", m_date_folder, mid)
-
-    # Probability
-    odds_html = "<div class='p-5 text-center text-gray-400 italic'>Win Probability N/A</div>"
-    if isinstance(odds_raw, dict):
-        h_prob = odds_raw.get('home', {}).get('expected', '-') if odds_raw.get('home') else '-'
-        a_prob = odds_raw.get('away', {}).get('expected', '-') if odds_raw.get('away') else '-'
-        odds_html = f'''<div class="flex justify-around p-6 items-center">
-            <div class="text-center"><div style="font-size:10px; color:#64748b; font-weight:800; margin-bottom:5px;">{teams[0].upper()}</div><div style="font-size:26px; font-weight:900; color:#2563eb;">{h_prob}%</div></div>
-            <div style="height:45px; width:1px; background:#e2e8f0;"></div>
-            <div class="text-center"><div style="font-size:10px; color:#64748b; font-weight:800; margin-bottom:5px;">{teams[1].upper()}</div><div style="font-size:26px; font-weight:900; color:#dc2626;">{a_prob}%</div></div>
-        </div>'''
-
-    # Form (Using updated Team Names and Spacing)
-    form_html = ""
-    if isinstance(form_raw, dict):
-        h_f = form_raw.get('homeTeam', {}).get('form')
-        a_f = form_raw.get('awayTeam', {}).get('form')
-        if h_f or a_f:
-            form_html = f'''<div class="sofa-card"><div class="sofa-header">Recent Form</div>
-                <div class="stat-row"><span class="team-name-label">{teams[0]}</span>{format_form_circles(h_f)}</div>
-                <div class="stat-row"><span class="team-name-label">{teams[1]}</span>{format_form_circles(a_f)}</div>
-            </div>'''
-
-    m_path = f"match/{m_slug}/{m_date_folder}"
-    os.makedirs(m_path, exist_ok=True)
-    
-    rows = ""
-    for c in m.get('tv_channels', []):
-        pills = "".join([f'<a href="{DOMAIN}/channel/{slugify(ch)}/" class="ch-pill" style="display:inline-block;background:#f1f5f9;color:#2563eb;padding:5px 12px;border-radius:6px;margin:3px;text-decoration:none;font-size:12px;font-weight:700;border:1px solid #cbd5e1; transition:0.2s;">{ch}</a>' for ch in c['channels']])
-        rows += f'<div style="display:flex;padding:14px;border-bottom:1px solid #edf2f7;background:#fff;align-items:center;"><div style="flex:0 0 110px;font-weight:800;color:#64748b;font-size:11px;text-transform:uppercase; letter-spacing:0.5px;">{c["country"]}</div><div style="flex:1;">{pills}</div></div>'
-
-    sofa_blocks = f'''
-    <div class="sofa-card"><div class="sofa-header">Win Probability</div>{odds_html}</div>
-    {form_html}
-    <div class="sofa-card"><div class="sofa-header">Confirmed Lineups</div>{build_lineups_html(lineup_raw, teams)}</div>
-    <div class="sofa-card"><div class="sofa-header">Match Statistics</div>{build_stats_html(stats_raw)}</div>
-    <div class="sofa-card"><div class="sofa-header">Head to Head History</div>{build_h2h_html(h2h_raw, teams)}</div>
-    '''
-
-    with open(f"{m_path}/index.html", "w", encoding='utf-8') as mf:
-        m_html = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
-        m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
-        m_html = m_html.replace("{{SOFA_DATA}}", sofa_blocks)
-        m_html = m_html.replace("{{LOCAL_DATE}}", m_dt_local.strftime("%d %b %Y"))
-        m_html = m_html.replace("{{LOCAL_TIME}}", m_dt_local.strftime("%H:%M"))
-        m_html = m_html.replace("{{UNIX}}", str(m['kickoff'])).replace("{{VENUE}}", m.get('venue', 'TBA')) 
-        mf.write(m_html)
-
-# --- 4. DAILY LISTING PAGES ---
+# --- DAILY LISTINGS (7 DAY MENU) ---
 for i in range(7):
     day = MENU_START_DATE + timedelta(days=i)
     fname = "index.html" if day == TODAY_DATE else f"{day.strftime('%Y-%m-%d')}.html"
+    sitemap_urls.append(f"{DOMAIN}/{fname}")
     
-    page_specific_menu = f'{MENU_CSS}<div class="weekly-menu-container">'
-    for j in range(7):
-        m_day = MENU_START_DATE + timedelta(days=j)
-        m_fname = "index.html" if m_day == TODAY_DATE else f"{m_day.strftime('%Y-%m-%d')}.html"
-        active_class = "active" if m_day == day else ""
-        page_specific_menu += f'<a href="{DOMAIN}/{m_fname}" class="date-btn {active_class}"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
-    page_specific_menu += '</div>'
-
     day_matches = [m for m in all_matches if datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET).date() == day]
-    day_matches.sort(key=lambda x: (x.get('league_id') not in TOP_LEAGUE_IDS, x.get('league', 'Other Football'), x['kickoff']))
+    day_matches.sort(key=lambda x: (x.get('league_id') not in TOP_LEAGUE_IDS, x.get('league', ''), x['kickoff']))
 
-    listing_html, last_league = "", ""
-    for m in day_matches:
+    listing_html, last_league = ADS_CODE, ""
+    for idx, m in enumerate(day_matches):
         league = m.get('league', 'Other Football')
         if league != last_league:
-            listing_html += f'<div class="league-header" style="background:#1e293b;color:#fff;padding:10px 16px;font-weight:bold;font-size:12px;text-transform:uppercase;letter-spacing:0.5px;">{league}</div>'
+            listing_html += f'<div class="league-header" style="background:#1e293b;color:#fff;padding:8px 15px;font-size:12px;">{league}</div>'
             last_league = league
         
         m_dt = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
-        m_url = f"{DOMAIN}/match/{slugify(m['fixture'])}/{m_dt.strftime('%Y%m%d')}/"
-        listing_html += f'''<a href="{m_url}" class="match-row" style="display:flex;align-items:center;padding:16px;background:#fff;border-bottom:1px solid #f1f5f9;text-decoration:none; transition:0.2s;">
-            <div style="min-width:75px;text-align:center;border-right:1px solid #eee;margin-right:18px;">
-                <div style="font-size:10px;color:#94a3b8;font-weight:bold;">{m_dt.strftime('%d %b')}</div>
-                <div style="font-weight:900;color:#2563eb;font-size:16px;">{m_dt.strftime('%H:%M')}</div>
+        listing_html += f'''<a href="{DOMAIN}/match/{slugify(m['fixture'])}/{m_dt.strftime('%Y%m%d')}/" class="match-row" style="display:flex;padding:15px;background:#fff;border-bottom:1px solid #eee;text-decoration:none;color:#333;">
+            <div style="min-width:80px;text-align:center;">
+                <div class="auto-date" data-unix="{m['kickoff']}" style="font-size:10px;color:#888;"></div>
+                <div class="auto-time" data-unix="{m['kickoff']}" style="font-weight:bold;color:#2563eb;"></div>
             </div>
-            <div style="color:#1e293b;font-weight:700;font-size:15px;">{m['fixture']}</div>
+            <div style="margin-left:15px;font-weight:600;">{m['fixture']}</div>
         </a>'''
+        if (idx+1) % 10 == 0: listing_html += ADS_CODE
 
     with open(fname, "w", encoding='utf-8') as df:
-        output = templates['home'].replace("{{MATCH_LISTING}}", listing_html).replace("{{WEEKLY_MENU}}", page_specific_menu)
-        output = output.replace("{{DOMAIN}}", DOMAIN).replace("{{SELECTED_DATE}}", day.strftime("%A, %b %d, %Y"))
-        output = output.replace("{{PAGE_TITLE}}", f"TV Channels For {day.strftime('%A, %b %d, %Y')}")
-        df.write(output)
+        menu = f'{MENU_CSS}<div class="weekly-menu-container">'
+        for j in range(7):
+            m_day = MENU_START_DATE + timedelta(days=j)
+            m_fn = "index.html" if m_day == TODAY_DATE else f"{m_day.strftime('%Y-%m-%d')}.html"
+            menu += f'<a href="{DOMAIN}/{m_fn}" class="date-btn {"active" if m_day==day else ""}"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
+        menu += '</div>'
+        df.write(templates['home'].replace("{{MATCH_LISTING}}", listing_html).replace("{{WEEKLY_MENU}}", menu).replace("{{DOMAIN}}", DOMAIN))
 
-# --- 5. CHANNEL PAGES ---
+# --- CHANNEL PAGES ---
 for ch_name, matches in channels_data.items():
     c_slug = slugify(ch_name)
-    c_dir = f"channel/{c_slug}"
-    os.makedirs(c_dir, exist_ok=True)
-    c_listing = ""
-    matches.sort(key=lambda x: x['m']['kickoff'])
-    for item in matches: 
-        m, dt, m_league = item['m'], item['dt'], item['league']
-        c_listing += f'''<a href="{DOMAIN}/match/{slugify(m['fixture'])}/{dt.strftime('%Y%m%d')}/" class="match-row" style="display:flex;align-items:center;padding:16px;background:#fff;border-bottom:1px solid #f1f5f9;text-decoration:none;">
-            <div style="min-width:75px;text-align:center;border-right:1px solid #eee;margin-right:18px;">
-                <div style="font-size:10px;color:#94a3b8;font-weight:bold;">{dt.strftime('%d %b')}</div>
-                <div style="font-weight:900;color:#2563eb;font-size:16px;">{dt.strftime('%H:%M')}</div>
-            </div>
-            <div><div style="color:#1e293b;font-weight:700;font-size:15px;">{m['fixture']}</div><div style="font-size:10px;color:#6366f1;font-weight:700;text-transform:uppercase;">{m_league}</div></div>
-        </a>'''
-    with open(f"{c_dir}/index.html", "w", encoding='utf-8') as cf:
+    os.makedirs(f"channel/{c_slug}", exist_ok=True)
+    c_listing = ADS_CODE
+    matches.sort(key=lambda x: x['m']['kickoff'], reverse=True)
+    for m_item in matches:
+        m = m_item['m']
+        c_listing += f'<a href="{DOMAIN}/match/{slugify(m["fixture"])}/{m_item["dt"].strftime("%Y%m%d")}/" style="display:block;padding:15px;border-bottom:1px solid #eee;text-decoration:none;color:#333;">{m["fixture"]}</a>'
+    
+    with open(f"channel/{c_slug}/index.html", "w", encoding='utf-8') as cf:
         cf.write(templates['channel'].replace("{{CHANNEL_NAME}}", ch_name).replace("{{MATCH_LISTING}}", c_listing).replace("{{DOMAIN}}", DOMAIN))
 
-# --- 6. SITEMAP ---
-sitemap_content = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+# --- SITEMAP ---
+sitemap = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
 for url in sorted(list(set(sitemap_urls))):
-    sitemap_content += f'<url><loc>{url}</loc><lastmod>{NOW.strftime("%Y-%m-%d")}</lastmod></url>'
-sitemap_content += '</urlset>'
-with open("sitemap.xml", "w", encoding='utf-8') as sm: sm.write(sitemap_content)
+    sitemap += f'<url><loc>{url}</loc><lastmod>{NOW.strftime("%Y-%m-%d")}</lastmod></url>'
+with open("sitemap.xml", "w", encoding='utf-8') as sm: sm.write(sitemap + '</urlset>')
 
-print("Build Successful: UI/Form spacing updated.")
+print("Build Successful: All matches archived, Local time enabled, Ads & Schema added.")
