@@ -60,7 +60,7 @@ def get_sofa_data(data_type, date_str, match_id):
             try:
                 data = json.load(f)
                 res = data.get(str(match_id))
-                return res if res is not None else {}
+                return res if isinstance(res, dict) else {}
             except: return {}
     return {}
 
@@ -74,8 +74,8 @@ def format_form_circles(form_list):
 
 def build_lineups_html(data, teams):
     if not isinstance(data, dict) or not data.get('home'): return "<div class='p-4 text-gray-400 italic'>Lineups not confirmed yet</div>"
-    h_players = "".join([f"<li>{p['player']['name']}</li>" for p in data['home'].get('players', [])[:11]])
-    a_players = "".join([f"<li>{p['player']['name']}</li>" for p in data['away'].get('players', [])[:11]])
+    h_players = "".join([f"<li>{p['player']['name']}</li>" for p in data.get('home', {}).get('players', [])[:11]])
+    a_players = "".join([f"<li>{p['player']['name']}</li>" for p in data.get('away', {}).get('players', [])[:11]])
     return f'''<div class="lineup-grid"><div class="team-col"><b>{teams[0]} XI</b><ul>{h_players}</ul></div><div class="team-col"><b>{teams[1]} XI</b><ul>{a_players}</ul></div></div>'''
 
 def build_stats_html(data):
@@ -90,11 +90,14 @@ def build_stats_html(data):
     except: return "No stats"
 
 def generate_match_faqs(m, teams, h2h, odds):
-    # Safety checks for FAQ data
-    h_win = h2h.get('homeWins', 0) if isinstance(h2h, dict) else 0
-    a_win = h2h.get('awayWins', 0) if isinstance(h2h, dict) else 0
-    draws = h2h.get('draws', 0) if isinstance(h2h, dict) else 0
-    prob = odds.get('home', {}).get('expected', '-') if isinstance(odds, dict) else '-'
+    # Null-safe extraction for FAQ data
+    h2h_data = h2h if isinstance(h2h, dict) else {}
+    odds_data = odds if isinstance(odds, dict) else {}
+    
+    h_win = h2h_data.get('homeWins', 0)
+    a_win = h2h_data.get('awayWins', 0)
+    draws = h2h_data.get('draws', 0)
+    prob = odds_data.get('home', {}).get('expected', '-') if isinstance(odds_data.get('home'), dict) else '-'
 
     q_a = [
         (f"Where to watch {m['fixture']} live?", f"You can watch {m['fixture']} on official channels like Sky Sports, TNT, or local broadcasters listed on our match page."),
@@ -127,8 +130,8 @@ seen_ids = set()
 for f in sorted(glob.glob("date/*.json")):
     with open(f, 'r', encoding='utf-8') as j:
         try:
-            matches = json.load(j)
-            for m in matches:
+            matches_data = json.load(j)
+            for m in matches_data:
                 if m.get('match_id') and m['match_id'] not in seen_ids:
                     all_matches.append(m); seen_ids.add(m['match_id'])
         except: continue
@@ -153,11 +156,16 @@ for m in all_matches:
     form_raw = get_sofa_data("form", m_date_folder, mid)
 
     # FAQ & Schema
-    faq_html, faq_schema_list = generate_match_faqs(m, teams, h2h_raw.get('teamDuel', {}), odds_raw)
+    h2h_duel = h2h_raw.get('teamDuel', {}) if isinstance(h2h_raw, dict) else {}
+    faq_html, faq_schema_list = generate_match_faqs(m, teams, h2h_duel, odds_raw)
     
-    # UI Blocks with Type Checking
-    h_p = odds_raw.get("home", {}).get("expected", "-") if isinstance(odds_raw, dict) else "-"
-    a_p = odds_raw.get("away", {}).get("expected", "-") if isinstance(odds_raw, dict) else "-"
+    # UI Odds Logic
+    h_p = "-"
+    a_p = "-"
+    if isinstance(odds_raw, dict):
+        h_p = odds_raw.get("home", {}).get("expected", "-") if isinstance(odds_raw.get("home"), dict) else "-"
+        a_p = odds_raw.get("away", {}).get("expected", "-") if isinstance(odds_raw.get("away"), dict) else "-"
+    
     odds_ui = f'<div class="flex justify-around p-6"><div>{teams[0]}: {h_p}%</div><div>{teams[1]}: {a_p}%</div></div>'
     
     form_ui = ""
