@@ -1,10 +1,10 @@
-import json, os, re, glob, time, tempfile, shutil
+import json, os, re, glob, time, tempfile, shutil 
 from datetime import datetime, timedelta, timezone
 
 # --- CONFIGURATION ---
 DOMAIN = "https://tv.cricfoot.net"
 
-# Auto-detect system timezone offset    
+# Auto-detect system timezone offset
 LOCAL_OFFSET = timezone(timedelta(seconds=-time.timezone if time.daylight == 0 else -time.altzone))
 
 DIST_DIR = "dist"
@@ -12,12 +12,12 @@ TEMP_DIR = "dist_temp"
 
 # Clean and create temp directory
 if os.path.exists(TEMP_DIR):
-    shutil.rmtree(TEMP_DIR) 
+    shutil.rmtree(TEMP_DIR)
 os.makedirs(TEMP_DIR, exist_ok=True)
 
 NOW = datetime.now(LOCAL_OFFSET)
 TODAY_DATE = NOW.date()
- 
+
 # CENTER LOGIC: To make Today the 4th item, we start the menu 3 days ago
 MENU_START_DATE = TODAY_DATE - timedelta(days=3)
 # We calculate the end date of the menu as well
@@ -67,33 +67,6 @@ MENU_CSS = '''
         .weekly-menu-container { gap: 2px; padding: 5px 2px; }
     }
 </style>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Get current page URL
-    var currentPath = window.location.pathname;
-    var currentPage = currentPath.split('/').pop() || 'index.html';
-    
-    // If we're at root or just domain, it's index.html
-    if (currentPath === '/' || currentPath === '') {
-        currentPage = 'index.html';
-    }
-    
-    // Find all date buttons and mark the matching one as active
-    var dateButtons = document.querySelectorAll('.date-btn');
-    dateButtons.forEach(function(btn) {
-        var btnHref = btn.getAttribute('href');
-        var btnPage = btnHref.split('/').pop();
-        
-        // Remove any existing active class
-        btn.classList.remove('active');
-        
-        // Check if this button matches current page
-        if (btnPage === currentPage) {
-            btn.classList.add('active');
-        }
-    });
-});
-</script>
 '''
 
 def slugify(t): 
@@ -209,9 +182,9 @@ for day in ALL_DATES:
     for j in range(7):
         m_day = MENU_START_DATE + timedelta(days=j)
         m_fname = "index.html" if m_day == TODAY_DATE else f"{m_day.strftime('%Y-%m-%d')}.html"
-        # Remove server-side active class - will be handled by JavaScript
+        active_class = "active" if m_day == TODAY_DATE else ""
         page_specific_menu += f'''
-        <a href="{DOMAIN}/{m_fname}" class="date-btn">
+        <a href="{DOMAIN}/{m_fname}" class="date-btn {active_class}">
             <div>{m_day.strftime("%a")}</div>
             <b>{m_day.strftime("%b %d")}</b>
         </a>'''
@@ -277,8 +250,8 @@ for ch_name, matches in channels_data.items():
     for j in range(7):
         m_day = MENU_START_DATE + timedelta(days=j)
         m_fname = "index.html" if m_day == TODAY_DATE else f"{m_day.strftime('%Y-%m-%d')}.html"
-        # Remove server-side active class - will be handled by JavaScript
-        channel_menu += f'<a href="{DOMAIN}/{m_fname}" class="date-btn"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
+        active_class = "active" if m_day == TODAY_DATE else ""
+        channel_menu += f'<a href="{DOMAIN}/{m_fname}" class="date-btn {active_class}"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
     channel_menu += '</div>'
  
     c_listing = ""
