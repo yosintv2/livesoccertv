@@ -292,3 +292,21 @@ else:
     os.rename(TEMP_DIR, DIST_DIR)
 
 print("✅ Build complete → dist/ (zero downtime)")
+
+
+# --- 8. GITHUB PAGES CONFIGURATION ---
+print("Applying GitHub Pages fixes...")
+
+# 1. Create .nojekyll in the TEMP directory to bypass Jekyll processing
+open(os.path.join(TEMP_DIR, ".nojekyll"), "w").close()
+
+# 2. Copy your 404.html into the TEMP directory so it is deployed
+if os.path.exists("404.html"):
+    shutil.copy("404.html", os.path.join(TEMP_DIR, "404.html"))
+    print("✅ 404.html included in build")
+else:
+    # Basic fallback if 404.html is missing from project root
+    fallback_404 = "<html><head><meta http-equiv='refresh' content='0;url=/'></head><body>Redirecting...</body></html>"
+    with open(os.path.join(TEMP_DIR, "404.html"), "w") as f:
+        f.write(fallback_404)
+    print("⚠️ 404.html missing from root, created redirect fallback")
