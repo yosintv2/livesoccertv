@@ -41,7 +41,7 @@
     </div>
 
     <script>
-        // Set the countdown time in seconds (Changed to 30)
+        // Set the countdown time in seconds
         let currentTime = 30;
 
         const countdownElement = document.getElementById('countdown');
@@ -50,7 +50,6 @@
             const minutes = Math.floor(currentTime / 60);
             const seconds = currentTime % 60;
 
-            // Format numbers to always show two digits (00:00 style)
             const displayMinutes = minutes < 10 ? '0' + minutes : minutes;
             const displaySeconds = seconds < 10 ? '0' + seconds : seconds;
 
@@ -58,13 +57,14 @@
 
             if (currentTime <= 0) {
                 clearInterval(timerInterval);
-                countdownElement.innerText = "Ready!";
+                // NEW: Redirect to homepage
+                countdownElement.innerText = "Redirecting...";
+                window.location.href = "https://tv.cricfoot.net/";
             } else {
                 currentTime--;
             }
         };
 
-        // Run every second
         const timerInterval = setInterval(updateCountdown, 1000);
     </script>
 </body>
