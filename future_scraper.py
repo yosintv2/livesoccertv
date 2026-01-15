@@ -105,12 +105,23 @@ async def process_day(session, days_offset):
     
     print(f"DONE: Generated {save_path}")
 
+To update your scraper to cover 7 days instead of 3, you only need to modify the main() function at the bottom of your script.
+
+Instead of passing the list [1, 2, 3], we will use range(1, 8). This will loop through Day 1 (tomorrow) all the way to Day 7.
+
+Updated Main Function
+Replace your existing main() function with this code:
+
+Python
+
 async def main():
     async with AsyncSession() as session:
-        # Loop through Tomorrow (1), Day After (2), and 3 Days Later (3)
-        for offset in [1, 2, 3]:
+        # range(1, 8) generates numbers: 1, 2, 3, 4, 5, 6, 7
+        # This covers exactly one week of upcoming fixtures
+        for offset in range(1, 8):
             await process_day(session, offset)
-            await asyncio.sleep(1)
+            # Short sleep to prevent hitting SofaScore rate limits
+            await asyncio.sleep(2)
 
 if __name__ == "__main__":
     asyncio.run(main())
