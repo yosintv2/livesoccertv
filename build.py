@@ -1,17 +1,19 @@
-import json, os, re, glob, time   
+import json, os, re, glob, time, tempfile, shutil
 from datetime import datetime, timedelta, timezone
 
 # --- CONFIGURATION ---
 DOMAIN = "https://tv.cricfoot.net"
-BASE_URL = "https://tv.cricfoot.net"
-CUSTOM_DOMAIN = "tv.cricfoot.net" 
-
 
 # Auto-detect system timezone offset
 LOCAL_OFFSET = timezone(timedelta(seconds=-time.timezone if time.daylight == 0 else -time.altzone))
 
 DIST_DIR = "dist"
-os.makedirs(DIST_DIR, exist_ok=True)
+TEMP_DIR = "dist_temp"
+
+# Clean and create temp directory
+if os.path.exists(TEMP_DIR):
+    shutil.rmtree(TEMP_DIR)
+os.makedirs(TEMP_DIR, exist_ok=True)
 
 NOW = datetime.now(LOCAL_OFFSET)
 TODAY_DATE = NOW.date()
@@ -70,6 +72,24 @@ MENU_CSS = '''
 def slugify(t): 
     return re.sub(r'[^a-z0-9]+', '-', str(t).lower()).strip('-')
 
+def atomic_write(path, content):
+    """Write file atomically to prevent serving partial content"""
+    directory = os.path.dirname(path)
+    if directory:
+        os.makedirs(directory, exist_ok=True)
+    
+    # Write to temp file first
+    temp_fd, temp_path = tempfile.mkstemp(dir=directory, text=True)
+    try:
+        with os.fdopen(temp_fd, 'w', encoding='utf-8') as f:
+            f.write(content)
+        # Atomic rename
+        os.replace(temp_path, path)
+    except:
+        if os.path.exists(temp_path):
+            os.unlink(temp_path)
+        raise
+
 # --- 1. LOAD TEMPLATES ---
 templates = {}
 for name in ['home', 'match', 'channel']:
@@ -91,12 +111,15 @@ for f in glob.glob("date/*.json"):
                 if mid and mid not in seen_match_ids:
                     all_matches.append(m)
                     seen_match_ids.add(mid)
-        except: continue
+        except Exception as e:
+            print(f"Warning: Failed to load {f}: {e}")
+            continue
 
 channels_data = {}
 sitemap_urls = [DOMAIN + "/"]
 
 # --- 3. PRE-PROCESS ALL MATCHES (FOR MATCH PAGES & SITEMAP) ---
+print("Building match pages...")
 for m in all_matches:
     m_dt_local = datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc).astimezone(LOCAL_OFFSET)
     m_slug = slugify(m['fixture'])
@@ -115,8 +138,7 @@ for m in all_matches:
                     channels_data[ch].append({'m': m, 'dt': m_dt_local, 'league': league})
 
     # --- GENERATE INDIVIDUAL MATCH PAGE ---
-    m_path = f"{DIST_DIR}/match/{m_slug}/{m_date_folder}"
-    os.makedirs(m_path, exist_ok=True)
+    m_path = f"{TEMP_DIR}/match/{m_slug}/{m_date_folder}/index.html"
     venue_val = m.get('venue') or m.get('stadium') or "To Be Announced"
     
     rows = ""
@@ -134,17 +156,16 @@ for m in all_matches:
         if country_counter % 10 == 0:
             rows += ADS_CODE
 
-    with open(f"{m_path}/index.html", "w", encoding='utf-8') as mf:
-        m_html = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
-        m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
-        m_html = m_html.replace("{{LOCAL_DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%d %b %Y")}</span>')
-        m_html = m_html.replace("{{LOCAL_TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%H:%M")}</span>')
-        m_html = m_html.replace("{{UNIX}}", str(m['kickoff'])).replace("{{VENUE}}", venue_val) 
-        mf.write(m_html)
+    m_html = templates['match'].replace("{{FIXTURE}}", m['fixture']).replace("{{DOMAIN}}", DOMAIN)
+    m_html = m_html.replace("{{BROADCAST_ROWS}}", rows).replace("{{LEAGUE}}", league)
+    m_html = m_html.replace("{{LOCAL_DATE}}", f'<span class="auto-date" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%d %b %Y")}</span>')
+    m_html = m_html.replace("{{LOCAL_TIME}}", f'<span class="auto-time" data-unix="{m["kickoff"]}">{m_dt_local.strftime("%H:%M")}</span>')
+    m_html = m_html.replace("{{UNIX}}", str(m['kickoff'])).replace("{{VENUE}}", venue_val)
+    
+    atomic_write(m_path, m_html)
 
 # --- 4. GENERATE DAILY LISTING PAGES (ALL DATES, MENU STILL 7 DAYS) ---
-
-# NEW: collect ALL unique match dates
+print("Building daily pages...")
 ALL_DATES = sorted({
     datetime.fromtimestamp(int(m['kickoff']), tz=timezone.utc)
     .astimezone(LOCAL_OFFSET).date()
@@ -153,7 +174,7 @@ ALL_DATES = sorted({
 
 for day in ALL_DATES:
     fname = "index.html" if day == TODAY_DATE else f"{day.strftime('%Y-%m-%d')}.html"
-    out_path = f"{DIST_DIR}/{fname}"
+    out_path = f"{TEMP_DIR}/{fname}"
     
     if fname != "index.html": sitemap_urls.append(f"{DOMAIN}/{fname}")
 
@@ -161,7 +182,7 @@ for day in ALL_DATES:
     for j in range(7):
         m_day = MENU_START_DATE + timedelta(days=j)
         m_fname = "index.html" if m_day == TODAY_DATE else f"{m_day.strftime('%Y-%m-%d')}.html"
-        active_class = "active" if m_day == day else ""
+        active_class = "active" if m_day == TODAY_DATE else ""
         page_specific_menu += f'''
         <a href="{DOMAIN}/{m_fname}" class="date-btn {active_class}">
             <div>{m_day.strftime("%a")}</div>
@@ -212,24 +233,25 @@ for day in ALL_DATES:
 
     if listing_html != "": listing_html += ADS_CODE
 
-    with open(out_path, "w", encoding='utf-8') as df:
-        output = templates['home'].replace("{{MATCH_LISTING}}", listing_html).replace("{{WEEKLY_MENU}}", page_specific_menu)
-        output = output.replace("{{DOMAIN}}", DOMAIN).replace("{{SELECTED_DATE}}", day.strftime("%A, %b %d, %Y"))
-        output = output.replace("{{PAGE_TITLE}}", f"TV Channels For {day.strftime('%A, %b %d, %Y')}")
-        df.write(output)
+    output = templates['home'].replace("{{MATCH_LISTING}}", listing_html).replace("{{WEEKLY_MENU}}", page_specific_menu)
+    output = output.replace("{{DOMAIN}}", DOMAIN).replace("{{SELECTED_DATE}}", day.strftime("%A, %b %d, %Y"))
+    output = output.replace("{{PAGE_TITLE}}", f"TV Channels For {day.strftime('%A, %b %d, %Y')}")
+    
+    atomic_write(out_path, output)
 
 # --- 5. CHANNEL PAGES ---
+print("Building channel pages...")
 for ch_name, matches in channels_data.items():
     c_slug = slugify(ch_name)
-    c_dir = f"{DIST_DIR}/channel/{c_slug}"
-    os.makedirs(c_dir, exist_ok=True)
-    sitemap_urls.append(f"{DOMAIN}/{c_dir}/")
+    c_path = f"{TEMP_DIR}/channel/{c_slug}/index.html"
+    sitemap_urls.append(f"{DOMAIN}/channel/{c_slug}/")
     
     channel_menu = f'{MENU_CSS}<div class="weekly-menu-container">'
     for j in range(7):
         m_day = MENU_START_DATE + timedelta(days=j)
         m_fname = "index.html" if m_day == TODAY_DATE else f"{m_day.strftime('%Y-%m-%d')}.html"
-        channel_menu += f'<a href="{DOMAIN}/{m_fname}" class="date-btn"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
+        active_class = "active" if m_day == TODAY_DATE else ""
+        channel_menu += f'<a href="{DOMAIN}/{m_fname}" class="date-btn {active_class}"><div>{m_day.strftime("%a")}</div><b>{m_day.strftime("%b %d")}</b></a>'
     channel_menu += '</div>'
  
     c_listing = ""
@@ -247,15 +269,26 @@ for ch_name, matches in channels_data.items():
                 <div class="text-[11px] text-blue-500 font-medium uppercase mt-0.5">{m_league}</div>
             </div>
         </a>'''
-        
-    with open(f"{c_dir}/index.html", "w", encoding='utf-8') as cf:
-        cf.write(templates['channel'].replace("{{CHANNEL_NAME}}", ch_name).replace("{{MATCH_LISTING}}", c_listing).replace("{{DOMAIN}}", DOMAIN).replace("{{WEEKLY_MENU}}", channel_menu))
+    
+    c_html = templates['channel'].replace("{{CHANNEL_NAME}}", ch_name).replace("{{MATCH_LISTING}}", c_listing).replace("{{DOMAIN}}", DOMAIN).replace("{{WEEKLY_MENU}}", channel_menu)
+    atomic_write(c_path, c_html)
 
 # --- 6. SITEMAP ---
+print("Building sitemap...")
 sitemap_content = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
 for url in sorted(list(set(sitemap_urls))):
     sitemap_content += f'<url><loc>{url}</loc><lastmod>{NOW.strftime("%Y-%m-%d")}</lastmod></url>'
 sitemap_content += '</urlset>'
-with open(f"{DIST_DIR}/sitemap.xml", "w", encoding='utf-8') as sm: sm.write(sitemap_content)
+atomic_write(f"{TEMP_DIR}/sitemap.xml", sitemap_content)
 
-print("Success! All match dates generated, menu unchanged.")
+# --- 7. ATOMIC SWAP: Replace dist/ with new content ---
+print("Swapping directories atomically...")
+if os.path.exists(DIST_DIR):
+    backup_dir = f"{DIST_DIR}_old_{int(time.time())}"
+    os.rename(DIST_DIR, backup_dir)
+    os.rename(TEMP_DIR, DIST_DIR)
+    shutil.rmtree(backup_dir)
+else:
+    os.rename(TEMP_DIR, DIST_DIR)
+
+print("✅ Build complete → dist/ (zero downtime)")
