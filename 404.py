@@ -1,7 +1,7 @@
 import os
 
 # --- CONFIGURATION ---
-DOMAIN = "https://tv.cricfoot.net"
+DOMAIN = "https://tv.cricfoot.net" 
 DIST_DIR = "dist"
 
 # Ensure dist directory exists
