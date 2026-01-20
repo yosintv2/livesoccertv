@@ -1649,13 +1649,13 @@
   },
   "14060817": {
     "teamDuel": {
-      "homeWins": 2,
-      "awayWins": 4,
+      "homeWins": 1,
+      "awayWins": 5,
       "draws": 4
     },
     "managerDuel": {
       "homeWins": 0,
-      "awayWins": 3,
+      "awayWins": 4,
       "draws": 1
     }
   },
@@ -3225,8 +3225,8 @@
   },
   "14049182": {
     "teamDuel": {
-      "homeWins": 8,
-      "awayWins": 2,
+      "homeWins": 7,
+      "awayWins": 3,
       "draws": 0
     },
     "managerDuel": {
