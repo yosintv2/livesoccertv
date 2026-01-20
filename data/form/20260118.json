@@ -68,7 +68,7 @@
     },
     "awayTeam": {
       "avgRating": "6.83",
-      "position": 5,
+      "position": 6,
       "value": "33",
       "form": [
         "W",
@@ -83,7 +83,7 @@
   "14025076": {
     "homeTeam": {
       "avgRating": "6.86",
-      "position": 4,
+      "position": 5,
       "value": "35",
       "form": [
         "W",
@@ -203,7 +203,7 @@
     },
     "awayTeam": {
       "avgRating": "6.85",
-      "position": 6,
+      "position": 9,
       "value": "32",
       "form": [
         "D",
@@ -271,8 +271,8 @@
   },
   "13981627": {
     "homeTeam": {
-      "avgRating": "6.74",
-      "position": 14,
+      "avgRating": "6.75",
+      "position": 15,
       "value": "22",
       "form": [
         "W",
@@ -284,7 +284,7 @@
     },
     "awayTeam": {
       "avgRating": "6.75",
-      "position": 15,
+      "position": 16,
       "value": "19",
       "form": [
         "L",
@@ -353,7 +353,7 @@
   "13981634": {
     "homeTeam": {
       "avgRating": "6.75",
-      "position": 12,
+      "position": 13,
       "value": "23",
       "form": [
         "W",
@@ -434,14 +434,14 @@
   "13981620": {
     "homeTeam": {
       "avgRating": "6.81",
-      "position": 9,
-      "value": "27",
+      "position": 8,
+      "value": "30",
       "form": [
-        "L",
         "D",
         "L",
         "L",
-        "D"
+        "D",
+        "W"
       ]
     },
     "awayTeam": {
@@ -460,20 +460,20 @@
   },
   "13981628": {
     "homeTeam": {
-      "avgRating": "6.96",
+      "avgRating": "6.97",
       "position": 2,
-      "value": "40",
+      "value": "43",
       "form": [
-        "D",
         "W",
         "W",
         "D",
-        "D"
+        "D",
+        "W"
       ]
     },
     "awayTeam": {
       "avgRating": "6.70",
-      "position": 17,
+      "position": 18,
       "value": "17",
       "form": [
         "L",
@@ -488,7 +488,7 @@
   "14083232": {
     "homeTeam": {
       "avgRating": "6.82",
-      "position": 15,
+      "position": 16,
       "value": "19",
       "form": [
         "W",
@@ -542,7 +542,7 @@
   "14083230": {
     "homeTeam": {
       "avgRating": "6.64",
-      "position": 12,
+      "position": 15,
       "value": "21",
       "form": [
         "L",
@@ -581,7 +581,7 @@
     },
     "awayTeam": {
       "avgRating": "6.70",
-      "position": 16,
+      "position": 18,
       "value": "19",
       "form": [
         "W",
@@ -608,7 +608,7 @@
     },
     "awayTeam": {
       "avgRating": "6.75",
-      "position": 10,
+      "position": 12,
       "value": "22",
       "form": [
         "L",
@@ -622,8 +622,8 @@
   },
   "14062176": {
     "homeTeam": {
-      "avgRating": "6.81",
-      "position": 12,
+      "avgRating": "6.82",
+      "position": 13,
       "value": "17",
       "form": [
         "D",
@@ -650,7 +650,7 @@
   "14083237": {
     "homeTeam": {
       "avgRating": "6.77",
-      "position": 11,
+      "position": 13,
       "value": "21",
       "form": [
         "L",
@@ -785,7 +785,7 @@
   "14062170": {
     "homeTeam": {
       "avgRating": "6.98",
-      "position": 3,
+      "position": 4,
       "value": "32",
       "form": [
         "D",
@@ -812,7 +812,7 @@
   "14062171": {
     "homeTeam": {
       "avgRating": "6.88",
-      "position": 4,
+      "position": 5,
       "value": "32",
       "form": [
         "L",
@@ -825,12 +825,12 @@
     "awayTeam": {
       "avgRating": "6.73",
       "position": 9,
-      "value": "22",
+      "value": "23",
       "form": [
         "L",
-        "L",
         "W",
         "W",
+        "D",
         "D"
       ]
     },
@@ -839,7 +839,7 @@
   "14064461": {
     "homeTeam": {
       "avgRating": "6.97",
-      "position": 1,
+      "position": 2,
       "value": "40",
       "form": [
         "W",
@@ -867,18 +867,18 @@
     "homeTeam": {
       "avgRating": "6.72",
       "position": 15,
-      "value": "14",
+      "value": "15",
       "form": [
-        "L",
         "W",
         "L",
         "D",
-        "L"
+        "L",
+        "D"
       ]
     },
     "awayTeam": {
       "avgRating": "6.76",
-      "position": 8,
+      "position": 9,
       "value": "23",
       "form": [
         "L",
@@ -974,7 +974,7 @@
   "14064456": {
     "homeTeam": {
       "avgRating": "6.82",
-      "position": 7,
+      "position": 8,
       "value": "24",
       "form": [
         "L",
@@ -1055,7 +1055,7 @@
   "14288934": {
     "homeTeam": {
       "avgRating": "6.77",
-      "position": 10,
+      "position": 11,
       "value": "20",
       "form": [
         "W",
@@ -1082,7 +1082,7 @@
   "14064455": {
     "homeTeam": {
       "avgRating": "6.86",
-      "position": 5,
+      "position": 6,
       "value": "30",
       "form": [
         "D",
@@ -1094,7 +1094,7 @@
     },
     "awayTeam": {
       "avgRating": "6.75",
-      "position": 11,
+      "position": 10,
       "value": "22",
       "form": [
         "W",
@@ -1190,7 +1190,7 @@
   "14288944": {
     "homeTeam": {
       "avgRating": "6.76",
-      "position": 7,
+      "position": 8,
       "value": "25",
       "form": [
         "D",
@@ -1271,7 +1271,7 @@
   "14288942": {
     "homeTeam": {
       "avgRating": "6.74",
-      "position": 14,
+      "position": 13,
       "value": "17",
       "form": [
         "W",
@@ -1337,7 +1337,7 @@
     },
     "awayTeam": {
       "avgRating": "6.82",
-      "position": 6,
+      "position": 5,
       "value": "28",
       "form": [
         "L",
@@ -1595,7 +1595,7 @@
   "14035983": {
     "homeTeam": {
       "avgRating": "6.87",
-      "position": 10,
+      "position": 11,
       "value": "24",
       "form": [
         "D",
@@ -1634,7 +1634,7 @@
     },
     "awayTeam": {
       "avgRating": "6.77",
-      "position": 6,
+      "position": 7,
       "value": "25",
       "form": [
         "D",
@@ -1676,7 +1676,7 @@
   "14109764": {
     "homeTeam": {
       "avgRating": "6.73",
-      "position": 8,
+      "position": 9,
       "value": "23",
       "form": [
         "D",
@@ -1769,7 +1769,7 @@
     },
     "awayTeam": {
       "avgRating": "6.87",
-      "position": 7,
+      "position": 8,
       "value": "27",
       "form": [
         "W",
@@ -1796,7 +1796,7 @@
     },
     "awayTeam": {
       "avgRating": "6.78",
-      "position": 6,
+      "position": 7,
       "value": "27",
       "form": [
         "W",
@@ -1823,7 +1823,7 @@
     },
     "awayTeam": {
       "avgRating": "6.72",
-      "position": 13,
+      "position": 14,
       "value": "20",
       "form": [
         "L",
