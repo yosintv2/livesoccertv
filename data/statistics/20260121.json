@@ -1281,12 +1281,12 @@
               },
               {
                 "name": "Corner kicks",
-                "home": "6",
+                "home": "7",
                 "away": "1",
                 "compareCode": 1,
                 "statisticsType": "positive",
                 "valueType": "event",
-                "homeValue": 6,
+                "homeValue": 7,
                 "awayValue": 1,
                 "renderType": 1,
                 "key": "cornerKicks"

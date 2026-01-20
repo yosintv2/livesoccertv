@@ -43619,6 +43619,102 @@
         "incidentType": "injuryTime"
       },
       {
+        "player": {
+          "name": "Daniel Miko\u0142ajewski",
+          "slug": "daniel-mikolajewski",
+          "shortName": "D. Miko\u0142ajewski",
+          "position": "F",
+          "jerseyNumber": "76",
+          "height": 184,
+          "userCount": 497,
+          "gender": "M",
+          "id": 1423452,
+          "marketValueCurrency": "EUR",
+          "dateOfBirthTimestamp": 1138060800,
+          "proposedMarketValueRaw": {
+            "value": 485000,
+            "currency": "EUR"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "\u062f\u0627\u0646\u064a\u064a\u0644 \u0645\u064a\u0643\u0648\u0644\u0627\u064a\u0648\u0641\u0633\u0643\u064a"
+            },
+            "shortNameTranslation": {
+              "ar": "\u062f. \u0645\u064a\u0643\u0648\u0644\u0627\u064a\u0648\u0641\u0633\u0643\u064a"
+            }
+          }
+        },
+        "rescinded": false,
+        "id": 124535929,
+        "time": 33,
+        "isHome": true,
+        "incidentClass": "yellow",
+        "reversedPeriodTime": 13,
+        "incidentType": "card"
+      },
+      {
+        "playerIn": {
+          "name": "Filippo Mengoni",
+          "firstName": "Filippo",
+          "lastName": "Mengoni",
+          "slug": "filippo-mengoni",
+          "shortName": "F. Mengoni",
+          "position": "M",
+          "jerseyNumber": "80",
+          "userCount": 4,
+          "gender": "M",
+          "id": 2158684,
+          "marketValueCurrency": "EUR",
+          "dateOfBirthTimestamp": 1149724800,
+          "proposedMarketValueRaw": {
+            "value": 26000,
+            "currency": "EUR"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "\u0641\u064a\u0644\u064a\u0628\u0648 \u0645\u064a\u0646\u063a\u0648\u0646\u064a"
+            },
+            "shortNameTranslation": {
+              "ar": "\u0641. \u0645\u064a\u0646\u063a\u0648\u0646\u064a"
+            }
+          }
+        },
+        "playerOut": {
+          "name": "Elia Plicco",
+          "firstName": "Elia",
+          "lastName": "Plicco",
+          "slug": "elia-plicco",
+          "shortName": "E. Plicco",
+          "position": "M",
+          "jerseyNumber": "65",
+          "height": 168,
+          "userCount": 79,
+          "gender": "M",
+          "id": 1587207,
+          "marketValueCurrency": "EUR",
+          "dateOfBirthTimestamp": 1170288000,
+          "proposedMarketValueRaw": {
+            "value": 545000,
+            "currency": "EUR"
+          },
+          "fieldTranslations": {
+            "nameTranslation": {
+              "ar": "\u0625\u0644\u064a\u0627 \u0628\u0644\u064a\u0643\u0648"
+            },
+            "shortNameTranslation": {
+              "ar": "\u0625. \u0628\u0644\u064a\u0643\u0648"
+            }
+          }
+        },
+        "id": 125366109,
+        "time": 30,
+        "injury": false,
+        "isHome": true,
+        "incidentClass": "regular",
+        "reversedPeriodTime": 16,
+        "incidentType": "substitution"
+      },
+      {
         "from": "regular",
         "homeScore": 1,
         "awayScore": 0,

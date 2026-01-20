@@ -106175,6 +106175,45 @@
         },
         {
           "player": {
+            "name": "Filippo Mengoni",
+            "firstName": "Filippo",
+            "lastName": "Mengoni",
+            "slug": "filippo-mengoni",
+            "shortName": "F. Mengoni",
+            "position": "M",
+            "jerseyNumber": "80",
+            "userCount": 4,
+            "gender": "M",
+            "id": 2158684,
+            "country": {
+              "alpha2": "IT",
+              "alpha3": "ITA",
+              "name": "Italy",
+              "slug": "italy"
+            },
+            "marketValueCurrency": "EUR",
+            "dateOfBirthTimestamp": 1149724800,
+            "proposedMarketValueRaw": {
+              "value": 26000,
+              "currency": "EUR"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "\u0641\u064a\u0644\u064a\u0628\u0648 \u0645\u064a\u0646\u063a\u0648\u0646\u064a"
+              },
+              "shortNameTranslation": {
+                "ar": "\u0641. \u0645\u064a\u0646\u063a\u0648\u0646\u064a"
+              }
+            }
+          },
+          "teamId": 72080,
+          "shirtNumber": 80,
+          "jerseyNumber": "80",
+          "position": "M",
+          "substitute": true
+        },
+        {
+          "player": {
             "name": "Gabriele Casentini",
             "firstName": "Gabriele Casentini",
             "slug": "gabriele-casentini",
@@ -106385,45 +106424,6 @@
           "teamId": 72080,
           "shirtNumber": 79,
           "jerseyNumber": "79",
-          "position": "M",
-          "substitute": true
-        },
-        {
-          "player": {
-            "name": "Filippo Mengoni",
-            "firstName": "Filippo",
-            "lastName": "Mengoni",
-            "slug": "filippo-mengoni",
-            "shortName": "F. Mengoni",
-            "position": "M",
-            "jerseyNumber": "80",
-            "userCount": 4,
-            "gender": "M",
-            "id": 2158684,
-            "country": {
-              "alpha2": "IT",
-              "alpha3": "ITA",
-              "name": "Italy",
-              "slug": "italy"
-            },
-            "marketValueCurrency": "EUR",
-            "dateOfBirthTimestamp": 1149724800,
-            "proposedMarketValueRaw": {
-              "value": 26000,
-              "currency": "EUR"
-            },
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "\u0641\u064a\u0644\u064a\u0628\u0648 \u0645\u064a\u0646\u063a\u0648\u0646\u064a"
-              },
-              "shortNameTranslation": {
-                "ar": "\u0641. \u0645\u064a\u0646\u063a\u0648\u0646\u064a"
-              }
-            }
-          },
-          "teamId": 72080,
-          "shirtNumber": 80,
-          "jerseyNumber": "80",
           "position": "M",
           "substitute": true
         },
