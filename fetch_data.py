@@ -15,7 +15,6 @@ ENDPOINTS = {
     "incidents": "incidents"
 }
 
-DATE_DIR = "date"
 DATA_DIR = "data"
 BATCH_SIZE = 5
 SLEEP_BETWEEN_BATCHES = 1
@@ -23,8 +22,7 @@ SLEEP_BETWEEN_BATCHES = 1
 # =========================================
 
 
-async def fetch_sofa_endpoint(session, match_id, endpoint_key, path):
-    """Fetch a single SofaScore endpoint for one match."""
+async def fetch_sofa_endpoint(session, match_id, key, path):
     url = f"https://api.sofascore.com/api/v1/event/{match_id}/{path}"
     try:
         res = await session.get(
@@ -33,14 +31,42 @@ async def fetch_sofa_endpoint(session, match_id, endpoint_key, path):
             timeout=10
         )
         if res.status_code == 200:
-            return endpoint_key, res.json()
+            return key, res.json()
     except Exception as e:
-        print(f"[ERROR] {endpoint_key} | Match {match_id}: {e}")
-    return endpoint_key, None
+        print(f"[ERROR] {key} | Match {match_id}: {e}")
+    return key, None
 
 
-async def process_match(session, match_id, date_str):
-    """Fetch all endpoints for one match and save them."""
+def process_incidents(data):
+    incidents = data.get("incidents", [])
+
+    home_score = 0
+    away_score = 0
+    home_scorers = []
+    away_scorers = []
+
+    for i in incidents:
+        if i.get("incidentType") == "goal":
+            minute = f"{i.get('time', '')}'"
+            name = i.get("player", {}).get("name", "Unknown")
+
+            home_score = i.get("homeScore", home_score)
+            away_score = i.get("awayScore", away_score)
+
+            if i.get("isHome"):
+                home_scorers.append([name, minute])
+            else:
+                away_scorers.append([name, minute])
+
+    return {
+        "home_score": home_score,
+        "away_score": away_score,
+        "home_scorers": home_scorers,
+        "away_scorers": away_scorers
+    }
+
+
+async def process_match(session, match_id, day_data):
     tasks = [
         fetch_sofa_endpoint(session, match_id, key, path)
         for key, path in ENDPOINTS.items()
@@ -48,57 +74,61 @@ async def process_match(session, match_id, date_str):
 
     results = await asyncio.gather(*tasks)
 
-    for folder, data in results:
+    match_data = {
+        "match_id": match_id
+    }
+
+    for key, data in results:
         if not data:
             continue
 
-        folder_path = os.path.join(DATA_DIR, folder)
-        os.makedirs(folder_path, exist_ok=True)
+        if key == "incidents":
+            match_data["incidents"] = process_incidents(data)
+        else:
+            match_data[key] = data
 
-        target_file = os.path.join(folder_path, f"{date_str}.json")
-
-        day_data = {}
-        if os.path.exists(target_file):
-            try:
-                with open(target_file, "r", encoding="utf-8") as rf:
-                    day_data = json.load(rf)
-            except:
-                day_data = {}
-
-        day_data[str(match_id)] = data
-
-        with open(target_file, "w", encoding="utf-8") as wf:
-            json.dump(day_data, wf, indent=2)
+    day_data[str(match_id)] = match_data
 
 
 async def main():
     async with AsyncSession() as session:
+        # Today + next 3 days
         target_dates = [
             (datetime.now() + timedelta(days=i)).strftime("%Y%m%d")
             for i in range(4)
         ]
 
         for date_str in target_dates:
-            date_file = os.path.join(DATE_DIR, f"{date_str}.json")
+            target_file = os.path.join(DATA_DIR, f"{date_str}.json")
 
-            if not os.path.exists(date_file):
-                print(f"[SKIP] No matches for {date_str}")
+            if not os.path.exists(target_file):
+                print(f"[SKIP] {target_file} not found")
                 continue
 
-            with open(date_file, "r", encoding="utf-8") as f:
-                matches = json.load(f)
+            with open(target_file, "r", encoding="utf-8") as f:
+                raw_data = json.load(f)
 
-            print(f"[INFO] {date_str} → {len(matches)} matches")
+            # If file already processed, skip
+            if isinstance(raw_data, dict):
+                print(f"[SKIP] {date_str} already processed")
+                continue
 
-            for i in range(0, len(matches), BATCH_SIZE):
-                batch = matches[i:i + BATCH_SIZE]
+            print(f"[INFO] Processing {len(raw_data)} matches for {date_str}")
+
+            day_data = {}
+
+            for i in range(0, len(raw_data), BATCH_SIZE):
+                batch = raw_data[i:i + BATCH_SIZE]
 
                 await asyncio.gather(*[
-                    process_match(session, m["match_id"], date_str)
+                    process_match(session, m["match_id"], day_data)
                     for m in batch if "match_id" in m
                 ])
 
                 await asyncio.sleep(SLEEP_BETWEEN_BATCHES)
+
+            with open(target_file, "w", encoding="utf-8") as wf:
+                json.dump(day_data, wf, indent=2)
 
 
 if __name__ == "__main__":
