@@ -6,138 +6,148 @@ from curl_cffi.requests import AsyncSession
 
 # ================= CONFIG =================
 
+DATA_DIR = "data"
+SPORT = "football"
+
 ENDPOINTS = {
     "h2h": "h2h",
     "lineups": "lineups",
     "statistics": "statistics",
     "odds": "provider/1/winning-odds",
     "form": "pregame-form",
-    "incidents": "incidents"
 }
 
-DATA_DIR = "data"
+DAYS_RANGE = range(-3, 4)  # last 3 days + today + next 3 days
 BATCH_SIZE = 5
-SLEEP_BETWEEN_BATCHES = 1
+SLEEP = 1
 
 # =========================================
 
 
-async def fetch_sofa_endpoint(session, match_id, key, path):
-    url = f"https://api.sofascore.com/api/v1/event/{match_id}/{path}"
-    try:
-        res = await session.get(
-            url,
-            impersonate="chrome120",
-            timeout=10
-        )
-        if res.status_code == 200:
-            return key, res.json()
-    except Exception as e:
-        print(f"[ERROR] {key} | Match {match_id}: {e}")
-    return key, None
+def ensure_dir(path):
+    os.makedirs(path, exist_ok=True)
 
 
-def process_incidents(data):
-    incidents = data.get("incidents", [])
+def extract_goals(incidents_json, match_id):
+    home_goals, away_goals = [], []
 
-    home_score = 0
-    away_score = 0
-    home_scorers = []
-    away_scorers = []
+    for inc in incidents_json.get("incidents", []):
+        if inc.get("incidentType") != "goal":
+            continue
 
-    for i in incidents:
-        if i.get("incidentType") == "goal":
-            minute = f"{i.get('time', '')}'"
-            name = i.get("player", {}).get("name", "Unknown")
+        player = inc.get("player", {}).get("name", "Unknown")
+        minute = f"{inc.get('time', '')}'"
+        is_home = inc.get("isHome")
 
-            home_score = i.get("homeScore", home_score)
-            away_score = i.get("awayScore", away_score)
+        goal = {"name": player, "time": minute}
 
-            if i.get("isHome"):
-                home_scorers.append([name, minute])
-            else:
-                away_scorers.append([name, minute])
+        if is_home:
+            home_goals.append(goal)
+        else:
+            away_goals.append(goal)
 
     return {
-        "home_score": home_score,
-        "away_score": away_score,
-        "home_scorers": home_scorers,
-        "away_scorers": away_scorers
+        "match_id": match_id,
+        "home_score": len(home_goals),
+        "away_score": len(away_goals),
+        "home_scorers": home_goals,
+        "away_scorers": away_goals,
     }
 
 
-async def process_match(session, match_id, day_data):
-    tasks = [
-        fetch_sofa_endpoint(session, match_id, key, path)
-        for key, path in ENDPOINTS.items()
-    ]
+async def fetch_json(session, url):
+    try:
+        r = await session.get(url, impersonate="chrome120", timeout=15)
+        if r.status_code == 200:
+            return r.json()
+    except Exception as e:
+        print("[ERROR]", url, e)
+    return None
 
-    results = await asyncio.gather(*tasks)
 
-    match_data = {"match_id": match_id}
+async def fetch_match_ids(session, target_date):
+    date_str = target_date.strftime("%Y-%m-%d")
+    url = f"https://www.sofascore.com/api/v1/sport/{SPORT}/scheduled-events/{date_str}"
 
-    for key, data in results:
+    data = await fetch_json(session, url)
+    if not data:
+        return []
+
+    return [e["id"] for e in data.get("events", [])]
+
+
+async def process_match(session, match_id, date_key):
+    # ---------- NORMAL ENDPOINTS ----------
+    for key, path in ENDPOINTS.items():
+        url = f"https://api.sofascore.com/api/v1/event/{match_id}/{path}"
+        data = await fetch_json(session, url)
         if not data:
             continue
-        if key == "incidents":
-            match_data["incidents"] = process_incidents(data)
-        else:
-            match_data[key] = data
 
-    day_data[str(match_id)] = match_data
+        folder = os.path.join(DATA_DIR, key)
+        ensure_dir(folder)
+        file = os.path.join(folder, f"{date_key}.json")
+
+        store = {}
+        if os.path.exists(file):
+            with open(file, "r", encoding="utf-8") as f:
+                store = json.load(f)
+
+        store[str(match_id)] = data
+
+        with open(file, "w", encoding="utf-8") as f:
+            json.dump(store, f, indent=2)
+
+    # ---------- INCIDENTS (GOALS ONLY) ----------
+    inc_url = f"https://api.sofascore.com/api/v1/event/{match_id}/incidents"
+    inc_data = await fetch_json(session, inc_url)
+    if not inc_data:
+        return
+
+    goals_data = extract_goals(inc_data, match_id)
+
+    folder = os.path.join(DATA_DIR, "incidents")
+    ensure_dir(folder)
+    file = os.path.join(folder, f"{date_key}.json")
+
+    store = {}
+    if os.path.exists(file):
+        with open(file, "r", encoding="utf-8") as f:
+            store = json.load(f)
+
+    store[str(match_id)] = goals_data
+
+    with open(file, "w", encoding="utf-8") as f:
+        json.dump(store, f, indent=2)
+
+
+async def process_day(session, offset):
+    day = datetime.utcnow() + timedelta(days=offset)
+    date_key = day.strftime("%Y%m%d")
+
+    print(f"[INFO] Processing {date_key}")
+
+    match_ids = await fetch_match_ids(session, day)
+
+    if not match_ids:
+        print(f"[INFO] {date_key} → No matches found")
+        return
+
+    for i in range(0, len(match_ids), BATCH_SIZE):
+        batch = match_ids[i:i + BATCH_SIZE]
+        await asyncio.gather(*[
+            process_match(session, mid, date_key)
+            for mid in batch
+        ])
+        await asyncio.sleep(SLEEP)
 
 
 async def main():
     async with AsyncSession() as session:
-        # ⬅️ LAST 3 DAYS | TODAY | NEXT 3 DAYS ➡️
-        target_dates = [
-            (datetime.now() + timedelta(days=i)).strftime("%Y%m%d")
-            for i in range(-3, 4)
-        ]
+        ensure_dir(DATA_DIR)
 
-        for date_str in target_dates:
-            file_path = os.path.join(DATA_DIR, f"{date_str}.json")
-
-            # Ensure data folder exists
-            os.makedirs(DATA_DIR, exist_ok=True)
-
-            # Load match list
-            if os.path.exists(file_path):
-                with open(file_path, "r", encoding="utf-8") as f:
-                    try:
-                        content = json.load(f)
-                    except:
-                        content = []
-            else:
-                content = []
-
-            # Normalize to match list
-            if isinstance(content, dict):
-                # Already processed → extract match IDs
-                matches = [{"match_id": int(mid)} for mid in content.keys()]
-            else:
-                matches = content
-
-            if not matches:
-                print(f"[INFO] {date_str} → No matches found")
-                continue
-
-            print(f"[UPDATE] {date_str} → {len(matches)} matches")
-
-            day_data = {}
-
-            for i in range(0, len(matches), BATCH_SIZE):
-                batch = matches[i:i + BATCH_SIZE]
-
-                await asyncio.gather(*[
-                    process_match(session, m["match_id"], day_data)
-                    for m in batch if "match_id" in m
-                ])
-
-                await asyncio.sleep(SLEEP_BETWEEN_BATCHES)
-
-            with open(file_path, "w", encoding="utf-8") as wf:
-                json.dump(day_data, wf, indent=2)
+        for offset in DAYS_RANGE:
+            await process_day(session, offset)
 
 
 if __name__ == "__main__":
