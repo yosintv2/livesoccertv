@@ -74,14 +74,11 @@ async def process_match(session, match_id, day_data):
 
     results = await asyncio.gather(*tasks)
 
-    match_data = {
-        "match_id": match_id
-    }
+    match_data = {"match_id": match_id}
 
     for key, data in results:
         if not data:
             continue
-
         if key == "incidents":
             match_data["incidents"] = process_incidents(data)
         else:
@@ -92,33 +89,45 @@ async def process_match(session, match_id, day_data):
 
 async def main():
     async with AsyncSession() as session:
-        # Today + next 3 days
+        # ⬅️ LAST 3 DAYS | TODAY | NEXT 3 DAYS ➡️
         target_dates = [
             (datetime.now() + timedelta(days=i)).strftime("%Y%m%d")
-            for i in range(4)
+            for i in range(-3, 4)
         ]
 
         for date_str in target_dates:
-            target_file = os.path.join(DATA_DIR, f"{date_str}.json")
+            file_path = os.path.join(DATA_DIR, f"{date_str}.json")
 
-            if not os.path.exists(target_file):
-                print(f"[SKIP] {target_file} not found")
+            # Ensure data folder exists
+            os.makedirs(DATA_DIR, exist_ok=True)
+
+            # Load match list
+            if os.path.exists(file_path):
+                with open(file_path, "r", encoding="utf-8") as f:
+                    try:
+                        content = json.load(f)
+                    except:
+                        content = []
+            else:
+                content = []
+
+            # Normalize to match list
+            if isinstance(content, dict):
+                # Already processed → extract match IDs
+                matches = [{"match_id": int(mid)} for mid in content.keys()]
+            else:
+                matches = content
+
+            if not matches:
+                print(f"[INFO] {date_str} → No matches found")
                 continue
 
-            with open(target_file, "r", encoding="utf-8") as f:
-                raw_data = json.load(f)
-
-            # If file already processed, skip
-            if isinstance(raw_data, dict):
-                print(f"[SKIP] {date_str} already processed")
-                continue
-
-            print(f"[INFO] Processing {len(raw_data)} matches for {date_str}")
+            print(f"[UPDATE] {date_str} → {len(matches)} matches")
 
             day_data = {}
 
-            for i in range(0, len(raw_data), BATCH_SIZE):
-                batch = raw_data[i:i + BATCH_SIZE]
+            for i in range(0, len(matches), BATCH_SIZE):
+                batch = matches[i:i + BATCH_SIZE]
 
                 await asyncio.gather(*[
                     process_match(session, m["match_id"], day_data)
@@ -127,7 +136,7 @@ async def main():
 
                 await asyncio.sleep(SLEEP_BETWEEN_BATCHES)
 
-            with open(target_file, "w", encoding="utf-8") as wf:
+            with open(file_path, "w", encoding="utf-8") as wf:
                 json.dump(day_data, wf, indent=2)
 
 
