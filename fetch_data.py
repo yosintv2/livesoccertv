@@ -1,75 +1,105 @@
 import asyncio
 import json
 import os
-import time
 from datetime import datetime, timedelta
 from curl_cffi.requests import AsyncSession
 
-# --- CONFIGURATION ---
+# ================= CONFIG =================
+
 ENDPOINTS = {
     "h2h": "h2h",
     "lineups": "lineups",
     "statistics": "statistics",
     "odds": "provider/1/winning-odds",
-    "form": "pregame-form"
+    "form": "pregame-form",
+    "incidents": "incidents"
 }
 
-async def fetch_sofa_endpoint(session, mid, endpoint_key, path):
-    """Fetches a specific SofaScore endpoint for a single match."""
-    url = f"https://api.sofascore.com/api/v1/event/{mid}/{path}"
+DATE_DIR = "date"
+DATA_DIR = "data"
+BATCH_SIZE = 5
+SLEEP_BETWEEN_BATCHES = 1
+
+# =========================================
+
+
+async def fetch_sofa_endpoint(session, match_id, endpoint_key, path):
+    """Fetch a single SofaScore endpoint for one match."""
+    url = f"https://api.sofascore.com/api/v1/event/{match_id}/{path}"
     try:
-        # Using impersonate="chrome120" to bypass Cloudflare/Rate limits
-        res = await session.get(url, impersonate="chrome120", timeout=10)
+        res = await session.get(
+            url,
+            impersonate="chrome120",
+            timeout=10
+        )
         if res.status_code == 200:
             return endpoint_key, res.json()
     except Exception as e:
-        print(f"Error fetching {endpoint_key} for {mid}: {e}")
+        print(f"[ERROR] {endpoint_key} | Match {match_id}: {e}")
     return endpoint_key, None
 
-async def process_match(session, mid, date_str):
-    """Fetches all 5 data points for a single match and updates the day's JSON files."""
-    tasks = [fetch_sofa_endpoint(session, mid, key, path) for key, path in ENDPOINTS.items()]
+
+async def process_match(session, match_id, date_str):
+    """Fetch all endpoints for one match and save them."""
+    tasks = [
+        fetch_sofa_endpoint(session, match_id, key, path)
+        for key, path in ENDPOINTS.items()
+    ]
+
     results = await asyncio.gather(*tasks)
 
     for folder, data in results:
-        if data:
-            os.makedirs(f"data/{folder}", exist_ok=True)
-            target_path = f"data/{folder}/{date_str}.json"
-            
-            # Load existing file to append new match data
-            day_data = {}
-            if os.path.exists(target_path):
-                try:
-                    with open(target_path, "r", encoding='utf-8') as rf:
-                        day_data = json.load(rf)
-                except: day_data = {}
+        if not data:
+            continue
 
-            day_data[str(mid)] = data
-            with open(target_path, "w", encoding='utf-8') as wf:
-                json.dump(day_data, wf, indent=2)
+        folder_path = os.path.join(DATA_DIR, folder)
+        os.makedirs(folder_path, exist_ok=True)
+
+        target_file = os.path.join(folder_path, f"{date_str}.json")
+
+        day_data = {}
+        if os.path.exists(target_file):
+            try:
+                with open(target_file, "r", encoding="utf-8") as rf:
+                    day_data = json.load(rf)
+            except:
+                day_data = {}
+
+        day_data[str(match_id)] = data
+
+        with open(target_file, "w", encoding="utf-8") as wf:
+            json.dump(day_data, wf, indent=2)
+
 
 async def main():
     async with AsyncSession() as session:
-        # Today + 3 Days
-        target_dates = [(datetime.now() + timedelta(days=i)).strftime('%Y%m%d') for i in range(4)]
-        
+        target_dates = [
+            (datetime.now() + timedelta(days=i)).strftime("%Y%m%d")
+            for i in range(4)
+        ]
+
         for date_str in target_dates:
-            date_file = f"date/{date_str}.json"
-            if not os.path.exists(date_file): 
-                print(f"Skipping {date_str}, no match list found.")
+            date_file = os.path.join(DATE_DIR, f"{date_str}.json")
+
+            if not os.path.exists(date_file):
+                print(f"[SKIP] No matches for {date_str}")
                 continue
-                
-            with open(date_file, "r", encoding='utf-8') as f:
+
+            with open(date_file, "r", encoding="utf-8") as f:
                 matches = json.load(f)
 
-            print(f"--- Processing {len(matches)} matches for {date_str} ---")
-            
-            # Process matches in small batches to avoid triggering rate limits
-            for i in range(0, len(matches), 5):
-                batch = matches[i:i+5]
-                match_tasks = [process_match(session, m['match_id'], date_str) for m in batch if 'match_id' in m]
-                await asyncio.gather(*match_tasks)
-                await asyncio.sleep(1) # Polite pause between batches
+            print(f"[INFO] {date_str} → {len(matches)} matches")
+
+            for i in range(0, len(matches), BATCH_SIZE):
+                batch = matches[i:i + BATCH_SIZE]
+
+                await asyncio.gather(*[
+                    process_match(session, m["match_id"], date_str)
+                    for m in batch if "match_id" in m
+                ])
+
+                await asyncio.sleep(SLEEP_BETWEEN_BATCHES)
+
 
 if __name__ == "__main__":
     asyncio.run(main())
