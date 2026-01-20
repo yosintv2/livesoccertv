@@ -238,9 +238,9 @@
   "14572699": {
     "home": null,
     "away": {
-      "fractionalValue": "3/2",
-      "expected": 40,
-      "actual": 65,
+      "fractionalValue": "31/20",
+      "expected": 39,
+      "actual": 71,
       "id": 19423913
     }
   },
@@ -1002,6 +1002,20 @@
       "expected": 31,
       "actual": 29,
       "id": 19422803
+    }
+  },
+  "15269917": {
+    "home": {
+      "fractionalValue": "21/20",
+      "expected": 49,
+      "actual": 55,
+      "id": 19481395
+    },
+    "away": {
+      "fractionalValue": "29/10",
+      "expected": 26,
+      "actual": 47,
+      "id": 19481396
     }
   }
 }
