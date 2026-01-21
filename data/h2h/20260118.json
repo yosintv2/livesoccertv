@@ -3029,11 +3029,7 @@
       "awayWins": 4,
       "draws": 2
     },
-    "managerDuel": {
-      "homeWins": 4,
-      "awayWins": 7,
-      "draws": 3
-    }
+    "managerDuel": null
   },
   "14222824": {
     "teamDuel": {
