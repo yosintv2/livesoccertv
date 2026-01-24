@@ -322,5 +322,19 @@
       "actual": 43,
       "id": 19532222
     }
+  },
+  "14023524": {
+    "home": {
+      "fractionalValue": "7/4",
+      "expected": 36,
+      "actual": 31,
+      "id": 19583153
+    },
+    "away": {
+      "fractionalValue": "29/20",
+      "expected": 41,
+      "actual": 25,
+      "id": 19583154
+    }
   }
 }

@@ -1195,7 +1195,7 @@
   "14671710": {
     "match_id": 14671710,
     "home_score": 2,
-    "away_score": 1,
+    "away_score": 2,
     "home_scorers": [
       {
         "name": "Sam Cosgrove",
@@ -1207,6 +1207,10 @@
       }
     ],
     "away_scorers": [
+      {
+        "name": "Oliver Lavale",
+        "time": "89'"
+      },
       {
         "name": "Oliver Lavale",
         "time": "44'"

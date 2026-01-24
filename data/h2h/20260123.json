@@ -611,12 +611,12 @@
     "teamDuel": {
       "homeWins": 2,
       "awayWins": 0,
-      "draws": 1
+      "draws": 2
     },
     "managerDuel": {
       "homeWins": 3,
       "awayWins": 2,
-      "draws": 5
+      "draws": 6
     }
   },
   "14671711": {

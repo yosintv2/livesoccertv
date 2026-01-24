@@ -3645,7 +3645,7 @@
   },
   "15138040": {
     "homeTeam": {
-      "avgRating": "6.74",
+      "avgRating": "6.73",
       "position": 2,
       "value": "6",
       "form": [
@@ -6789,6 +6789,33 @@
         "L",
         "L",
         "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14023524": {
+    "homeTeam": {
+      "avgRating": "6.76",
+      "position": 7,
+      "value": "19",
+      "form": [
+        "W",
+        "L",
+        "L",
+        "D",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.76",
+      "position": 6,
+      "value": "23",
+      "form": [
+        "L",
+        "D",
+        "W",
+        "L",
+        "L"
       ]
     },
     "label": "Pts"

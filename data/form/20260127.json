@@ -1535,7 +1535,7 @@
   },
   "14117785": {
     "homeTeam": {
-      "avgRating": "6.75",
+      "avgRating": "6.73",
       "position": 13,
       "value": "16",
       "form": [
@@ -1574,7 +1574,7 @@
       ]
     },
     "awayTeam": {
-      "avgRating": "6.94",
+      "avgRating": "6.95",
       "position": 2,
       "value": "45",
       "form": [
@@ -1859,7 +1859,7 @@
   },
   "15138039": {
     "homeTeam": {
-      "avgRating": "6.62",
+      "avgRating": "6.67",
       "position": 6,
       "value": "3",
       "form": [
@@ -2753,6 +2753,52 @@
       "value": "3",
       "form": [
         "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14023524": {
+    "homeTeam": {
+      "avgRating": "6.76",
+      "position": 7,
+      "value": "19",
+      "form": [
+        "W",
+        "L",
+        "L",
+        "D",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.76",
+      "position": 6,
+      "value": "23",
+      "form": [
+        "L",
+        "D",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15269912": {
+    "homeTeam": {
+      "avgRating": "6.61",
+      "position": 13,
+      "value": "0",
+      "form": [
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.61",
+      "position": 5,
+      "value": "1",
+      "form": [
+        "D"
       ]
     },
     "label": "Pts"

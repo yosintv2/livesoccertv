@@ -2152,7 +2152,7 @@
   },
   "15176537": {
     "homeTeam": {
-      "avgRating": "6.55",
+      "avgRating": "6.56",
       "position": 16,
       "value": "0",
       "form": [
@@ -5592,6 +5592,7 @@
       ]
     },
     "awayTeam": {
+      "avgRating": "6.70",
       "position": 3,
       "value": "6",
       "form": [
@@ -5690,7 +5691,7 @@
       ]
     },
     "awayTeam": {
-      "avgRating": "6.78",
+      "avgRating": "6.77",
       "position": 2,
       "value": "7",
       "form": [
