@@ -1,0 +1,2702 @@
+{
+  "14083166": {
+    "homeTeam": {
+      "avgRating": "6.73",
+      "position": 11,
+      "value": "24",
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.65",
+      "position": 16,
+      "value": "21",
+      "form": [
+        "L",
+        "L",
+        "D",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "13981640": {
+    "homeTeam": {
+      "avgRating": "6.63",
+      "position": 19,
+      "value": "14",
+      "form": [
+        "L",
+        "D",
+        "L",
+        "L",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.74",
+      "position": 10,
+      "value": "26",
+      "form": [
+        "D",
+        "L",
+        "W",
+        "D",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15129439": {
+    "homeTeam": {
+      "avgRating": "6.85",
+      "position": 10,
+      "value": "32",
+      "form": [
+        "D",
+        "W",
+        "L",
+        "D",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.74",
+      "position": 16,
+      "value": "25",
+      "form": [
+        "D",
+        "D",
+        "D",
+        "L",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15362429": {
+    "homeTeam": {
+      "avgRating": "6.69",
+      "position": 16,
+      "value": "13",
+      "form": [
+        "W",
+        "D",
+        "L",
+        "L",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.95",
+      "position": 5,
+      "value": "32",
+      "form": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15362425": {
+    "homeTeam": {
+      "avgRating": "6.75",
+      "position": 14,
+      "value": "18",
+      "form": [
+        "L",
+        "L",
+        "D",
+        "L",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.86",
+      "position": 3,
+      "value": "33",
+      "form": [
+        "L",
+        "W",
+        "D",
+        "W",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14059801": {
+    "homeTeam": {
+      "avgRating": "6.79",
+      "position": 20,
+      "value": "30",
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.95",
+      "position": 1,
+      "value": "58",
+      "form": [
+        "L",
+        "D",
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14288950": {
+    "homeTeam": {
+      "avgRating": "6.98",
+      "position": 1,
+      "value": "52",
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.82",
+      "position": 4,
+      "value": "31",
+      "form": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14109771": {
+    "homeTeam": {
+      "avgRating": "6.74",
+      "position": 17,
+      "value": "14",
+      "form": [
+        "W",
+        "D",
+        "L",
+        "L",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.88",
+      "position": 5,
+      "value": "32",
+      "form": [
+        "W",
+        "D",
+        "D",
+        "W",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15176538": {
+    "homeTeam": {
+      "avgRating": "6.81",
+      "position": 6,
+      "value": "6",
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.73",
+      "position": 9,
+      "value": "5",
+      "form": [
+        "D",
+        "L",
+        "D",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15150254": {
+    "homeTeam": {
+      "avgRating": "6.80",
+      "position": 6,
+      "value": "32",
+      "form": [
+        "W",
+        "W",
+        "W",
+        "D",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.84",
+      "position": 4,
+      "value": "33",
+      "form": [
+        "D",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15213758": {
+    "homeTeam": {
+      "avgRating": "6.96",
+      "position": 1,
+      "value": "52",
+      "form": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.83",
+      "position": 19,
+      "value": "18",
+      "form": [
+        "D",
+        "W",
+        "L",
+        "D",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15392911": {
+    "homeTeam": {
+      "avgRating": "6.90",
+      "position": 3,
+      "value": "37",
+      "form": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.85",
+      "position": 9,
+      "value": "32",
+      "form": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14083686": {
+    "homeTeam": {
+      "avgRating": "6.74",
+      "position": 11,
+      "value": "32",
+      "form": [
+        "D",
+        "W",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.75",
+      "position": 17,
+      "value": "25",
+      "form": [
+        "L",
+        "L",
+        "D",
+        "D",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14056537": {
+    "homeTeam": {
+      "avgRating": "6.75",
+      "position": 18,
+      "value": "23",
+      "form": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.85",
+      "position": 5,
+      "value": "35",
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15392912": {
+    "homeTeam": {
+      "avgRating": "6.85",
+      "position": 8,
+      "value": "33",
+      "form": [
+        "L",
+        "L",
+        "W",
+        "D",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.76",
+      "position": 10,
+      "value": "30",
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14056540": {
+    "homeTeam": {
+      "avgRating": "6.80",
+      "position": 7,
+      "value": "34",
+      "form": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.75",
+      "position": 17,
+      "value": "25",
+      "form": [
+        "D",
+        "L",
+        "L",
+        "D",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15392913": {
+    "homeTeam": {
+      "avgRating": "6.86",
+      "position": 6,
+      "value": "35",
+      "form": [
+        "L",
+        "W",
+        "W",
+        "D",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.77",
+      "position": 11,
+      "value": "30",
+      "form": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15393670": {
+    "homeTeam": {
+      "avgRating": "6.75",
+      "position": 12,
+      "value": "28",
+      "form": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "7.02",
+      "position": 2,
+      "value": "50",
+      "form": [
+        "D",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15292887": {
+    "homeTeam": {
+      "avgRating": "6.86",
+      "position": 3,
+      "value": "36",
+      "form": [
+        "D",
+        "D",
+        "W",
+        "W",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.81",
+      "position": 5,
+      "value": "32",
+      "form": [
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14138490": {
+    "homeTeam": {
+      "avgRating": "6.75",
+      "position": 18,
+      "value": "23",
+      "form": [
+        "W",
+        "L",
+        "L",
+        "D",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.89",
+      "position": 6,
+      "value": "33",
+      "form": [
+        "D",
+        "D",
+        "L",
+        "D",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15367313": {
+    "homeTeam": {
+      "avgRating": "7.32",
+      "position": 1,
+      "value": "3",
+      "form": [
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.85",
+      "position": 9,
+      "value": "3",
+      "form": [
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15362172": {
+    "homeTeam": {
+      "avgRating": "6.99",
+      "position": 8,
+      "value": "3",
+      "form": [
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.99",
+      "position": 4,
+      "value": "3",
+      "form": [
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15367314": {
+    "homeTeam": {
+      "avgRating": "6.57",
+      "position": 17,
+      "value": "0",
+      "form": [
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.89",
+      "position": 6,
+      "value": "3",
+      "form": [
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14061205": {
+    "homeTeam": {
+      "avgRating": "6.80",
+      "position": 6,
+      "value": "39",
+      "form": [
+        "W",
+        "D",
+        "D",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.77",
+      "position": 7,
+      "value": "39",
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15367315": {
+    "homeTeam": {
+      "avgRating": "6.59",
+      "position": 16,
+      "value": "0",
+      "form": [
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "7.06",
+      "position": 3,
+      "value": "3",
+      "form": [
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14061194": {
+    "homeTeam": {
+      "avgRating": "6.75",
+      "position": 20,
+      "value": "29",
+      "form": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.82",
+      "position": 4,
+      "value": "45",
+      "form": [
+        "W",
+        "D",
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14061197": {
+    "homeTeam": {
+      "avgRating": "6.85",
+      "position": 5,
+      "value": "43",
+      "form": [
+        "D",
+        "D",
+        "L",
+        "W",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.80",
+      "position": 19,
+      "value": "30",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14061199": {
+    "homeTeam": {
+      "avgRating": "6.91",
+      "position": 1,
+      "value": "55",
+      "form": [
+        "W",
+        "D",
+        "W",
+        "D",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.79",
+      "position": 15,
+      "value": "32",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "D",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14061209": {
+    "homeTeam": {
+      "avgRating": "6.80",
+      "position": 2,
+      "value": "52",
+      "form": [
+        "W",
+        "D",
+        "W",
+        "D",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.85",
+      "position": 3,
+      "value": "46",
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14061215": {
+    "homeTeam": {
+      "avgRating": "6.67",
+      "position": 23,
+      "value": "24",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.70",
+      "position": 21,
+      "value": "29",
+      "form": [
+        "L",
+        "L",
+        "D",
+        "D",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14061213": {
+    "homeTeam": {
+      "avgRating": "6.72",
+      "position": 24,
+      "value": "18",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.69",
+      "position": 17,
+      "value": "31",
+      "form": [
+        "D",
+        "L",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14061211": {
+    "homeTeam": {
+      "avgRating": "6.75",
+      "position": 14,
+      "value": "33",
+      "form": [
+        "L",
+        "D",
+        "D",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.74",
+      "position": 10,
+      "value": "35",
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14061217": {
+    "homeTeam": {
+      "avgRating": "6.75",
+      "position": 8,
+      "value": "38",
+      "form": [
+        "L",
+        "D",
+        "L",
+        "L",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.76",
+      "position": 12,
+      "value": "35",
+      "form": [
+        "D",
+        "W",
+        "L",
+        "W",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14061222": {
+    "homeTeam": {
+      "avgRating": "6.76",
+      "position": 11,
+      "value": "35",
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.78",
+      "position": 13,
+      "value": "33",
+      "form": [
+        "L",
+        "W",
+        "W",
+        "D",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14061202": {
+    "homeTeam": {
+      "avgRating": "6.70",
+      "position": 22,
+      "value": "26",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "D",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.69",
+      "position": 16,
+      "value": "32",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "D",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14061219": {
+    "homeTeam": {
+      "avgRating": "6.80",
+      "position": 9,
+      "value": "36",
+      "form": [
+        "L",
+        "D",
+        "D",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.80",
+      "position": 18,
+      "value": "30",
+      "form": [
+        "L",
+        "W",
+        "D",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14060893": {
+    "homeTeam": {
+      "avgRating": "6.78",
+      "position": 13,
+      "value": "35",
+      "form": [
+        "L",
+        "D",
+        "W",
+        "W",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.81",
+      "position": 17,
+      "value": "32",
+      "form": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14060889": {
+    "homeTeam": {
+      "avgRating": "6.64",
+      "position": 24,
+      "value": "17",
+      "form": [
+        "L",
+        "D",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.76",
+      "position": 16,
+      "value": "33",
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14060907": {
+    "homeTeam": {
+      "avgRating": "6.75",
+      "position": 6,
+      "value": "44",
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.70",
+      "position": 20,
+      "value": "22",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14060897": {
+    "homeTeam": {
+      "avgRating": "6.71",
+      "position": 19,
+      "value": "24",
+      "form": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.84",
+      "position": 12,
+      "value": "35",
+      "form": [
+        "W",
+        "D",
+        "W",
+        "D",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14060901": {
+    "homeTeam": {
+      "avgRating": "6.80",
+      "position": 1,
+      "value": "52",
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.81",
+      "position": 10,
+      "value": "39",
+      "form": [
+        "L",
+        "L",
+        "W",
+        "D",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14060911": {
+    "homeTeam": {
+      "avgRating": "6.69",
+      "position": 18,
+      "value": "30",
+      "form": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.77",
+      "position": 14,
+      "value": "35",
+      "form": [
+        "L",
+        "D",
+        "D",
+        "L",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14060915": {
+    "homeTeam": {
+      "avgRating": "6.85",
+      "position": 9,
+      "value": "39",
+      "form": [
+        "W",
+        "D",
+        "D",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.80",
+      "position": 11,
+      "value": "37",
+      "form": [
+        "L",
+        "D",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14060922": {
+    "homeTeam": {
+      "avgRating": "6.82",
+      "position": 5,
+      "value": "44",
+      "form": [
+        "W",
+        "D",
+        "L",
+        "D",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.63",
+      "position": 21,
+      "value": "21",
+      "form": [
+        "D",
+        "L",
+        "L",
+        "W",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14060933": {
+    "homeTeam": {
+      "avgRating": "6.78",
+      "position": 4,
+      "value": "46",
+      "form": [
+        "W",
+        "W",
+        "D",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.79",
+      "position": 8,
+      "value": "41",
+      "form": [
+        "W",
+        "L",
+        "D",
+        "D",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14060937": {
+    "homeTeam": {
+      "avgRating": "6.77",
+      "position": 3,
+      "value": "46",
+      "form": [
+        "D",
+        "W",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.71",
+      "position": 22,
+      "value": "19",
+      "form": [
+        "D",
+        "L",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14060928": {
+    "homeTeam": {
+      "avgRating": "6.80",
+      "position": 7,
+      "value": "42",
+      "form": [
+        "D",
+        "L",
+        "D",
+        "L",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.86",
+      "position": 2,
+      "value": "46",
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14060918": {
+    "homeTeam": {
+      "avgRating": "6.73",
+      "position": 23,
+      "value": "18",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "D",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.80",
+      "position": 15,
+      "value": "34",
+      "form": [
+        "W",
+        "L",
+        "D",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14773698": {
+    "homeTeam": {
+      "avgRating": "6.69",
+      "position": 11,
+      "value": "17",
+      "form": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.59",
+      "position": 15,
+      "value": "11",
+      "form": [
+        "L",
+        "L",
+        "D",
+        "D",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14060335": {
+    "homeTeam": {
+      "avgRating": "6.91",
+      "position": 7,
+      "value": "33",
+      "form": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.66",
+      "position": 14,
+      "value": "19",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14773702": {
+    "homeTeam": {
+      "avgRating": "6.90",
+      "position": 6,
+      "value": "27",
+      "form": [
+        "W",
+        "W",
+        "D",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.62",
+      "position": 17,
+      "value": "9",
+      "form": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14773701": {
+    "homeTeam": {
+      "avgRating": "7.01",
+      "position": 2,
+      "value": "37",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.93",
+      "position": 5,
+      "value": "35",
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14321285": {
+    "homeTeam": {
+      "avgRating": "6.86",
+      "position": 3,
+      "value": "23",
+      "form": [
+        "W",
+        "W",
+        "W",
+        "D",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.71",
+      "position": 4,
+      "value": "23",
+      "form": [
+        "D",
+        "L",
+        "W",
+        "D",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14060326": {
+    "homeTeam": {
+      "avgRating": "6.79",
+      "position": 6,
+      "value": "35",
+      "form": [
+        "W",
+        "W",
+        "D",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.91",
+      "position": 3,
+      "value": "42",
+      "form": [
+        "W",
+        "D",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15410406": {
+    "homeTeam": {
+      "avgRating": "6.78",
+      "position": 11,
+      "value": "16",
+      "form": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.65",
+      "position": 13,
+      "value": "15",
+      "form": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14671867": {
+    "homeTeam": {
+      "avgRating": "6.74",
+      "position": 7,
+      "value": "16",
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.74",
+      "position": 10,
+      "value": "10",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "D",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15302521": {
+    "homeTeam": {
+      "avgRating": "6.72",
+      "position": 8,
+      "value": "16",
+      "form": [
+        "L",
+        "D",
+        "W",
+        "D",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.95",
+      "position": 2,
+      "value": "31",
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15302522": {
+    "homeTeam": {
+      "avgRating": "6.89",
+      "position": 3,
+      "value": "26",
+      "form": [
+        "W",
+        "L",
+        "W",
+        "D",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.63",
+      "position": 13,
+      "value": "9",
+      "form": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14117785": {
+    "homeTeam": {
+      "avgRating": "6.75",
+      "position": 13,
+      "value": "16",
+      "form": [
+        "W",
+        "D",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.73",
+      "position": 11,
+      "value": "20",
+      "form": [
+        "D",
+        "D",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14117783": {
+    "homeTeam": {
+      "avgRating": "6.72",
+      "position": 17,
+      "value": "10",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.94",
+      "position": 2,
+      "value": "45",
+      "form": [
+        "W",
+        "D",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14117787": {
+    "homeTeam": {
+      "avgRating": "6.83",
+      "position": 6,
+      "value": "32",
+      "form": [
+        "D",
+        "W",
+        "L",
+        "D",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.63",
+      "position": 16,
+      "value": "12",
+      "form": [
+        "D",
+        "L",
+        "D",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14117782": {
+    "homeTeam": {
+      "avgRating": "6.89",
+      "position": 3,
+      "value": "36",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.62",
+      "position": 15,
+      "value": "15",
+      "form": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14117784": {
+    "homeTeam": {
+      "avgRating": "6.83",
+      "position": 7,
+      "value": "30",
+      "form": [
+        "W",
+        "W",
+        "W",
+        "D",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.77",
+      "position": 9,
+      "value": "27",
+      "form": [
+        "W",
+        "D",
+        "W",
+        "D",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15269909": {
+    "homeTeam": {
+      "avgRating": "6.81",
+      "position": 6,
+      "value": "1",
+      "form": [
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.72",
+      "position": 15,
+      "value": "0",
+      "form": [
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14287019": {
+    "homeTeam": {
+      "avgRating": "6.89",
+      "position": 4,
+      "value": "17",
+      "form": [
+        "W",
+        "W",
+        "D",
+        "W",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.66",
+      "position": 10,
+      "value": "8",
+      "form": [
+        "D",
+        "D",
+        "L",
+        "L",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15269905": {
+    "homeTeam": {
+      "avgRating": "6.95",
+      "position": 2,
+      "value": "3",
+      "form": [
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.64",
+      "position": 13,
+      "value": "0",
+      "form": [
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14117788": {
+    "homeTeam": {
+      "avgRating": "6.87",
+      "position": 5,
+      "value": "32",
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.89",
+      "position": 4,
+      "value": "35",
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15362841": {
+    "homeTeam": {
+      "position": 1,
+      "value": "30",
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 9,
+      "value": "12",
+      "form": [
+        "L",
+        "L",
+        "D",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15362839": {
+    "homeTeam": {
+      "position": 5,
+      "value": "15",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 4,
+      "value": "20",
+      "form": [
+        "L",
+        "W",
+        "L",
+        "D",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15138041": {
+    "homeTeam": {
+      "avgRating": "6.70",
+      "position": 4,
+      "value": "4",
+      "form": [
+        "W",
+        "D",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.89",
+      "position": 1,
+      "value": "6",
+      "form": [
+        "W",
+        "W",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15138044": {
+    "homeTeam": {
+      "avgRating": "6.69",
+      "position": 3,
+      "value": "6",
+      "form": [
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.49",
+      "position": 6,
+      "value": "1",
+      "form": [
+        "D",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15138039": {
+    "homeTeam": {
+      "avgRating": "6.62",
+      "position": 6,
+      "value": "3",
+      "form": [
+        "L",
+        "W",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.62",
+      "position": 5,
+      "value": "3",
+      "form": [
+        "L",
+        "W",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15362854": {
+    "homeTeam": {
+      "position": 2,
+      "value": "27",
+      "form": [
+        "W",
+        "L",
+        "W",
+        "D",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 11,
+      "value": "6",
+      "form": [
+        "L",
+        "L",
+        "D",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15362850": {
+    "homeTeam": {
+      "position": 7,
+      "value": "14",
+      "form": [
+        "L",
+        "L",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "position": 12,
+      "value": "6",
+      "form": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15146358": {
+    "homeTeam": {
+      "avgRating": "6.82",
+      "position": 3,
+      "value": "5",
+      "form": [
+        "D",
+        "W",
+        "D",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.82",
+      "position": 2,
+      "value": "7",
+      "form": [
+        "D",
+        "W",
+        "W",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15200567": {
+    "homeTeam": {
+      "position": 11,
+      "value": "21",
+      "form": [
+        "L",
+        "D",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "position": 2,
+      "value": "36",
+      "form": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15188390": {
+    "homeTeam": {
+      "position": 4,
+      "value": "5",
+      "form": [
+        "W",
+        "D",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "position": 10,
+      "value": "0",
+      "form": [
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15380244": {
+    "homeTeam": {
+      "position": 2,
+      "value": "58",
+      "form": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 7,
+      "value": "45",
+      "form": [
+        "L",
+        "W",
+        "W",
+        "D",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15363379": {
+    "homeTeam": {
+      "position": 3,
+      "value": "0",
+      "form": [
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "position": 2,
+      "value": "3",
+      "form": [
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15188414": {
+    "homeTeam": {
+      "position": 6,
+      "value": "3",
+      "form": [
+        "L",
+        "W",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "position": 8,
+      "value": "2",
+      "form": [
+        "D",
+        "D",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15402227": {
+    "homeTeam": {
+      "position": 13,
+      "value": "16",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "position": 3,
+      "value": "29",
+      "form": [
+        "W",
+        "D",
+        "D",
+        "D",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14214876": {
+    "homeTeam": {
+      "position": 11,
+      "value": "20",
+      "form": [
+        "W",
+        "W",
+        "D",
+        "L",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 10,
+      "value": "21",
+      "form": [
+        "D",
+        "D",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15402226": {
+    "homeTeam": {
+      "position": 4,
+      "value": "29",
+      "form": [
+        "D",
+        "L",
+        "W",
+        "D",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "position": 12,
+      "value": "18",
+      "form": [
+        "L",
+        "L",
+        "W",
+        "D",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15335959": {
+    "homeTeam": {
+      "position": 1,
+      "value": "3",
+      "form": [
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 8,
+      "value": "0",
+      "form": [
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15402228": {
+    "homeTeam": {
+      "position": 16,
+      "value": "11",
+      "form": [
+        "D",
+        "L",
+        "L",
+        "W",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "position": 15,
+      "value": "15",
+      "form": [
+        "D",
+        "D",
+        "L",
+        "L",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14302712": {
+    "homeTeam": {
+      "position": 1,
+      "value": "56",
+      "form": [
+        "W",
+        "W",
+        "D",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 4,
+      "value": "36",
+      "form": [
+        "D",
+        "W",
+        "W",
+        "L",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14068629": {
+    "homeTeam": {
+      "position": 18,
+      "value": "20",
+      "form": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "position": 15,
+      "value": "26",
+      "form": [
+        "D",
+        "L",
+        "L",
+        "D",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14302713": {
+    "homeTeam": {
+      "position": 2,
+      "value": "44",
+      "form": [
+        "D",
+        "W",
+        "D",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 5,
+      "value": "34",
+      "form": [
+        "L",
+        "L",
+        "D",
+        "W",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15402232": {
+    "homeTeam": {
+      "position": 10,
+      "value": "19",
+      "form": [
+        "L",
+        "L",
+        "D",
+        "W",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "position": 14,
+      "value": "15",
+      "form": [
+        "D",
+        "D",
+        "D",
+        "D",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15402230": {
+    "homeTeam": {
+      "position": 9,
+      "value": "21",
+      "form": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "position": 7,
+      "value": "22",
+      "form": [
+        "W",
+        "D",
+        "D",
+        "L",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14068623": {
+    "homeTeam": {
+      "position": 1,
+      "value": "37",
+      "form": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "position": 12,
+      "value": "29",
+      "form": [
+        "W",
+        "D",
+        "L",
+        "L",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14068621": {
+    "homeTeam": {
+      "position": 2,
+      "value": "36",
+      "form": [
+        "D",
+        "W",
+        "L",
+        "W",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "position": 6,
+      "value": "32",
+      "form": [
+        "L",
+        "D",
+        "D",
+        "W",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14068624": {
+    "homeTeam": {
+      "position": 3,
+      "value": "35",
+      "form": [
+        "D",
+        "D",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 17,
+      "value": "20",
+      "form": [
+        "D",
+        "W",
+        "W",
+        "D",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15273933": {
+    "homeTeam": {
+      "position": 2,
+      "value": "6",
+      "form": [
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 7,
+      "value": "0",
+      "form": [
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14336315": {
+    "homeTeam": {
+      "avgRating": "6.83",
+      "position": 8,
+      "value": "25",
+      "form": [
+        "L",
+        "W",
+        "D",
+        "L",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.86",
+      "position": 3,
+      "value": "29",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15273936": {
+    "homeTeam": {
+      "position": 4,
+      "value": "3",
+      "form": [
+        "L",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 8,
+      "value": "0",
+      "form": [
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15273887": {
+    "homeTeam": {
+      "position": 2,
+      "value": "6",
+      "form": [
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 6,
+      "value": "1",
+      "form": [
+        "D",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15273898": {
+    "homeTeam": {
+      "position": 5,
+      "value": "1",
+      "form": [
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "position": 1,
+      "value": "6",
+      "form": [
+        "W",
+        "W",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15317656": {
+    "homeTeam": {
+      "position": 3,
+      "value": "6",
+      "form": [
+        "L",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 2,
+      "value": "6",
+      "form": [
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15404522": {
+    "homeTeam": {
+      "position": 4,
+      "value": "25",
+      "form": [
+        "W",
+        "D",
+        "D",
+        "D",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "position": 3,
+      "value": "28",
+      "form": [
+        "D",
+        "W",
+        "L",
+        "D",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15399014": {
+    "homeTeam": {
+      "position": 2,
+      "value": "32",
+      "form": [
+        "W",
+        "L",
+        "L",
+        "D",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 1,
+      "value": "37",
+      "form": [
+        "D",
+        "D",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15273963": {
+    "homeTeam": {
+      "position": 8,
+      "value": "1",
+      "form": [
+        "L",
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "position": 6,
+      "value": "3",
+      "form": [
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "14255446": {
+    "homeTeam": {
+      "position": 8,
+      "value": "0",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "position": 7,
+      "value": "3",
+      "form": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15401967": {
+    "homeTeam": {
+      "position": 12,
+      "value": "17",
+      "form": [
+        "L",
+        "D",
+        "L",
+        "D",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "position": 11,
+      "value": "19",
+      "form": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15401968": {
+    "homeTeam": {
+      "position": 4,
+      "value": "32",
+      "form": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "position": 6,
+      "value": "25",
+      "form": [
+        "D",
+        "D",
+        "W",
+        "D",
+        "D"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15401965": {
+    "homeTeam": {
+      "position": 1,
+      "value": "37",
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "position": 13,
+      "value": "14",
+      "form": [
+        "W",
+        "L",
+        "L",
+        "D",
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15401973": {
+    "homeTeam": {
+      "position": 7,
+      "value": "24",
+      "form": [
+        "L",
+        "D",
+        "W",
+        "L",
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "position": 2,
+      "value": "37",
+      "form": [
+        "D",
+        "D",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  }
+}

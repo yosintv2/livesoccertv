@@ -1,809 +1,509 @@
 {
   "14572796": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f1582d",
-        "fancyNumber": "222226"
+    "match_id": 14572796,
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Jonathan Rowe",
+        "time": "72'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "00376f",
-        "fancyNumber": "222226"
+      {
+        "name": "Thijs Dallinga",
+        "time": "58'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "e430ac",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Auston Trusty",
+        "time": "40'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Reo Hatate",
+        "time": "5'"
       }
-    }
+    ]
   },
   "13981637": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "0a0a0a",
-        "outline": "fbcb4c",
-        "fancyNumber": "222226"
+    "match_id": 13981637,
+    "home_score": 6,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Henrikh Mkhitaryan",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "0dd6f6",
-        "outline": "024ec0",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f4413a",
-        "fancyNumber": "222226"
+      {
+        "name": "Ange-Yoan Bonny",
+        "time": "86'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "d3d0a8",
-        "outline": "1f3285",
-        "fancyNumber": "222226"
+      {
+        "name": "Federico Dimarco",
+        "time": "82'"
+      },
+      {
+        "name": "Francesco Pio Esposito",
+        "time": "45'"
+      },
+      {
+        "name": "Lautaro Mart\u00ednez",
+        "time": "41'"
+      },
+      {
+        "name": "Piotr Zieli\u0144ski",
+        "time": "39'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Stefano Moreo",
+        "time": "23'"
+      },
+      {
+        "name": "Stefano Moreo",
+        "time": "11'"
+      }
+    ]
   },
   "14083146": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "030000",
-        "outline": "ca201b",
-        "fancyNumber": "222226"
+    "match_id": 14083146,
+    "home_score": 3,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Alan Matturro",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "2f3565",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "030202",
-        "outline": "01b2cb",
-        "fancyNumber": "222226"
+      {
+        "name": "Adri\u00e1n de la Fuente",
+        "time": "68'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "0d0e06",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Pablo Mart\u00ednez",
+        "time": "50'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Adam Boayar",
+        "time": "90'"
+      },
+      {
+        "name": "\u00c1lvaro Rodriguez",
+        "time": "11'"
+      }
+    ]
   },
   "14062185": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "fb80aa",
-        "outline": "0e8553",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "eaeaec",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "fcfcfc",
-        "outline": "48a8d3",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "050505",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14062185,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14064470": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "2c3793",
-        "outline": "8bdae1",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "2654d7",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    "match_id": 14064470,
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Bradley Barcola",
+        "time": "79'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "fcfcfc",
-        "outline": "fff200",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "18345e",
-        "fancyNumber": "222226"
-      }
-    }
+    ]
   },
   "14572701": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "416baa",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f2ea82",
-        "fancyNumber": "222226"
+    "match_id": 14572701,
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Jadon Sancho",
+        "time": "25'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f23a3a",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "88002d",
-        "fancyNumber": "222226"
-      }
-    }
+    ]
   },
   "14572644": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f4990e",
-        "fancyNumber": "222226"
+    "match_id": 14572644,
+    "home_score": 3,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Gon\u00e7alo Borges",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "f4f4f6",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "5be201",
-        "fancyNumber": "222226"
+      {
+        "name": "Anis Hadj Moussa",
+        "time": "68'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Tsuyoshi Watanabe",
+        "time": "5'"
       }
-    }
+    ],
+    "away_scorers": []
   },
   "14572804": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "050505",
-        "outline": "9ffd1c",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "8bb2e7",
-        "fancyNumber": "222226"
+    "match_id": 14572804,
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Vasilije Kostov",
+        "time": "16'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "59db00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "121111",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    }
+    ]
   },
   "14572713": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f60707",
-        "fancyNumber": "222226"
+    "match_id": 14572713,
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Giorgos Giakoumakis",
+        "time": "86'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "19191a",
-        "fancyNumber": "222226"
+      {
+        "name": "Andrija \u017divkovi\u0107",
+        "time": "67'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "8d8b8b",
-        "outline": "061c42",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "0d0d0d",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "14572769": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "0b0909",
-        "outline": "fedd1d",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "121212",
-        "outline": "f6f4f4",
-        "fancyNumber": "222226"
+    "match_id": 14572769,
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Igor Matanovi\u0107",
+        "time": "82'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "fff7d1",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "112aa7",
-        "outline": "ffee05",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "14572826": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "fdf9f9",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
+    "match_id": 14572826,
+    "home_score": 3,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Joachim Soltvedt",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "df0000",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "030303",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Emil Kornvig",
+        "time": "68'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "f3f1f1",
-        "outline": "000000",
-        "fancyNumber": "222226"
+      {
+        "name": "Noah Jean Holm",
+        "time": "19'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Martin Erli\u0107",
+        "time": "70'"
+      },
+      {
+        "name": "J\u00fanior Brumado",
+        "time": "31'"
+      },
+      {
+        "name": "Martin Erli\u0107",
+        "time": "4'"
+      }
+    ]
   },
   "14572724": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "b9ff00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff383d",
-        "fancyNumber": "222226"
+    "match_id": 14572724,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Luk\u00e1\u0161 \u010cerv",
+        "time": "6'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "050505",
-        "outline": "a8a8a3",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "005ec2",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Deniz G\u00fcl",
+        "time": "90'"
       }
-    }
+    ]
   },
   "14572754": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff1f1f",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fcd807",
-        "fancyNumber": "222226"
+    "match_id": 14572754,
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Ainsley Maitland-Niles",
+        "time": "45'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "5c2774",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "466db6",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    }
+    ]
   },
   "14572791": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffbf00",
-        "outline": "00ccaa",
-        "fancyNumber": "222226"
+    "match_id": 14572791,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Carl Starfelt",
+        "time": "69'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "050505",
-        "outline": "b8d4f2",
-        "fancyNumber": "222226"
+      {
+        "name": "Williot Swedberg",
+        "time": "1'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "030303",
-        "outline": "86bdf3",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "df0000",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Olivier Giroud",
+        "time": "86'"
       }
-    }
+    ]
   },
   "14572819": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "0e0d0d",
-        "outline": "e0d440",
-        "fancyNumber": "222226"
+    "match_id": 14572819,
+    "home_score": 0,
+    "away_score": 2,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Daan Heymans",
+        "time": "83'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Zakaria El Ouahdi",
+        "time": "54'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "f7a327",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "3986e8",
-        "fancyNumber": "222226"
-      }
-    }
+    ]
   },
   "14572736": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "cffb20",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "151c33",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    "match_id": 14572736,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Yusuf Bamidele",
+        "time": "62'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "0e6f3f",
-        "outline": "9ed65e",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "01564f",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Anass Zaroury",
+        "time": "86'"
       }
-    }
+    ]
   },
   "14572653": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "9c0021",
-        "fancyNumber": "222226"
+    "match_id": 14572653,
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Sandro Kulenovi\u0107",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "052d72",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
+      {
+        "name": "Dion Drena Beljo",
+        "time": "71'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "fafafa",
-        "outline": "c83b3e",
-        "fancyNumber": "222226"
+      {
+        "name": "Dion Drena Beljo",
+        "time": "11'"
+      },
+      {
+        "name": "Monsef Bakrar",
+        "time": "7'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Daniel B\u00eerligea",
+        "time": "42'"
+      }
+    ]
   },
   "14572784": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "f0780d",
-        "fancyNumber": "222226"
+    "match_id": 14572784,
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Tiago Gouveia",
+        "time": "59'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "b8a96c",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "090606",
-        "outline": "ed4722",
-        "fancyNumber": "222226"
+      {
+        "name": "Tiago Gouveia",
+        "time": "41'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "0d0e0a",
-        "outline": "e6af26",
-        "fancyNumber": "222226"
+      {
+        "name": "Charles Vanhoutte",
+        "time": "10'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Finn Stokkers",
+        "time": "68'"
+      }
+    ]
   },
   "14572640": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "faf5f5",
-        "outline": "ec823c",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "076fdf",
-        "fancyNumber": "222226"
+    "match_id": 14572640,
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Mohammed Diomande",
+        "time": "33'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "d53419",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "09582d",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "14572661": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "070707",
-        "outline": "ffee00",
-        "fancyNumber": "222226"
+    "match_id": 14572661,
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Frans Kr\u00e4tzig",
+        "time": "35'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ff0000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "393f3f",
-        "outline": "67ff9e",
-        "fancyNumber": "222226"
+      {
+        "name": "Kerim Alajbegovi\u0107",
+        "time": "12'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "fefdfb",
-        "outline": "813e42",
-        "fancyNumber": "222226"
+      {
+        "name": "Kerim Alajbegovi\u0107",
+        "time": "4'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jeremy Agbonifo",
+        "time": "56'"
+      }
+    ]
   },
   "14572630": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "b9cc75",
-        "outline": "191917",
-        "fancyNumber": "222226"
+    "match_id": 14572630,
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Niccol\u00f2 Pisilli",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "f0a400",
-        "outline": "990000",
-        "fancyNumber": "222226"
+      {
+        "name": "Niccol\u00f2 Pisilli",
+        "time": "40'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "fb3487",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "c90311",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "14572699": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "077547",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+    "match_id": 14572699,
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Ryan Yates",
+        "time": "54'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "d2403e",
-        "outline": "f3f353",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "e4232c",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "14288946": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "fafafa",
-        "outline": "1583dc",
-        "fancyNumber": "222226"
+    "match_id": 14288946,
+    "home_score": 3,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Oluwakorede Osundina",
+        "time": "65'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "c3f426",
-        "fancyNumber": "222226"
+      {
+        "name": "Gaizka Larrazabal",
+        "time": "50'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "c5271c",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "David Sousa",
+        "time": "5'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Guilherme Neiva",
+        "time": "90'"
+      },
+      {
+        "name": "Nen\u00ea",
+        "time": "90'"
+      },
+      {
+        "name": "Nen\u00ea",
+        "time": "75'"
+      }
+    ]
   },
   "14109772": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "b3bbb9",
-        "fancyNumber": "222226"
+    "match_id": 14109772,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Oleksandr Zubkov",
+        "time": "84'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "590626",
-        "fancyNumber": "222226"
+      {
+        "name": "Paul Onuachu",
+        "time": "51'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "0d0d0d",
-        "outline": "45db41",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "9a7827",
-        "outline": "18274e",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Fousseni Diabat\u00e9",
+        "time": "61'"
       }
-    }
+    ]
   },
   "14109775": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "c195e4",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "fed616",
-        "outline": "fe171d",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "d4f588",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "122056",
-        "outline": "f26522",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14109775,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14032390": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "f6f6f6",
-        "number": "ffffff",
-        "outline": "f6f6f6",
-        "fancyNumber": "222226"
+    "match_id": 14032390,
+    "home_score": 0,
+    "away_score": 4,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Maksim Paskotsi",
+        "time": "88'"
       },
-      "playerColor": {
-        "primary": "ff0000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "ffffff"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "16a134",
-        "number": "ffffff",
-        "outline": "16a134",
-        "fancyNumber": "ffffff"
+      {
+        "name": "Wilfried Kanga",
+        "time": "84'"
       },
-      "playerColor": {
-        "primary": "ffffff",
-        "number": "1e429a",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Wilfried Kanga",
+        "time": "31'"
+      },
+      {
+        "name": "Wilfried Kanga",
+        "time": "11'"
       }
-    }
+    ]
   },
   "14023635": {
     "incidents": [],
@@ -837,2918 +537,1597 @@
     }
   },
   "15010830": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "e55119",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "1ab749",
-        "outline": "ffdf00",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0000ff",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15010830,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "15010828": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "30e837",
-        "fancyNumber": "222226"
+    "match_id": 15010828,
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Mahmoud Tr\u00e9z\u00e9guet",
+        "time": "75'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "9a0b14",
-        "fancyNumber": "222226"
+      {
+        "name": "Mahmoud Tr\u00e9z\u00e9guet",
+        "time": "45'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "009900",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "15037737": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "e55119",
-        "fancyNumber": "222226"
+    "match_id": 15037737,
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Teboho Mokoena",
+        "time": "64'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "1ab749",
-        "outline": "ffdf00",
-        "fancyNumber": "222226"
+      {
+        "name": "Arthur Sales",
+        "time": "22'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "a1feca",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Abdelrazig Omer",
+        "time": "71'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0000ff",
-        "fancyNumber": "222226"
+      {
+        "name": "Abdelrazig Omer",
+        "time": "15'"
       }
-    }
+    ]
   },
   "14059794": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "faff00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    "match_id": 14059794,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Patrick Agyemang",
+        "time": "44'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "8a00d3",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ff0000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Chris Mepham",
+        "time": "90'"
       }
-    }
+    ]
   },
   "14083709": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "91a7c4",
-        "fancyNumber": "222226"
+    "match_id": 14083709,
+    "home_score": 3,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Adri\u00e1n Ni\u00f1o",
+        "time": "86'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "21255a",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "1d1b1b",
-        "outline": "f85a42",
-        "fancyNumber": "222226"
+      {
+        "name": "Chupete",
+        "time": "38'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "David Larrubia",
+        "time": "33'"
       }
-    }
+    ],
+    "away_scorers": []
   },
   "15176527": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "2e75e1",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    "match_id": 15176527,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Gabriel Barbosa",
+        "time": "90'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f7e800",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Yuri Alberto",
+        "time": "16'"
       }
-    }
+    ]
   },
   "14065416": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "e6ebf0",
-        "outline": "3f3a41",
-        "fancyNumber": "222226"
+    "match_id": 14065416,
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Luca Marseiler",
+        "time": "75'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "022ebe",
-        "fancyNumber": "222226"
+      {
+        "name": "Hiroki Akiyama",
+        "time": "60'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "619bda",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "7a0423",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "14065419": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "9fddf6",
-        "fancyNumber": "222226"
+    "match_id": 14065419,
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Noah Joel Sarenren Bazee",
+        "time": "87'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "033771",
-        "fancyNumber": "222226"
+      {
+        "name": "Joel Grodowski",
+        "time": "70'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "f7f7f7",
-        "outline": "c065b7",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Ivan Neki\u0107",
+        "time": "45'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0548bd",
-        "fancyNumber": "222226"
+      {
+        "name": "Leon Schneider",
+        "time": "33'"
       }
-    }
+    ]
   },
   "15176528": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff80dc",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    "match_id": 15176528,
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Patrick Brey",
+        "time": "75'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "15176545": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+    "match_id": 15176545,
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Guilherme Parede",
+        "time": "45'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f8f984",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "275d41",
-        "fancyNumber": "222226"
-      }
-    }
+    ]
   },
   "14317886": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "dfd930",
-        "outline": "45453f",
-        "fancyNumber": "222226"
+    "match_id": 14317886,
+    "home_score": 3,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Fabio Abiuso",
+        "time": "76'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "fffc81",
-        "outline": "fafafa",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "1f4352",
-        "outline": "c8f461",
-        "fancyNumber": "222226"
+      {
+        "name": "Simone Zanon",
+        "time": "62'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "f3f3f1",
-        "outline": "0066ff",
-        "fancyNumber": "222226"
+      {
+        "name": "Juli\u00e1n Illanes",
+        "time": "28'"
       }
-    }
+    ],
+    "away_scorers": []
   },
   "14064706": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "020406",
-        "outline": "41abd6",
-        "fancyNumber": "222226"
+    "match_id": 14064706,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Quentin Paris",
+        "time": "72'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "890119",
-        "fancyNumber": "222226"
+      {
+        "name": "Valentin Jacob",
+        "time": "33'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "fafbfb",
-        "outline": "f2368e",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "db1443",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Famara Di\u00e9dhiou",
+        "time": "90'"
       }
-    }
+    ]
   },
   "14064709": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "feba4b",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "c0b7b3",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "020000",
-        "outline": "fef35a",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "93000e",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14064709,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14064818": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "edeef2",
-        "outline": "fa615f",
-        "fancyNumber": "222226"
+    "match_id": 14064818,
+    "home_score": 0,
+    "away_score": 2,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Yanis Issoufou",
+        "time": "63'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "004be8",
-        "fancyNumber": "222226"
+      {
+        "name": "Alexandre Mendy",
+        "time": "2'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "0f0f0f",
-        "outline": "f7ae24",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ec5c1e",
-        "outline": "203049",
-        "fancyNumber": "222226"
-      }
-    }
+    ]
   },
   "14064696": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "b6f983",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ff0000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    "match_id": 14064696,
+    "home_score": 1,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Adrian Dabasse",
+        "time": "85'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0d4f30",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Kenny Nagera",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffc800",
-        "outline": "ba1029",
-        "fancyNumber": "222226"
+      {
+        "name": "Tairyk Arconte",
+        "time": "57'"
+      },
+      {
+        "name": "Ibrahima Bald\u00e9",
+        "time": "8'"
       }
-    }
+    ]
   },
   "14056513": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "3cb640",
-        "fancyNumber": "222226"
+    "match_id": 14056513,
+    "home_score": 2,
+    "away_score": 4,
+    "home_scorers": [
+      {
+        "name": "Bouke Boersma",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "000099",
-        "fancyNumber": "222226"
+      {
+        "name": "Jevon Simons",
+        "time": "57'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "f1f0ef",
-        "outline": "e6964c",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Nazjir Held",
+        "time": "84'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "0062ff",
-        "outline": "eeff00",
-        "fancyNumber": "222226"
+      {
+        "name": "Yorem van der Veen",
+        "time": "78'"
+      },
+      {
+        "name": "Harrie Kuster",
+        "time": "54'"
+      },
+      {
+        "name": "Juan Familia-Castillo",
+        "time": "35'"
       }
-    }
+    ]
   },
   "14064698": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "e78cb1",
-        "fancyNumber": "222226"
+    "match_id": 14064698,
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Steeve Beusnard",
+        "time": "63'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "0006a8",
-        "outline": "fff700",
-        "fancyNumber": "222226"
+      {
+        "name": "Tom Pouilly",
+        "time": "44'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "f5f2f2",
-        "outline": "b53334",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Lucas Bernadou",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "083d9a",
-        "fancyNumber": "222226"
+      {
+        "name": "Evans Fabrice Maurin",
+        "time": "78'"
       }
-    }
+    ]
   },
   "14056516": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "33ccff",
-        "fancyNumber": "222226"
+    "match_id": 14056516,
+    "home_score": 3,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Yannick Eduardo",
+        "time": "80'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "00cc66",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
+      {
+        "name": "St\u00e9phano Carrillo",
+        "time": "70'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0000ff",
-        "fancyNumber": "222226"
+      {
+        "name": "Yoon Do-young",
+        "time": "16'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Sebastian Karlsson Grach",
+        "time": "74'"
+      },
+      {
+        "name": "Kevin Felida",
+        "time": "67'"
+      }
+    ]
   },
   "14056519": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "33cccc",
-        "fancyNumber": "222226"
+    "match_id": 14056519,
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Ilias Breugelmans",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "dd0000",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+      {
+        "name": "Sven Braken",
+        "time": "70'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "66cc99",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Rafik El Arguioui",
+        "time": "47'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Tijn den Boggende",
+        "time": "4'"
       }
-    }
+    ]
   },
   "14056522": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
+    "match_id": 14056522,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Anthony van den Hurk",
+        "time": "52'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Lucas Beerten",
+        "time": "81'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+      {
+        "name": "Maurilio de Lannoy",
+        "time": "76'"
       }
-    }
+    ]
   },
   "14056525": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000fe3",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "0000b3",
-        "outline": "0000ff",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14056525,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14056528": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "d9fa8c",
-        "fancyNumber": "222226"
+    "match_id": 14056528,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Naoufal Bannis",
+        "time": "44'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "fcf8f8",
-        "outline": "0b0b0a",
-        "fancyNumber": "222226"
+      {
+        "name": "Naoufal Bannis",
+        "time": "38'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "faff00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f9f001",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Evan Rottier",
+        "time": "52'"
       }
-    }
+    ]
   },
   "14056531": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ff7990",
-        "fancyNumber": "222226"
+    "match_id": 14056531,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Raffael Behounek",
+        "time": "88'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "696b75",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Nick Doodeman",
+        "time": "35'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Dean Zandbergen",
+        "time": "79'"
       }
-    }
+    ]
   },
   "14138491": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "cad84d",
-        "fancyNumber": "222226"
+    "match_id": 14138491,
+    "home_score": 0,
+    "away_score": 3,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Amadou Badji",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "82c2f2",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "36dcec",
-        "fancyNumber": "222226"
+      {
+        "name": "Jo\u00e3o Amaral",
+        "time": "34'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "6b1f2e",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Douglas Tanque",
+        "time": "24'"
       }
-    }
+    ]
   },
   "14671707": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "050000",
-        "outline": "f92f76",
-        "fancyNumber": "222226"
+    "match_id": 14671707,
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Xavier Bertoncello",
+        "time": "89'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000114",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0082",
-        "fancyNumber": "222226"
+      {
+        "name": "Eli Adams",
+        "time": "70'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "f6e552",
-        "fancyNumber": "222226"
+      {
+        "name": "Clayton Taylor",
+        "time": "56'"
+      },
+      {
+        "name": "Lachlan Bayliss",
+        "time": "1'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Sander Erik Kartum",
+        "time": "86'"
+      }
+    ]
   },
   "14143630": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "0e0e0e",
-        "outline": "f3950f",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "9543b3",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "0e0e0e",
-        "outline": "ebbc24",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f24545",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14143630,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14138479": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "008000",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ad8b43",
-        "outline": "f2ff09",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ac8839",
-        "outline": "586a58",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14138479,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14671710": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "f6f6f8",
-        "outline": "12b1e2",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "203a64",
-        "outline": "ffd92e",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14671710,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14671711": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "fcf5f5",
-        "outline": "8be068",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f76b39",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "f6f0f0",
-        "outline": "25c0f0",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "af162d",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14671711,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14671712": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "119b39",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "050505",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f500bb",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "5fc9ec",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14671712,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14091851": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 14091851,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Andrew Idoko",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+      {
+        "name": "Tamir Haimovich",
+        "time": "56'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0000ff",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "M\u00e1rk Koszta",
+        "time": "68'"
       }
-    }
+    ]
   },
   "15366772": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+    "match_id": 15366772,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Facundo Bon\u00e9",
+        "time": "50'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+      {
+        "name": "Dereck Moncada",
+        "time": "45'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0080",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Luifer Hern\u00e1ndez",
+        "time": "19'"
       }
-    }
+    ]
   },
   "15367306": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "9868eb",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "f0c561",
-        "outline": "800000",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f36096",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "294a7f",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15367306,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14061151": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffdb53",
-        "fancyNumber": "222226"
+    "match_id": 14061151,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Jack Moylan",
+        "time": "55'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fa0000",
-        "fancyNumber": "222226"
+      {
+        "name": "Jack Moylan",
+        "time": "35'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "a5da66",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Jake Beesley",
+        "time": "37'"
       }
-    }
+    ]
   },
   "14321283": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "ff8000",
-        "fancyNumber": "222226"
+    "match_id": 14321283,
+    "home_score": 3,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Mohamed Abdelrahim",
+        "time": "26'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "f7de0f",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+      {
+        "name": "Ali Hussein",
+        "time": "20'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "dd0000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Seif Teka",
+        "time": "8'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Abdelrahim Amoory",
+        "time": "45'"
+      },
+      {
+        "name": "Jimmy Emmanuel Mwanga",
+        "time": "1'"
+      }
+    ]
   },
   "14321287": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "4fc63e",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "ffc703",
-        "fancyNumber": "222226"
+    "match_id": 14321287,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Abdelrahman El Dah",
+        "time": "62'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Joackiam Ojera",
+        "time": "68'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000050",
-        "fancyNumber": "222226"
+      {
+        "name": "Joackiam Ojera",
+        "time": "55'"
       }
-    }
+    ]
   },
   "14773695": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "fe724d",
-        "fancyNumber": "222226"
+    "match_id": 14773695,
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Roger Mart\u00ednez",
+        "time": "85'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "f2f22c",
-        "fancyNumber": "222226"
+      {
+        "name": "Roger Mart\u00ednez",
+        "time": "23'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "9b22ff",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Yousef Al-Shammari",
+        "time": "55'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f3c72c",
-        "fancyNumber": "222226"
+      {
+        "name": "F\u00e1bio Martins",
+        "time": "49'"
       }
-    }
+    ]
   },
   "14321284": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "45c62f",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "ef3322",
-        "fancyNumber": "222226"
+    "match_id": 14321284,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Mahmoud Ouka",
+        "time": "17'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Islam Abdelnaim",
+        "time": "10'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+      {
+        "name": "Ali Sulieman",
+        "time": "7'"
       }
-    }
+    ]
   },
   "14773693": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "c0a20c",
-        "outline": "5d13b1",
-        "fancyNumber": "222226"
+    "match_id": 14773693,
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Marcos Leonardo",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0855b3",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "fafafa",
-        "outline": "050505",
-        "fancyNumber": "222226"
+      {
+        "name": "Mohamed Kanno",
+        "time": "61'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "030088",
-        "outline": "ff8000",
-        "fancyNumber": "222226"
+      {
+        "name": "Orlando Mosquera",
+        "time": "45'"
+      },
+      {
+        "name": "Sergej Milinkovi\u0107-Savi\u0107",
+        "time": "37'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Fashion Sakala",
+        "time": "14'"
+      }
+    ]
   },
   "14773689": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "18e24a",
-        "fancyNumber": "222226"
+    "match_id": 14773689,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Juli\u00e1n Qui\u00f1ones",
+        "time": "59'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f72d39",
-        "fancyNumber": "222226"
+      {
+        "name": "Juli\u00e1n Qui\u00f1ones",
+        "time": "37'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "890ba8",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f9e71a",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Karim Benzema",
+        "time": "29'"
       }
-    }
+    ]
   },
   "14060328": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 14060328,
+    "home_score": 0,
+    "away_score": 2,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Claudiu Micovschi",
+        "time": "72'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "fd9a50",
-        "outline": "e4e6ec",
-        "fancyNumber": "222226"
+      {
+        "name": "Robert Moldoveanu",
+        "time": "64'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "080808",
-        "outline": "e3fe8f",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "4a377c",
-        "outline": "dddde6",
-        "fancyNumber": "222226"
-      }
-    }
+    ]
   },
   "14060333": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "f8de55",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "1d1b1b",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    "match_id": 14060333,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Marko Gjorgjievski",
+        "time": "77'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "5eb4ab",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Raul Opru\u021b",
+        "time": "80'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+      {
+        "name": "Raul Opru\u021b",
+        "time": "71'"
       }
-    }
+    ]
   },
   "14366028": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "f29922",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "0d3696",
-        "outline": "39cce6",
-        "fancyNumber": "222226"
+    "match_id": 14366028,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Moses Mthembu",
+        "time": "45'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Kgaogelo Sekgota",
+        "time": "1'"
       }
-    }
+    ]
   },
   "14671883": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
+    "match_id": 14671883,
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Bente Jansen",
+        "time": "89'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "dd0000",
-        "outline": "ff9900",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "82549d",
-        "fancyNumber": "222226"
+      {
+        "name": "Sharn Freier",
+        "time": "66'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "dd0000",
-        "outline": "009933",
-        "fancyNumber": "222226"
+      {
+        "name": "Daisy Brown",
+        "time": "45'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Sofia Christopherson",
+        "time": "13'"
+      }
+    ]
   },
   "14671882": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffcc00",
-        "outline": "339900",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14671882,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14671885": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "66ffff",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "dd0000",
-        "outline": "9900ff",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "aef5c5",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "101f3e",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14671885,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "15213929": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "f5d341",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "dd0000",
-        "outline": "000000",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "dd0000",
-        "outline": "0000cc",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15213929,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14283240": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0500cc",
-        "fancyNumber": "222226"
+    "match_id": 14283240,
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Jelena \u010cankovi\u0107",
+        "time": "41'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "66cc00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "0054a6",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    }
+    ]
   },
   "14117776": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0a0a0a",
-        "fancyNumber": "222226"
+    "match_id": 14117776,
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Thierry Ambrose",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f24245",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "0a0000",
-        "outline": "5eeb00",
-        "fancyNumber": "222226"
+      {
+        "name": "Jellert Van Landschoot",
+        "time": "73'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0000dd",
-        "fancyNumber": "222226"
+      {
+        "name": "Jellert Van Landschoot",
+        "time": "47'"
+      },
+      {
+        "name": "Brecht Dejaegere",
+        "time": "7'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "August De Wannemacker",
+        "time": "22'"
+      }
+    ]
   },
   "14117779": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "00ff2a",
-        "fancyNumber": "222226"
+    "match_id": 14117779,
+    "home_score": 0,
+    "away_score": 3,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Jessi Da Silva",
+        "time": "82'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000066",
-        "outline": "ff4040",
-        "fancyNumber": "222226"
+      {
+        "name": "Thibaut Van Acker",
+        "time": "61'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "005bb7",
-        "fancyNumber": "222226"
+      {
+        "name": "Rayan Buifrahi",
+        "time": "59'"
       }
-    }
+    ]
   },
   "14435522": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "009900",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ff0000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    "match_id": 14435522,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Dina Orschmann",
+        "time": "36'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Kristin K\u00f6gel",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
+      {
+        "name": "Vanessa Fudalla",
+        "time": "78'"
       }
-    }
+    ]
   },
   "14626846": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "cc3333",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14626846,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14019479": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "101e82",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14019479,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "15366443": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+    "match_id": 15366443,
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Zoubir Motrani",
+        "time": "82'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "15366440": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 15366440,
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Chemseddine Bekkouche",
+        "time": "49'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ff0f0f",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Edward Ledlum",
+        "time": "29'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "023262",
-        "outline": "ffff10",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "15269902": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff9c00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffff00",
-        "outline": "398138",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "f2f2f2",
-        "outline": "2a3e8a",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "49af12",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15269902,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "15270071": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "6a4abd",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "0a0a0a",
-        "outline": "16a150",
-        "fancyNumber": "222226"
+    "match_id": 15270071,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Mauro M\u00e9ndez",
+        "time": "48'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ffdd01",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ff3c3c",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Jordy Caicedo",
+        "time": "84'"
       }
-    }
+    ]
   },
   "15366441": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "f1d655",
-        "fancyNumber": "222226"
+    "match_id": 15366441,
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Kheir Eddine Toual",
+        "time": "62'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+      {
+        "name": "Merouane Zerrouki",
+        "time": "41'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+      {
+        "name": "Kamel Hamidi",
+        "time": "8'"
+      },
+      {
+        "name": "Akram Djahnit",
+        "time": "2'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Mohamed Islam Bakir",
+        "time": "50'"
+      }
+    ]
   },
   "15269913": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "050505",
-        "outline": "e15cbc",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "a54248",
-        "outline": "f34843",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0c7a07",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "57413d",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15269913,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "15269917": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ff9c00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "fbf3f3",
-        "outline": "000000",
-        "fancyNumber": "222226"
+    "match_id": 15269917,
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Valentino Simoni",
+        "time": "5'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
-      }
-    }
+    ]
   },
   "15269910": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "eb00ff",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+    "match_id": 15269910,
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Tob\u00edas Andrada",
+        "time": "90'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0a0a0a",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "2e3139",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    }
+    ]
   },
   "15269915": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "67ff00",
-        "fancyNumber": "222226"
+    "match_id": 15269915,
+    "home_score": 2,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Alexis Cuello",
+        "time": "86'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "22314e",
-        "fancyNumber": "222226"
+      {
+        "name": "Alexis Cuello",
+        "time": "53'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "00eaee",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Marcelino Moreno",
+        "time": "73'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "f9e9dc",
-        "outline": "9d2a30",
-        "fancyNumber": "222226"
+      {
+        "name": "Carlos Izquierdoz",
+        "time": "30'"
+      },
+      {
+        "name": "Rodrigo Castillo",
+        "time": "24'"
       }
-    }
+    ]
   },
   "15269906": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ffae00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+    "match_id": 15269906,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Luciano Cabral",
+        "time": "45'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "0a0000",
-        "outline": "d0cccc",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "fafafa",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Fabricio P\u00e9rez",
+        "time": "46'"
       }
-    }
+    ]
   },
   "15269908": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "e919dc",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "272c51",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "1ca517",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ededed",
-        "outline": "fd0808",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15269908,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "15270072": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "0a0000",
-        "outline": "b0e80d",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "14163f",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "0f0f0f",
-        "outline": "e932aa",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "143a90",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15270072,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14530050": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+    "match_id": 14530050,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Diogo Almeida",
+        "time": "84'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "ecc337",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Ramon",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "a3dcf0",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Charles Boli",
+        "time": "5'"
       }
-    }
+    ]
   },
   "14530044": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "034ea2",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14530044,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14530048": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "808080",
-        "fancyNumber": "222226"
+    "match_id": 14530048,
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Jordan Rezabala",
+        "time": "80'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "33ff00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "222226",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "15138036": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 15138036,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Juninho",
+        "time": "66'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffcd00",
-        "outline": "002570",
-        "fancyNumber": "222226"
+      {
+        "name": "Ricardo Oliveira",
+        "time": "29'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "ff5941",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "dfd603",
-        "outline": "011f85",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Matheus Iacovelli",
+        "time": "16'"
       }
-    }
+    ]
   },
   "15138038": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 15138038,
+    "home_score": 3,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Juan Iber\u00ea",
+        "time": "66'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "009900",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+      {
+        "name": "Brun\u00e3o",
+        "time": "45'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "005400",
-        "fancyNumber": "222226"
+      {
+        "name": "Isael",
+        "time": "35'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Antonio Gutemberg",
+        "time": "76'"
+      },
+      {
+        "name": "Guilherme Silveira",
+        "time": "20'"
+      }
+    ]
   },
   "15138033": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 15138033,
+    "home_score": 2,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Jorge Pedra",
+        "time": "72'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff932e",
-        "fancyNumber": "222226"
+      {
+        "name": "Leonardo David",
+        "time": "26'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "070707",
-        "outline": "8e051d",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Kevin Serna",
+        "time": "79'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "6e202e",
-        "fancyNumber": "222226"
+      {
+        "name": "Everaldo",
+        "time": "58'"
+      },
+      {
+        "name": "Kevin Serna",
+        "time": "54'"
       }
-    }
+    ]
   },
   "15146344": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "118a02",
-        "outline": "8bff00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    "match_id": 15146344,
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Rodrigo Sam",
+        "time": "90'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "03159d",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "5d001e",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "14530052": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "66ff66",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f90126",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "66ffff",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "222226",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14530052,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "15146345": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "0d0c0c",
-        "outline": "1ec23f",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "29156e",
-        "fancyNumber": "222226"
+    "match_id": 15146345,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Andrey",
+        "time": "86'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Vin\u00edcius Garcia",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+      {
+        "name": "Jean Carlo",
+        "time": "47'"
       }
-    }
+    ]
   },
   "15188782": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "d9e401",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0455a3",
-        "fancyNumber": "222226"
+    "match_id": 15188782,
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Bryan",
+        "time": "61'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
-      }
-    }
+    ]
   },
   "15298491": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
+    "match_id": 15298491,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "51'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Abnner Oliveira",
+        "time": "89'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "006030",
-        "fancyNumber": "222226"
+      {
+        "name": "Unknown",
+        "time": "27'"
       }
-    }
+    ]
   },
   "15204438": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+    "match_id": 15204438,
+    "home_score": 0,
+    "away_score": 4,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Oluwasegun Samuel Otusanya",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "006600",
-        "fancyNumber": "222226"
+      {
+        "name": "Felipe Saraiva",
+        "time": "21'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "808080",
-        "fancyNumber": "222226"
+      {
+        "name": "Dod\u00f4",
+        "time": "15'"
+      },
+      {
+        "name": "Reginaldo",
+        "time": "10'"
       }
-    }
+    ]
   },
   "15298494": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+    "match_id": 15298494,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "22'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Unknown",
+        "time": "88'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Unknown",
+        "time": "37'"
       }
-    }
+    ]
   },
   "15321825": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+    "match_id": 15321825,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "63'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Unknown",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+      {
+        "name": "Jussimar",
+        "time": "48'"
       }
-    }
+    ]
   },
   "15188408": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
+    "match_id": 15188408,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Fernando Lesme",
+        "time": "90'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "4169e1",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Joaqu\u00edn Huertas",
+        "time": "52'"
       }
-    }
+    ]
   },
   "15188415": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "cb9a2b",
-        "outline": "182846",
-        "fancyNumber": "222226"
+    "match_id": 15188415,
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "David Guzm\u00e1n",
+        "time": "18'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "080808",
-        "outline": "00e1de",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "9f093e",
-        "fancyNumber": "222226"
-      }
-    }
+    ]
   },
   "15337489": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "fcc826",
-        "outline": "67111a",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15337489,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14222831": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "f94b0d",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "e8ebed",
-        "outline": "ffc000",
-        "fancyNumber": "222226"
+    "match_id": 14222831,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Marquinhos",
+        "time": "82'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "333399",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Christos Kallis",
+        "time": "90'"
       }
-    }
+    ]
   },
   "15337486": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 15337486,
+    "home_score": 5,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "76'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "0a0a0a",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "cc0000",
-        "fancyNumber": "222226"
+      {
+        "name": "Leam Safir",
+        "time": "69'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "dd0000",
-        "outline": "3333ff",
-        "fancyNumber": "222226"
+      {
+        "name": "Vitek Simon",
+        "time": "67'"
+      },
+      {
+        "name": "Jiri Mokrejs",
+        "time": "34'"
+      },
+      {
+        "name": "Unknown",
+        "time": "24'"
       }
-    }
+    ],
+    "away_scorers": []
   },
   "14217706": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "faff00",
-        "fancyNumber": "222226"
+    "match_id": 14217706,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Mathis Touho",
+        "time": "50'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000dc2",
-        "fancyNumber": "222226"
+      {
+        "name": "Babacar Leye",
+        "time": "12'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "50007f",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Mokrane Bentoumi",
+        "time": "3'"
       }
-    }
+    ]
   },
   "14217685": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "214727",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "83121d",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "48f000",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "005fa9",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14217685,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14217688": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0000cc",
-        "fancyNumber": "222226"
+    "match_id": 14217688,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Djibril Diarra",
+        "time": "15'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "eb0000",
-        "outline": "000040",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Aymeric Ahmed",
+        "time": "35'"
       }
-    }
+    ]
   },
   "14217701": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "d5ff00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0095e5",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "e90000",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "e1ff00",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14217701,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14217693": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 14217693,
+    "home_score": 3,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Yann Diebold",
+        "time": "87'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "aed1e1",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fffa00",
-        "fancyNumber": "222226"
+      {
+        "name": "Marvin Ad\u00e9laide",
+        "time": "52'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "d70000",
-        "fancyNumber": "222226"
+      {
+        "name": "Renald Xhemo",
+        "time": "45'"
       }
-    }
+    ],
+    "away_scorers": []
   },
   "14217699": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "00ff00",
-        "fancyNumber": "222226"
+    "match_id": 14217699,
+    "home_score": 1,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Jordan Poha",
+        "time": "42'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Cedric Odzoumo",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "968c5c",
-        "outline": "024d90",
-        "fancyNumber": "222226"
+      {
+        "name": "Shelton Guillaume",
+        "time": "71'"
+      },
+      {
+        "name": "Cedric Odzoumo",
+        "time": "48'"
       }
-    }
+    ]
   },
   "14217703": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0000ff",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "121318",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14217703,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14217696": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "a60000",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
+    "match_id": 14217696,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Fahd El Khoumisti",
+        "time": "88'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff00d5",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Elson Mendes",
+        "time": "42'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "2c55a2",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
+      {
+        "name": "Kapitbafan Djoco",
+        "time": "27'"
       }
-    }
+    ]
   },
   "14103099": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ff001b",
-        "fancyNumber": "222226"
+    "match_id": 14103099,
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Verthomy Schilo Boboy",
+        "time": "22'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "f8f6f9",
-        "outline": "bc1e2c",
-        "fancyNumber": "222226"
+      {
+        "name": "Meiko Sponsel",
+        "time": "5'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "515bc0",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "14275099": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "00cc33",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0000ff",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14275099,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14489884": {
     "incidents": [],
@@ -3813,35 +2192,25 @@
     }
   },
   "15335952": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0025",
-        "fancyNumber": "222226"
+    "match_id": 15335952,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Jos\u00e9 Carlos Mart\u00ednez",
+        "time": "90'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "William Jeh\u00fa Fajardo",
+        "time": "57'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+      {
+        "name": "William Jeh\u00fa Fajardo",
+        "time": "24'"
       }
-    }
+    ]
   },
   "14604463": {
     "incidents": [],
@@ -3875,562 +2244,268 @@
     }
   },
   "15335951": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 15335951,
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Santiago G\u00f3mez",
+        "time": "71'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "f5f50a",
-        "fancyNumber": "222226"
+      {
+        "name": "Kevin Fernandez",
+        "time": "20'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0000d0",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "14214861": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+    "match_id": 14214861,
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Mariano Peralta Bauer",
+        "time": "15'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff6000",
-        "fancyNumber": "222226"
-      }
-    }
+    ]
   },
   "14214863": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 14214863,
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Maxwell",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+      {
+        "name": "Gustavo Fran\u00e7a",
+        "time": "44'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "dd0000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "14214872": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "32dca4",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "f22626",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "00ff00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "4b0082",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14214872,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14214867": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "151d47",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "c50236",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14214867,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "15166709": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 15166709,
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Mehrdad Ghanbari",
+        "time": "65'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "3cb371",
-        "fancyNumber": "222226"
+      {
+        "name": "Amirhossein Farsi",
+        "time": "14'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Sasan Hosseini",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000066",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Rahman Jafari",
+        "time": "34'"
       }
-    }
+    ]
   },
   "15166713": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 15166713,
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Mojtaba Fakhrian",
+        "time": "89'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "0a0ab6",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Gustavo Blanco",
+        "time": "73'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Mohammad Ghoreishi",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "7e182a",
-        "fancyNumber": "222226"
+      {
+        "name": "Ehsan Mahroughi",
+        "time": "51'"
       }
-    }
+    ]
   },
   "15166710": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
+    "match_id": 15166710,
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Domagoj Dro\u017e\u0111ek",
+        "time": "84'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+      {
+        "name": "Danial Esmaeilifar",
+        "time": "76'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f1771d",
-        "fancyNumber": "222226"
+      {
+        "name": "Nima Mirzazad",
+        "time": "56'"
+      },
+      {
+        "name": "Amirhossein Hosseinzadeh",
+        "time": "19'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Farnam Arab",
+        "time": "88'"
+      }
+    ]
   },
   "15166712": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "006600",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "005300",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "414141",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0000ff",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15166712,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14973206": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "4b0082",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffdf00",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14973206,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "15166714": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffff33",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0000ff",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0783f7",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15166714,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "15166717": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "22650a",
-        "fancyNumber": "222226"
+    "match_id": 15166717,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Igor Sergeev",
+        "time": "70'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "cc0000",
-        "fancyNumber": "222226"
+      {
+        "name": "Oston Urunov",
+        "time": "49'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "7e43af",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "141415",
-        "outline": "efb339",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Ricardo Alves",
+        "time": "90'"
       }
-    }
+    ]
   },
   "15166716": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "affd08",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "064ddb",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fbb6cb",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "7c8b74",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15166716,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "15166715": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 15166715,
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Pouria Shahrabadi",
+        "time": "65'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "75aadb",
-        "fancyNumber": "222226"
+      {
+        "name": "Mehdi Tikdari",
+        "time": "51'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "14302716": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "f0dc6e",
-        "fancyNumber": "222226"
+    "match_id": 14302716,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Noa Kljajic",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+      {
+        "name": "Krist\u00f3fer J\u00f3nsson",
+        "time": "74'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "171616",
-        "outline": "d2e745",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f00236",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Matteo Ferro",
+        "time": "72'"
       }
-    }
+    ]
   },
   "14068622": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f1543b",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "dd0000",
-        "outline": "ffff33",
-        "fancyNumber": "222226"
+    "match_id": 14068622,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Antoine N'Diaye",
+        "time": "8'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "33ff00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Maurizio Junior Rossetti",
+        "time": "61'"
       }
-    }
+    ]
   },
   "14068619": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "f0660a",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "680b22",
-        "fancyNumber": "222226"
+    "match_id": 14068619,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "David Bonacina",
+        "time": "49'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "e71313",
-        "outline": "fffa00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "f0a400",
-        "outline": "990000",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Daniel Tonica",
+        "time": "36'"
       }
-    }
+    ]
   },
   "14303479": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "016001",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "3d5186",
-        "outline": "f7f722",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "322960",
-        "outline": "6aae37",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "282842",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14303479,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14068632": {
     "incidents": [],
@@ -4464,35 +2539,11 @@
     }
   },
   "14068627": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "66cc00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "660066",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "f3f3f7",
-        "outline": "0297b6",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "dd0000",
-        "outline": "000099",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14068627,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14068628": {
     "incidents": [],
@@ -4557,314 +2608,149 @@
     }
   },
   "15362905": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "dd0000",
-        "outline": "66ccff",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15362905,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "15362907": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+    "match_id": 15362907,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Pedro Santiago Cejas",
+        "time": "50'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Vinicius Baiano",
+        "time": "79'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+      {
+        "name": "Vitinho",
+        "time": "66'"
       }
-    }
+    ]
   },
   "15270420": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "00ff40",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0a0a0a",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15270420,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14049177": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "660033",
-        "fancyNumber": "222226"
+    "match_id": 14049177,
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Jamie McGonigle",
+        "time": "80'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "306eff",
-        "fancyNumber": "222226"
+      {
+        "name": "Joel Cooper",
+        "time": "20'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "339900",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0000ff",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "15270419": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "020b3d",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15270419,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14049181": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
+    "match_id": 14049181,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Ryan Nolan",
+        "time": "38'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "c82831",
-        "fancyNumber": "222226"
+      {
+        "name": "Ryan Nolan",
+        "time": "19'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Ben Cushnie",
+        "time": "52'"
       }
-    }
+    ]
   },
   "15188927": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "fcfcfc",
-        "outline": "e2130b",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "0d0c0c",
-        "outline": "ffde05",
-        "fancyNumber": "222226"
+    "match_id": 15188927,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Allan Wlk",
+        "time": "49'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff1c1c",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "303459",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Fernando Romero",
+        "time": "63'"
       }
-    }
+    ]
   },
   "15188931": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "1129df",
-        "outline": "bbee7c",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "2229bd",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+    "match_id": 15188931,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "El\u00edas Alfonso",
+        "time": "8'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "82e154",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Iv\u00e1n Maggi",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ffdd00",
-        "fancyNumber": "222226"
+      {
+        "name": "Iv\u00e1n Maggi",
+        "time": "90'"
       }
-    }
+    ]
   },
   "14336307": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ad101c",
-        "fancyNumber": "222226"
+    "match_id": 14336307,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Diego Fernandes",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "008040",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
+      {
+        "name": "Joao Victor",
+        "time": "90'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ee75c8",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "383838",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Andr\u00e9 Cl\u00f3vis",
+        "time": "50'"
       }
-    }
+    ]
   },
   "14336314": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "e5f50a",
-        "outline": "0101a2",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "060608",
-        "outline": "fedc00",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14336314,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14263157": {
     "incidents": [],
@@ -4898,406 +2784,784 @@
     }
   },
   "15273954": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "cff50d",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15273954,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "15274979": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "808080",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "0000ff",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 15274979,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "14195514": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "f5ed00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "21664f",
-        "fancyNumber": "222226"
+    "match_id": 14195514,
+    "home_score": 1,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Ryoya Taniguchi",
+        "time": "74'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "214787",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Trent Buhagiar",
+        "time": "60'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fbda4d",
-        "fancyNumber": "222226"
+      {
+        "name": "Trent Buhagiar",
+        "time": "55'"
+      },
+      {
+        "name": "Nikola Ignjatovi\u0107",
+        "time": "20'"
       }
-    }
+    ]
   },
   "14035429": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "dd0000",
-        "outline": "990000",
-        "fancyNumber": "222226"
+    "match_id": 14035429,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Aaron Muirhead",
+        "time": "58'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "0000ff",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Michael Garrity",
+        "time": "74'"
       }
-    }
+    ]
   },
   "14255430": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "9ac14a",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "fa6f3a",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "d41380",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "1303fc",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    }
+    "match_id": 14255430,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   },
   "15204294": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "808080",
-        "fancyNumber": "222226"
+    "match_id": 15204294,
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Joris Manquant",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "808080",
-        "fancyNumber": "222226"
+      {
+        "name": "Jarell Njike Simo",
+        "time": "10'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Itaitinga",
+        "time": "52'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000080",
-        "fancyNumber": "222226"
+      {
+        "name": "Itaitinga",
+        "time": "27'"
       }
-    }
+    ]
   },
   "15204293": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "006600",
-        "fancyNumber": "222226"
+    "match_id": 15204293,
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Milo\u0161 Coci\u0107",
+        "time": "59'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "990000",
-        "outline": "000000",
-        "fancyNumber": "222226"
+      {
+        "name": "Dominik Schwizer",
+        "time": "21'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
+      {
+        "name": "Liridon Berisha",
+        "time": "15'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Orges Bunjaku",
+        "time": "90'"
+      }
+    ]
   },
   "15335632": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 15335632,
+    "home_score": 3,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Firas Chaouat",
+        "time": "77'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "222226",
-        "outline": "a7d1e5",
-        "fancyNumber": "222226"
+      {
+        "name": "Firas Chaouat",
+        "time": "74'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+      {
+        "name": "Firas Chaouat",
+        "time": "41'"
       }
-    }
+    ],
+    "away_scorers": []
   },
   "15332924": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 15332924,
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Ch\u00e9rif Bodian",
+        "time": "64'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ed1b24",
-        "fancyNumber": "222226"
+      {
+        "name": "Fares Meskini",
+        "time": "23'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    ],
+    "away_scorers": [
+      {
+        "name": "Helmi Jouaida",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "03776e",
-        "fancyNumber": "222226"
+      {
+        "name": "Jasser Khmiri",
+        "time": "34'"
       }
-    }
+    ]
   },
   "15332917": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
+    "match_id": 15332917,
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Mustapha Samb",
+        "time": "45'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
-      },
-      "playerColor": {
-        "primary": "000000",
-        "number": "dd0000",
-        "outline": "ffff00",
-        "fancyNumber": "222226"
-      }
-    }
+    ],
+    "away_scorers": []
   },
   "15394516": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 15394516,
+    "home_score": 3,
+    "away_score": 4,
+    "home_scorers": [
+      {
+        "name": "Liam Higgins",
+        "time": "67'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "ffffff",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+      {
+        "name": "Cameron Ferguson",
+        "time": "63'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "000000",
-        "fancyNumber": "222226"
+      {
+        "name": "Lassana Nalatche Mendes",
+        "time": "10'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Ben Wynne",
+        "time": "33'"
+      },
+      {
+        "name": "Harry Owen",
+        "time": "28'"
+      },
+      {
+        "name": "Ben Wynne",
+        "time": "22'"
+      },
+      {
+        "name": "Darren Stephenson",
+        "time": "18'"
+      }
+    ]
   },
   "15394508": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 15394508,
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Samuel Snaith",
+        "time": "73'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ff0000",
-        "outline": "30b010",
-        "fancyNumber": "222226"
-      }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+      {
+        "name": "Kian Jenkins",
+        "time": "65'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "ff0000",
-        "fancyNumber": "222226"
+      {
+        "name": "Thomas Price",
+        "time": "33'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jack Daniel Williams",
+        "time": "46'"
+      }
+    ]
   },
   "15394511": {
-    "incidents": [],
-    "home": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    "match_id": 15394511,
+    "home_score": 0,
+    "away_score": 2,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Corey Shephard",
+        "time": "90'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "8b0000",
-        "fancyNumber": "222226"
+      {
+        "name": "Rhys Abbruzzese",
+        "time": "73'"
       }
-    },
-    "away": {
-      "goalkeeperColor": {
-        "primary": "000000",
-        "number": "000000",
-        "outline": "fafb00",
-        "fancyNumber": "222226"
+    ]
+  },
+  "15362809": {
+    "match_id": 15362809,
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Richard Peralta",
+        "time": "90'"
+      }
+    ]
+  },
+  "14929378": {
+    "match_id": 14929378,
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Nguy\u1ec5n \u0110\u00ecnh B\u1eafc",
+        "time": "71'"
       },
-      "playerColor": {
-        "primary": "000000",
-        "number": "ffffff",
-        "outline": "0000ff",
-        "fancyNumber": "222226"
+      {
+        "name": "Nguy\u1ec5n Qu\u1ed1c Vi\u1ec7t",
+        "time": "30'"
       }
-    }
+    ],
+    "away_scorers": [
+      {
+        "name": "Shin Min-Ha",
+        "time": "90'"
+      },
+      {
+        "name": "Kim Tae-won",
+        "time": "69'"
+      }
+    ]
+  },
+  "15415125": {
+    "match_id": 15415125,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Juan David Ararat Lucum\u00ed",
+        "time": "46'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Fredy Montero",
+        "time": "38'"
+      }
+    ]
+  },
+  "15409790": {
+    "match_id": 15409790,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
+  },
+  "15409792": {
+    "match_id": 15409792,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
+  },
+  "15335633": {
+    "match_id": 15335633,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Mohamed Askri",
+        "time": "69'"
+      },
+      {
+        "name": "Haroune Kouki",
+        "time": "10'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Innocent Nshuti",
+        "time": "90'"
+      }
+    ]
+  },
+  "15403708": {
+    "match_id": 15403708,
+    "home_score": 3,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Mads S\u00f8ndergaard",
+        "time": "81'"
+      },
+      {
+        "name": "Jeppe Gr\u00f8nning",
+        "time": "65'"
+      },
+      {
+        "name": "Charly Horneman",
+        "time": "7'"
+      }
+    ],
+    "away_scorers": []
+  },
+  "15403712": {
+    "match_id": 15403712,
+    "home_score": 8,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "84'"
+      },
+      {
+        "name": "Unknown",
+        "time": "75'"
+      },
+      {
+        "name": "Unknown",
+        "time": "72'"
+      },
+      {
+        "name": "Unknown",
+        "time": "60'"
+      },
+      {
+        "name": "Unknown",
+        "time": "55'"
+      },
+      {
+        "name": "Unknown",
+        "time": "25'"
+      },
+      {
+        "name": "Unknown",
+        "time": "9'"
+      },
+      {
+        "name": "Unknown",
+        "time": "1'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Unknown",
+        "time": "54'"
+      },
+      {
+        "name": "Unknown",
+        "time": "31'"
+      }
+    ]
+  },
+  "15403701": {
+    "match_id": 15403701,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Fred Bozicevic",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Alexander Eriksson",
+        "time": "46'"
+      }
+    ]
+  },
+  "15403719": {
+    "match_id": 15403719,
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Hugo Vallejo",
+        "time": "41'"
+      }
+    ],
+    "away_scorers": []
+  },
+  "15404112": {
+    "match_id": 15404112,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "62'"
+      },
+      {
+        "name": "Unknown",
+        "time": "34'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Unknown",
+        "time": "16'"
+      }
+    ]
+  },
+  "15334378": {
+    "match_id": 15334378,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Ricca Roque",
+        "time": "3'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Cecilio Waterman",
+        "time": "70'"
+      },
+      {
+        "name": "Jeison Fuentealba",
+        "time": "17'"
+      }
+    ]
+  },
+  "15404197": {
+    "match_id": 15404197,
+    "home_score": 3,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Viktor Claesson",
+        "time": "70'"
+      },
+      {
+        "name": "Viktor Claesson",
+        "time": "56'"
+      },
+      {
+        "name": "Youssoufa Moukoko",
+        "time": "53'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Yasin Belhadj",
+        "time": "82'"
+      },
+      {
+        "name": "Casper Andreasen",
+        "time": "13'"
+      }
+    ]
+  },
+  "15405078": {
+    "match_id": 15405078,
+    "home_score": 7,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "90'"
+      },
+      {
+        "name": "Unknown",
+        "time": "88'"
+      },
+      {
+        "name": "Unknown",
+        "time": "81'"
+      },
+      {
+        "name": "Unknown",
+        "time": "74'"
+      },
+      {
+        "name": "Unknown",
+        "time": "44'"
+      },
+      {
+        "name": "Unknown",
+        "time": "25'"
+      },
+      {
+        "name": "Unknown",
+        "time": "18'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Unknown",
+        "time": "83'"
+      },
+      {
+        "name": "Unknown",
+        "time": "20'"
+      }
+    ]
+  },
+  "15404203": {
+    "match_id": 15404203,
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Marco Hoffmann",
+        "time": "32'"
+      }
+    ],
+    "away_scorers": []
+  },
+  "15404204": {
+    "match_id": 15404204,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "7'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Unknown",
+        "time": "68'"
+      },
+      {
+        "name": "Unknown",
+        "time": "56'"
+      }
+    ]
+  },
+  "15404200": {
+    "match_id": 15404200,
+    "home_score": 3,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "86'"
+      },
+      {
+        "name": "Unknown",
+        "time": "70'"
+      },
+      {
+        "name": "Oskar Boesen",
+        "time": "57'"
+      }
+    ],
+    "away_scorers": []
+  },
+  "15336230": {
+    "match_id": 15336230,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
+  },
+  "15405079": {
+    "match_id": 15405079,
+    "home_score": 2,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "65'"
+      },
+      {
+        "name": "Unknown",
+        "time": "36'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Unknown",
+        "time": "88'"
+      },
+      {
+        "name": "Unknown",
+        "time": "24'"
+      },
+      {
+        "name": "Unknown",
+        "time": "21'"
+      }
+    ]
+  },
+  "15404202": {
+    "match_id": 15404202,
+    "home_score": 7,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Sandro Schendl",
+        "time": "90'"
+      },
+      {
+        "name": "Fabio Kedl",
+        "time": "79'"
+      },
+      {
+        "name": "Oliv\u00e9r Schindler",
+        "time": "55'"
+      },
+      {
+        "name": "Fabio Kedl",
+        "time": "42'"
+      },
+      {
+        "name": "Nicolas Wisak",
+        "time": "39'"
+      },
+      {
+        "name": "Michael Hutter",
+        "time": "37'"
+      },
+      {
+        "name": "Lukas Ried",
+        "time": "20'"
+      }
+    ],
+    "away_scorers": []
+  },
+  "15404209": {
+    "match_id": 15404209,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
+  },
+  "15404210": {
+    "match_id": 15404210,
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Julian Holler",
+        "time": "71'"
+      },
+      {
+        "name": "Can Danis",
+        "time": "55'"
+      },
+      {
+        "name": "Philipp Hosiner",
+        "time": "36'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Emirhan T\u00fct\u00fcnci",
+        "time": "90'"
+      }
+    ]
+  },
+  "15404195": {
+    "match_id": 15404195,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
+  },
+  "15404199": {
+    "match_id": 15404199,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
+  },
+  "15404196": {
+    "match_id": 15404196,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
+  },
+  "15404208": {
+    "match_id": 15404208,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
+  },
+  "15404211": {
+    "match_id": 15404211,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
+  },
+  "15403585": {
+    "match_id": 15403585,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Florinel Coman",
+        "time": "64'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Luan Pereira",
+        "time": "74'"
+      }
+    ]
+  },
+  "15404206": {
+    "match_id": 15404206,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
+  },
+  "15414085": {
+    "match_id": 15414085,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
+  },
+  "15405080": {
+    "match_id": 15405080,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
   }
 }
