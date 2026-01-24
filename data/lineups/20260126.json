@@ -2740,47 +2740,6 @@
         },
         {
           "player": {
-            "name": "Tosin Adarabioyo",
-            "slug": "tosin-adarabioyo",
-            "shortName": "T. Adarabioyo",
-            "position": "D",
-            "jerseyNumber": "4",
-            "height": 196,
-            "userCount": 10454,
-            "gender": "M",
-            "sofascoreId": "tosinadarabioyo",
-            "id": 352668,
-            "country": {
-              "alpha2": "EN",
-              "alpha3": "ENG",
-              "name": "England",
-              "slug": "england"
-            },
-            "marketValueCurrency": "EUR",
-            "dateOfBirthTimestamp": 875059200,
-            "proposedMarketValueRaw": {
-              "value": 21000000,
-              "currency": "EUR"
-            },
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "\u062a\u0648\u0633\u064a\u0646 \u0623\u062f\u0627\u0631\u0627\u0628\u0627\u064a\u0648",
-                "hi": "\u091f\u094b\u0938\u093f\u0928 \u0905\u0926\u093e\u0930\u093e\u092c\u093f\u092f\u094b\u092f\u094b",
-                "bn": "\u09a4\u09cb\u09b8\u09bf\u09a8 \u0986\u09a6\u09be\u09b0\u09be\u09ac\u09bf\u09af\u09bc\u09cb\u09af\u09bc\u09cb"
-              },
-              "shortNameTranslation": {
-                "ar": "\u062a. \u0623\u062f\u0627\u0631\u0627\u0628\u0627\u064a\u0648",
-                "hi": "\u091f\u0940. \u0905\u0926\u093e\u0930\u093e\u092c\u093f\u092f\u094b\u092f\u094b",
-                "bn": "\u099f\u09bf. \u0986\u09a6\u09be\u09b0\u09be\u09ac\u09bf\u09af\u09bc\u09cb\u09af\u09bc\u09cb"
-              }
-            }
-          },
-          "type": "missing",
-          "reason": 1,
-          "externalType": 5
-        },
-        {
-          "player": {
             "name": "Rom\u00e9o Lavia",
             "firstName": "Romeo Lavia",
             "slug": "romeo-lavia",
@@ -2822,6 +2781,47 @@
           "description": "Thigh Injury",
           "externalType": 5,
           "expectedEndDate": "2026-02-22T00:00:00+00:00"
+        },
+        {
+          "player": {
+            "name": "Tosin Adarabioyo",
+            "slug": "tosin-adarabioyo",
+            "shortName": "T. Adarabioyo",
+            "position": "D",
+            "jerseyNumber": "4",
+            "height": 196,
+            "userCount": 10454,
+            "gender": "M",
+            "sofascoreId": "tosinadarabioyo",
+            "id": 352668,
+            "country": {
+              "alpha2": "EN",
+              "alpha3": "ENG",
+              "name": "England",
+              "slug": "england"
+            },
+            "marketValueCurrency": "EUR",
+            "dateOfBirthTimestamp": 875059200,
+            "proposedMarketValueRaw": {
+              "value": 21000000,
+              "currency": "EUR"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "\u062a\u0648\u0633\u064a\u0646 \u0623\u062f\u0627\u0631\u0627\u0628\u0627\u064a\u0648",
+                "hi": "\u091f\u094b\u0938\u093f\u0928 \u0905\u0926\u093e\u0930\u093e\u092c\u093f\u092f\u094b\u092f\u094b",
+                "bn": "\u09a4\u09cb\u09b8\u09bf\u09a8 \u0986\u09a6\u09be\u09b0\u09be\u09ac\u09bf\u09af\u09bc\u09cb\u09af\u09bc\u09cb"
+              },
+              "shortNameTranslation": {
+                "ar": "\u062a. \u0623\u062f\u0627\u0631\u0627\u0628\u0627\u064a\u0648",
+                "hi": "\u091f\u0940. \u0905\u0926\u093e\u0930\u093e\u092c\u093f\u092f\u094b\u092f\u094b",
+                "bn": "\u099f\u09bf. \u0986\u09a6\u09be\u09b0\u09be\u09ac\u09bf\u09af\u09bc\u09cb\u09af\u09bc\u09cb"
+              }
+            }
+          },
+          "type": "missing",
+          "reason": 1,
+          "externalType": 5
         },
         {
           "player": {
@@ -5696,46 +5696,6 @@
         },
         {
           "player": {
-            "name": "John McGinn",
-            "slug": "john-mcginn",
-            "shortName": "J. McGinn",
-            "position": "M",
-            "jerseyNumber": "7",
-            "height": 175,
-            "userCount": 3917,
-            "gender": "M",
-            "id": 250223,
-            "country": {
-              "alpha2": "SX",
-              "alpha3": "SCO",
-              "name": "Scotland",
-              "slug": "scotland"
-            },
-            "marketValueCurrency": "EUR",
-            "dateOfBirthTimestamp": 782438400,
-            "proposedMarketValueRaw": {
-              "value": 14500000,
-              "currency": "EUR"
-            },
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "\u062c\u0648\u0646 \u0645\u0627\u0643\u062c\u064a\u0646",
-                "hi": "\u091c\u0949\u0928 \u092e\u0948\u0915\u0917\u093f\u0928",
-                "bn": "\u099c\u09a8 \u09ae\u09cd\u09af\u09be\u0995\u0997\u09bf\u09a8"
-              },
-              "shortNameTranslation": {
-                "ar": "\u062c. \u0645\u0627\u0643\u062c\u064a\u0646",
-                "hi": "\u091c\u0947. \u092e\u0948\u0915\u0917\u093f\u0928",
-                "bn": "\u099c\u09c7. \u09ae\u09cd\u09af\u09be\u0995\u0997\u09bf\u09a8"
-              }
-            }
-          },
-          "type": "doubtful",
-          "reason": 1,
-          "externalType": 5
-        },
-        {
-          "player": {
             "name": "Amadou Onana",
             "slug": "amadou-onana",
             "shortName": "A. Onana",
@@ -5776,6 +5736,46 @@
           "description": "Hamstring",
           "externalType": 5,
           "expectedEndDate": "2026-02-02T00:00:00+00:00"
+        },
+        {
+          "player": {
+            "name": "John McGinn",
+            "slug": "john-mcginn",
+            "shortName": "J. McGinn",
+            "position": "M",
+            "jerseyNumber": "7",
+            "height": 175,
+            "userCount": 3917,
+            "gender": "M",
+            "id": 250223,
+            "country": {
+              "alpha2": "SX",
+              "alpha3": "SCO",
+              "name": "Scotland",
+              "slug": "scotland"
+            },
+            "marketValueCurrency": "EUR",
+            "dateOfBirthTimestamp": 782438400,
+            "proposedMarketValueRaw": {
+              "value": 14500000,
+              "currency": "EUR"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "\u062c\u0648\u0646 \u0645\u0627\u0643\u062c\u064a\u0646",
+                "hi": "\u091c\u0949\u0928 \u092e\u0948\u0915\u0917\u093f\u0928",
+                "bn": "\u099c\u09a8 \u09ae\u09cd\u09af\u09be\u0995\u0997\u09bf\u09a8"
+              },
+              "shortNameTranslation": {
+                "ar": "\u062c. \u0645\u0627\u0643\u062c\u064a\u0646",
+                "hi": "\u091c\u0947. \u092e\u0948\u0915\u0917\u093f\u0928",
+                "bn": "\u099c\u09c7. \u09ae\u09cd\u09af\u09be\u0995\u0997\u09bf\u09a8"
+              }
+            }
+          },
+          "type": "doubtful",
+          "reason": 1,
+          "externalType": 5
         },
         {
           "player": {
@@ -12579,50 +12579,6 @@
       "missingPlayers": [
         {
           "player": {
-            "name": "Matija Frigan",
-            "firstName": "",
-            "lastName": "",
-            "slug": "matija-frigan",
-            "shortName": "M. Frigan",
-            "position": "F",
-            "jerseyNumber": "20",
-            "height": 184,
-            "userCount": 1390,
-            "gender": "M",
-            "id": 1092081,
-            "country": {
-              "alpha2": "HR",
-              "alpha3": "HRV",
-              "name": "Croatia",
-              "slug": "croatia"
-            },
-            "marketValueCurrency": "EUR",
-            "dateOfBirthTimestamp": 1044921600,
-            "proposedMarketValueRaw": {
-              "value": 8199999,
-              "currency": "EUR"
-            },
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "\u0645\u0627\u062a\u064a\u0627 \u0641\u0631\u064a\u063a\u0627\u0646",
-                "hi": "\u092e\u0924\u093f\u091c\u093e \u092b\u094d\u0930\u093f\u0917\u0928",
-                "bn": "\u09ae\u09a4\u09bf\u099c\u09be \u09ab\u09cd\u09b0\u09bf\u0997\u09be\u09a8"
-              },
-              "shortNameTranslation": {
-                "ar": "\u0645. \u0641\u0631\u064a\u063a\u0627\u0646",
-                "hi": "\u090f\u092e. \u092b\u094d\u0930\u093f\u0917\u0928",
-                "bn": "\u098f\u09ae. \u09ab\u09cd\u09b0\u09bf\u0997\u09be\u09a8"
-              }
-            }
-          },
-          "type": "missing",
-          "reason": 1,
-          "description": "ACL Knee Injury",
-          "externalType": 5,
-          "expectedEndDate": "2026-03-09T00:00:00+00:00"
-        },
-        {
-          "player": {
             "name": "Zion Suzuki",
             "firstName": "",
             "lastName": "",
@@ -12664,6 +12620,50 @@
           "description": "Broken Finger",
           "externalType": 5,
           "expectedEndDate": "2026-03-02T00:00:00+00:00"
+        },
+        {
+          "player": {
+            "name": "Matija Frigan",
+            "firstName": "",
+            "lastName": "",
+            "slug": "matija-frigan",
+            "shortName": "M. Frigan",
+            "position": "F",
+            "jerseyNumber": "20",
+            "height": 184,
+            "userCount": 1390,
+            "gender": "M",
+            "id": 1092081,
+            "country": {
+              "alpha2": "HR",
+              "alpha3": "HRV",
+              "name": "Croatia",
+              "slug": "croatia"
+            },
+            "marketValueCurrency": "EUR",
+            "dateOfBirthTimestamp": 1044921600,
+            "proposedMarketValueRaw": {
+              "value": 8199999,
+              "currency": "EUR"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "\u0645\u0627\u062a\u064a\u0627 \u0641\u0631\u064a\u063a\u0627\u0646",
+                "hi": "\u092e\u0924\u093f\u091c\u093e \u092b\u094d\u0930\u093f\u0917\u0928",
+                "bn": "\u09ae\u09a4\u09bf\u099c\u09be \u09ab\u09cd\u09b0\u09bf\u0997\u09be\u09a8"
+              },
+              "shortNameTranslation": {
+                "ar": "\u0645. \u0641\u0631\u064a\u063a\u0627\u0646",
+                "hi": "\u090f\u092e. \u092b\u094d\u0930\u093f\u0917\u0928",
+                "bn": "\u098f\u09ae. \u09ab\u09cd\u09b0\u09bf\u0997\u09be\u09a8"
+              }
+            }
+          },
+          "type": "missing",
+          "reason": 1,
+          "description": "ACL Knee Injury",
+          "externalType": 5,
+          "expectedEndDate": "2026-03-09T00:00:00+00:00"
         },
         {
           "player": {
@@ -29255,42 +29255,6 @@
         },
         {
           "player": {
-            "name": "Dayann Methalie",
-            "slug": "dayann-methalie",
-            "shortName": "D. Methalie",
-            "position": "D",
-            "jerseyNumber": "24",
-            "height": 186,
-            "userCount": 400,
-            "gender": "M",
-            "id": 1894003,
-            "country": {
-              "alpha2": "FR",
-              "alpha3": "FRA",
-              "name": "France",
-              "slug": "france"
-            },
-            "marketValueCurrency": "EUR",
-            "dateOfBirthTimestamp": 1139961600,
-            "proposedMarketValueRaw": {
-              "value": 8800000,
-              "currency": "EUR"
-            },
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "\u062f\u0627\u064a\u0627\u0646 \u0645\u064a\u062b\u0627\u0644\u064a"
-              },
-              "shortNameTranslation": {
-                "ar": "\u062f. \u0645\u064a\u062b\u0627\u0644\u064a"
-              }
-            }
-          },
-          "type": "missing",
-          "reason": 1,
-          "externalType": 5
-        },
-        {
-          "player": {
             "name": "Emersonn",
             "firstName": "Emersonn",
             "lastName": "",
@@ -29326,6 +29290,42 @@
           "type": "missing",
           "reason": 3,
           "description": "Red card suspension",
+          "externalType": 5
+        },
+        {
+          "player": {
+            "name": "Dayann Methalie",
+            "slug": "dayann-methalie",
+            "shortName": "D. Methalie",
+            "position": "D",
+            "jerseyNumber": "24",
+            "height": 186,
+            "userCount": 400,
+            "gender": "M",
+            "id": 1894003,
+            "country": {
+              "alpha2": "FR",
+              "alpha3": "FRA",
+              "name": "France",
+              "slug": "france"
+            },
+            "marketValueCurrency": "EUR",
+            "dateOfBirthTimestamp": 1139961600,
+            "proposedMarketValueRaw": {
+              "value": 8800000,
+              "currency": "EUR"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "\u062f\u0627\u064a\u0627\u0646 \u0645\u064a\u062b\u0627\u0644\u064a"
+              },
+              "shortNameTranslation": {
+                "ar": "\u062f. \u0645\u064a\u062b\u0627\u0644\u064a"
+              }
+            }
+          },
+          "type": "missing",
+          "reason": 1,
           "externalType": 5
         }
       ]
@@ -33249,42 +33249,6 @@
         },
         {
           "player": {
-            "name": "Mateo Lisica",
-            "slug": "mateo-lisica",
-            "shortName": "M. Lisica",
-            "position": "M",
-            "jerseyNumber": "21",
-            "height": 178,
-            "userCount": 761,
-            "gender": "M",
-            "id": 1034543,
-            "country": {
-              "alpha2": "HR",
-              "alpha3": "HRV",
-              "name": "Croatia",
-              "slug": "croatia"
-            },
-            "marketValueCurrency": "EUR",
-            "dateOfBirthTimestamp": 1057708800,
-            "proposedMarketValueRaw": {
-              "value": 1200000,
-              "currency": "EUR"
-            },
-            "fieldTranslations": {
-              "nameTranslation": {
-                "ar": "\u0645\u0627\u062a\u064a\u0648 \u0644\u064a\u0633\u064a\u0643\u0627"
-              },
-              "shortNameTranslation": {
-                "ar": "\u0645. \u0644\u064a\u0633\u064a\u0643\u0627"
-              }
-            }
-          },
-          "type": "missing",
-          "reason": 2,
-          "externalType": 5
-        },
-        {
-          "player": {
             "name": "Matteo Perez Vinl\u00f6f",
             "firstName": "Matteo Vinl\u00f6f",
             "lastName": "",
@@ -33319,6 +33283,42 @@
           },
           "type": "doubtful",
           "reason": 1,
+          "externalType": 5
+        },
+        {
+          "player": {
+            "name": "Mateo Lisica",
+            "slug": "mateo-lisica",
+            "shortName": "M. Lisica",
+            "position": "M",
+            "jerseyNumber": "21",
+            "height": 178,
+            "userCount": 761,
+            "gender": "M",
+            "id": 1034543,
+            "country": {
+              "alpha2": "HR",
+              "alpha3": "HRV",
+              "name": "Croatia",
+              "slug": "croatia"
+            },
+            "marketValueCurrency": "EUR",
+            "dateOfBirthTimestamp": 1057708800,
+            "proposedMarketValueRaw": {
+              "value": 1200000,
+              "currency": "EUR"
+            },
+            "fieldTranslations": {
+              "nameTranslation": {
+                "ar": "\u0645\u0627\u062a\u064a\u0648 \u0644\u064a\u0633\u064a\u0643\u0627"
+              },
+              "shortNameTranslation": {
+                "ar": "\u0645. \u0644\u064a\u0633\u064a\u0643\u0627"
+              }
+            }
+          },
+          "type": "missing",
+          "reason": 2,
           "externalType": 5
         },
         {
