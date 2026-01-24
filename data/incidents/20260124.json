@@ -1219,15 +1219,28 @@
   },
   "14671711": {
     "match_id": 14671711,
-    "home_score": 1,
-    "away_score": 0,
+    "home_score": 2,
+    "away_score": 2,
     "home_scorers": [
+      {
+        "name": "Christopher Long",
+        "time": "60'"
+      },
       {
         "name": "Samuel Klein",
         "time": "41'"
       }
     ],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Brody Burkitt",
+        "time": "70'"
+      },
+      {
+        "name": "Brody Burkitt",
+        "time": "56'"
+      }
+    ]
   },
   "14671712": {
     "match_id": 14671712,
@@ -1645,7 +1658,7 @@
   "14671882": {
     "match_id": 14671882,
     "home_score": 1,
-    "away_score": 1,
+    "away_score": 2,
     "home_scorers": [
       {
         "name": "Annalise Rasmussen",
@@ -1653,6 +1666,10 @@
       }
     ],
     "away_scorers": [
+      {
+        "name": "Holly Caspers",
+        "time": "57'"
+      },
       {
         "name": "Holly Caspers",
         "time": "35'"
@@ -2858,9 +2875,21 @@
   },
   "14214872": {
     "match_id": 14214872,
-    "home_score": 1,
+    "home_score": 4,
     "away_score": 0,
     "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "50'"
+      },
+      {
+        "name": "Unknown",
+        "time": "38'"
+      },
+      {
+        "name": "Unknown",
+        "time": "36'"
+      },
       {
         "name": "Unknown",
         "time": "27'"

@@ -594,15 +594,15 @@
   },
   "14671712": {
     "home": {
-      "fractionalValue": "21/10",
-      "expected": 32,
-      "actual": 42,
+      "fractionalValue": "5/2",
+      "expected": 29,
+      "actual": 29,
       "id": 19461278
     },
     "away": {
-      "fractionalValue": "13/10",
-      "expected": 43,
-      "actual": 45,
+      "fractionalValue": "11/10",
+      "expected": 48,
+      "actual": 56,
       "id": 19461279
     }
   },
