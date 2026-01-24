@@ -3473,7 +3473,7 @@
     },
     "awayTeam": {
       "avgRating": "7.06",
-      "position": 2,
+      "position": 3,
       "value": "3",
       "form": [
         "W"
@@ -3484,7 +3484,7 @@
   "15367308": {
     "homeTeam": {
       "avgRating": "6.67",
-      "position": 15,
+      "position": 14,
       "value": "0",
       "form": [
         "L"
@@ -3492,7 +3492,7 @@
     },
     "awayTeam": {
       "avgRating": "6.59",
-      "position": 16,
+      "position": 15,
       "value": "0",
       "form": [
         "L"

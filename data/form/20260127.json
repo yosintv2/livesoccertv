@@ -577,8 +577,8 @@
   },
   "15367314": {
     "homeTeam": {
-      "avgRating": "6.57",
-      "position": 17,
+      "avgRating": "6.59",
+      "position": 16,
       "value": "0",
       "form": [
         "L",
@@ -625,7 +625,7 @@
   "15367315": {
     "homeTeam": {
       "avgRating": "6.59",
-      "position": 16,
+      "position": 15,
       "value": "0",
       "form": [
         "L"
@@ -633,9 +633,10 @@
     },
     "awayTeam": {
       "avgRating": "7.06",
-      "position": 3,
-      "value": "3",
+      "position": 1,
+      "value": "6",
       "form": [
+        "W",
         "W"
       ]
     },
@@ -1670,7 +1671,7 @@
   "15269909": {
     "homeTeam": {
       "avgRating": "6.81",
-      "position": 6,
+      "position": 7,
       "value": "1",
       "form": [
         "D"
@@ -1716,7 +1717,7 @@
   "15269905": {
     "homeTeam": {
       "avgRating": "6.95",
-      "position": 2,
+      "position": 3,
       "value": "3",
       "form": [
         "W"
@@ -1724,7 +1725,7 @@
     },
     "awayTeam": {
       "avgRating": "6.64",
-      "position": 13,
+      "position": 12,
       "value": "0",
       "form": [
         "L"
@@ -2694,6 +2695,61 @@
         "D",
         "W",
         "W",
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15269911": {
+    "homeTeam": {
+      "avgRating": "6.83",
+      "position": 4,
+      "value": "3",
+      "form": [
+        "W"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.93",
+      "position": 2,
+      "value": "3",
+      "form": [
+        "W"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15269903": {
+    "homeTeam": {
+      "position": 15,
+      "value": "0",
+      "form": [
+        "L"
+      ]
+    },
+    "awayTeam": {
+      "avgRating": "6.68",
+      "position": 14,
+      "value": "0",
+      "form": [
+        "L"
+      ]
+    },
+    "label": "Pts"
+  },
+  "15269919": {
+    "homeTeam": {
+      "avgRating": "6.71",
+      "position": 3,
+      "value": "1",
+      "form": [
+        "D"
+      ]
+    },
+    "awayTeam": {
+      "position": 1,
+      "value": "3",
+      "form": [
         "W"
       ]
     },

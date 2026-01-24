@@ -15,9 +15,9 @@
   },
   "13981640": {
     "home": {
-      "fractionalValue": "9/5",
-      "expected": 36,
-      "actual": 9,
+      "fractionalValue": "47/25",
+      "expected": 35,
+      "actual": 11,
       "id": 19496091
     },
     "away": {
@@ -191,9 +191,9 @@
   },
   "14773702": {
     "home": {
-      "fractionalValue": "17/100",
-      "expected": 86,
-      "actual": 80,
+      "fractionalValue": "7/50",
+      "expected": 87,
+      "actual": 79,
       "id": 19502165
     },
     "away": null
