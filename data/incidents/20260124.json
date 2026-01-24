@@ -1160,15 +1160,37 @@
   "14138479": {
     "match_id": 14138479,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Lev Skvortsov",
+        "time": "44'"
+      }
+    ]
   },
   "14143630": {
     "match_id": 14143630,
-    "home_score": 0,
+    "home_score": 4,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Francis Ezeh",
+        "time": "39'"
+      },
+      {
+        "name": "Odise Roshi",
+        "time": "26'"
+      },
+      {
+        "name": "Halil Can Ayan",
+        "time": "10'"
+      },
+      {
+        "name": "Francis Ezeh",
+        "time": "3'"
+      }
+    ],
     "away_scorers": []
   },
   "14138481": {
@@ -1248,9 +1270,13 @@
   },
   "14671712": {
     "match_id": 14671712,
-    "home_score": 5,
-    "away_score": 1,
+    "home_score": 6,
+    "away_score": 2,
     "home_scorers": [
+      {
+        "name": "Harrison Sawyer",
+        "time": "90'"
+      },
       {
         "name": "Dean Bosnjak",
         "time": "70'"
@@ -1273,6 +1299,10 @@
       }
     ],
     "away_scorers": [
+      {
+        "name": "Marcus Younis",
+        "time": "84'"
+      },
       {
         "name": "Medin Memeti",
         "time": "24'"
@@ -1730,9 +1760,13 @@
   "14671885": {
     "match_id": 14671885,
     "home_score": 0,
-    "away_score": 1,
+    "away_score": 2,
     "home_scorers": [],
     "away_scorers": [
+      {
+        "name": "Holly McNamara",
+        "time": "72'"
+      },
       {
         "name": "Holly McNamara",
         "time": "20'"
@@ -1963,9 +1997,14 @@
   },
   "14626846": {
     "match_id": 14626846,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Martyna Wiankowska",
+        "time": "43'"
+      }
+    ],
     "away_scorers": []
   },
   "14414563": {
@@ -2267,9 +2306,22 @@
   "14530052": {
     "match_id": 14530052,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 3,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Ismaheel Akinade",
+        "time": "81'"
+      },
+      {
+        "name": "Isaac Amoah",
+        "time": "47'"
+      },
+      {
+        "name": "Domi Massoumou",
+        "time": "45'"
+      }
+    ]
   },
   "14530048": {
     "match_id": 14530048,
@@ -2376,14 +2428,9 @@
   },
   "15415125": {
     "match_id": 15415125,
-    "home_score": 1,
+    "home_score": 0,
     "away_score": 1,
-    "home_scorers": [
-      {
-        "name": "Juan David Ararat Lucum\u00ed",
-        "time": "46'"
-      }
-    ],
+    "home_scorers": [],
     "away_scorers": [
       {
         "name": "Fredy Montero",
@@ -3168,9 +3215,14 @@
   },
   "14068627": {
     "match_id": 14068627,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Davide Atzeni",
+        "time": "33'"
+      }
+    ],
     "away_scorers": []
   },
   "14068628": {
@@ -3256,7 +3308,7 @@
     "away_score": 0,
     "home_scorers": [
       {
-        "name": "Fernando S\u00e1mano",
+        "name": "Fernando  S\u00e1mano Salgado",
         "time": "90'"
       },
       {
@@ -3469,10 +3521,20 @@
   },
   "14336314": {
     "match_id": 14336314,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Roberto",
+        "time": "44'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Miguel Pereira",
+        "time": "17'"
+      }
+    ]
   },
   "14336311": {
     "match_id": 14336311,
@@ -3567,10 +3629,20 @@
   },
   "15273954": {
     "match_id": 15273954,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "19'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Unknown",
+        "time": "43'"
+      }
+    ]
   },
   "14591698": {
     "match_id": 14591698,
@@ -3602,10 +3674,24 @@
   },
   "15274979": {
     "match_id": 15274979,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "35'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Unknown",
+        "time": "17'"
+      },
+      {
+        "name": "Unknown",
+        "time": "12'"
+      }
+    ]
   },
   "14035429": {
     "match_id": 14035429,
@@ -3742,9 +3828,14 @@
   },
   "14255430": {
     "match_id": 14255430,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "11'"
+      }
+    ],
     "away_scorers": []
   },
   "14035769": {
