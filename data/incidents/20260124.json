@@ -6022,7 +6022,7 @@
     "away_scorers": [
       {
         "name": "Salvatore Borriello",
-        "time": "76'"
+        "time": "77'"
       }
     ]
   },
@@ -6852,9 +6852,14 @@
   "14035426": {
     "match_id": 14035426,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Kieran Phillips",
+        "time": "84'"
+      }
+    ]
   },
   "15273956": {
     "match_id": 15273956,
@@ -6865,10 +6870,24 @@
   },
   "15273962": {
     "match_id": 15273962,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Tom\u00e1s Pereira",
+        "time": "79'"
+      },
+      {
+        "name": "Guilherme Santos",
+        "time": "22'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Tiago Sousa",
+        "time": "51'"
+      }
+    ]
   },
   "14035431": {
     "match_id": 14035431,
@@ -6879,10 +6898,32 @@
   },
   "14035430": {
     "match_id": 14035430,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Jack Hamilton",
+        "time": "69'"
+      },
+      {
+        "name": "Jack Hamilton",
+        "time": "64'"
+      },
+      {
+        "name": "Josh Mullin",
+        "time": "45'"
+      },
+      {
+        "name": "Jack Hamilton",
+        "time": "39'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Sebastian Drozd",
+        "time": "76'"
+      }
+    ]
   },
   "14035587": {
     "match_id": 14035587,
@@ -6893,10 +6934,24 @@
   },
   "14684289": {
     "match_id": 14684289,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Alex Samuel",
+        "time": "14'"
+      },
+      {
+        "name": "Logan Chalmers",
+        "time": "12'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Curtis Main",
+        "time": "60'"
+      }
+    ]
   },
   "14035591": {
     "match_id": 14035591,
