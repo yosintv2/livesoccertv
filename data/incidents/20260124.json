@@ -1,38 +1,119 @@
 {
   "14025104": {
     "match_id": 14025104,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Lyle Foster",
+        "time": "76'"
+      },
+      {
+        "name": "Axel Tuanzebe",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Cristian Romero",
+        "time": "90'"
+      },
+      {
+        "name": "Micky van de Ven",
+        "time": "38'"
+      }
+    ]
   },
   "14025095": {
     "match_id": 14025095,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Amine Adli",
+        "time": "90'"
+      },
+      {
+        "name": "\u00c1lex Jim\u00e9nez",
+        "time": "33'"
+      },
+      {
+        "name": "Evanilson",
+        "time": "26'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Dominik Szoboszlai",
+        "time": "80'"
+      },
+      {
+        "name": "Virgil van Dijk",
+        "time": "45'"
+      }
+    ]
   },
   "14025116": {
     "match_id": 14025116,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Antoine Semenyo",
+        "time": "45'"
+      },
+      {
+        "name": "Omar Marmoush",
+        "time": "6'"
+      }
+    ],
     "away_scorers": []
   },
   "14025113": {
     "match_id": 14025113,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Harry Wilson",
+        "time": "90'"
+      },
+      {
+        "name": "Samuel Chukwueze",
+        "time": "72'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Yasin Ayari",
+        "time": "28'"
+      }
+    ]
   },
   "14025122": {
     "match_id": 14025122,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Mateus Fernandes",
+        "time": "43'"
+      },
+      {
+        "name": "Jarrod Bowen",
+        "time": "28'"
+      },
+      {
+        "name": "Crysencio Summerville",
+        "time": "14'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Brian Brobbey",
+        "time": "66'"
+      }
+    ]
   },
   "13981637": {
     "match_id": 13981637,
@@ -77,16 +158,55 @@
   },
   "13981632": {
     "match_id": 13981632,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Marco Brescianini",
+        "time": "74'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Marco Palestra",
+        "time": "47'"
+      },
+      {
+        "name": "Semih K\u0131l\u0131\u00e7soy",
+        "time": "31'"
+      }
+    ]
   },
   "13981631": {
     "match_id": 13981631,
-    "home_score": 0,
+    "home_score": 6,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Maxence Caqueret",
+        "time": "76'"
+      },
+      {
+        "name": "Nicolas-Gerrit K\u00fchn",
+        "time": "70'"
+      },
+      {
+        "name": "Anastasios Douvikas",
+        "time": "66'"
+      },
+      {
+        "name": "Lucas Da Cunha",
+        "time": "59'"
+      },
+      {
+        "name": "Martin Baturina",
+        "time": "16'"
+      },
+      {
+        "name": "Anastasios Douvikas",
+        "time": "8'"
+      }
+    ],
     "away_scorers": []
   },
   "13981639": {
@@ -98,17 +218,36 @@
   },
   "13981642": {
     "match_id": 13981642,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Alieu Fadera",
+        "time": "3'"
+      }
+    ],
     "away_scorers": []
   },
   "14083127": {
     "match_id": 14083127,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Akor Adams",
+        "time": "56'"
+      },
+      {
+        "name": "Peque Fern\u00e1ndez",
+        "time": "42'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Robert Navarro",
+        "time": "40'"
+      }
+    ]
   },
   "14083146": {
     "match_id": 14083146,
@@ -141,31 +280,93 @@
   },
   "14083156": {
     "match_id": 14083156,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Largie Ramazani",
+        "time": "90'"
+      },
+      {
+        "name": "Eray C\u00f6mert",
+        "time": "59'"
+      },
+      {
+        "name": "Hugo Duro",
+        "time": "15'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jos\u00e9 Copete",
+        "time": "79'"
+      },
+      {
+        "name": "Ram\u00f3n Terrats",
+        "time": "54'"
+      }
+    ]
   },
   "14083176": {
     "match_id": 14083176,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Path\u00e9 Isma\u00ebl Ciss",
+        "time": "59'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Asier Osambela",
+        "time": "90'"
+      },
+      {
+        "name": "Jozhua Vertrouwd",
+        "time": "90'"
+      },
+      {
+        "name": "Ante Budimir",
+        "time": "29'"
+      }
+    ]
   },
   "14083186": {
     "match_id": 14083186,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 2,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Kylian Mbapp\u00e9",
+        "time": "90'"
+      },
+      {
+        "name": "Kylian Mbapp\u00e9",
+        "time": "47'"
+      }
+    ]
   },
   "14062186": {
     "match_id": 14062186,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 3,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "David Raum",
+        "time": "70'"
+      },
+      {
+        "name": "Antonio Nusa",
+        "time": "68'"
+      },
+      {
+        "name": "Ridle Baku",
+        "time": "62'"
+      }
+    ]
   },
   "14062185": {
     "match_id": 14062185,
@@ -176,23 +377,64 @@
   },
   "14062182": {
     "match_id": 14062182,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Nadiem Amiri",
+        "time": "83'"
+      },
+      {
+        "name": "Stefan Bell",
+        "time": "73'"
+      },
+      {
+        "name": "Phillip Tietz",
+        "time": "68'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Mohamed Amoura",
+        "time": "3'"
+      }
+    ]
   },
   "14062180": {
     "match_id": 14062180,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Arnaud Kalimuendo",
+        "time": "18'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Aur\u00e8le Amenda",
+        "time": "65'"
+      },
+      {
+        "name": "Ozan Kabak",
+        "time": "60'"
+      },
+      {
+        "name": "Max Moerstedt",
+        "time": "52'"
+      }
+    ]
   },
   "14062178": {
     "match_id": 14062178,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Lucas V\u00e1zquez",
+        "time": "37'"
+      }
+    ],
     "away_scorers": []
   },
   "14064470": {
@@ -210,9 +452,18 @@
   "14064471": {
     "match_id": 14064471,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 2,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Pablo Pagis",
+        "time": "77'"
+      },
+      {
+        "name": "Jean-Victor Makengo",
+        "time": "3'"
+      }
+    ]
   },
   "14064473": {
     "match_id": 14064473,
@@ -223,24 +474,77 @@
   },
   "14062179": {
     "match_id": 14062179,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Hiroki It\u014d",
+        "time": "23'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Han-Noah Massengo",
+        "time": "81'"
+      },
+      {
+        "name": "Arthur Chaves",
+        "time": "75'"
+      }
+    ]
   },
   "14062184": {
     "match_id": 14062184,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 3,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Maximilian Beier",
+        "time": "84'"
+      },
+      {
+        "name": "Nico Schlotterbeck",
+        "time": "53'"
+      },
+      {
+        "name": "Emre Can",
+        "time": "10'"
+      }
+    ]
   },
   "14288954": {
     "match_id": 14288954,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 4,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Yanis Begraoui",
+        "time": "78'"
+      },
+      {
+        "name": "Alejandro Marqu\u00e9s",
+        "time": "65'"
+      },
+      {
+        "name": "Alejandro Marqu\u00e9s",
+        "time": "56'"
+      },
+      {
+        "name": "Yanis Begraoui",
+        "time": "29'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Matija Mitrovi\u0107",
+        "time": "34'"
+      },
+      {
+        "name": "Samu",
+        "time": "27'"
+      }
+    ]
   },
   "14288946": {
     "match_id": 14288946,
@@ -277,45 +581,123 @@
   },
   "14288951": {
     "match_id": 14288951,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Marac\u00e1s",
+        "time": "87'"
+      }
+    ],
     "away_scorers": []
   },
   "14064469": {
     "match_id": 14064469,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Amine Gouiri",
+        "time": "75'"
+      },
+      {
+        "name": "Ethan Nwaneri",
+        "time": "13'"
+      },
+      {
+        "name": "Amine Gouiri",
+        "time": "3'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Rayan Fofana",
+        "time": "85'"
+      }
+    ]
   },
   "14288955": {
     "match_id": 14288955,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Ivan Barbero",
+        "time": "48'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Luis Javier Su\u00e1rez",
+        "time": "90'"
+      },
+      {
+        "name": "Luis Javier Su\u00e1rez",
+        "time": "35'"
+      }
+    ]
   },
   "14053802": {
     "match_id": 14053802,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Armando Obispo",
+        "time": "90'"
+      },
+      {
+        "name": "Couhaib Driouech",
+        "time": "27'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Charles-Andreas Brym",
+        "time": "45'"
+      },
+      {
+        "name": "Boy Kemper",
+        "time": "45'"
+      }
+    ]
   },
   "14053811": {
     "match_id": 14053811,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Youri Baas",
+        "time": "36'"
+      },
+      {
+        "name": "Youri Baas",
+        "time": "13'"
+      }
+    ],
     "away_scorers": []
   },
   "14053806": {
     "match_id": 14053806,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Tjaronn Chery",
+        "time": "78'"
+      },
+      {
+        "name": "Koki Ogawa",
+        "time": "39'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Younes Namli",
+        "time": "15'"
+      }
+    ]
   },
   "14053799": {
     "match_id": 14053799,
@@ -327,9 +709,14 @@
   "14053809": {
     "match_id": 14053809,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Isak Steiner Jensen",
+        "time": "78'"
+      }
+    ]
   },
   "14109780": {
     "match_id": 14109780,
@@ -340,10 +727,20 @@
   },
   "14109773": {
     "match_id": 14109773,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Deian Sorescu",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Bla\u017e Kramer",
+        "time": "88'"
+      }
+    ]
   },
   "14109772": {
     "match_id": 14109772,
@@ -368,37 +765,117 @@
   },
   "14109777": {
     "match_id": 14109777,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Baris Kalayci",
+        "time": "27'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Victor Osimhen",
+        "time": "55'"
+      },
+      {
+        "name": "Gabriel Sara",
+        "time": "51'"
+      },
+      {
+        "name": "Gabriel Sara",
+        "time": "1'"
+      }
+    ]
   },
   "14109775": {
     "match_id": 14109775,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 3,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Nuno Da Costa",
+        "time": "86'"
+      },
+      {
+        "name": "Ramazan Civelek",
+        "time": "67'"
+      },
+      {
+        "name": "Davie Selke",
+        "time": "35'"
+      }
+    ]
   },
   "14032389": {
     "match_id": 14032389,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Pape Fall",
+        "time": "59'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Oumar Diouf",
+        "time": "89'"
+      },
+      {
+        "name": "Shogo Taniguchi",
+        "time": "63'"
+      }
+    ]
   },
   "14032384": {
     "match_id": 14032384,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 4,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Nicol\u00f2 Tresoldi",
+        "time": "78'"
+      },
+      {
+        "name": "Aleksandar Stankovi\u0107",
+        "time": "60'"
+      },
+      {
+        "name": "Brandon Mechele",
+        "time": "46'"
+      },
+      {
+        "name": "Aleksandar Stankovi\u0107",
+        "time": "6'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Joseph Opoku",
+        "time": "80'"
+      },
+      {
+        "name": "Anosike Ementa",
+        "time": "40'"
+      },
+      {
+        "name": "Marley Ak\u00e9",
+        "time": "38'"
+      }
+    ]
   },
   "14159128": {
     "match_id": 14159128,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Ayoub El Kaabi",
+        "time": "26'"
+      }
+    ],
     "away_scorers": []
   },
   "14032390": {
@@ -435,22 +912,66 @@
   "14159124": {
     "match_id": 14159124,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Luka Jovi\u0107",
+        "time": "38'"
+      }
+    ]
   },
   "14035251": {
     "match_id": 14035251,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 6,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Topi Keskinen",
+        "time": "90'"
+      },
+      {
+        "name": "Topi Keskinen",
+        "time": "85'"
+      },
+      {
+        "name": "Sivert Heltne Nilsen",
+        "time": "75'"
+      },
+      {
+        "name": "Kevin Nisbet",
+        "time": "45'"
+      },
+      {
+        "name": "Kevin Nisbet",
+        "time": "45'"
+      },
+      {
+        "name": "Kenan Bilalovic",
+        "time": "9'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Robbie Muirhead",
+        "time": "31'"
+      },
+      {
+        "name": "Mahamadou Susoho",
+        "time": "28'"
+      }
+    ]
   },
   "14159120": {
     "match_id": 14159120,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "\u00c1ngelo Sagal",
+        "time": "46'"
+      }
+    ],
     "away_scorers": []
   },
   "14035250": {
@@ -462,16 +983,55 @@
   },
   "14035252": {
     "match_id": 14035252,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Grant Hanley",
+        "time": "89'"
+      },
+      {
+        "name": "Barney Stewart",
+        "time": "83'"
+      },
+      {
+        "name": "Barney Stewart",
+        "time": "43'"
+      },
+      {
+        "name": "Barney Stewart",
+        "time": "17'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Rocky Bushiri Kiranga",
+        "time": "59'"
+      }
+    ]
   },
   "14035254": {
     "match_id": 14035254,
-    "home_score": 0,
+    "home_score": 4,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Lukas Fadinger",
+        "time": "82'"
+      },
+      {
+        "name": "Ibrahim Said",
+        "time": "56'"
+      },
+      {
+        "name": "Tawanda Maswanhise",
+        "time": "45'"
+      },
+      {
+        "name": "Elijah Just",
+        "time": "29'"
+      }
+    ],
     "away_scorers": []
   },
   "15010825": {
@@ -483,17 +1043,49 @@
   },
   "14023639": {
     "match_id": 14023639,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Marko Paja\u010d",
+        "time": "76'"
+      },
+      {
+        "name": "Du\u0161an Vukovi\u0107",
+        "time": "50'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jakov Pulji\u0107",
+        "time": "4'"
+      }
+    ]
   },
   "14023634": {
     "match_id": 14023634,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Tiago Dantas",
+        "time": "85'"
+      },
+      {
+        "name": "Merveil Ndockyt",
+        "time": "66'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Adriano Jagu\u0161i\u0107",
+        "time": "82'"
+      },
+      {
+        "name": "Ilija Nestorovski",
+        "time": "2'"
+      }
+    ]
   },
   "15010826": {
     "match_id": 15010826,
@@ -542,7 +1134,7 @@
     "away_scorers": [
       {
         "name": "Abdelrazig Omer",
-        "time": "71'"
+        "time": "70'"
       },
       {
         "name": "Abdelrazig Omer",
@@ -552,9 +1144,14 @@
   },
   "15010832": {
     "match_id": 15010832,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Jack Diarra",
+        "time": "21'"
+      }
+    ],
     "away_scorers": []
   },
   "15010827": {
@@ -583,66 +1180,197 @@
   },
   "14059795": {
     "match_id": 14059795,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Lewis Miller",
+        "time": "28'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Edo Kayembe",
+        "time": "26'"
+      }
+    ]
   },
   "14059800": {
     "match_id": 14059800,
-    "home_score": 0,
+    "home_score": 4,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Aidomo Emakhu",
+        "time": "90'"
+      },
+      {
+        "name": "Luke Cundle",
+        "time": "90'"
+      },
+      {
+        "name": "Caleb Taylor",
+        "time": "81'"
+      },
+      {
+        "name": "Kayne Ramsay",
+        "time": "7'"
+      }
+    ],
     "away_scorers": []
   },
   "14059792": {
     "match_id": 14059792,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Tomoki Iwata",
+        "time": "42'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Phil Neumann",
+        "time": "71'"
+      }
+    ]
   },
   "14059798": {
     "match_id": 14059798,
-    "home_score": 0,
+    "home_score": 4,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Tommy Conway",
+        "time": "54'"
+      },
+      {
+        "name": "Morgan Whittaker",
+        "time": "42'"
+      },
+      {
+        "name": "Tommy Conway",
+        "time": "28'"
+      },
+      {
+        "name": "Alan Browne",
+        "time": "9'"
+      }
+    ],
     "away_scorers": []
   },
   "14059797": {
     "match_id": 14059797,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Abdul Fatawu Issahaku",
+        "time": "84'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Mark Harris",
+        "time": "71'"
+      },
+      {
+        "name": "Sam Long",
+        "time": "4'"
+      }
+    ]
   },
   "14059796": {
     "match_id": 14059796,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Sam Bell",
+        "time": "78'"
+      },
+      {
+        "name": "Scott Twine",
+        "time": "64'"
+      }
+    ],
     "away_scorers": []
   },
   "14059802": {
     "match_id": 14059802,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Steve Cook",
+        "time": "80'"
+      },
+      {
+        "name": "Harvey Vale",
+        "time": "6'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Oliver Rathbone",
+        "time": "90'"
+      },
+      {
+        "name": "Josh Windass",
+        "time": "90'"
+      },
+      {
+        "name": "Callum Doyle",
+        "time": "54'"
+      }
+    ]
   },
   "14059799": {
     "match_id": 14059799,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Regan Slater",
+        "time": "39'"
+      },
+      {
+        "name": "Oliver McBurnie",
+        "time": "24'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Liam Cullen",
+        "time": "59'"
+      }
+    ]
   },
   "14059805": {
     "match_id": 14059805,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Patrick Bamford",
+        "time": "66'"
+      },
+      {
+        "name": "Andre Brooks",
+        "time": "45'"
+      },
+      {
+        "name": "Callum O'Hare",
+        "time": "38'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jack Clarke",
+        "time": "60'"
+      }
+    ]
   },
   "14083709": {
     "match_id": 14083709,
@@ -666,30 +1394,71 @@
   },
   "14083695": {
     "match_id": 14083695,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Diego Garcia",
+        "time": "83'"
+      },
+      {
+        "name": "\u00c1lex Mill\u00e1n",
+        "time": "62'"
+      }
+    ],
     "away_scorers": []
   },
   "14083718": {
     "match_id": 14083718,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Ale Garc\u00eda",
+        "time": "17'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Adrian Fuentes",
+        "time": "13'"
+      },
+      {
+        "name": "Diego Bri",
+        "time": "10'"
+      }
+    ]
   },
   "14083705": {
     "match_id": 14083705,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Antonio Puertas",
+        "time": "85'"
+      }
+    ]
   },
   "14083726": {
     "match_id": 14083726,
-    "home_score": 0,
+    "home_score": 3,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Guille Rosas",
+        "time": "73'"
+      },
+      {
+        "name": "Jonathan Dubasin",
+        "time": "53'"
+      },
+      {
+        "name": "Juan Otero",
+        "time": "45'"
+      }
+    ],
     "away_scorers": []
   },
   "14065419": {
@@ -719,10 +1488,24 @@
   },
   "14065415": {
     "match_id": 14065415,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Benjamin K\u00e4llman",
+        "time": "47'"
+      },
+      {
+        "name": "Daisuke Yokota",
+        "time": "4'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Elias Egouli",
+        "time": "49'"
+      }
+    ]
   },
   "14065416": {
     "match_id": 14065416,
@@ -742,38 +1525,119 @@
   },
   "14083681": {
     "match_id": 14083681,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Alvaro Garcia-Pascual",
+        "time": "61'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Rub\u00e9n Alcaraz",
+        "time": "64'"
+      },
+      {
+        "name": "Mario Climent",
+        "time": "11'"
+      }
+    ]
   },
   "14065414": {
     "match_id": 14065414,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Sebastian Jung",
+        "time": "26'"
+      },
+      {
+        "name": "Fabian Schleusener",
+        "time": "7'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jeremy Dudziak",
+        "time": "79'"
+      },
+      {
+        "name": "Fabian Reese",
+        "time": "19'"
+      }
+    ]
   },
   "14065413": {
     "match_id": 14065413,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Mateusz \u017bukowski",
+        "time": "29'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Thomas Keller",
+        "time": "45'"
+      },
+      {
+        "name": "Kofi Jeremy Amoako",
+        "time": "34'"
+      }
+    ]
   },
   "15176537": {
     "match_id": 15176537,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Guilherme Pacheco",
+        "time": "34'"
+      },
+      {
+        "name": "Cristiano",
+        "time": "18'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Carl\u00e3o",
+        "time": "42'"
+      },
+      {
+        "name": "Denner Melz",
+        "time": "11'"
+      }
+    ]
   },
   "15176532": {
     "match_id": 15176532,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 4,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Everton Galdino",
+        "time": "90'"
+      },
+      {
+        "name": "Eduardo",
+        "time": "47'"
+      },
+      {
+        "name": "Renato Marques",
+        "time": "7'"
+      },
+      {
+        "name": "Igor Formiga",
+        "time": "3'"
+      }
+    ]
   },
   "14065417": {
     "match_id": 14065417,
@@ -784,23 +1648,60 @@
   },
   "15176540": {
     "match_id": 15176540,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Khellven",
+        "time": "51'"
+      },
+      {
+        "name": "Jos\u00e9 L\u00f3pez",
+        "time": "31'"
+      },
+      {
+        "name": "Mauricio",
+        "time": "8'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Dami\u00e1n Bobadilla",
+        "time": "13'"
+      }
+    ]
   },
   "14317884": {
     "match_id": 14317884,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Riccardo Ciervo",
+        "time": "60'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Gabriele Moncini",
+        "time": "76'"
+      },
+      {
+        "name": "Emanuele Rao",
+        "time": "51'"
+      }
+    ]
   },
   "14317889": {
     "match_id": 14317889,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Giorgi Kvernadze",
+        "time": "57'"
+      }
+    ],
     "away_scorers": []
   },
   "14317886": {
@@ -825,16 +1726,51 @@
   },
   "14317888": {
     "match_id": 14317888,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 5,
+    "home_scorers": [
+      {
+        "name": "Davis Mensah",
+        "time": "81'"
+      },
+      {
+        "name": "Tommaso Marras",
+        "time": "40'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Konstantinos Chrysopoulos",
+        "time": "90'"
+      },
+      {
+        "name": "Andrea Adorante",
+        "time": "74'"
+      },
+      {
+        "name": "Issa Doumbia",
+        "time": "59'"
+      },
+      {
+        "name": "John Yeboah",
+        "time": "33'"
+      },
+      {
+        "name": "Andrea Adorante",
+        "time": "25'"
+      }
+    ]
   },
   "14317890": {
     "match_id": 14317890,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Leonardo Candellone",
+        "time": "13'"
+      }
+    ],
     "away_scorers": []
   },
   "14064709": {
@@ -846,9 +1782,14 @@
   },
   "14317892": {
     "match_id": 14317892,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Gabriele Artistico",
+        "time": "26'"
+      }
+    ],
     "away_scorers": []
   },
   "14317895": {
@@ -881,9 +1822,22 @@
   },
   "14317891": {
     "match_id": 14317891,
-    "home_score": 0,
+    "home_score": 3,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Paulo Azzi",
+        "time": "78'"
+      },
+      {
+        "name": "Hernani",
+        "time": "49'"
+      },
+      {
+        "name": "Hernani",
+        "time": "34'"
+      }
+    ],
     "away_scorers": []
   },
   "14064696": {
@@ -954,16 +1908,39 @@
   },
   "14383007": {
     "match_id": 14383007,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Pape Meissa Ba",
+        "time": "85'"
+      },
+      {
+        "name": "Damien Durand",
+        "time": "32'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Vincent Burlet",
+        "time": "73'"
+      },
+      {
+        "name": "Julien Boyer",
+        "time": "69'"
+      }
+    ]
   },
   "14064817": {
     "match_id": 14064817,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Amadou Samoura",
+        "time": "68'"
+      }
+    ],
     "away_scorers": []
   },
   "14056516": {
@@ -1022,7 +1999,7 @@
     "away_score": 4,
     "home_scorers": [
       {
-        "name": "Bouke Boersma",
+        "name": "Reuven Niemeijer",
         "time": "90'"
       },
       {
@@ -1076,9 +2053,14 @@
   },
   "14064816": {
     "match_id": 14064816,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Hafiz Umar Ibrahim",
+        "time": "70'"
+      }
+    ],
     "away_scorers": []
   },
   "14056531": {
@@ -1160,9 +2142,17 @@
   "14138479": {
     "match_id": 14138479,
     "home_score": 0,
-    "away_score": 1,
+    "away_score": 3,
     "home_scorers": [],
     "away_scorers": [
+      {
+        "name": "Gu\u00e9lor Kanga",
+        "time": "73'"
+      },
+      {
+        "name": "\u00d6mer Faruk Beyaz",
+        "time": "60'"
+      },
       {
         "name": "Lev Skvortsov",
         "time": "44'"
@@ -1171,9 +2161,13 @@
   },
   "14143630": {
     "match_id": 14143630,
-    "home_score": 4,
-    "away_score": 0,
+    "home_score": 5,
+    "away_score": 1,
     "home_scorers": [
+      {
+        "name": "Ali Akman",
+        "time": "82'"
+      },
       {
         "name": "Francis Ezeh",
         "time": "39'"
@@ -1187,32 +2181,73 @@
         "time": "10'"
       },
       {
-        "name": "Francis Ezeh",
+        "name": "Turker Dirdiroglu",
         "time": "3'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Do\u011fan Can Davas",
+        "time": "79'"
+      }
+    ]
+  },
+  "14138481": {
+    "match_id": 14138481,
+    "home_score": 3,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Iv\u00e1n C\u00e9dric",
+        "time": "66'"
+      },
+      {
+        "name": "Ensar \u00c7avu\u015fo\u011flu",
+        "time": "61'"
+      },
+      {
+        "name": "Hasan Bilal",
+        "time": "45'"
       }
     ],
     "away_scorers": []
   },
-  "14138481": {
-    "match_id": 14138481,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
-  },
   "14138484": {
     "match_id": 14138484,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Eren Tozlu",
+        "time": "23'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Mustafa Fettahoglu",
+        "time": "85'"
+      },
+      {
+        "name": "Thuram",
+        "time": "44'"
+      }
+    ]
   },
   "14138480": {
     "match_id": 14138480,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 2,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Bernardo Sousa",
+        "time": "90'"
+      },
+      {
+        "name": "Batuhan \u00c7elik",
+        "time": "11'"
+      }
+    ]
   },
   "14671710": {
     "match_id": 14671710,
@@ -1311,16 +2346,35 @@
   },
   "14138482": {
     "match_id": 14138482,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Metehan Mert",
+        "time": "90'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Mame Thiam",
+        "time": "90'"
+      },
+      {
+        "name": "Mame Thiam",
+        "time": "41'"
+      }
+    ]
   },
   "14671713": {
     "match_id": 14671713,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Ryan Fraser",
+        "time": "90'"
+      }
+    ],
     "away_scorers": []
   },
   "14091851": {
@@ -1353,24 +2407,61 @@
   },
   "14091846": {
     "match_id": 14091846,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Basam Zaarura",
+        "time": "90'"
+      },
+      {
+        "name": "Heriberto Tavares",
+        "time": "54'"
+      },
+      {
+        "name": "Heriberto Tavares",
+        "time": "45'"
+      },
+      {
+        "name": "Maor Levi",
+        "time": "3'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Ayi Silva Kangani",
+        "time": "7'"
+      }
+    ]
   },
   "14091849": {
     "match_id": 14091849,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Antonio Sefer",
+        "time": "80'"
+      }
+    ]
   },
   "14091844": {
     "match_id": 14091844,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Itamar Shviro",
+        "time": "90'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Artur Miranyan",
+        "time": "66'"
+      }
+    ]
   },
   "15366772": {
     "match_id": 15366772,
@@ -1395,10 +2486,32 @@
   },
   "14091848": {
     "match_id": 14091848,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Eliel Peretz",
+        "time": "59'"
+      },
+      {
+        "name": "Eliel Peretz",
+        "time": "31'"
+      },
+      {
+        "name": "Or Blorian",
+        "time": "9'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Yair Mordechai",
+        "time": "68'"
+      },
+      {
+        "name": "Yair Mordechai",
+        "time": "26'"
+      }
+    ]
   },
   "15367306": {
     "match_id": 15367306,
@@ -1418,10 +2531,20 @@
   },
   "15362222": {
     "match_id": 15362222,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Carlos Cort\u00e9s",
+        "time": "32'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Luciano Pons",
+        "time": "43'"
+      }
+    ]
   },
   "15367307": {
     "match_id": 15367307,
@@ -1432,143 +2555,395 @@
   },
   "14061146": {
     "match_id": 14061146,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Marcus Harness",
+        "time": "23'"
+      }
+    ],
     "away_scorers": []
   },
   "14061136": {
     "match_id": 14061136,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Joel Colwill",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Kyle Wootton",
+        "time": "10'"
+      }
+    ]
   },
   "14061155": {
     "match_id": 14061155,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Brendan Galloway",
+        "time": "45'"
+      }
+    ],
     "away_scorers": []
   },
   "15367309": {
     "match_id": 15367309,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Tilman Palacios",
+        "time": "30'"
+      }
+    ]
   },
   "15367308": {
     "match_id": 15367308,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Johan Mart\u00ednez",
+        "time": "82'"
+      },
+      {
+        "name": "Steven Rodr\u00edguez",
+        "time": "63'"
+      },
+      {
+        "name": "Avil\u00e9s Hurtado",
+        "time": "37'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Geronimo Mancilla",
+        "time": "74'"
+      }
+    ]
   },
   "14061160": {
     "match_id": 14061160,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Cameron Humphreys",
+        "time": "75'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Timur Tutierov",
+        "time": "59'"
+      },
+      {
+        "name": "Jayden Wareham",
+        "time": "47'"
+      },
+      {
+        "name": "Carlos Mendes Gomes",
+        "time": "22'"
+      }
+    ]
   },
   "14061164": {
     "match_id": 14061164,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Jack Marriott",
+        "time": "84'"
+      },
+      {
+        "name": "Haydon Roberts",
+        "time": "32'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Adam Phillips",
+        "time": "67'"
+      },
+      {
+        "name": "David McGoldrick",
+        "time": "38'"
+      }
+    ]
   },
   "14061141": {
     "match_id": 14061141,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Harry Clifton",
+        "time": "49'"
+      },
+      {
+        "name": "Jay McGrath",
+        "time": "21'"
+      },
+      {
+        "name": "Francis Okoronkwo",
+        "time": "7'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Owen Moxon",
+        "time": "87'"
+      },
+      {
+        "name": "Callum Wright",
+        "time": "66'"
+      },
+      {
+        "name": "Joe Taylor",
+        "time": "60'"
+      }
+    ]
   },
   "14061132": {
     "match_id": 14061132,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Mason Burstow",
+        "time": "90'"
+      },
+      {
+        "name": "Thierry Gale",
+        "time": "46'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Theodore Archibald",
+        "time": "49'"
+      }
+    ]
   },
   "14061126": {
     "match_id": 14061126,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Ashley Fletcher",
+        "time": "50'"
+      },
+      {
+        "name": "Zachary Ashworth",
+        "time": "3'"
+      }
+    ],
     "away_scorers": []
   },
   "14060828": {
     "match_id": 14060828,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Kabongo Tshimanga",
+        "time": "87'"
+      },
+      {
+        "name": "Kabongo Tshimanga",
+        "time": "45'"
+      },
+      {
+        "name": "Ryan Glover",
+        "time": "36'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jack Stevens",
+        "time": "69'"
+      },
+      {
+        "name": "Tom Pett",
+        "time": "11'"
+      }
+    ]
   },
   "14061169": {
     "match_id": 14061169,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Zak Jules",
+        "time": "50'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Marcus Browne",
+        "time": "82'"
+      }
+    ]
   },
   "14061181": {
     "match_id": 14061181,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 2,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Cian Hayes",
+        "time": "68'"
+      },
+      {
+        "name": "Kyrell Lisbie",
+        "time": "37'"
+      }
+    ]
   },
   "14061174": {
     "match_id": 14061174,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Chem Campbell",
+        "time": "90'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Lucas Akins",
+        "time": "78'"
+      }
+    ]
   },
   "14060876": {
     "match_id": 14060876,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Alassana Jatta",
+        "time": "8'"
+      }
+    ],
     "away_scorers": []
   },
   "14060855": {
     "match_id": 14060855,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Micah Mbick",
+        "time": "38'"
+      },
+      {
+        "name": "Kyreece Lisbie",
+        "time": "14'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Ethan Ennis",
+        "time": "79'"
+      }
+    ]
   },
   "14060844": {
     "match_id": 14060844,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 4,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Ben Knight",
+        "time": "90'"
+      },
+      {
+        "name": "Kelland Watts",
+        "time": "77'"
+      },
+      {
+        "name": "Kelland Watts",
+        "time": "67'"
+      },
+      {
+        "name": "Shayne Lavery",
+        "time": "58'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Charlie Whitaker",
+        "time": "63'"
+      },
+      {
+        "name": "Dylan Jones",
+        "time": "45'"
+      }
+    ]
   },
   "14060849": {
     "match_id": 14060849,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 2,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Jaze Kabia",
+        "time": "74'"
+      },
+      {
+        "name": "Kieran Green",
+        "time": "5'"
+      }
+    ]
   },
   "14060834": {
     "match_id": 14060834,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Taylor Richards",
+        "time": "89'"
+      }
+    ]
   },
   "14060839": {
     "match_id": 14060839,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Nicke Kabamba",
+        "time": "89'"
+      },
+      {
+        "name": "Ashley Charles",
+        "time": "46'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Fletcher Holman",
+        "time": "10'"
+      }
+    ]
   },
   "14060885": {
     "match_id": 14060885,
@@ -1579,31 +2954,89 @@
   },
   "14060870": {
     "match_id": 14060870,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Michael Spellman",
+        "time": "63'"
+      },
+      {
+        "name": "Harrison Biggins",
+        "time": "50'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Dilan Markanday",
+        "time": "85'"
+      }
+    ]
   },
   "14060881": {
     "match_id": 14060881,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Ryan Graydon",
+        "time": "8'"
+      }
+    ],
     "away_scorers": []
   },
   "14060860": {
     "match_id": 14060860,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 3,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Sam Vokes",
+        "time": "84'"
+      },
+      {
+        "name": "Armani Little",
+        "time": "55'"
+      },
+      {
+        "name": "Conor Masterson",
+        "time": "51'"
+      }
+    ]
   },
   "14060865": {
     "match_id": 14060865,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 5,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Daniel Crowley",
+        "time": "88'"
+      },
+      {
+        "name": "Luke Offord",
+        "time": "81'"
+      },
+      {
+        "name": "Callum Paterson",
+        "time": "34'"
+      },
+      {
+        "name": "Callum Paterson",
+        "time": "11'"
+      },
+      {
+        "name": "Callum Paterson",
+        "time": "8'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Thomas Sang",
+        "time": "83'"
+      }
+    ]
   },
   "14773699": {
     "match_id": 14773699,
@@ -1615,16 +3048,43 @@
   "14773705": {
     "match_id": 14773705,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 3,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Enzo Millot",
+        "time": "67'"
+      },
+      {
+        "name": "Riyad Mahrez",
+        "time": "64'"
+      },
+      {
+        "name": "Ivan Toney",
+        "time": "55'"
+      }
+    ]
   },
   "14773700": {
     "match_id": 14773700,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Ramiro Enrique",
+        "time": "16'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Khalid Al-Ghannam",
+        "time": "83'"
+      },
+      {
+        "name": "Khalid Al-Ghannam",
+        "time": "50'"
+      }
+    ]
   },
   "14060328": {
     "match_id": 14060328,
@@ -1665,37 +3125,93 @@
   },
   "14038836": {
     "match_id": 14038836,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Mohamed Belhadj Mahmoud",
+        "time": "79'"
+      },
+      {
+        "name": "Mattia Zanotti",
+        "time": "44'"
+      },
+      {
+        "name": "Kevin Behrens",
+        "time": "42'"
+      },
+      {
+        "name": "Anto Grgi\u0107",
+        "time": "13'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Andrin Hunziker",
+        "time": "67'"
+      }
+    ]
   },
   "14038835": {
     "match_id": 14038835,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Donat Rrudhani",
+        "time": "35'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Adrian Grbi\u0107",
+        "time": "19'"
+      }
+    ]
   },
   "14060331": {
     "match_id": 14060331,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Monday Etim",
+        "time": "83'"
+      },
+      {
+        "name": "Alexandru Cic\u00e2ld\u0103u",
+        "time": "65'"
+      }
+    ],
     "away_scorers": []
   },
   "14038848": {
     "match_id": 14038848,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Gaoussou Diakite",
+        "time": "51'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jonathan Asp Jensen",
+        "time": "75'"
+      }
+    ]
   },
   "14060330": {
     "match_id": 14060330,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Andrei Gheorghita",
+        "time": "5'"
+      }
+    ],
     "away_scorers": []
   },
   "14366028": {
@@ -1739,9 +3255,14 @@
   "14372241": {
     "match_id": 14372241,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Justice Figuareido",
+        "time": "60'"
+      }
+    ]
   },
   "14366029": {
     "match_id": 14366029,
@@ -1775,17 +3296,40 @@
   },
   "15213929": {
     "match_id": 15213929,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Neboj\u0161a Kosovi\u0107",
+        "time": "49'"
+      }
+    ],
     "away_scorers": []
   },
   "14671887": {
     "match_id": 14671887,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Brooke Nunn",
+        "time": "86'"
+      },
+      {
+        "name": "Brooke Nunn",
+        "time": "18'"
+      },
+      {
+        "name": "Makala Woods",
+        "time": "15'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Isabel Hodgson",
+        "time": "87'"
+      }
+    ]
   },
   "14671893": {
     "match_id": 14671893,
@@ -1815,66 +3359,191 @@
   },
   "15213934": {
     "match_id": 15213934,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Brayan Perea",
+        "time": "33'"
+      },
+      {
+        "name": "Kak\u00e1 Mendes",
+        "time": "1'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Gleyson",
+        "time": "52'"
+      }
+    ]
   },
   "15213937": {
     "match_id": 15213937,
-    "home_score": 0,
+    "home_score": 3,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Suriya Singmui",
+        "time": "78'"
+      },
+      {
+        "name": "Mohammed Osman",
+        "time": "60'"
+      },
+      {
+        "name": "Willen Mota",
+        "time": "58'"
+      }
+    ],
     "away_scorers": []
   },
   "15213931": {
     "match_id": 15213931,
-    "home_score": 0,
+    "home_score": 3,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Yuki Kusano",
+        "time": "88'"
+      },
+      {
+        "name": "Yuki Kusano",
+        "time": "49'"
+      },
+      {
+        "name": "Wendel",
+        "time": "12'"
+      }
+    ],
     "away_scorers": []
   },
   "15213930": {
     "match_id": 15213930,
-    "home_score": 0,
+    "home_score": 4,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Nika Sandokhadze",
+        "time": "86'"
+      },
+      {
+        "name": "Ikhsan Fandi Ahmad",
+        "time": "24'"
+      },
+      {
+        "name": "Nika Sandokhadze",
+        "time": "13'"
+      },
+      {
+        "name": "Yoshiaki Takagi",
+        "time": "6'"
+      }
+    ],
     "away_scorers": []
   },
   "14283239": {
     "match_id": 14283239,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 2,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Mariona Caldentey",
+        "time": "61'"
+      },
+      {
+        "name": "Bethany Mead",
+        "time": "55'"
+      }
+    ]
   },
   "14283241": {
     "match_id": 14283241,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Mia Enderby",
+        "time": "90'"
+      },
+      {
+        "name": "Toko Koga",
+        "time": "90'"
+      }
+    ],
     "away_scorers": []
   },
   "14283238": {
     "match_id": 14283238,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 4,
+    "home_scorers": [
+      {
+        "name": "Kirsty Hanson",
+        "time": "37'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Hanna Lundkvist",
+        "time": "79'"
+      },
+      {
+        "name": "Jessica Park",
+        "time": "75'"
+      },
+      {
+        "name": "Elisabeth Terland",
+        "time": "71'"
+      },
+      {
+        "name": "Julia Zigiotti Olme",
+        "time": "35'"
+      }
+    ]
   },
   "14283243": {
     "match_id": 14283243,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Eva Nystr\u00f6m",
+        "time": "84'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Shekiera Martinez",
+        "time": "63'"
+      },
+      {
+        "name": "Verena Hanshaw",
+        "time": "34'"
+      }
+    ]
   },
   "14283242": {
     "match_id": 14283242,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Freya Godfrey",
+        "time": "68'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Khadija Shaw",
+        "time": "86'"
+      },
+      {
+        "name": "Kerolin Nicoli",
+        "time": "11'"
+      }
+    ]
   },
   "14117779": {
     "match_id": 14117779,
@@ -1934,23 +3603,76 @@
   },
   "14117778": {
     "match_id": 14117778,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Nicolas Rommens",
+        "time": "90'"
+      },
+      {
+        "name": "Sam De Grand",
+        "time": "90'"
+      },
+      {
+        "name": "Zal\u00e1n Vancsa",
+        "time": "72'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Isaac Nuhu",
+        "time": "38'"
+      },
+      {
+        "name": "Isaac Nuhu",
+        "time": "29'"
+      }
+    ]
   },
   "14117780": {
     "match_id": 14117780,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Akpa Chukwu Hemsley",
+        "time": "90'"
+      },
+      {
+        "name": "Abdoulaye Ba",
+        "time": "70'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Simon Paulet",
+        "time": "39'"
+      },
+      {
+        "name": "Kevin Shkurti",
+        "time": "34'"
+      }
+    ]
   },
   "14287020": {
     "match_id": 14287020,
-    "home_score": 0,
+    "home_score": 3,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Filippa Curmark",
+        "time": "61'"
+      },
+      {
+        "name": "Martina Piemonte",
+        "time": "36'"
+      },
+      {
+        "name": "Eleonora Goldoni",
+        "time": "29'"
+      }
+    ],
     "away_scorers": []
   },
   "14435522": {
@@ -1977,23 +3699,67 @@
   "14290362": {
     "match_id": 14290362,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Manuela Giugliano",
+        "time": "45'"
+      }
+    ]
   },
   "14287021": {
     "match_id": 14287021,
-    "home_score": 0,
+    "home_score": 3,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Thea Kyv\u00e5g",
+        "time": "84'"
+      },
+      {
+        "name": "Kayleigh van Dooren",
+        "time": "80'"
+      },
+      {
+        "name": "Kayleigh van Dooren",
+        "time": "34'"
+      }
+    ],
     "away_scorers": []
   },
   "14117774": {
     "match_id": 14117774,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 4,
+    "home_scorers": [
+      {
+        "name": "Pjotr Kestens",
+        "time": "89'"
+      },
+      {
+        "name": "Noah Dodeigne",
+        "time": "9'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Kjetil Borry",
+        "time": "84'"
+      },
+      {
+        "name": "Japhet Muanza",
+        "time": "57'"
+      },
+      {
+        "name": "L\u00e9andro Rousseau",
+        "time": "44'"
+      },
+      {
+        "name": "Radja Nainggolan",
+        "time": "13'"
+      }
+    ]
   },
   "14626846": {
     "match_id": 14626846,
@@ -2023,17 +3789,56 @@
   },
   "14414569": {
     "match_id": 14414569,
-    "home_score": 0,
+    "home_score": 3,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Eunate Astralaga",
+        "time": "88'"
+      },
+      {
+        "name": "Ane Etxezarreta",
+        "time": "79'"
+      },
+      {
+        "name": "Intza Eguiguren",
+        "time": "17'"
+      }
+    ],
     "away_scorers": []
   },
   "14414570": {
     "match_id": 14414570,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 4,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Millaray Cort\u00e9s",
+        "time": "49'"
+      },
+      {
+        "name": "Rosa M\u00e1rquez",
+        "time": "45'"
+      },
+      {
+        "name": "Isabel \u00c1lvarez",
+        "time": "40'"
+      },
+      {
+        "name": "Esther Mart\u00edn-Pozuelo",
+        "time": "20'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Ana Franco",
+        "time": "65'"
+      },
+      {
+        "name": "Raiderlin Carrasco",
+        "time": "45'"
+      }
+    ]
   },
   "15366443": {
     "match_id": 15366443,
@@ -2049,31 +3854,86 @@
   },
   "14019480": {
     "match_id": 14019480,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Levente Sz\u0151r",
+        "time": "78'"
+      },
+      {
+        "name": "Bence B\u00edr\u00f3",
+        "time": "28'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Tibor Lippai",
+        "time": "82'"
+      },
+      {
+        "name": "\u00c1din Moln\u00e1r",
+        "time": "74'"
+      },
+      {
+        "name": "\u00c1din Moln\u00e1r",
+        "time": "10'"
+      }
+    ]
   },
   "14019479": {
     "match_id": 14019479,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Marko Kvasina",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Giorgi Beridze",
+        "time": "19'"
+      }
+    ]
   },
   "15013813": {
     "match_id": 15013813,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Ahmed Khaldi",
+        "time": "84'"
+      },
+      {
+        "name": "Zakaria Draoui",
+        "time": "13'"
+      }
+    ],
     "away_scorers": []
   },
   "14019486": {
     "match_id": 14019486,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Zsolt Nagy",
+        "time": "23'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Attila Osv\u00e1th",
+        "time": "83'"
+      },
+      {
+        "name": "Kevin Horv\u00e1th",
+        "time": "17'"
+      }
+    ]
   },
   "15366440": {
     "match_id": 15366440,
@@ -2122,23 +3982,52 @@
   },
   "15366442": {
     "match_id": 15366442,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Miloud Rebiai",
+        "time": "8'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Dhiya Eddine Benyahia",
+        "time": "59'"
+      }
+    ]
   },
   "15366445": {
     "match_id": 15366445,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Abderahmane Hachoud",
+        "time": "74'"
+      },
+      {
+        "name": "Mohamed Sylla",
+        "time": "12'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Abderrahmane Bourdim",
+        "time": "42'"
+      }
+    ]
   },
   "15366932": {
     "match_id": 15366932,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Khair Al-Din Marzouki",
+        "time": "34'"
+      }
+    ],
     "away_scorers": []
   },
   "15270072": {
@@ -2232,9 +4121,14 @@
   "15269918": {
     "match_id": 15269918,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Gonzalo Montiel",
+        "time": "59'"
+      }
+    ]
   },
   "14530050": {
     "match_id": 14530050,
@@ -2285,30 +4179,79 @@
   "14929373": {
     "match_id": 14929373,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 4,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Kosei Ogura",
+        "time": "76'"
+      },
+      {
+        "name": "Ryunosuke Sato",
+        "time": "60'"
+      },
+      {
+        "name": "Kosei Ogura",
+        "time": "20'"
+      },
+      {
+        "name": "Yuto Ozeki",
+        "time": "12'"
+      }
+    ]
   },
   "15270068": {
     "match_id": 15270068,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "\u00c1ngel Di Mar\u00eda",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Lautaro Gutierrez",
+        "time": "89'"
+      },
+      {
+        "name": "Facundo Mallo",
+        "time": "88'"
+      }
+    ]
   },
   "15270067": {
     "match_id": 15270067,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Franco Torres",
+        "time": "49'"
+      },
+      {
+        "name": "Nicolas Schelotto",
+        "time": "10'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Tom\u00e1s Conechny",
+        "time": "83'"
+      }
+    ]
   },
   "14530052": {
     "match_id": 14530052,
     "home_score": 0,
-    "away_score": 3,
+    "away_score": 4,
     "home_scorers": [],
     "away_scorers": [
+      {
+        "name": "Farid Iskandarov",
+        "time": "90'"
+      },
       {
         "name": "Ismaheel Akinade",
         "time": "81'"
@@ -2325,14 +4268,9 @@
   },
   "14530048": {
     "match_id": 14530048,
-    "home_score": 1,
+    "home_score": 0,
     "away_score": 0,
-    "home_scorers": [
-      {
-        "name": "Jordan Rezabala",
-        "time": "80'"
-      }
-    ],
+    "home_scorers": [],
     "away_scorers": []
   },
   "14530044": {
@@ -2345,86 +4283,237 @@
   "14530053": {
     "match_id": 14530053,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 2,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Ehtiram Shahverdiyev",
+        "time": "55'"
+      },
+      {
+        "name": "Ryonosuke Ohori",
+        "time": "24'"
+      }
+    ]
   },
   "15138043": {
     "match_id": 15138043,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Alex Telles",
+        "time": "75'"
+      },
+      {
+        "name": "Santiago Rodr\u00edguez",
+        "time": "55'"
+      }
+    ],
     "away_scorers": []
   },
   "15188786": {
     "match_id": 15188786,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Gabriel Moyses",
+        "time": "45'"
+      },
+      {
+        "name": "Gabriel Moyses",
+        "time": "10'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Kevlin",
+        "time": "90'"
+      }
+    ]
   },
   "15146356": {
     "match_id": 15146356,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Alberte",
+        "time": "36'"
+      }
+    ],
     "away_scorers": []
   },
   "15146355": {
     "match_id": 15146355,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Thiago Santos",
+        "time": "74'"
+      },
+      {
+        "name": "Felipe Rangel dos Santos",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Cleiton Garcia",
+        "time": "33'"
+      },
+      {
+        "name": "Cleiton Garcia",
+        "time": "20'"
+      }
+    ]
   },
   "15188783": {
     "match_id": 15188783,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 5,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Gabriel Barcelos Rossetto",
+        "time": "75'"
+      },
+      {
+        "name": "Bruno Lopes",
+        "time": "66'"
+      },
+      {
+        "name": "L\u00e9o Gobo",
+        "time": "45'"
+      },
+      {
+        "name": "Clayton",
+        "time": "43'"
+      },
+      {
+        "name": "Gustavo Ermel",
+        "time": "28'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Victor Ara\u00fajo",
+        "time": "45'"
+      },
+      {
+        "name": "Marcelo Cau\u00e3 de Aguiar Alves",
+        "time": "11'"
+      }
+    ]
   },
   "15146359": {
     "match_id": 15146359,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Wellisson",
+        "time": "36'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Luam",
+        "time": "2'"
+      }
+    ]
   },
   "15204425": {
     "match_id": 15204425,
-    "home_score": 0,
+    "home_score": 3,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Marcelo Ajul",
+        "time": "90'"
+      },
+      {
+        "name": "Leo Lima",
+        "time": "65'"
+      },
+      {
+        "name": "Gustavo Coutinho",
+        "time": "49'"
+      }
+    ],
     "away_scorers": []
   },
   "15298488": {
     "match_id": 15298488,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Eduardo Nardini",
+        "time": "15'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Luiz Henrique",
+        "time": "69'"
+      }
+    ]
   },
   "15298492": {
     "match_id": 15298492,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 2,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Gustavo Silva Souza",
+        "time": "62'"
+      },
+      {
+        "name": "Marcelo Toscano",
+        "time": "44'"
+      }
+    ]
   },
   "15188785": {
     "match_id": 15188785,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "L\u00e9o Reis",
+        "time": "50'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Eduardo Person",
+        "time": "47'"
+      }
+    ]
   },
   "15321821": {
     "match_id": 15321821,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "45'"
+      },
+      {
+        "name": "Unknown",
+        "time": "15'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "\u00cdcaro",
+        "time": "79'"
+      }
+    ]
   },
   "15415125": {
     "match_id": 15415125,
@@ -2448,23 +4537,51 @@
   "15321815": {
     "match_id": 15321815,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 2,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Juliano Fabro",
+        "time": "38'"
+      },
+      {
+        "name": "Lucas Mineiro",
+        "time": "31'"
+      }
+    ]
   },
   "15188410": {
     "match_id": 15188410,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Isaac Badilla",
+        "time": "90'"
+      }
+    ],
     "away_scorers": []
   },
   "15415123": {
     "match_id": 15415123,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Edmilson Herazo",
+        "time": "36'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Andres Felipe Ru\u00edz Viveros",
+        "time": "52'"
+      },
+      {
+        "name": "Jose Carrasco Hernandez",
+        "time": "14'"
+      }
+    ]
   },
   "14222830": {
     "match_id": 14222830,
@@ -2499,38 +4616,113 @@
   },
   "14222826": {
     "match_id": 14222826,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Yassine Bahassa",
+        "time": "52'"
+      }
+    ],
     "away_scorers": []
   },
   "14222833": {
     "match_id": 14222833,
-    "home_score": 0,
+    "home_score": 4,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Garry Rodrigues",
+        "time": "85'"
+      },
+      {
+        "name": "Pedro Marques",
+        "time": "24'"
+      },
+      {
+        "name": "Brandon Thomas",
+        "time": "19'"
+      },
+      {
+        "name": "Josef Kvida",
+        "time": "12'"
+      }
+    ],
     "away_scorers": []
   },
   "14391408": {
     "match_id": 14391408,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Lenell John-Lewis",
+        "time": "58'"
+      },
+      {
+        "name": "Frankie Maguire",
+        "time": "54'"
+      },
+      {
+        "name": "Lenell John-Lewis",
+        "time": "28'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Slavi Spasov",
+        "time": "81'"
+      },
+      {
+        "name": "Andrew Dallas",
+        "time": "66'"
+      },
+      {
+        "name": "Andrew Dallas",
+        "time": "19'"
+      }
+    ]
   },
   "15254210": {
     "match_id": 15254210,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Martin Nagy",
+        "time": "63'"
+      },
+      {
+        "name": "Erik Daniel",
+        "time": "44'"
+      }
+    ],
     "away_scorers": []
   },
   "14391407": {
     "match_id": 14391407,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Jake Southern-Cooper",
+        "time": "75'"
+      },
+      {
+        "name": "Otis Khan",
+        "time": "48'"
+      },
+      {
+        "name": "Oliver Crankshaw",
+        "time": "13'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Regan Booty",
+        "time": "81'"
+      }
+    ]
   },
   "14391406": {
     "match_id": 14391406,
@@ -2541,24 +4733,64 @@
   },
   "15254211": {
     "match_id": 15254211,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 4,
+    "home_scorers": [
+      {
+        "name": "Marek F\u00e1bry",
+        "time": "27'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jakub Dockal",
+        "time": "73'"
+      },
+      {
+        "name": "David N\u011bme\u010dek",
+        "time": "45'"
+      },
+      {
+        "name": "Radek Ovesny",
+        "time": "44'"
+      },
+      {
+        "name": "Zdenek Riha",
+        "time": "24'"
+      }
+    ]
   },
   "14391413": {
     "match_id": 14391413,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Ian Henderson",
+        "time": "35'"
+      },
+      {
+        "name": "Tyler Smith",
+        "time": "3'"
+      }
+    ],
     "away_scorers": []
   },
   "14391412": {
     "match_id": 14391412,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 2,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Darius Lipsiuc",
+        "time": "76'"
+      },
+      {
+        "name": "Conor Wilkinson",
+        "time": "17'"
+      }
+    ]
   },
   "14391409": {
     "match_id": 14391409,
@@ -2576,31 +4808,101 @@
   },
   "14391410": {
     "match_id": 14391410,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Lloyd Humphries",
+        "time": "80'"
+      },
+      {
+        "name": "Sam Pearson",
+        "time": "27'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Florent Hoti",
+        "time": "60'"
+      },
+      {
+        "name": "Will Harris",
+        "time": "40'"
+      },
+      {
+        "name": "Will Harris",
+        "time": "9'"
+      }
+    ]
   },
   "14391417": {
     "match_id": 14391417,
-    "home_score": 0,
+    "home_score": 5,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Ollie Pearce",
+        "time": "61'"
+      },
+      {
+        "name": "Hiram Boateng",
+        "time": "28'"
+      },
+      {
+        "name": "Ollie Pearce",
+        "time": "22'"
+      },
+      {
+        "name": "Greg Olley",
+        "time": "18'"
+      },
+      {
+        "name": "Ollie Pearce",
+        "time": "5'"
+      }
+    ],
     "away_scorers": []
   },
   "14391414": {
     "match_id": 14391414,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Carlton Ubaezuonu",
+        "time": "75'"
+      },
+      {
+        "name": "Zain Westbrooke",
+        "time": "50'"
+      },
+      {
+        "name": "Danny Whitehall",
+        "time": "38'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jili Buyabu",
+        "time": "57'"
+      },
+      {
+        "name": "Ricardo Rees",
+        "time": "5'"
+      }
+    ]
   },
   "14391415": {
     "match_id": 14391415,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Davide Rodari",
+        "time": "71'"
+      }
+    ]
   },
   "14391416": {
     "match_id": 14391416,
@@ -2611,9 +4913,14 @@
   },
   "15253961": {
     "match_id": 15253961,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Rasmus Mendolin",
+        "time": "87'"
+      }
+    ],
     "away_scorers": []
   },
   "14217685": {
@@ -2646,24 +4953,69 @@
   },
   "15253963": {
     "match_id": 15253963,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Amir Belabid",
+        "time": "86'"
+      },
+      {
+        "name": "Daniel Heikkinen",
+        "time": "23'"
+      }
+    ],
     "away_scorers": []
   },
   "15253962": {
     "match_id": 15253962,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Elias Mastokangas",
+        "time": "73'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Rudi Vikstrom",
+        "time": "66'"
+      },
+      {
+        "name": "Rudi Vikstrom",
+        "time": "15'"
+      }
+    ]
   },
   "15253964": {
     "match_id": 15253964,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 4,
+    "home_scorers": [
+      {
+        "name": "Simon Lindholm",
+        "time": "25'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Julius K\u00f6rkk\u00f6",
+        "time": "90'"
+      },
+      {
+        "name": "Elias Kallio",
+        "time": "70'"
+      },
+      {
+        "name": "Elias Kallio",
+        "time": "48'"
+      },
+      {
+        "name": "Rasmus Karjalainen",
+        "time": "12'"
+      }
+    ]
   },
   "14217703": {
     "match_id": 14217703,
@@ -2730,7 +5082,7 @@
     "away_scorers": [
       {
         "name": "Aymeric Ahmed",
-        "time": "35'"
+        "time": "33'"
       }
     ]
   },
@@ -2787,45 +5139,139 @@
   },
   "14103106": {
     "match_id": 14103106,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Axel Borgmann",
+        "time": "44'"
+      },
+      {
+        "name": "Moritz Hannemann",
+        "time": "23'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Erik Shuranov",
+        "time": "19'"
+      }
+    ]
   },
   "14103100": {
     "match_id": 14103100,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 3,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Elias L\u00f6der",
+        "time": "90'"
+      },
+      {
+        "name": "Mirnes Pepi\u0107",
+        "time": "54'"
+      },
+      {
+        "name": "Marcel Seegert",
+        "time": "48'"
+      }
+    ]
   },
   "14103107": {
     "match_id": 14103107,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Torben M\u00fcsel",
+        "time": "68'"
+      },
+      {
+        "name": "Marek Janssen",
+        "time": "52'"
+      },
+      {
+        "name": "Marek Janssen",
+        "time": "37'"
+      },
+      {
+        "name": "Marek Janssen",
+        "time": "35'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Arlind Rexhepi",
+        "time": "45'"
+      }
+    ]
   },
   "14103097": {
     "match_id": 14103097,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Dennis Kayg\u0131n",
+        "time": "48'"
+      },
+      {
+        "name": "Simon Lorenz",
+        "time": "31'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Noah Darvich",
+        "time": "32'"
+      }
+    ]
   },
   "14103105": {
     "match_id": 14103105,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Lex-Tyger Lobinger",
+        "time": "52'"
+      },
+      {
+        "name": "Joshua Bitter",
+        "time": "27'"
+      }
+    ],
     "away_scorers": []
   },
   "14103109": {
     "match_id": 14103109,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Deniz Zeitler",
+        "time": "84'"
+      },
+      {
+        "name": "Luka Duric",
+        "time": "63'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Lars Gindorf",
+        "time": "72'"
+      },
+      {
+        "name": "Lars Gindorf",
+        "time": "58'"
+      },
+      {
+        "name": "Mika Schr\u00f6ers",
+        "time": "37'"
+      }
+    ]
   },
   "15209556": {
     "match_id": 15209556,
@@ -2850,16 +5296,39 @@
   },
   "14275104": {
     "match_id": 14275104,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Josiah Kaled Uwakhonye",
+        "time": "60'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jonas Berg",
+        "time": "36'"
+      },
+      {
+        "name": "Julijan Popovi\u0107",
+        "time": "23'"
+      }
+    ]
   },
   "14275105": {
     "match_id": 14275105,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Burinyuy Nyuydine",
+        "time": "79'"
+      },
+      {
+        "name": "Burinyuy Nyuydine",
+        "time": "26'"
+      }
+    ],
     "away_scorers": []
   },
   "14275106": {
@@ -2872,23 +5341,51 @@
   "14275102": {
     "match_id": 14275102,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Kilian Joel Wagenaar",
+        "time": "65'"
+      }
+    ]
   },
   "14489883": {
     "match_id": 14489883,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 3,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Kelvin Osei Asibey",
+        "time": "77'"
+      },
+      {
+        "name": "Martin Karikari",
+        "time": "63'"
+      },
+      {
+        "name": "Mawuli Wayo",
+        "time": "8'"
+      }
+    ]
   },
   "14604373": {
     "match_id": 14604373,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Mark Sifneos",
+        "time": "9'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Alberto Simoni",
+        "time": "59'"
+      }
+    ]
   },
   "14275101": {
     "match_id": 14275101,
@@ -2899,45 +5396,127 @@
   },
   "14604374": {
     "match_id": 14604374,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Paschalis Kassos",
+        "time": "29'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Franco Shea",
+        "time": "34'"
+      },
+      {
+        "name": "Spyridon Glynos",
+        "time": "11'"
+      }
+    ]
   },
   "14604369": {
     "match_id": 14604369,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Vasilios Kontonikos",
+        "time": "49'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Fiorin Durmishaj",
+        "time": "89'"
+      },
+      {
+        "name": "Georgios Manalis",
+        "time": "15'"
+      }
+    ]
   },
   "14604371": {
     "match_id": 14604371,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Giannis Loukinas",
+        "time": "60'"
+      }
+    ]
   },
   "15335953": {
     "match_id": 15335953,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 3,
+    "home_scorers": [
+      {
+        "name": "Karel Espino",
+        "time": "90'"
+      },
+      {
+        "name": "Byron Leal",
+        "time": "15'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Uri Amaral",
+        "time": "63'"
+      },
+      {
+        "name": "Uri Amaral",
+        "time": "52'"
+      },
+      {
+        "name": "Janderson",
+        "time": "28'"
+      }
+    ]
   },
   "15335954": {
     "match_id": 15335954,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Diego Casas",
+        "time": "72'"
+      }
+    ],
     "away_scorers": []
   },
   "14604367": {
     "match_id": 14604367,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 4,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Dimitrios Tsopouroglou",
+        "time": "83'"
+      },
+      {
+        "name": "Konstantinos Polykratis",
+        "time": "69'"
+      },
+      {
+        "name": "Konstantinos Polykratis",
+        "time": "36'"
+      },
+      {
+        "name": "Mahamadou Balde",
+        "time": "8'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Georgios Papakonstantinou",
+        "time": "90'"
+      }
+    ]
   },
   "14214863": {
     "match_id": 14214863,
@@ -3031,9 +5610,18 @@
   },
   "14214869": {
     "match_id": 14214869,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Iker Guarrotxena",
+        "time": "62'"
+      },
+      {
+        "name": "Carlos Fran\u00e7a",
+        "time": "5'"
+      }
+    ],
     "away_scorers": []
   },
   "15166717": {
@@ -3090,9 +5678,22 @@
   "14214873": {
     "match_id": 14214873,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 3,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Rachmat Irianto",
+        "time": "84'"
+      },
+      {
+        "name": "Bruno Para\u00edba",
+        "time": "74'"
+      },
+      {
+        "name": "Paulo Gali",
+        "time": "35'"
+      }
+    ]
   },
   "15166712": {
     "match_id": 15166712,
@@ -3124,72 +5725,192 @@
   },
   "14302717": {
     "match_id": 14302717,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Mattia Pagliuca",
+        "time": "84'"
+      },
+      {
+        "name": "Iacopo Cernigoi",
+        "time": "3'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Ilario Iotti",
+        "time": "77'"
+      },
+      {
+        "name": "Ilario Iotti",
+        "time": "48'"
+      }
+    ]
   },
   "14310352": {
     "match_id": 14310352,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Davide Balestrero",
+        "time": "90'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Michele Cali",
+        "time": "60'"
+      },
+      {
+        "name": "Andrea Delcarro",
+        "time": "24'"
+      }
+    ]
   },
   "14302708": {
     "match_id": 14302708,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Giacomo Sali",
+        "time": "79'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Federico Chinetti",
+        "time": "64'"
+      },
+      {
+        "name": "Marco Fossati",
+        "time": "48'"
+      }
+    ]
   },
   "14303091": {
     "match_id": 14303091,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Marcelo Orellana",
+        "time": "79'"
+      }
+    ]
   },
   "14303097": {
     "match_id": 14303097,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 2,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Christian Sussi",
+        "time": "90'"
+      },
+      {
+        "name": "Luca Fabrizi",
+        "time": "74'"
+      }
+    ]
   },
   "14303098": {
     "match_id": 14303098,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Mattia Sala",
+        "time": "36'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Ismet Sinani",
+        "time": "2'"
+      }
+    ]
   },
   "14303095": {
     "match_id": 14303095,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Matteo Solini",
+        "time": "90'"
+      },
+      {
+        "name": "Joshua Tenkorang",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Daniel Sannipoli",
+        "time": "90'"
+      }
+    ]
   },
   "14303089": {
     "match_id": 14303089,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Camillo Tavernelli",
+        "time": "20'"
+      }
+    ],
     "away_scorers": []
   },
   "14303474": {
     "match_id": 14303474,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 3,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Pier Luigi Simonetti",
+        "time": "45'"
+      },
+      {
+        "name": "Mattia Maita",
+        "time": "43'"
+      },
+      {
+        "name": "Marco Tumminello",
+        "time": "23'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Federico Pacciardi",
+        "time": "90'"
+      },
+      {
+        "name": "Sebastiano Di Paolo",
+        "time": "20'"
+      }
+    ]
   },
   "14303478": {
     "match_id": 14303478,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Davide Di Pasquale",
+        "time": "52'"
+      },
+      {
+        "name": "Matteo Maggio",
+        "time": "42'"
+      }
+    ],
     "away_scorers": []
   },
   "14303479": {
@@ -3201,17 +5922,44 @@
   },
   "14303480": {
     "match_id": 14303480,
-    "home_score": 0,
+    "home_score": 2,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Giacomo Parigi",
+        "time": "40'"
+      },
+      {
+        "name": "Nicola Fasan",
+        "time": "32'"
+      }
+    ],
     "away_scorers": []
   },
   "14303475": {
     "match_id": 14303475,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Vito Leonetti",
+        "time": "90'"
+      },
+      {
+        "name": "Federico Giraudo",
+        "time": "66'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Sebastiano Bianchi",
+        "time": "24'"
+      },
+      {
+        "name": "Sebastiano Bianchi",
+        "time": "2'"
+      }
+    ]
   },
   "14068627": {
     "match_id": 14068627,
@@ -3220,17 +5968,35 @@
     "home_scorers": [
       {
         "name": "Davide Atzeni",
-        "time": "33'"
+        "time": "35'"
       }
     ],
     "away_scorers": []
   },
   "14068628": {
     "match_id": 14068628,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Nirash Perera",
+        "time": "36'"
+      },
+      {
+        "name": "Simone Lontani",
+        "time": "27'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Dilan Zarate Hidalgo",
+        "time": "89'"
+      },
+      {
+        "name": "Matias Mancuso",
+        "time": "65'"
+      }
+    ]
   },
   "14068632": {
     "match_id": 14068632,
@@ -3241,17 +6007,41 @@
   },
   "14068625": {
     "match_id": 14068625,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Alfonso Montero",
+        "time": "56'"
+      },
+      {
+        "name": "Diego Pugno",
+        "time": "54'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Salvatore Borriello",
+        "time": "76'"
+      }
+    ]
   },
   "14303472": {
     "match_id": 14303472,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Michele Grande",
+        "time": "47'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Pietro Comi",
+        "time": "44'"
+      }
+    ]
   },
   "15270420": {
     "match_id": 15270420,
@@ -3297,10 +6087,24 @@
   },
   "15362903": {
     "match_id": 15362903,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Nhayson",
+        "time": "81'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Oualed El Hasni",
+        "time": "87'"
+      },
+      {
+        "name": "Dodo",
+        "time": "14'"
+      }
+    ]
   },
   "15270419": {
     "match_id": 15270419,
@@ -3321,30 +6125,93 @@
   "15270421": {
     "match_id": 15270421,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "N\u00e9stor Corona",
+        "time": "45'"
+      }
+    ]
   },
   "15269896": {
     "match_id": 15269896,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Jos\u00e9 Rodr\u00edguez",
+        "time": "71'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jair Cortez",
+        "time": "89'"
+      }
+    ]
   },
   "15269897": {
     "match_id": 15269897,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 4,
+    "away_score": 4,
+    "home_scorers": [
+      {
+        "name": "Adolfo Dom\u00ednguez",
+        "time": "72'"
+      },
+      {
+        "name": "Juan Calero",
+        "time": "50'"
+      },
+      {
+        "name": "Javier Casillas",
+        "time": "45'"
+      },
+      {
+        "name": "Javier Casillas",
+        "time": "32'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Jhan Carlos Rengifo Estupi\u00f1an",
+        "time": "90'"
+      },
+      {
+        "name": "Salvador Manr\u00edquez",
+        "time": "90'"
+      },
+      {
+        "name": "Diego Martinez",
+        "time": "78'"
+      },
+      {
+        "name": "Sebasti\u00e1n Cervantes",
+        "time": "64'"
+      }
+    ]
   },
   "15269894": {
     "match_id": 15269894,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Francisco Figueroa",
+        "time": "45'"
+      },
+      {
+        "name": "Christian",
+        "time": "26'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Benjam\u00edn S\u00e1nchez",
+        "time": "16'"
+      }
+    ]
   },
   "14049181": {
     "match_id": 14049181,
@@ -3352,11 +6219,11 @@
     "away_score": 1,
     "home_scorers": [
       {
-        "name": "Ryan Nolan",
-        "time": "38'"
+        "name": "Andy Ryan",
+        "time": "37'"
       },
       {
-        "name": "Ryan Nolan",
+        "name": "Andy Ryan",
         "time": "19'"
       }
     ],
@@ -3374,35 +6241,80 @@
     "home_scorers": [
       {
         "name": "Jamie McGonigle",
-        "time": "80'"
+        "time": "79'"
       },
       {
         "name": "Joel Cooper",
-        "time": "20'"
+        "time": "19'"
       }
     ],
     "away_scorers": []
   },
   "15401608": {
     "match_id": 15401608,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 4,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Soufiane Benjdida",
+        "time": "87'"
+      },
+      {
+        "name": "Soufiane Benjdida",
+        "time": "75'"
+      },
+      {
+        "name": "Ayman Chabani",
+        "time": "10'"
+      },
+      {
+        "name": "Soufiane Benjdida",
+        "time": "4'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Ayoub Mouloua",
+        "time": "58'"
+      },
+      {
+        "name": "Lamine Diakit\u00e9",
+        "time": "6'"
+      }
+    ]
   },
   "15401607": {
     "match_id": 15401607,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Romuald Dacosta",
+        "time": "52'"
+      }
+    ]
   },
   "15403588": {
     "match_id": 15403588,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Mehdi Balouk",
+        "time": "53'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Karim Lagrouch",
+        "time": "90'"
+      },
+      {
+        "name": "Bilal El Ouadghiri",
+        "time": "20'"
+      }
+    ]
   },
   "15188927": {
     "match_id": 15188927,
@@ -3451,17 +6363,48 @@
   },
   "14049175": {
     "match_id": 14049175,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 5,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Adam Lecky",
+        "time": "83'"
+      },
+      {
+        "name": "Adam Lecky",
+        "time": "65'"
+      },
+      {
+        "name": "Adam Lecky",
+        "time": "25'"
+      },
+      {
+        "name": "Paul Heatley",
+        "time": "14'"
+      },
+      {
+        "name": "Joe Crowe",
+        "time": "9'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Eogh\u00e1n  Liggett",
+        "time": "80'"
+      }
+    ]
   },
   "14049179": {
     "match_id": 14049179,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 1,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Matthew Fitzpatrick",
+        "time": "8'"
+      }
+    ]
   },
   "15409792": {
     "match_id": 15409792,
@@ -3479,17 +6422,32 @@
   },
   "15188930": {
     "match_id": 15188930,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Hugo Valdez",
+        "time": "45'"
+      }
+    ],
     "away_scorers": []
   },
   "15188929": {
     "match_id": 15188929,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Ignacio Aliseda",
+        "time": "20'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Gustavo Aguilar",
+        "time": "64'"
+      }
+    ]
   },
   "15409791": {
     "match_id": 15409791,
@@ -3521,15 +6479,23 @@
   },
   "14336314": {
     "match_id": 14336314,
-    "home_score": 1,
-    "away_score": 1,
+    "home_score": 2,
+    "away_score": 2,
     "home_scorers": [
+      {
+        "name": "Tiago Almeida",
+        "time": "70'"
+      },
       {
         "name": "Roberto",
         "time": "44'"
       }
     ],
     "away_scorers": [
+      {
+        "name": "Rodrigo Martins",
+        "time": "81'"
+      },
       {
         "name": "Miguel Pereira",
         "time": "17'"
@@ -3545,101 +6511,218 @@
   },
   "14336313": {
     "match_id": 14336313,
-    "home_score": 0,
+    "home_score": 1,
     "away_score": 0,
-    "home_scorers": [],
+    "home_scorers": [
+      {
+        "name": "Andr\u00e9 Oliveira",
+        "time": "76'"
+      }
+    ],
     "away_scorers": []
   },
   "14336309": {
     "match_id": 14336309,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
-  },
-  "14270996": {
-    "match_id": 14270996,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
-  },
-  "14270995": {
-    "match_id": 14270995,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
-  },
-  "14270997": {
-    "match_id": 14270997,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
-  },
-  "14270993": {
-    "match_id": 14270993,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
-  },
-  "14336308": {
-    "match_id": 14336308,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
-  },
-  "14270998": {
-    "match_id": 14270998,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
-  },
-  "14263130": {
-    "match_id": 14263130,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
-  },
-  "14263157": {
-    "match_id": 14263157,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
-  },
-  "14263128": {
-    "match_id": 14263128,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
-  },
-  "14591689": {
-    "match_id": 14591689,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
-  },
-  "15273954": {
-    "match_id": 15273954,
     "home_score": 1,
     "away_score": 1,
     "home_scorers": [
       {
+        "name": "Adri\u00e1n Butzke",
+        "time": "10'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Tiago Leite",
+        "time": "62'"
+      }
+    ]
+  },
+  "14270996": {
+    "match_id": 14270996,
+    "home_score": 1,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Nuno Januario",
+        "time": "43'"
+      }
+    ],
+    "away_scorers": []
+  },
+  "14270995": {
+    "match_id": 14270995,
+    "home_score": 1,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Duarte Martins",
+        "time": "44'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Rodrigo Monteiro",
+        "time": "82'"
+      }
+    ]
+  },
+  "14270997": {
+    "match_id": 14270997,
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Dino Semedo",
+        "time": "82'"
+      },
+      {
+        "name": "Miguel Lopes",
+        "time": "45'"
+      }
+    ],
+    "away_scorers": []
+  },
+  "14270993": {
+    "match_id": 14270993,
+    "home_score": 1,
+    "away_score": 2,
+    "home_scorers": [
+      {
+        "name": "Helder Suker",
+        "time": "90'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Bra\u00edma Samb\u00fa",
+        "time": "74'"
+      },
+      {
+        "name": "Bra\u00edma Samb\u00fa",
+        "time": "71'"
+      }
+    ]
+  },
+  "14336308": {
+    "match_id": 14336308,
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Gui Meira",
+        "time": "78'"
+      }
+    ]
+  },
+  "14270998": {
+    "match_id": 14270998,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Eberth Araujo Nogueira",
+        "time": "41'"
+      },
+      {
+        "name": "Marco Grilo",
+        "time": "37'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Eduardo Love",
+        "time": "32'"
+      }
+    ]
+  },
+  "14263130": {
+    "match_id": 14263130,
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Diogo Morais",
+        "time": "87'"
+      },
+      {
         "name": "Unknown",
-        "time": "19'"
+        "time": "34'"
       }
     ],
     "away_scorers": [
       {
         "name": "Unknown",
+        "time": "60'"
+      }
+    ]
+  },
+  "14263157": {
+    "match_id": 14263157,
+    "home_score": 0,
+    "away_score": 1,
+    "home_scorers": [],
+    "away_scorers": [
+      {
+        "name": "Siriki Camara",
+        "time": "60'"
+      }
+    ]
+  },
+  "14263128": {
+    "match_id": 14263128,
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "Unknown",
+        "time": "74'"
+      },
+      {
+        "name": "Unknown",
+        "time": "36'"
+      }
+    ],
+    "away_scorers": []
+  },
+  "14591689": {
+    "match_id": 14591689,
+    "home_score": 2,
+    "away_score": 0,
+    "home_scorers": [
+      {
+        "name": "McKenna Martinez",
+        "time": "71'"
+      },
+      {
+        "name": "Erica Meg Parkinson",
+        "time": "9'"
+      }
+    ],
+    "away_scorers": []
+  },
+  "15273954": {
+    "match_id": 15273954,
+    "home_score": 3,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Gon\u00e7alo Paiva",
+        "time": "54'"
+      },
+      {
+        "name": "R\u00faben Ribeiro",
+        "time": "46'"
+      },
+      {
+        "name": "Shyon Omrani",
+        "time": "19'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Bassco Soyer",
         "time": "43'"
       }
     ]
@@ -3647,23 +6730,71 @@
   "14591698": {
     "match_id": 14591698,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 3,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Malu Schmidt",
+        "time": "75'"
+      },
+      {
+        "name": "Rita Melo",
+        "time": "28'"
+      },
+      {
+        "name": "Rita Melo",
+        "time": "11'"
+      }
+    ]
   },
   "14591695": {
     "match_id": 14591695,
-    "home_score": 0,
-    "away_score": 0,
-    "home_scorers": [],
-    "away_scorers": []
+    "home_score": 2,
+    "away_score": 1,
+    "home_scorers": [
+      {
+        "name": "Sade Henrichs",
+        "time": "73'"
+      },
+      {
+        "name": "Fatumata Sisse",
+        "time": "21'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Sydney Shepherd",
+        "time": "25'"
+      }
+    ]
   },
   "14591696": {
     "match_id": 14591696,
     "home_score": 0,
-    "away_score": 0,
+    "away_score": 5,
     "home_scorers": [],
-    "away_scorers": []
+    "away_scorers": [
+      {
+        "name": "Carissa Boeckmann",
+        "time": "90'"
+      },
+      {
+        "name": "Nycole Raysla",
+        "time": "36'"
+      },
+      {
+        "name": "Susan Ama Duah",
+        "time": "25'"
+      },
+      {
+        "name": "Anna Gasper",
+        "time": "19'"
+      },
+      {
+        "name": "Nycole Raysla",
+        "time": "1'"
+      }
+    ]
   },
   "14596147": {
     "match_id": 14596147,
@@ -3674,21 +6805,29 @@
   },
   "15274979": {
     "match_id": 15274979,
-    "home_score": 1,
-    "away_score": 2,
+    "home_score": 2,
+    "away_score": 3,
     "home_scorers": [
       {
-        "name": "Unknown",
+        "name": "Pedro Oliveira",
+        "time": "79'"
+      },
+      {
+        "name": "Pedro Oliveira",
         "time": "35'"
       }
     ],
     "away_scorers": [
       {
-        "name": "Unknown",
+        "name": "Martim Dias",
+        "time": "86'"
+      },
+      {
+        "name": "Bernardo Louren\u00e7o",
         "time": "17'"
       },
       {
-        "name": "Unknown",
+        "name": "Gon\u00e7alo Monteiro",
         "time": "12'"
       }
     ]
@@ -4427,6 +7566,13 @@
   },
   "15416914": {
     "match_id": 15416914,
+    "home_score": 0,
+    "away_score": 0,
+    "home_scorers": [],
+    "away_scorers": []
+  },
+  "15424060": {
+    "match_id": 15424060,
     "home_score": 0,
     "away_score": 0,
     "home_scorers": [],
