@@ -1,0 +1,1766 @@
+{
+  "13981646": {
+    "teamDuel": {
+      "homeWins": 8,
+      "awayWins": 2,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14572676": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "14062196": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 5,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "14064480": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 3,
+      "draws": 4
+    },
+    "managerDuel": {
+      "homeWins": 2,
+      "awayWins": 0,
+      "draws": 0
+    }
+  },
+  "14083236": {
+    "teamDuel": {
+      "homeWins": 5,
+      "awayWins": 3,
+      "draws": 2
+    },
+    "managerDuel": {
+      "homeWins": 1,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "14572731": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 1,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14572778": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 2,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14572749": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14572758": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "14572632": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 2,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "14572649": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "14572709": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "14572812": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "14572823": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14572766": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "14572773": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "14572741": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "14572719": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "14572655": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "14572807": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 0,
+      "draws": 0
+    },
+    "managerDuel": {
+      "homeWins": 3,
+      "awayWins": 0,
+      "draws": 1
+    }
+  },
+  "14572789": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "15237888": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 0,
+      "draws": 0
+    },
+    "managerDuel": {
+      "homeWins": 2,
+      "awayWins": 0,
+      "draws": 0
+    }
+  },
+  "14572801": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 3,
+      "draws": 0
+    },
+    "managerDuel": {
+      "homeWins": 3,
+      "awayWins": 3,
+      "draws": 1
+    }
+  },
+  "14288973": {
+    "teamDuel": {
+      "homeWins": 5,
+      "awayWins": 3,
+      "draws": 2
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 1
+    }
+  },
+  "14053829": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 4,
+      "draws": 5
+    },
+    "managerDuel": null
+  },
+  "14109784": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 3,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 2,
+      "awayWins": 0,
+      "draws": 0
+    }
+  },
+  "15237885": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 4,
+      "draws": 6
+    },
+    "managerDuel": null
+  },
+  "14109783": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 6,
+      "draws": 2
+    },
+    "managerDuel": {
+      "homeWins": 2,
+      "awayWins": 0,
+      "draws": 0
+    }
+  },
+  "14109781": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 3,
+      "draws": 6
+    },
+    "managerDuel": null
+  },
+  "14032398": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 1
+    }
+  },
+  "15010834": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 1,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 1
+    }
+  },
+  "15238919": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 5,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "14023641": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 3,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "15238921": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 6,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "15238920": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 6,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "15010847": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "15010845": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "15037736": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 4,
+      "draws": 3
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 0,
+      "draws": 1
+    }
+  },
+  "14059807": {
+    "teamDuel": {
+      "homeWins": 6,
+      "awayWins": 3,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 0,
+      "draws": 1
+    }
+  },
+  "14083753": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 2,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "14065426": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 1,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14065422": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 5,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14064705": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 4,
+      "draws": 3
+    },
+    "managerDuel": {
+      "homeWins": 1,
+      "awayWins": 2,
+      "draws": 0
+    }
+  },
+  "14064702": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 5,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "14317896": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 5,
+      "draws": 4
+    },
+    "managerDuel": {
+      "homeWins": 2,
+      "awayWins": 4,
+      "draws": 3
+    }
+  },
+  "14064703": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 3,
+      "draws": 2
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 2,
+      "draws": 2
+    }
+  },
+  "14064701": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 6,
+      "draws": 2
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "14064697": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 1,
+      "draws": 6
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "14064712": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 4,
+      "draws": 2
+    },
+    "managerDuel": {
+      "homeWins": 2,
+      "awayWins": 0,
+      "draws": 0
+    }
+  },
+  "14056543": {
+    "teamDuel": {
+      "homeWins": 6,
+      "awayWins": 1,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "14056552": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 6,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14056546": {
+    "teamDuel": {
+      "homeWins": 6,
+      "awayWins": 2,
+      "draws": 2
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "14056549": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 6,
+      "draws": 2
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "14056558": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 1,
+      "draws": 2
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 0,
+      "draws": 1
+    }
+  },
+  "14056555": {
+    "teamDuel": {
+      "homeWins": 6,
+      "awayWins": 1,
+      "draws": 3
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 0,
+      "draws": 1
+    }
+  },
+  "14671715": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 7,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 1,
+      "awayWins": 3,
+      "draws": 0
+    }
+  },
+  "14671716": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 6,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14138492": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14138489": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 4,
+      "draws": 4
+    },
+    "managerDuel": null
+  },
+  "14138487": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 0,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14671719": {
+    "teamDuel": {
+      "homeWins": 5,
+      "awayWins": 5,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14671720": {
+    "teamDuel": {
+      "homeWins": 6,
+      "awayWins": 3,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14671721": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 1,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "15367319": {
+    "teamDuel": {
+      "homeWins": 5,
+      "awayWins": 0,
+      "draws": 5
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "15352966": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 6,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "15365055": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "15367320": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 2,
+      "draws": 6
+    },
+    "managerDuel": null
+  },
+  "13981912": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 0,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "13981913": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 1,
+      "draws": 2
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 2,
+      "draws": 1
+    }
+  },
+  "15367321": {
+    "teamDuel": {
+      "homeWins": 6,
+      "awayWins": 0,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "14321291": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 3,
+      "draws": 5
+    },
+    "managerDuel": null
+  },
+  "14324870": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 3,
+      "draws": 5
+    },
+    "managerDuel": null
+  },
+  "14321290": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 5,
+      "draws": 3
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "14324871": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 3,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14321292": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 1,
+      "draws": 5
+    },
+    "managerDuel": null
+  },
+  "14773711": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 8,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 2,
+      "draws": 0
+    }
+  },
+  "14321293": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 5,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "15362086": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 5,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "15362081": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 4,
+      "draws": 4
+    },
+    "managerDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 2
+    }
+  },
+  "15362089": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "14773710": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 9,
+      "draws": 0
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "14773712": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 7,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14773716": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 0,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 3,
+      "awayWins": 1,
+      "draws": 1
+    }
+  },
+  "14773708": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 2,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 3,
+      "draws": 0
+    }
+  },
+  "14773714": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 0
+    },
+    "managerDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 0
+    }
+  },
+  "14671886": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 3,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14060339": {
+    "teamDuel": {
+      "homeWins": 5,
+      "awayWins": 1,
+      "draws": 4
+    },
+    "managerDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 0
+    }
+  },
+  "14366035": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 4,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14366034": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 1,
+      "draws": 2
+    },
+    "managerDuel": {
+      "homeWins": 4,
+      "awayWins": 1,
+      "draws": 4
+    }
+  },
+  "14060338": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 0,
+      "draws": 2
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 1
+    }
+  },
+  "15211535": {
+    "teamDuel": {
+      "homeWins": 5,
+      "awayWins": 3,
+      "draws": 2
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "15211522": {
+    "teamDuel": {
+      "homeWins": 6,
+      "awayWins": 3,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14671890": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 8,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14671895": {
+    "teamDuel": {
+      "homeWins": 8,
+      "awayWins": 0,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "14671891": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 5,
+      "draws": 4
+    },
+    "managerDuel": null
+  },
+  "15302519": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 7,
+      "draws": 0
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "15211532": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 5,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "15213938": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 4,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "15211540": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 6,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "15213940": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "15302518": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 3,
+      "draws": 3
+    },
+    "managerDuel": {
+      "homeWins": 1,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "14435079": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 9,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14117790": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 6,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "14117794": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 2,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "14194041": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 3,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14436059": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 0,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14414573": {
+    "teamDuel": {
+      "homeWins": 8,
+      "awayWins": 1,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "15411341": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 2,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "15411342": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "14414577": {
+    "teamDuel": {
+      "homeWins": 6,
+      "awayWins": 3,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "15269916": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "15269907": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 4,
+      "draws": 5
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 0,
+      "draws": 1
+    }
+  },
+  "15269922": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 3,
+      "draws": 5
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 3,
+      "draws": 3
+    }
+  },
+  "15269921": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "15411331": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 3,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "15269920": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 2,
+      "draws": 8
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 0,
+      "draws": 1
+    }
+  },
+  "14530060": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 4,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14530056": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 1,
+      "draws": 2
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 0,
+      "draws": 1
+    }
+  },
+  "14992667": {
+    "teamDuel": {
+      "homeWins": 5,
+      "awayWins": 3,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "14530057": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 3,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "15138048": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 1,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "15298475": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "15298482": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 2,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "15414822": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "15138049": {
+    "teamDuel": {
+      "homeWins": 7,
+      "awayWins": 1,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "15420738": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 4,
+      "draws": 2
+    },
+    "managerDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 0
+    }
+  },
+  "15415132": {
+    "teamDuel": {
+      "homeWins": 5,
+      "awayWins": 1,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "15415126": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 3,
+      "draws": 4
+    },
+    "managerDuel": null
+  },
+  "15415130": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 5,
+      "draws": 4
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 2,
+      "draws": 1
+    }
+  },
+  "15415124": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 6,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "15188404": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 3,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "14222839": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 4,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "15188397": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 6,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "15366032": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "15436395": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "15253965": {
+    "teamDuel": {
+      "homeWins": 5,
+      "awayWins": 2,
+      "draws": 3
+    },
+    "managerDuel": {
+      "homeWins": 5,
+      "awayWins": 0,
+      "draws": 0
+    }
+  },
+  "15254212": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 2,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "15253967": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 4,
+      "draws": 3
+    },
+    "managerDuel": {
+      "homeWins": 5,
+      "awayWins": 3,
+      "draws": 0
+    }
+  },
+  "14217708": {
+    "teamDuel": null,
+    "managerDuel": null
+  },
+  "14217715": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 1,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14217723": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 6,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14217720": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 3,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 3,
+      "draws": 3
+    }
+  },
+  "14217718": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 2,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14217728": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14217713": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 0,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 2
+    }
+  },
+  "14217710": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 3,
+      "draws": 3
+    },
+    "managerDuel": {
+      "homeWins": 2,
+      "awayWins": 0,
+      "draws": 1
+    }
+  },
+  "14304993": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 0,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 2,
+      "awayWins": 0,
+      "draws": 0
+    }
+  },
+  "14103117": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14304996": {
+    "teamDuel": {
+      "homeWins": 5,
+      "awayWins": 2,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "14304997": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 5,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "15335964": {
+    "teamDuel": {
+      "homeWins": 5,
+      "awayWins": 2,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "14214877": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 4,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "14304998": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 0,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14275112": {
+    "teamDuel": {
+      "homeWins": 6,
+      "awayWins": 0,
+      "draws": 4
+    },
+    "managerDuel": null
+  },
+  "14489897": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 4,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14214881": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 5,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14214879": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 5,
+      "draws": 3
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "14214883": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "15402231": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 1,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 2,
+      "awayWins": 1,
+      "draws": 1
+    }
+  },
+  "14303099": {
+    "teamDuel": {
+      "homeWins": 5,
+      "awayWins": 4,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14068637": {
+    "teamDuel": {
+      "homeWins": 5,
+      "awayWins": 0,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 0
+    }
+  },
+  "14303104": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 1,
+      "draws": 0
+    },
+    "managerDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 0
+    }
+  },
+  "14303106": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 1,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14068646": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 1,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14068634": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 1,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14271756": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 5,
+      "draws": 0
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "15270422": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 3,
+      "draws": 4
+    },
+    "managerDuel": null
+  },
+  "15270423": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 4,
+      "draws": 4
+    },
+    "managerDuel": null
+  },
+  "15270425": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 4,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "15263844": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 4,
+      "draws": 4
+    },
+    "managerDuel": null
+  },
+  "15270424": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 5,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "15372255": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 2,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14336324": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 0,
+      "draws": 1
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 0,
+      "draws": 1
+    }
+  },
+  "15372250": {
+    "teamDuel": {
+      "homeWins": 5,
+      "awayWins": 2,
+      "draws": 3
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 4,
+      "draws": 3
+    }
+  },
+  "14336318": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 4,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "14336317": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 2,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "15273955": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 2,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "14035436": {
+    "teamDuel": {
+      "homeWins": 4,
+      "awayWins": 5,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "15273892": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 3,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "15273909": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 2,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "15204320": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 4,
+      "draws": 3
+    },
+    "managerDuel": {
+      "homeWins": 1,
+      "awayWins": 1,
+      "draws": 0
+    }
+  },
+  "14074321": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 4,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "14074317": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 4,
+      "draws": 4
+    },
+    "managerDuel": null
+  },
+  "14195519": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 6,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "14255489": {
+    "teamDuel": {
+      "homeWins": 10,
+      "awayWins": 0,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "15204316": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 4,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "15362538": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 0,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "15204295": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 3,
+      "draws": 4
+    },
+    "managerDuel": {
+      "homeWins": 2,
+      "awayWins": 1,
+      "draws": 2
+    }
+  },
+  "15204311": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 4,
+      "draws": 3
+    },
+    "managerDuel": {
+      "homeWins": 3,
+      "awayWins": 4,
+      "draws": 1
+    }
+  },
+  "15362540": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 4,
+      "draws": 4
+    },
+    "managerDuel": {
+      "homeWins": 0,
+      "awayWins": 0,
+      "draws": 1
+    }
+  },
+  "14636483": {
+    "teamDuel": {
+      "homeWins": 6,
+      "awayWins": 1,
+      "draws": 3
+    },
+    "managerDuel": null
+  },
+  "15437039": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 1,
+      "draws": 1
+    },
+    "managerDuel": null
+  },
+  "15335640": {
+    "teamDuel": {
+      "homeWins": 1,
+      "awayWins": 1,
+      "draws": 0
+    },
+    "managerDuel": null
+  },
+  "14636489": {
+    "teamDuel": {
+      "homeWins": 2,
+      "awayWins": 6,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "14708450": {
+    "teamDuel": {
+      "homeWins": 0,
+      "awayWins": 5,
+      "draws": 5
+    },
+    "managerDuel": null
+  },
+  "15427452": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 5,
+      "draws": 2
+    },
+    "managerDuel": null
+  },
+  "15437144": {
+    "teamDuel": {
+      "homeWins": 3,
+      "awayWins": 5,
+      "draws": 2
+    },
+    "managerDuel": null
+  }
+}
