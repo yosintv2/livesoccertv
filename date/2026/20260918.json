@@ -189,6 +189,15 @@
         "tv_channels": []
     },
     {
+        "match_id": 6144868,
+        "kickoff": 1789660800,
+        "fixture": "Skeid vs Vålerenga",
+        "league_id": 206,
+        "league": "Cup",
+        "venue": "Nordre Åsen gress",
+        "tv_channels": []
+    },
+    {
         "match_id": 6135727,
         "kickoff": 1789729200,
         "fixture": "Bình Định vs Công An Hà Nội",
@@ -1035,15 +1044,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 5955094,
-        "kickoff": 1789752600,
-        "fixture": "Richards Bay vs Sekhukhune United",
-        "league_id": 537,
-        "league": "Premier Soccer League",
-        "venue": "Princess Magogo Stadium",
-        "tv_channels": []
-    },
-    {
         "match_id": 1000007889,
         "kickoff": 1789660800,
         "fixture": "FCI Levadia vs Tammeka",
@@ -1608,6 +1608,15 @@
         "league_id": 337,
         "league": "Liga Nacional - Apertura",
         "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5116011,
+        "kickoff": 1789765200,
+        "fixture": "Central Córdoba de Santiago vs Defensa y Justicia",
+        "league_id": 112,
+        "league": "Liga Profesional Clausura",
+        "venue": "Estadio Alfredo Terrera",
         "tv_channels": []
     },
     {

@@ -626,7 +626,7 @@
         "fixture": "Rio Ave vs Estrela da Amadora",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Estadio dos Arcos",
+        "venue": "Estádio do Rio Ave Futebol Clube",
         "tv_channels": []
     },
     {
@@ -635,7 +635,7 @@
         "fixture": "Moreirense vs Marítimo",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Estadio C. Joaquim de Almeida Freitas",
+        "venue": "Parque Desportivo Comendador Joaquim de Almeida Freitas",
         "tv_channels": []
     },
     {
@@ -644,7 +644,7 @@
         "fixture": "Braga vs Estoril",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Estadio Municipal de Braga",
+        "venue": "Estádio Municipal de Braga",
         "tv_channels": []
     },
     {
@@ -897,6 +897,15 @@
         "league_id": 262,
         "league": "Premier League",
         "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113458,
+        "kickoff": 1789410600,
+        "fixture": "CA Defensores de Belgrano vs Deportivo Madryn",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Juan Pasquale",
         "tv_channels": []
     },
     {
@@ -1329,6 +1338,15 @@
         "league_id": 8814,
         "league": "Série B",
         "venue": "Estádio Dr. Aderbal Ramos da Silva",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000015128,
+        "kickoff": 1789405200,
+        "fixture": "FK Zemun vs FK Radnik Surdulica",
+        "league_id": 182,
+        "league": "Super Liga",
+        "venue": "Stadion Dragan Dzajić",
         "tv_channels": []
     },
     {

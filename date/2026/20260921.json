@@ -698,7 +698,7 @@
         "fixture": "Estoril vs Casa Pia AC",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Antonio Coimbra da Mota",
+        "venue": "Estádio António Coimbra da Mota",
         "tv_channels": []
     },
     {
@@ -707,7 +707,7 @@
         "fixture": "Santa Clara vs Braga",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Estadio do Sao Miguel",
+        "venue": "Estádio de São Miguel",
         "tv_channels": []
     },
     {
@@ -716,7 +716,7 @@
         "fixture": "FC Porto vs Benfica",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Estadio do Dragao",
+        "venue": "Estádio Do Dragão",
         "tv_channels": []
     },
     {
@@ -1077,6 +1077,114 @@
         "league_id": 8968,
         "league": "Primera Federacion - Group 2",
         "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113075,
+        "kickoff": 1789927200,
+        "fixture": "Agropecuario vs Gimnasia y Tiro",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Ofelia Rosenzuaig",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113083,
+        "kickoff": 1789927200,
+        "fixture": "Tristán Suárez vs Atlanta",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113077,
+        "kickoff": 1789929000,
+        "fixture": "Chacarita Juniors vs Quilmes",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio de Chacarita Juniors",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113079,
+        "kickoff": 1789929000,
+        "fixture": "Deportivo Maipú vs Gimnasia Jujuy",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Omar Higinio Sperdutti",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113467,
+        "kickoff": 1789929000,
+        "fixture": "Deportivo Morón vs Godoy Cruz",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Nuevo Francisco Urbano",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113466,
+        "kickoff": 1789930800,
+        "fixture": "Deportivo Madryn vs Racing de Córdoba",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Abel Sastre",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113465,
+        "kickoff": 1789932600,
+        "fixture": "Colón vs Los Andes",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Brigadier General Estanislao López",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113078,
+        "kickoff": 1789934400,
+        "fixture": "Atlético Güemes vs CA Ferrocarril Midland",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Arturo Jiya Miranda",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113464,
+        "kickoff": 1789934400,
+        "fixture": "CA Chaco For Ever vs Almirante Brown",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Juan Alberto García",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113463,
+        "kickoff": 1789934400,
+        "fixture": "Central Norte vs CA Defensores de Belgrano",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Padre Ernesto Martearena",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113080,
+        "kickoff": 1789934400,
+        "fixture": "Nueva Chicago vs Patronato de Parana",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113081,
+        "kickoff": 1789934400,
+        "fixture": "San Martín San Juan vs Colegiales",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Ingeniero Hilario Sánchez",
         "tv_channels": []
     },
     {
@@ -2301,6 +2409,15 @@
         "league_id": 9084,
         "league": "Premier League 2",
         "venue": "The Wyatt Homes Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000013728,
+        "kickoff": 1790022600,
+        "fixture": "Bogotá FC vs Barranquilla FC",
+        "league_id": 9125,
+        "league": "Primera B",
+        "venue": "Estadio Enrique Olaya Herrera",
         "tv_channels": []
     }
 ]

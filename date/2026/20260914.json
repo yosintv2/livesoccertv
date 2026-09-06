@@ -729,24 +729,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 5852069,
-        "kickoff": 1789315200,
-        "fixture": "Colombia U20 (W) vs North Korea U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. E",
-        "venue": "Stadion Miejski im. Władysława Króla",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852070,
-        "kickoff": 1789315200,
-        "fixture": "Portugal U20 (W) vs Costa Rica U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. E",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
         "match_id": 5760489,
         "kickoff": 1789320600,
         "fixture": "Botev Plovdiv vs Lokomotiv Plovdiv",
@@ -1058,7 +1040,7 @@
         "fixture": "Arouca vs Santa Clara",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Municipal de Arouca",
+        "venue": "Estádio Municipal de Arouca",
         "tv_channels": []
     },
     {
@@ -1067,7 +1049,7 @@
         "fixture": "Benfica vs Gil Vicente",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Estadio da Luz",
+        "venue": "Estádio do Sport Lisboa e Benfica (da Luz)",
         "tv_channels": []
     },
     {
@@ -1076,7 +1058,7 @@
         "fixture": "Famalicão vs Sporting CP",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Municipal 22 de Junho",
+        "venue": "Estádio Municipal 22 de Junho",
         "tv_channels": []
     },
     {
@@ -1085,7 +1067,7 @@
         "fixture": "Rio Ave vs Estrela da Amadora",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Estadio dos Arcos",
+        "venue": "Estádio do Rio Ave Futebol Clube",
         "tv_channels": []
     },
     {
@@ -1094,7 +1076,7 @@
         "fixture": "Moreirense vs Marítimo",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Estadio C. Joaquim de Almeida Freitas",
+        "venue": "Parque Desportivo Comendador Joaquim de Almeida Freitas",
         "tv_channels": []
     },
     {
@@ -1103,7 +1085,7 @@
         "fixture": "Braga vs Estoril",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Estadio Municipal de Braga",
+        "venue": "Estádio Municipal de Braga",
         "tv_channels": []
     },
     {
@@ -1662,6 +1644,105 @@
         "league_id": 8968,
         "league": "Primera Federacion - Group 2",
         "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113460,
+        "kickoff": 1789322400,
+        "fixture": "Los Andes vs CA San Miguel",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Eduardo Gallardón",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113454,
+        "kickoff": 1789324200,
+        "fixture": "Almirante Brown vs Ferro Carril Oeste",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Fragata Presidente Sarmiento",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113455,
+        "kickoff": 1789324200,
+        "fixture": "Club Atlético Estudiantes vs Acassuso",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Ciudad de Caseros",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113072,
+        "kickoff": 1789324200,
+        "fixture": "Patronato de Parana vs Temperley",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Presbítero Bartolomé Grella",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113071,
+        "kickoff": 1789326000,
+        "fixture": "CA Ferrocarril Midland vs Chacarita Juniors",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Ferrocarril Midland",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113456,
+        "kickoff": 1789326000,
+        "fixture": "Club Atlético Mitre vs CA Chaco For Ever",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Aurinegro",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113069,
+        "kickoff": 1789326000,
+        "fixture": "Gimnasia Jujuy vs Atlético Rafaela",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio 23 de Agosto",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113461,
+        "kickoff": 1789329600,
+        "fixture": "Racing de Córdoba vs Deportivo Morón",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Miguel Sancho",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113459,
+        "kickoff": 1789333200,
+        "fixture": "Godoy Cruz vs Colón",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Feliciano Gambarte",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113074,
+        "kickoff": 1789335000,
+        "fixture": "San Martín de Tucumán vs Agropecuario",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio La Ciudadela",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113458,
+        "kickoff": 1789410600,
+        "fixture": "CA Defensores de Belgrano vs Deportivo Madryn",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Juan Pasquale",
         "tv_channels": []
     },
     {
@@ -2274,6 +2355,24 @@
         "league_id": 10699,
         "league": "USL Super League",
         "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852069,
+        "kickoff": 1789315200,
+        "fixture": "Colombia U20 (W) vs North Korea U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. E",
+        "venue": "Stadion Miejski im. Władysława Króla",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852070,
+        "kickoff": 1789315200,
+        "fixture": "Portugal U20 (W) vs Costa Rica U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. E",
+        "venue": "ArcelorMittal Park",
         "tv_channels": []
     },
     {
@@ -2985,6 +3084,42 @@
         "league_id": 9464,
         "league": "Série D",
         "venue": "Estádio Municipal João Havelange",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000015131,
+        "kickoff": 1789311600,
+        "fixture": "Radnički Niš vs OFK Beograd",
+        "league_id": 182,
+        "league": "Super Liga",
+        "venue": "Gradski Stadion Čair",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000015130,
+        "kickoff": 1789318800,
+        "fixture": "FK IMT Beograd vs FK Crvena Zvezda",
+        "league_id": 182,
+        "league": "Super Liga",
+        "venue": "Stadion Lagator",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000015129,
+        "kickoff": 1789326000,
+        "fixture": "Partizan Beograd vs Vojvodina",
+        "league_id": 182,
+        "league": "Super Liga",
+        "venue": "Stadion Partizana",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000015128,
+        "kickoff": 1789405200,
+        "fixture": "FK Zemun vs FK Radnik Surdulica",
+        "league_id": 182,
+        "league": "Super Liga",
+        "venue": "Stadion Dragan Dzajić",
         "tv_channels": []
     },
     {

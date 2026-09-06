@@ -594,6 +594,159 @@
         "tv_channels": []
     },
     {
+        "match_id": 1000021860,
+        "kickoff": 1790726400,
+        "fixture": "Fenerbahçe vs FC Minsk",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021861,
+        "kickoff": 1790726400,
+        "fixture": "Torreense vs FC Kharkiv",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021862,
+        "kickoff": 1790726400,
+        "fixture": "Aktobe W vs Ajax",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021863,
+        "kickoff": 1790726400,
+        "fixture": "Sturm Graz vs VfL Wolfsburg",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021864,
+        "kickoff": 1790726400,
+        "fixture": "Farul Constanța vs Sparta Prague",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021865,
+        "kickoff": 1790726400,
+        "fixture": "Sporting CP vs Brøndby IF",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021866,
+        "kickoff": 1790726400,
+        "fixture": "Malmö FF vs SKN St. Pölten",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021867,
+        "kickoff": 1790726400,
+        "fixture": "Czarni Sosnowiec vs Breidablik",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021868,
+        "kickoff": 1790726400,
+        "fixture": "Vålerenga vs Feyenoord",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021869,
+        "kickoff": 1790726400,
+        "fixture": "Rosenborg BK vs Slovan Liberec",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021870,
+        "kickoff": 1790726400,
+        "fixture": "Brann vs HJK",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021871,
+        "kickoff": 1790726400,
+        "fixture": "Real Sociedad vs Heart of Midlothian",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021872,
+        "kickoff": 1790726400,
+        "fixture": "FH Hafnarfjordur vs Eintracht Frankfurt",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021873,
+        "kickoff": 1790726400,
+        "fixture": "Spartak Myjava vs PAOK Thessaloniki FC",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021874,
+        "kickoff": 1790726400,
+        "fixture": "Rangers vs Hammarby IF",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021875,
+        "kickoff": 1790726400,
+        "fixture": "Fortuna Hjørring vs PSV",
+        "league_id": 11129,
+        "league": "UEFA Women's Europa Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6144881,
+        "kickoff": 1790784000,
+        "fixture": "Flint vs Sandefjord",
+        "league_id": 206,
+        "league": "Cup",
+        "venue": "Flint ESSO Arena A KG",
+        "tv_channels": []
+    },
+    {
         "match_id": 6144872,
         "kickoff": 1790784000,
         "fixture": "Follo vs Sarpsborg 08",
@@ -699,6 +852,51 @@
         "league_id": 533,
         "league": "NPFL",
         "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148608,
+        "kickoff": 1790786700,
+        "fixture": "BK Häcken (W) vs Juventus (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148604,
+        "kickoff": 1790786700,
+        "fixture": "Paris FC (W) vs Arsenal (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148595,
+        "kickoff": 1790786700,
+        "fixture": "Roma (W) vs Barcelona (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148586,
+        "kickoff": 1790794800,
+        "fixture": "OL Lyonnes (W) vs Chelsea (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "Groupama Academy Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148592,
+        "kickoff": 1790794800,
+        "fixture": "Benfica (W) vs Bayern München (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "Benfica Campus",
         "tv_channels": []
     },
     {

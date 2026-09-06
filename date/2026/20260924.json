@@ -423,6 +423,42 @@
         "tv_channels": []
     },
     {
+        "match_id": 6148620,
+        "kickoff": 1790181900,
+        "fixture": "Oud-Heverlee Leuven (W) vs Roma (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148613,
+        "kickoff": 1790181900,
+        "fixture": "Servette (W) vs OL Lyonnes (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "Stade de Marignac",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148584,
+        "kickoff": 1790190000,
+        "fixture": "Barcelona (W) vs Paris FC (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "Estadi Johan Cruyff",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148579,
+        "kickoff": 1790190000,
+        "fixture": "Chelsea (W) vs Austria Wien W (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "Kingsmeadow",
+        "tv_channels": []
+    },
+    {
         "match_id": 6006645,
         "kickoff": 1790186400,
         "fixture": "Crystal Palace (W) vs Watford (W)",

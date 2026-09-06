@@ -2588,7 +2588,7 @@
         "fixture": "Gil Vicente vs Marítimo",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Estadio Cidade de Barcelos",
+        "venue": "Estádio Cidade de Barcelos",
         "tv_channels": []
     },
     {
@@ -2597,7 +2597,7 @@
         "fixture": "Nacional vs Famalicão",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Estadio da Madeira",
+        "venue": "Estádio da Madeira",
         "tv_channels": []
     },
     {
@@ -2606,7 +2606,7 @@
         "fixture": "Alverca vs Rio Ave",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Complexo Desportivo Futebol Clube de Alverca",
+        "venue": "Complexo Desportivo FC Alverca",
         "tv_channels": []
     },
     {
@@ -2615,12 +2615,12 @@
         "fixture": "Sporting CP vs Arouca",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Estadio Jose Alvalade",
+        "venue": "Estádio José Alvalade",
         "tv_channels": []
     },
     {
         "match_id": 5116011,
-        "kickoff": 1789768800,
+        "kickoff": 1789765200,
         "fixture": "Central Córdoba de Santiago vs Defensa y Justicia",
         "league_id": 112,
         "league": "Liga Profesional Clausura",
@@ -5725,7 +5725,7 @@
     },
     {
         "match_id": 5955094,
-        "kickoff": 1789752600,
+        "kickoff": 1789822800,
         "fixture": "Richards Bay vs Sekhukhune United",
         "league_id": 537,
         "league": "Premier Soccer League",
@@ -5829,15 +5829,6 @@
         "league_id": 9125,
         "league": "Primera B",
         "venue": "Estadio Metropolitano de Itagüí",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000013728,
-        "kickoff": 1789849800,
-        "fixture": "Bogotá FC vs Barranquilla FC",
-        "league_id": 9125,
-        "league": "Primera B",
-        "venue": "Estadio Enrique Olaya Herrera",
         "tv_channels": []
     },
     {
@@ -6715,7 +6706,7 @@
     },
     {
         "match_id": 5113462,
-        "kickoff": 1789848000,
+        "kickoff": 1789842600,
         "fixture": "Acassuso vs Club Atlético Mitre",
         "league_id": 8965,
         "league": "Primera Nacional",
@@ -6723,44 +6714,8 @@
         "tv_channels": []
     },
     {
-        "match_id": 5113075,
-        "kickoff": 1789848000,
-        "fixture": "Agropecuario vs Gimnasia y Tiro",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113078,
-        "kickoff": 1789848000,
-        "fixture": "Atlético Güemes vs CA Ferrocarril Midland",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113076,
-        "kickoff": 1789848000,
-        "fixture": "Atlético Rafaela vs San Martín de Tucumán",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "Estadio Nuevo Monumental",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113464,
-        "kickoff": 1789848000,
-        "fixture": "CA Chaco For Ever vs Almirante Brown",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
         "match_id": 5113469,
-        "kickoff": 1789848000,
+        "kickoff": 1789842600,
         "fixture": "CA San Miguel vs All Boys",
         "league_id": 8965,
         "league": "Primera Nacional",
@@ -6768,62 +6723,8 @@
         "tv_channels": []
     },
     {
-        "match_id": 5113463,
-        "kickoff": 1789848000,
-        "fixture": "Central Norte vs CA Defensores de Belgrano",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113077,
-        "kickoff": 1789848000,
-        "fixture": "Chacarita Juniors vs Quilmes",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113465,
-        "kickoff": 1789848000,
-        "fixture": "Colón vs Los Andes",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113466,
-        "kickoff": 1789848000,
-        "fixture": "Deportivo Madryn vs Racing de Córdoba",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113079,
-        "kickoff": 1789848000,
-        "fixture": "Deportivo Maipú vs Gimnasia Jujuy",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113467,
-        "kickoff": 1789848000,
-        "fixture": "Deportivo Morón vs Godoy Cruz",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
         "match_id": 5113468,
-        "kickoff": 1789848000,
+        "kickoff": 1789842600,
         "fixture": "Ferro Carril Oeste vs Ciudad de Bolívar",
         "league_id": 8965,
         "league": "Primera Nacional",
@@ -6831,26 +6732,8 @@
         "tv_channels": []
     },
     {
-        "match_id": 5113080,
-        "kickoff": 1789848000,
-        "fixture": "Nueva Chicago vs Patronato de Parana",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113081,
-        "kickoff": 1789848000,
-        "fixture": "San Martín San Juan vs Colegiales",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
         "match_id": 5113470,
-        "kickoff": 1789848000,
+        "kickoff": 1789842600,
         "fixture": "San Telmo vs Club Atlético Estudiantes",
         "league_id": 8965,
         "league": "Primera Nacional",
@@ -6859,7 +6742,7 @@
     },
     {
         "match_id": 5113082,
-        "kickoff": 1789848000,
+        "kickoff": 1789844400,
         "fixture": "Temperley vs Almagro",
         "league_id": 8965,
         "league": "Primera Nacional",
@@ -6867,12 +6750,12 @@
         "tv_channels": []
     },
     {
-        "match_id": 5113083,
-        "kickoff": 1789848000,
-        "fixture": "Tristán Suárez vs Atlanta",
+        "match_id": 5113076,
+        "kickoff": 1789851600,
+        "fixture": "Atlético Rafaela vs San Martín de Tucumán",
         "league_id": 8965,
         "league": "Primera Nacional",
-        "venue": "TBA",
+        "venue": "Estadio Nuevo Monumental",
         "tv_channels": []
     },
     {

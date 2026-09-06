@@ -171,6 +171,24 @@
         "tv_channels": []
     },
     {
+        "match_id": 6146353,
+        "kickoff": 1790870400,
+        "fixture": "Bærum vs Lillestrøm",
+        "league_id": 206,
+        "league": "Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6146352,
+        "kickoff": 1790870400,
+        "fixture": "Madla vs Viking",
+        "league_id": 206,
+        "league": "Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
         "match_id": 6144873,
         "kickoff": 1790870400,
         "fixture": "Rana FK vs Bodø/Glimt",
@@ -221,7 +239,7 @@
         "fixture": "Reilac Shiga vs Roasso Kumamoto",
         "league_id": 9136,
         "league": "J. League 3",
-        "venue": "TBA",
+        "venue": "Takebishi Stadium Kyōto",
         "tv_channels": []
     },
     {
@@ -330,6 +348,42 @@
         "league_id": 335,
         "league": "Primera Division - Apertura",
         "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148624,
+        "kickoff": 1790873100,
+        "fixture": "Austria Wien W (W) vs Inter (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148627,
+        "kickoff": 1790873100,
+        "fixture": "HB Køge (W) vs Servette (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148617,
+        "kickoff": 1790881200,
+        "fixture": "Manchester City (W) vs Real Madrid (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "Joie Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148582,
+        "kickoff": 1790881200,
+        "fixture": "Paris Saint Germain (W) vs Oud-Heverlee Leuven (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "Stade Sebastien Charlety",
         "tv_channels": []
     },
     {

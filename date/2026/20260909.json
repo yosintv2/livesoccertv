@@ -455,7 +455,7 @@
         "fixture": "Djerv 1919 vs FK Haugesund",
         "league_id": 206,
         "league": "Cup",
-        "venue": "TBA",
+        "venue": "Djervbanen",
         "tv_channels": []
     },
     {
@@ -536,78 +536,6 @@
         "fixture": "Slovan Magura Vavrecka vs Žilina",
         "league_id": 177,
         "league": "FA Cup",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5849641,
-        "kickoff": 1788883200,
-        "fixture": "Poland U20 (W) vs Mexico U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. A",
-        "venue": "Arena Katowice",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852052,
-        "kickoff": 1788969600,
-        "fixture": "Japan U20 (W) vs USA U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. A",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5849966,
-        "kickoff": 1788883200,
-        "fixture": "England U20 (W) vs Tanzania U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. B",
-        "venue": "Stadion Miejski",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852052,
-        "kickoff": 1788969600,
-        "fixture": "Japan U20 (W) vs USA U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. B",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5849979,
-        "kickoff": 1788958800,
-        "fixture": "Ghana U20 (W) vs South Korea U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. C",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852052,
-        "kickoff": 1788969600,
-        "fixture": "Japan U20 (W) vs USA U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. C",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852051,
-        "kickoff": 1788958800,
-        "fixture": "Italy U20 (W) vs New Zealand U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. D",
-        "venue": "Stadion Miejski im. Władysława Króla",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852052,
-        "kickoff": 1788969600,
-        "fixture": "Japan U20 (W) vs USA U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. D",
         "venue": "TBA",
         "tv_channels": []
     },
@@ -1530,6 +1458,60 @@
         "tv_channels": []
     },
     {
+        "match_id": 5849641,
+        "kickoff": 1788883200,
+        "fixture": "Poland U20 (W) vs Mexico U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. A",
+        "venue": "Arena Katowice",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5849966,
+        "kickoff": 1788883200,
+        "fixture": "England U20 (W) vs Tanzania U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. B",
+        "venue": "Stadion Miejski",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5849979,
+        "kickoff": 1788958800,
+        "fixture": "Ghana U20 (W) vs South Korea U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. C",
+        "venue": "ArcelorMittal Park",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5849980,
+        "kickoff": 1788969600,
+        "fixture": "France U20 (W) vs Ecuador U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. C",
+        "venue": "ArcelorMittal Park",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852051,
+        "kickoff": 1788958800,
+        "fixture": "Italy U20 (W) vs New Zealand U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. D",
+        "venue": "Stadion Miejski im. Władysława Króla",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852052,
+        "kickoff": 1788969600,
+        "fixture": "Japan U20 (W) vs USA U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. D",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
         "match_id": 1000020026,
         "kickoff": 1788904800,
         "fixture": "Fluminense vs Club Atlético Platense",
@@ -1770,6 +1752,15 @@
         "league_id": 9125,
         "league": "Primera B",
         "venue": "Estadio Francisco Rivera Escobar",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000013680,
+        "kickoff": 1788985800,
+        "fixture": "Independiente Valle del Cauca vs Deportes Quindío",
+        "league_id": 9125,
+        "league": "Primera B",
+        "venue": "Estadio Deportivo Cali",
         "tv_channels": []
     },
     {
@@ -2039,7 +2030,7 @@
         "fixture": "Levadiakos vs Aris Thessaloniki",
         "league_id": 145,
         "league": "Cup Group Stage",
-        "venue": "TBA",
+        "venue": "Dimotiko Stadio Levadias Lambros Katsonis",
         "tv_channels": []
     },
     {
@@ -2048,7 +2039,7 @@
         "fixture": "OFI Crete vs Nestos Chrisoupolis",
         "league_id": 145,
         "league": "Cup Group Stage",
-        "venue": "TBA",
+        "venue": "Pankritio Stadio",
         "tv_channels": []
     },
     {

@@ -549,78 +549,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 5849978,
-        "kickoff": 1788710400,
-        "fixture": "Ecuador U20 (W) vs Ghana U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. C",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852059,
-        "kickoff": 1788796800,
-        "fixture": "Spain U20 (W) vs Nigeria U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. C",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852050,
-        "kickoff": 1788710400,
-        "fixture": "USA U20 (W) vs Italy U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. D",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852059,
-        "kickoff": 1788796800,
-        "fixture": "Spain U20 (W) vs Nigeria U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. D",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852065,
-        "kickoff": 1788786000,
-        "fixture": "North Korea U20 (W) vs Portugal U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. E",
-        "venue": "Stadion Miejski im. Władysława Króla",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852059,
-        "kickoff": 1788796800,
-        "fixture": "Spain U20 (W) vs Nigeria U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. E",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852058,
-        "kickoff": 1788786000,
-        "fixture": "New Caledonia U20 (W) vs China U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. F",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852059,
-        "kickoff": 1788796800,
-        "fixture": "Spain U20 (W) vs Nigeria U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. F",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
         "match_id": 5760486,
         "kickoff": 1788710400,
         "fixture": "Lokomotiv Plovdiv vs Cherno More Varna",
@@ -795,6 +723,15 @@
         "match_id": 5832553,
         "kickoff": 1788710400,
         "fixture": "Hapoel Afula vs Maccabi Kabilio Jaffa",
+        "league_id": 128,
+        "league": "Leumit League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5832554,
+        "kickoff": 1788710400,
+        "fixture": "Hapoel Raanana vs Hapoel Kfar Saba",
         "league_id": 128,
         "league": "Leumit League",
         "venue": "TBA",
@@ -2214,6 +2151,15 @@
         "tv_channels": []
     },
     {
+        "match_id": 5990833,
+        "kickoff": 1788721200,
+        "fixture": "Perugia vs Pineto",
+        "league_id": 147,
+        "league": "Serie C Grp. B",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
         "match_id": 5991409,
         "kickoff": 1788710400,
         "fixture": "Team Altamura vs Savoia",
@@ -2427,6 +2373,60 @@
         "league_id": 46,
         "league": "Superligaen",
         "venue": "MCH Arena",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5849978,
+        "kickoff": 1788710400,
+        "fixture": "Ecuador U20 (W) vs Ghana U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. C",
+        "venue": "ArcelorMittal Park",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852050,
+        "kickoff": 1788710400,
+        "fixture": "USA U20 (W) vs Italy U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. D",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852065,
+        "kickoff": 1788786000,
+        "fixture": "North Korea U20 (W) vs Portugal U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. E",
+        "venue": "Stadion Miejski im. Władysława Króla",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852066,
+        "kickoff": 1788796800,
+        "fixture": "Costa Rica U20 (W) vs Colombia U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. E",
+        "venue": "Stadion Miejski im. Władysława Króla",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852058,
+        "kickoff": 1788786000,
+        "fixture": "New Caledonia U20 (W) vs China U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. F",
+        "venue": "ArcelorMittal Park",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852059,
+        "kickoff": 1788796800,
+        "fixture": "Spain U20 (W) vs Nigeria U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. F",
+        "venue": "ArcelorMittal Park",
         "tv_channels": []
     },
     {
@@ -2745,15 +2745,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 1000007304,
-        "kickoff": 1788708600,
-        "fixture": "Antofagasta vs Deportes Recoleta",
-        "league_id": 9126,
-        "league": "Primera B",
-        "venue": "Estadio Regional Calvo y Bascuñán",
-        "tv_channels": []
-    },
-    {
         "match_id": 1000013711,
         "kickoff": 1788726600,
         "fixture": "Boca Juniors de Cali vs Envigado",
@@ -2769,6 +2760,42 @@
         "league_id": 9125,
         "league": "Primera B",
         "venue": "Estadio de La Independencia",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000007304,
+        "kickoff": 1788708600,
+        "fixture": "Antofagasta vs Deportes Recoleta",
+        "league_id": 9126,
+        "league": "Primera B",
+        "venue": "Estadio Regional Calvo y Bascuñán",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000019037,
+        "kickoff": 1788721200,
+        "fixture": "Independiente Petrolero vs Bolívar",
+        "league_id": 144,
+        "league": "Primera División",
+        "venue": "Estadio Olímpico Patria",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000019038,
+        "kickoff": 1788732000,
+        "fixture": "The Strongest vs Real Tomayapo",
+        "league_id": 144,
+        "league": "Primera División",
+        "venue": "Estadio Hernando Siles",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000019039,
+        "kickoff": 1788739200,
+        "fixture": "Nacional Potosí vs Blooming",
+        "league_id": 144,
+        "league": "Primera División",
+        "venue": "Estadio Víctor Agustín Ugarte de Potosí",
         "tv_channels": []
     },
     {
@@ -2805,33 +2832,6 @@
         "league_id": 273,
         "league": "Primera División",
         "venue": "Estadio Municipal de La Cisterna",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000019037,
-        "kickoff": 1788721200,
-        "fixture": "Independiente Petrolero vs Bolívar",
-        "league_id": 144,
-        "league": "Primera División",
-        "venue": "Estadio Olímpico Patria",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000019038,
-        "kickoff": 1788732000,
-        "fixture": "The Strongest vs Real Tomayapo",
-        "league_id": 144,
-        "league": "Primera División",
-        "venue": "Estadio Hernando Siles",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000019039,
-        "kickoff": 1788739200,
-        "fixture": "Nacional Potosí vs Blooming",
-        "league_id": 144,
-        "league": "Primera División",
-        "venue": "Estadio Víctor Agustín Ugarte de Potosí",
         "tv_channels": []
     },
     {
@@ -3123,6 +3123,69 @@
         "tv_channels": []
     },
     {
+        "match_id": 5107596,
+        "kickoff": 1788800400,
+        "fixture": "Kalmar FF vs Djurgården",
+        "league_id": 67,
+        "league": "Allsvenskan",
+        "venue": "Guldfågeln Arena",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5107592,
+        "kickoff": 1788800400,
+        "fixture": "Malmö FF vs AIK",
+        "league_id": 67,
+        "league": "Allsvenskan",
+        "venue": "Eleda Stadion",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5107591,
+        "kickoff": 1788800400,
+        "fixture": "Mjällby vs IFK Göteborg",
+        "league_id": 67,
+        "league": "Allsvenskan",
+        "venue": "Strandvallen",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5832856,
+        "kickoff": 1788804000,
+        "fixture": "Jong FC Utrecht vs FC Eindhoven",
+        "league_id": 111,
+        "league": "Eerste Divisie",
+        "venue": "Sportcomplex Zoudenbalch",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5832855,
+        "kickoff": 1788804000,
+        "fixture": "Jong PSV vs FC Den Bosch",
+        "league_id": 111,
+        "league": "Eerste Divisie",
+        "venue": "TenCate Stadion De Herdgang",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5837137,
+        "kickoff": 1788807600,
+        "fixture": "Bromley vs Wimbledon",
+        "league_id": 108,
+        "league": "League One",
+        "venue": "Copperjax Community Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5803250,
+        "kickoff": 1788806700,
+        "fixture": "Nantes vs Nancy",
+        "league_id": 110,
+        "league": "Ligue 2",
+        "venue": "Stade de la Beaujoire - Louis Fonteneau",
+        "tv_channels": []
+    },
+    {
         "match_id": 5144750,
         "kickoff": 1788796800,
         "fixture": "Drøbak/Frogn vs Lyn 2",
@@ -3177,75 +3240,12 @@
         "tv_channels": []
     },
     {
-        "match_id": 5837137,
-        "kickoff": 1788807600,
-        "fixture": "Bromley vs Wimbledon",
-        "league_id": 108,
-        "league": "League One",
-        "venue": "Copperjax Community Stadium",
-        "tv_channels": []
-    },
-    {
         "match_id": 5125618,
         "kickoff": 1788800700,
         "fixture": "Örebro vs Östersunds FK",
         "league_id": 168,
         "league": "Superettan",
         "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5832856,
-        "kickoff": 1788804000,
-        "fixture": "Jong FC Utrecht vs FC Eindhoven",
-        "league_id": 111,
-        "league": "Eerste Divisie",
-        "venue": "Sportcomplex Zoudenbalch",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5832855,
-        "kickoff": 1788804000,
-        "fixture": "Jong PSV vs FC Den Bosch",
-        "league_id": 111,
-        "league": "Eerste Divisie",
-        "venue": "TenCate Stadion De Herdgang",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5803250,
-        "kickoff": 1788806700,
-        "fixture": "Nantes vs Nancy",
-        "league_id": 110,
-        "league": "Ligue 2",
-        "venue": "Stade de la Beaujoire - Louis Fonteneau",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5107596,
-        "kickoff": 1788800400,
-        "fixture": "Kalmar FF vs Djurgården",
-        "league_id": 67,
-        "league": "Allsvenskan",
-        "venue": "Guldfågeln Arena",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5107592,
-        "kickoff": 1788800400,
-        "fixture": "Malmö FF vs AIK",
-        "league_id": 67,
-        "league": "Allsvenskan",
-        "venue": "Eleda Stadion",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5107591,
-        "kickoff": 1788800400,
-        "fixture": "Mjällby vs IFK Göteborg",
-        "league_id": 67,
-        "league": "Allsvenskan",
-        "venue": "Strandvallen",
         "tv_channels": []
     },
     {

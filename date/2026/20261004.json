@@ -936,6 +936,15 @@
         "tv_channels": []
     },
     {
+        "match_id": 5888054,
+        "kickoff": 1791108000,
+        "fixture": "Farense vs Chaves",
+        "league_id": 185,
+        "league": "Liga Portugal 2",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
         "match_id": 5116027,
         "kickoff": 1791049500,
         "fixture": "Defensa y Justicia vs San Lorenzo",
@@ -2493,6 +2502,78 @@
         "tv_channels": []
     },
     {
+        "match_id": 1000007240,
+        "kickoff": 1791041400,
+        "fixture": "Magallanes vs Curicó Unido",
+        "league_id": 9126,
+        "league": "Primera B",
+        "venue": "Estadio Municipal Luis Navarro Avilés",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000007238,
+        "kickoff": 1791050400,
+        "fixture": "Deportes Recoleta vs Santiago Wanderers",
+        "league_id": 9126,
+        "league": "Primera B",
+        "venue": "Estadio Santa Laura-Universidad SEK",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000007242,
+        "kickoff": 1791050400,
+        "fixture": "Deportes Copiapó vs Puerto Montt",
+        "league_id": 9126,
+        "league": "Primera B",
+        "venue": "Estadio Luis Valenzuela Hermosilla",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000007237,
+        "kickoff": 1791059400,
+        "fixture": "Deportes Temuco vs Cobreloa",
+        "league_id": 9126,
+        "league": "Primera B",
+        "venue": "Estadio Municipal Bicentenario Germán Becker",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000007235,
+        "kickoff": 1791068400,
+        "fixture": "Deportes Santa Cruz vs San Marcos",
+        "league_id": 9126,
+        "league": "Primera B",
+        "venue": "Estadio Municipal Joaquín Muñoz García",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000007241,
+        "kickoff": 1791127800,
+        "fixture": "Antofagasta vs Rangers",
+        "league_id": 9126,
+        "league": "Primera B",
+        "venue": "Estadio Regional Calvo y Bascuñán",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000007236,
+        "kickoff": 1791136800,
+        "fixture": "Unión San Felipe vs Deportes Iquique",
+        "league_id": 9126,
+        "league": "Primera B",
+        "venue": "Estadio Municipal de San Felipe",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000007239,
+        "kickoff": 1791145800,
+        "fixture": "San Luis vs Unión Española",
+        "league_id": 9126,
+        "league": "Primera B",
+        "venue": "Estadio Municipal Lucio Fariña Fernández",
+        "tv_channels": []
+    },
+    {
         "match_id": 1000013741,
         "kickoff": 1791059400,
         "fixture": "Patriotas vs Independiente Valle del Cauca",
@@ -2565,21 +2646,21 @@
         "tv_channels": []
     },
     {
+        "match_id": 1000016486,
+        "kickoff": 1791072000,
+        "fixture": "Montrose vs Glasgow City",
+        "league_id": 10791,
+        "league": "SWPL 1",
+        "venue": "The Parkgrove Stadium at Station Park",
+        "tv_channels": []
+    },
+    {
         "match_id": 1000016484,
         "kickoff": 1791118800,
         "fixture": "Celtic vs Spartans FC",
         "league_id": 10791,
         "league": "SWPL 1",
         "venue": "Kirkintilloch Community Sports Complex",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000016486,
-        "kickoff": 1791118800,
-        "fixture": "Montrose vs Glasgow City",
-        "league_id": 10791,
-        "league": "SWPL 1",
-        "venue": "The Parkgrove Stadium at Station Park",
         "tv_channels": []
     },
     {

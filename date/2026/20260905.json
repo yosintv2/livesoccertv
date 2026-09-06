@@ -595,7 +595,7 @@
     },
     {
         "match_id": 5225988,
-        "kickoff": 1788616800,
+        "kickoff": 1788617700,
         "fixture": "KFG vs Víkingur Olafsvik",
         "league_id": 10226,
         "league": "2. Deild",
@@ -1881,42 +1881,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 5849638,
-        "kickoff": 1788613200,
-        "fixture": "Poland U20 (W) vs Argentina U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. A",
-        "venue": "Arena Katowice",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5849964,
-        "kickoff": 1788624000,
-        "fixture": "Canada U20 (W) vs England U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. A",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5849963,
-        "kickoff": 1788613200,
-        "fixture": "Brazil U20 (W) vs Tanzania U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. B",
-        "venue": "Stadion Miejski",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5849964,
-        "kickoff": 1788624000,
-        "fixture": "Canada U20 (W) vs England U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. B",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
         "match_id": 5101269,
         "kickoff": 1788547500,
         "fixture": "Bray Wanderers vs Cork City",
@@ -2016,18 +1980,18 @@
         "tv_channels": []
     },
     {
-        "match_id": 5897596,
+        "match_id": 5897594,
         "kickoff": 1788616800,
-        "fixture": "Sochi vs Nizhny Novgorod",
+        "fixture": "Shinnik Yaroslavl vs FC Rotor Volgograd",
         "league_id": 338,
         "league": "First League",
         "venue": "TBA",
         "tv_channels": []
     },
     {
-        "match_id": 5897594,
-        "kickoff": 1788616800,
-        "fixture": "Shinnik Yaroslavl vs FC Rotor Volgograd",
+        "match_id": 5897596,
+        "kickoff": 1788624000,
+        "fixture": "Sochi vs Nizhny Novgorod",
         "league_id": 338,
         "league": "First League",
         "venue": "TBA",
@@ -3339,18 +3303,18 @@
         "tv_channels": []
     },
     {
-        "match_id": 5886510,
+        "match_id": 5886518,
         "kickoff": 1788612300,
-        "fixture": "SC Bastia vs Amiens",
+        "fixture": "Versailles vs Cannes",
         "league_id": 8970,
         "league": "Ligue 3",
         "venue": "TBA",
         "tv_channels": []
     },
     {
-        "match_id": 5886518,
-        "kickoff": 1788612300,
-        "fixture": "Versailles vs Cannes",
+        "match_id": 5886510,
+        "kickoff": 1788612900,
+        "fixture": "SC Bastia vs Amiens",
         "league_id": 8970,
         "league": "Ligue 3",
         "venue": "TBA",
@@ -4356,15 +4320,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 5998311,
-        "kickoff": 1788613200,
-        "fixture": "Polisi Tanzania FC vs Coastal Union",
-        "league_id": 9066,
-        "league": "Premier League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
         "match_id": 5998310,
         "kickoff": 1788624000,
         "fixture": "JKT Tanzania vs Pamba Jiji",
@@ -4662,15 +4617,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 5883635,
-        "kickoff": 1788624000,
-        "fixture": "UD Ibiza vs Rayo Majadahonda",
-        "league_id": 8968,
-        "league": "Primera Federacion - Group 2",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
         "match_id": 5883634,
         "kickoff": 1788624900,
         "fixture": "Sant Andreu vs CDA Águilas FC",
@@ -4683,6 +4629,15 @@
         "match_id": 5883629,
         "kickoff": 1788626700,
         "fixture": "Cartagena vs Gimnàstic",
+        "league_id": 8968,
+        "league": "Primera Federacion - Group 2",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5883635,
+        "kickoff": 1788627600,
+        "fixture": "UD Ibiza vs Rayo Majadahonda",
         "league_id": 8968,
         "league": "Primera Federacion - Group 2",
         "venue": "TBA",
@@ -5630,6 +5585,42 @@
         "fixture": "Galway United (W) vs Treaty United (W)",
         "league_id": 10210,
         "league": "Women's Premier Division",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5849638,
+        "kickoff": 1788613200,
+        "fixture": "Poland U20 (W) vs Argentina U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. A",
+        "venue": "Arena Katowice",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5849639,
+        "kickoff": 1788624000,
+        "fixture": "Mexico U20 (W) vs Benin U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. A",
+        "venue": "Arena Katowice",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5849963,
+        "kickoff": 1788613200,
+        "fixture": "Brazil U20 (W) vs Tanzania U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. B",
+        "venue": "Stadion Miejski",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5849964,
+        "kickoff": 1788624000,
+        "fixture": "Canada U20 (W) vs England U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. B",
         "venue": "TBA",
         "tv_channels": []
     },
@@ -6851,7 +6842,7 @@
     {
         "match_id": 1000017720,
         "kickoff": 1788609600,
-        "fixture": "Rasi Salai United vs Port FC",
+        "fixture": "Rasisalai United vs Port FC",
         "league_id": 8984,
         "league": "Thai League",
         "venue": "Khao Kradong Stadium",

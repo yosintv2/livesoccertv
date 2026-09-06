@@ -180,24 +180,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 5071323,
-        "kickoff": 1788651000,
-        "fixture": "Cincinnati vs DC United",
-        "league_id": 130,
-        "league": "Major League Soccer",
-        "venue": "TQL Stadium",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5071325,
-        "kickoff": 1788651000,
-        "fixture": "Inter Miami CF vs Atlanta United",
-        "league_id": 130,
-        "league": "Major League Soccer",
-        "venue": "Nu Stadium",
-        "tv_channels": []
-    },
-    {
         "match_id": 5071326,
         "kickoff": 1788651000,
         "fixture": "Orlando vs San Diego FC",
@@ -249,6 +231,24 @@
         "league_id": 130,
         "league": "Major League Soccer",
         "venue": "Lumen Field",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5071325,
+        "kickoff": 1788656400,
+        "fixture": "Inter Miami CF vs Atlanta United",
+        "league_id": 130,
+        "league": "Major League Soccer",
+        "venue": "Nu Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5071323,
+        "kickoff": 1788658200,
+        "fixture": "Cincinnati vs DC United",
+        "league_id": 130,
+        "league": "Major League Soccer",
+        "venue": "TQL Stadium",
         "tv_channels": []
     },
     {
@@ -1494,83 +1494,20 @@
         "tv_channels": []
     },
     {
-        "match_id": 5849639,
-        "kickoff": 1788624000,
-        "fixture": "Mexico U20 (W) vs Benin U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. A",
-        "venue": "Arena Katowice",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852050,
-        "kickoff": 1788710400,
-        "fixture": "USA U20 (W) vs Italy U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. A",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5849964,
-        "kickoff": 1788624000,
-        "fixture": "Canada U20 (W) vs England U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. B",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852050,
-        "kickoff": 1788710400,
-        "fixture": "USA U20 (W) vs Italy U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. B",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5849977,
-        "kickoff": 1788699600,
-        "fixture": "France U20 (W) vs South Korea U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. C",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852050,
-        "kickoff": 1788710400,
-        "fixture": "USA U20 (W) vs Italy U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. C",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852049,
-        "kickoff": 1788699600,
-        "fixture": "Japan U20 (W) vs New Zealand U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. D",
-        "venue": "Stadion Miejski im. Władysława Króla",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852050,
-        "kickoff": 1788710400,
-        "fixture": "USA U20 (W) vs Italy U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. D",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
         "match_id": 5101273,
         "kickoff": 1788633000,
         "fixture": "Longford Town vs Kerry FC",
         "league_id": 218,
         "league": "First Division",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5897596,
+        "kickoff": 1788624000,
+        "fixture": "Sochi vs Nizhny Novgorod",
+        "league_id": 338,
+        "league": "First League",
         "venue": "TBA",
         "tv_channels": []
     },
@@ -2043,15 +1980,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 5832554,
-        "kickoff": 1788685200,
-        "fixture": "Hapoel Raanana vs Hapoel Kfar Saba",
-        "league_id": 128,
-        "league": "Leumit League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
         "match_id": 5832557,
         "kickoff": 1788685200,
         "fixture": "Maccabi Ahi Nazareth vs Maccabi Bnei Raina",
@@ -2082,6 +2010,15 @@
         "match_id": 5832553,
         "kickoff": 1788710400,
         "fixture": "Hapoel Afula vs Maccabi Kabilio Jaffa",
+        "league_id": 128,
+        "league": "Leumit League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5832554,
+        "kickoff": 1788710400,
+        "fixture": "Hapoel Raanana vs Hapoel Kfar Saba",
         "league_id": 128,
         "league": "Leumit League",
         "venue": "TBA",
@@ -2451,15 +2388,6 @@
         "match_id": 5888061,
         "kickoff": 1788688800,
         "fixture": "Vizela vs Felgueiras 1932",
-        "league_id": 185,
-        "league": "Liga Portugal 2",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5888054,
-        "kickoff": 1788699600,
-        "fixture": "Farense vs Chaves",
         "league_id": 185,
         "league": "Liga Portugal 2",
         "venue": "TBA",
@@ -3411,6 +3339,15 @@
         "tv_channels": []
     },
     {
+        "match_id": 5998311,
+        "kickoff": 1788699600,
+        "fixture": "Polisi Tanzania FC vs Coastal Union",
+        "league_id": 9066,
+        "league": "Premier League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
         "match_id": 5901160,
         "kickoff": 1788624000,
         "fixture": "Montpellier (W) vs Toulouse (W)",
@@ -3645,15 +3582,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 5883635,
-        "kickoff": 1788624000,
-        "fixture": "UD Ibiza vs Rayo Majadahonda",
-        "league_id": 8968,
-        "league": "Primera Federacion - Group 2",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
         "match_id": 5883634,
         "kickoff": 1788624900,
         "fixture": "Sant Andreu vs CDA Águilas FC",
@@ -3666,6 +3594,15 @@
         "match_id": 5883629,
         "kickoff": 1788626700,
         "fixture": "Cartagena vs Gimnàstic",
+        "league_id": 8968,
+        "league": "Primera Federacion - Group 2",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5883635,
+        "kickoff": 1788627600,
+        "fixture": "UD Ibiza vs Rayo Majadahonda",
         "league_id": 8968,
         "league": "Primera Federacion - Group 2",
         "venue": "TBA",
@@ -3992,7 +3929,7 @@
         "fixture": "Werder Bremen II vs 1. FC Phönix Lübeck",
         "league_id": 512,
         "league": "Regionalliga North",
-        "venue": "TBA",
+        "venue": "Weserstadion Platz 11",
         "tv_channels": []
     },
     {
@@ -4689,15 +4626,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 5990833,
-        "kickoff": 1788699600,
-        "fixture": "Perugia vs Pineto",
-        "league_id": 147,
-        "league": "Serie C Grp. B",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
         "match_id": 5990834,
         "kickoff": 1788699600,
         "fixture": "Sambenedettese vs Spezia",
@@ -4728,6 +4656,15 @@
         "match_id": 5990836,
         "kickoff": 1788710400,
         "fixture": "Pescara vs Ravenna",
+        "league_id": 147,
+        "league": "Serie C Grp. B",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5990833,
+        "kickoff": 1788721200,
+        "fixture": "Perugia vs Pineto",
         "league_id": 147,
         "league": "Serie C Grp. B",
         "venue": "TBA",
@@ -5396,6 +5333,60 @@
         "fixture": "Galway United (W) vs Treaty United (W)",
         "league_id": 10210,
         "league": "Women's Premier Division",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5849639,
+        "kickoff": 1788624000,
+        "fixture": "Mexico U20 (W) vs Benin U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. A",
+        "venue": "Arena Katowice",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5849964,
+        "kickoff": 1788624000,
+        "fixture": "Canada U20 (W) vs England U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. B",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5849977,
+        "kickoff": 1788699600,
+        "fixture": "France U20 (W) vs South Korea U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. C",
+        "venue": "ArcelorMittal Park",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5849978,
+        "kickoff": 1788710400,
+        "fixture": "Ecuador U20 (W) vs Ghana U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. C",
+        "venue": "ArcelorMittal Park",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852049,
+        "kickoff": 1788699600,
+        "fixture": "Japan U20 (W) vs New Zealand U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. D",
+        "venue": "Stadion Miejski im. Władysława Króla",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852050,
+        "kickoff": 1788710400,
+        "fixture": "USA U20 (W) vs Italy U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. D",
         "venue": "TBA",
         "tv_channels": []
     },
@@ -6363,6 +6354,87 @@
         "tv_channels": []
     },
     {
+        "match_id": 1000019034,
+        "kickoff": 1788634800,
+        "fixture": "Guabirá vs Real Potosí",
+        "league_id": 144,
+        "league": "Primera División",
+        "venue": "Estadio Gilberto Parada",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000019035,
+        "kickoff": 1788642900,
+        "fixture": "Aurora vs GV San José",
+        "league_id": 144,
+        "league": "Primera División",
+        "venue": "Estadio Félix Capriles",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000019036,
+        "kickoff": 1788651000,
+        "fixture": "Oriente Petrolero vs Always Ready",
+        "league_id": 144,
+        "league": "Primera División",
+        "venue": "Estadio Ramón Aguilera Costas",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000019037,
+        "kickoff": 1788721200,
+        "fixture": "Independiente Petrolero vs Bolívar",
+        "league_id": 144,
+        "league": "Primera División",
+        "venue": "Estadio Olímpico Patria",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000013222,
+        "kickoff": 1788643800,
+        "fixture": "Everton CD vs Universidad Católica",
+        "league_id": 273,
+        "league": "Primera División",
+        "venue": "Estadio Sausalito",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000013220,
+        "kickoff": 1788652800,
+        "fixture": "Universidad de Chile vs Coquimbo Unido",
+        "league_id": 273,
+        "league": "Primera División",
+        "venue": "Estadio Nacional Julio Martínez Prádanos",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000013221,
+        "kickoff": 1788708600,
+        "fixture": "La Serena vs Ñublense",
+        "league_id": 273,
+        "league": "Primera División",
+        "venue": "Estadio La Portada",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000013225,
+        "kickoff": 1788716700,
+        "fixture": "O'Higgins vs Unión La Calera",
+        "league_id": 273,
+        "league": "Primera División",
+        "venue": "Estadio Codelco El Teniente",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000013226,
+        "kickoff": 1788724800,
+        "fixture": "Huachipato vs Colo Colo",
+        "league_id": 273,
+        "league": "Primera División",
+        "venue": "Estadio Municipal Alcaldesa Ester Roa Rebolledo",
+        "tv_channels": []
+    },
+    {
         "match_id": 1000018905,
         "kickoff": 1788645600,
         "fixture": "Portuguesa FC vs Zamora FC",
@@ -6450,87 +6522,6 @@
         "league_id": 339,
         "league": "Primera División",
         "venue": "Estadio José Alberto Pérez",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000019034,
-        "kickoff": 1788634800,
-        "fixture": "Guabirá vs Real Potosí",
-        "league_id": 144,
-        "league": "Primera División",
-        "venue": "Estadio Gilberto Parada",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000019035,
-        "kickoff": 1788642900,
-        "fixture": "Aurora vs GV San José",
-        "league_id": 144,
-        "league": "Primera División",
-        "venue": "Estadio Félix Capriles",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000019036,
-        "kickoff": 1788651000,
-        "fixture": "Oriente Petrolero vs Always Ready",
-        "league_id": 144,
-        "league": "Primera División",
-        "venue": "Estadio Ramón Aguilera Costas",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000019037,
-        "kickoff": 1788721200,
-        "fixture": "Independiente Petrolero vs Bolívar",
-        "league_id": 144,
-        "league": "Primera División",
-        "venue": "Estadio Olímpico Patria",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000013222,
-        "kickoff": 1788643800,
-        "fixture": "Everton CD vs Universidad Católica",
-        "league_id": 273,
-        "league": "Primera División",
-        "venue": "Estadio Sausalito",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000013220,
-        "kickoff": 1788652800,
-        "fixture": "Universidad de Chile vs Coquimbo Unido",
-        "league_id": 273,
-        "league": "Primera División",
-        "venue": "Estadio Nacional Julio Martínez Prádanos",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000013221,
-        "kickoff": 1788708600,
-        "fixture": "La Serena vs Ñublense",
-        "league_id": 273,
-        "league": "Primera División",
-        "venue": "Estadio La Portada",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000013225,
-        "kickoff": 1788716700,
-        "fixture": "O'Higgins vs Unión La Calera",
-        "league_id": 273,
-        "league": "Primera División",
-        "venue": "Estadio Codelco El Teniente",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000013226,
-        "kickoff": 1788724800,
-        "fixture": "Huachipato vs Colo Colo",
-        "league_id": 273,
-        "league": "Primera División",
-        "venue": "Estadio Municipal Alcaldesa Ester Roa Rebolledo",
         "tv_channels": []
     },
     {
@@ -6903,15 +6894,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 5109540,
-        "kickoff": 1788651000,
-        "fixture": "FC Naples vs Boise",
-        "league_id": 9296,
-        "league": "USL League One",
-        "venue": "Paradise Coast Sports Complex",
-        "tv_channels": []
-    },
-    {
         "match_id": 1000016156,
         "kickoff": 1788652800,
         "fixture": "Union Omaha vs Charlotte Independence",
@@ -6927,6 +6909,15 @@
         "league_id": 9296,
         "league": "USL League One",
         "venue": "Cabaniss Athletic Complex",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5109540,
+        "kickoff": 1788657600,
+        "fixture": "FC Naples vs Boise",
+        "league_id": 9296,
+        "league": "USL League One",
+        "venue": "Paradise Coast Sports Complex",
         "tv_channels": []
     },
     {

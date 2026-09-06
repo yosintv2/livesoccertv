@@ -3933,6 +3933,42 @@
         "tv_channels": []
     },
     {
+        "match_id": 1000007240,
+        "kickoff": 1791041400,
+        "fixture": "Magallanes vs Curicó Unido",
+        "league_id": 9126,
+        "league": "Primera B",
+        "venue": "Estadio Municipal Luis Navarro Avilés",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000007238,
+        "kickoff": 1791050400,
+        "fixture": "Deportes Recoleta vs Santiago Wanderers",
+        "league_id": 9126,
+        "league": "Primera B",
+        "venue": "Estadio Santa Laura-Universidad SEK",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000007242,
+        "kickoff": 1791050400,
+        "fixture": "Deportes Copiapó vs Puerto Montt",
+        "league_id": 9126,
+        "league": "Primera B",
+        "venue": "Estadio Luis Valenzuela Hermosilla",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000007237,
+        "kickoff": 1791059400,
+        "fixture": "Deportes Temuco vs Cobreloa",
+        "league_id": 9126,
+        "league": "Primera B",
+        "venue": "Estadio Municipal Bicentenario Germán Becker",
+        "tv_channels": []
+    },
+    {
         "match_id": 1000021200,
         "kickoff": 1791057600,
         "fixture": "Floresta vs Botafogo-PB",

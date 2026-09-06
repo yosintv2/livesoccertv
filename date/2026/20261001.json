@@ -18,6 +18,15 @@
         "tv_channels": []
     },
     {
+        "match_id": 6144881,
+        "kickoff": 1790784000,
+        "fixture": "Flint vs Sandefjord",
+        "league_id": 206,
+        "league": "Cup",
+        "venue": "Flint ESSO Arena A KG",
+        "tv_channels": []
+    },
+    {
         "match_id": 6144872,
         "kickoff": 1790784000,
         "fixture": "Follo vs Sarpsborg 08",
@@ -33,6 +42,24 @@
         "league_id": 206,
         "league": "Cup",
         "venue": "AKA Arena",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6146353,
+        "kickoff": 1790870400,
+        "fixture": "Bærum vs Lillestrøm",
+        "league_id": 206,
+        "league": "Cup",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6146352,
+        "kickoff": 1790870400,
+        "fixture": "Madla vs Viking",
+        "league_id": 206,
+        "league": "Cup",
+        "venue": "TBA",
         "tv_channels": []
     },
     {
@@ -294,6 +321,87 @@
         "league_id": 8972,
         "league": "USL Championship",
         "venue": "Heart Health Park",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148608,
+        "kickoff": 1790786700,
+        "fixture": "BK Häcken (W) vs Juventus (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148604,
+        "kickoff": 1790786700,
+        "fixture": "Paris FC (W) vs Arsenal (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148595,
+        "kickoff": 1790786700,
+        "fixture": "Roma (W) vs Barcelona (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148586,
+        "kickoff": 1790794800,
+        "fixture": "OL Lyonnes (W) vs Chelsea (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "Groupama Academy Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148592,
+        "kickoff": 1790794800,
+        "fixture": "Benfica (W) vs Bayern München (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "Benfica Campus",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148624,
+        "kickoff": 1790873100,
+        "fixture": "Austria Wien W (W) vs Inter (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148627,
+        "kickoff": 1790873100,
+        "fixture": "HB Køge (W) vs Servette (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148617,
+        "kickoff": 1790881200,
+        "fixture": "Manchester City (W) vs Real Madrid (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "Joie Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6148582,
+        "kickoff": 1790881200,
+        "fixture": "Paris Saint Germain (W) vs Oud-Heverlee Leuven (W)",
+        "league_id": 9375,
+        "league": "Women's Champions League",
+        "venue": "Stade Sebastien Charlety",
         "tv_channels": []
     },
     {

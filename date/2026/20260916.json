@@ -1629,15 +1629,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 1000020035,
-        "kickoff": 1789516800,
-        "fixture": "Independiente Rivadavia vs Atlético Tucumán",
-        "league_id": 9305,
-        "league": "Copa Argentina",
-        "venue": "Estadio Florencio Solá",
-        "tv_channels": []
-    },
-    {
         "match_id": 1000021051,
         "kickoff": 1789509600,
         "fixture": "Vasco da Gama vs Santa Fe",
@@ -1927,7 +1918,7 @@
     },
     {
         "match_id": 5190717,
-        "kickoff": 1789518600,
+        "kickoff": 1789516800,
         "fixture": "CRB vs Sport Recife",
         "league_id": 8814,
         "league": "Série B",
@@ -2232,15 +2223,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 6146353,
-        "kickoff": 1789574400,
-        "fixture": "Bærum vs Lillestrøm",
-        "league_id": 206,
-        "league": "Cup",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
         "match_id": 6144861,
         "kickoff": 1789574400,
         "fixture": "Bjarg vs Bryne",
@@ -2259,30 +2241,12 @@
         "tv_channels": []
     },
     {
-        "match_id": 6144867,
-        "kickoff": 1789574400,
-        "fixture": "Eidsvold TF vs Kongsvinger",
-        "league_id": 206,
-        "league": "Cup",
-        "venue": "Myhrer Stadion",
-        "tv_channels": []
-    },
-    {
         "match_id": 6144866,
         "kickoff": 1789574400,
         "fixture": "Elverum vs Raufoss",
         "league_id": 206,
         "league": "Cup",
         "venue": "Elverum Stadion",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6144881,
-        "kickoff": 1789574400,
-        "fixture": "Flint vs Sandefjord",
-        "league_id": 206,
-        "league": "Cup",
-        "venue": "TBA",
         "tv_channels": []
     },
     {
@@ -2331,15 +2295,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 6146352,
-        "kickoff": 1789574400,
-        "fixture": "Madla vs Viking",
-        "league_id": 206,
-        "league": "Cup",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
         "match_id": 6144865,
         "kickoff": 1789574400,
         "fixture": "Notodden vs Odd",
@@ -2354,7 +2309,7 @@
         "fixture": "Os vs Brann",
         "league_id": 206,
         "league": "Cup",
-        "venue": "TBA",
+        "venue": "Kuventræ Arena",
         "tv_channels": []
     },
     {
@@ -2373,15 +2328,6 @@
         "league_id": 206,
         "league": "Cup",
         "venue": "Stemmemyren kunstgressbane",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6144868,
-        "kickoff": 1789574400,
-        "fixture": "Skeid vs Vålerenga",
-        "league_id": 206,
-        "league": "Cup",
-        "venue": "Nordre Åsen gress",
         "tv_channels": []
     },
     {
@@ -2426,7 +2372,16 @@
         "fixture": "Vindbjart vs Start",
         "league_id": 206,
         "league": "Cup",
-        "venue": "TBA",
+        "venue": "Sparebanken Norge-banen Vennesla",
+        "tv_channels": []
+    },
+    {
+        "match_id": 6144867,
+        "kickoff": 1789578000,
+        "fixture": "Eidsvold TF vs Kongsvinger",
+        "league_id": 206,
+        "league": "Cup",
+        "venue": "Myhrer Stadion",
         "tv_channels": []
     },
     {

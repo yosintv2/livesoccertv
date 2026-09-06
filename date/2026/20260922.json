@@ -612,6 +612,15 @@
         "tv_channels": []
     },
     {
+        "match_id": 1000013728,
+        "kickoff": 1790022600,
+        "fixture": "Bogotá FC vs Barranquilla FC",
+        "league_id": 9125,
+        "league": "Primera B",
+        "venue": "Estadio Enrique Olaya Herrera",
+        "tv_channels": []
+    },
+    {
         "match_id": 1000013729,
         "kickoff": 1790028000,
         "fixture": "Real Cundinamarca vs Deportes Quindío",
@@ -1179,21 +1188,21 @@
         "tv_channels": []
     },
     {
-        "match_id": 6148589,
-        "kickoff": 1790103600,
-        "fixture": "Arsenal (W) vs OL Lyonnes (W)",
+        "match_id": 6148576,
+        "kickoff": 1790095500,
+        "fixture": "Bayern München (W) vs Manchester City (W)",
         "league_id": 9375,
         "league": "Women's Champions League",
-        "venue": "Emirates Stadium",
+        "venue": "FC Bayern Campus",
         "tv_channels": []
     },
     {
-        "match_id": 6148590,
-        "kickoff": 1790103600,
-        "fixture": "Arsenal (W) vs Benfica (W)",
+        "match_id": 6148611,
+        "kickoff": 1790095500,
+        "fixture": "Inter (W) vs BK Häcken (W)",
         "league_id": 9375,
         "league": "Women's Champions League",
-        "venue": "Emirates Stadium",
+        "venue": "TBA",
         "tv_channels": []
     },
     {
@@ -1206,204 +1215,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 6148622,
-        "kickoff": 1790103600,
-        "fixture": "Austria Wien W (W) vs Bayern München (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148623,
-        "kickoff": 1790103600,
-        "fixture": "Austria Wien W (W) vs Juventus (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148624,
-        "kickoff": 1790103600,
-        "fixture": "Austria Wien W (W) vs Inter (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148583,
-        "kickoff": 1790103600,
-        "fixture": "Barcelona (W) vs Arsenal (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Estadi Johan Cruyff",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148584,
-        "kickoff": 1790103600,
-        "fixture": "Barcelona (W) vs Paris FC (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Estadi Johan Cruyff",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148585,
-        "kickoff": 1790103600,
-        "fixture": "Barcelona (W) vs Servette (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Estadi Johan Cruyff",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148574,
-        "kickoff": 1790103600,
-        "fixture": "Bayern München (W) vs Barcelona (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "FC Bayern Campus",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148575,
-        "kickoff": 1790103600,
-        "fixture": "Bayern München (W) vs Real Madrid (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "FC Bayern Campus",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148576,
-        "kickoff": 1790103600,
-        "fixture": "Bayern München (W) vs Manchester City (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "FC Bayern Campus",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148607,
-        "kickoff": 1790103600,
-        "fixture": "BK Häcken (W) vs Chelsea (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148608,
-        "kickoff": 1790103600,
-        "fixture": "BK Häcken (W) vs Juventus (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148609,
-        "kickoff": 1790103600,
-        "fixture": "BK Häcken (W) vs Manchester City (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148577,
-        "kickoff": 1790103600,
-        "fixture": "Chelsea (W) vs Paris Saint Germain (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Kingsmeadow",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148578,
-        "kickoff": 1790103600,
-        "fixture": "Chelsea (W) vs Roma (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Kingsmeadow",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148579,
-        "kickoff": 1790103600,
-        "fixture": "Chelsea (W) vs Austria Wien W (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Kingsmeadow",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148625,
-        "kickoff": 1790103600,
-        "fixture": "HB Køge (W) vs Barcelona (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148626,
-        "kickoff": 1790103600,
-        "fixture": "HB Køge (W) vs Benfica (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148627,
-        "kickoff": 1790103600,
-        "fixture": "HB Køge (W) vs Servette (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148610,
-        "kickoff": 1790103600,
-        "fixture": "Inter (W) vs Arsenal (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148611,
-        "kickoff": 1790103600,
-        "fixture": "Inter (W) vs BK Häcken (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148612,
-        "kickoff": 1790103600,
-        "fixture": "Inter (W) vs Manchester City (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148598,
-        "kickoff": 1790103600,
-        "fixture": "Juventus (W) vs OL Lyonnes (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Juventus Training Center",
-        "tv_channels": []
-    },
-    {
         "match_id": 6148599,
         "kickoff": 1790103600,
         "fixture": "Juventus (W) vs Benfica (W)",
@@ -1413,255 +1224,12 @@
         "tv_channels": []
     },
     {
-        "match_id": 6148600,
-        "kickoff": 1790103600,
-        "fixture": "Juventus (W) vs Oud-Heverlee Leuven (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Juventus Training Center",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148616,
-        "kickoff": 1790103600,
-        "fixture": "Manchester City (W) vs Paris Saint Germain (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Joie Stadium",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148617,
-        "kickoff": 1790103600,
-        "fixture": "Manchester City (W) vs Real Madrid (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Joie Stadium",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148618,
-        "kickoff": 1790103600,
-        "fixture": "Manchester City (W) vs Austria Wien W (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Joie Stadium",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148586,
-        "kickoff": 1790103600,
-        "fixture": "OL Lyonnes (W) vs Chelsea (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Groupama Academy Stadium",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148587,
-        "kickoff": 1790103600,
-        "fixture": "OL Lyonnes (W) vs BK Häcken (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Groupama Academy Stadium",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148588,
-        "kickoff": 1790103600,
-        "fixture": "OL Lyonnes (W) vs Inter (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Groupama Academy Stadium",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148619,
-        "kickoff": 1790103600,
-        "fixture": "Oud-Heverlee Leuven (W) vs Chelsea (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148620,
-        "kickoff": 1790103600,
-        "fixture": "Oud-Heverlee Leuven (W) vs Roma (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148621,
-        "kickoff": 1790103600,
-        "fixture": "Oud-Heverlee Leuven (W) vs HB Køge (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148604,
-        "kickoff": 1790103600,
-        "fixture": "Paris FC (W) vs Arsenal (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148605,
-        "kickoff": 1790103600,
-        "fixture": "Paris FC (W) vs BK Häcken (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148606,
-        "kickoff": 1790103600,
-        "fixture": "Paris FC (W) vs HB Køge (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148580,
-        "kickoff": 1790103600,
-        "fixture": "Paris Saint Germain (W) vs Bayern München (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Stade Sebastien Charlety",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148581,
-        "kickoff": 1790103600,
-        "fixture": "Paris Saint Germain (W) vs Juventus (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Stade Sebastien Charlety",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148582,
-        "kickoff": 1790103600,
-        "fixture": "Paris Saint Germain (W) vs Oud-Heverlee Leuven (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Stade Sebastien Charlety",
-        "tv_channels": []
-    },
-    {
         "match_id": 6148601,
         "kickoff": 1790103600,
         "fixture": "Real Madrid (W) vs Paris Saint Germain (W)",
         "league_id": 9375,
         "league": "Women's Champions League",
         "venue": "Ciudad Real Madrid",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148602,
-        "kickoff": 1790103600,
-        "fixture": "Real Madrid (W) vs Paris FC (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Ciudad Real Madrid",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148603,
-        "kickoff": 1790103600,
-        "fixture": "Real Madrid (W) vs Inter (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Ciudad Real Madrid",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148595,
-        "kickoff": 1790103600,
-        "fixture": "Roma (W) vs Barcelona (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148596,
-        "kickoff": 1790103600,
-        "fixture": "Roma (W) vs Real Madrid (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148597,
-        "kickoff": 1790103600,
-        "fixture": "Roma (W) vs Servette (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148613,
-        "kickoff": 1790103600,
-        "fixture": "Servette (W) vs OL Lyonnes (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Stade de Marignac",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148614,
-        "kickoff": 1790103600,
-        "fixture": "Servette (W) vs Paris FC (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Stade de Marignac",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148615,
-        "kickoff": 1790103600,
-        "fixture": "Servette (W) vs Oud-Heverlee Leuven (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Stade de Marignac",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148592,
-        "kickoff": 1790103600,
-        "fixture": "Benfica (W) vs Bayern München (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Benfica Campus",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148593,
-        "kickoff": 1790103600,
-        "fixture": "Benfica (W) vs Roma (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Benfica Campus",
-        "tv_channels": []
-    },
-    {
-        "match_id": 6148594,
-        "kickoff": 1790103600,
-        "fixture": "Benfica (W) vs Austria Wien W (W)",
-        "league_id": 9375,
-        "league": "Women's Champions League",
-        "venue": "Benfica Campus",
         "tv_channels": []
     }
 ]

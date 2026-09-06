@@ -1548,78 +1548,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 5849642,
-        "kickoff": 1789142400,
-        "fixture": "Argentina U20 (W) vs Mexico U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. A",
-        "venue": "Arena Katowice",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5849643,
-        "kickoff": 1789142400,
-        "fixture": "Benin U20 (W) vs Poland U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. A",
-        "venue": "Stadion Miejski",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5849981,
-        "kickoff": 1789228800,
-        "fixture": "Ghana U20 (W) vs France U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. A",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5849982,
-        "kickoff": 1789228800,
-        "fixture": "South Korea U20 (W) vs Ecuador U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. A",
-        "venue": "Stadion Miejski im. Władysława Króla",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852053,
-        "kickoff": 1789218000,
-        "fixture": "Italy U20 (W) vs Japan U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. D",
-        "venue": "Stadion Miejski im. Władysława Króla",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852054,
-        "kickoff": 1789218000,
-        "fixture": "New Zealand U20 (W) vs USA U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. D",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5849981,
-        "kickoff": 1789228800,
-        "fixture": "Ghana U20 (W) vs France U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. D",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5849982,
-        "kickoff": 1789228800,
-        "fixture": "South Korea U20 (W) vs Ecuador U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. D",
-        "venue": "Stadion Miejski im. Władysława Króla",
-        "tv_channels": []
-    },
-    {
         "match_id": 5101274,
         "kickoff": 1789152300,
         "fixture": "Cork City vs Cobh Ramblers",
@@ -2822,7 +2750,7 @@
         "fixture": "Nacional vs Alverca",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Estadio da Madeira",
+        "venue": "Estádio da Madeira",
         "tv_channels": []
     },
     {
@@ -2831,7 +2759,7 @@
         "fixture": "Casa Pia AC vs FC Porto",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Estadio Municipal de Rio Maior",
+        "venue": "Estádio Municipal de Rio Maior",
         "tv_channels": []
     },
     {
@@ -2840,7 +2768,7 @@
         "fixture": "Académico Viseu vs Vitória de Guimarães",
         "league_id": 61,
         "league": "Liga Portugal",
-        "venue": "Estadio do Fontelo",
+        "venue": "Estádio Municipal do Fontelo",
         "tv_channels": []
     },
     {
@@ -4626,6 +4554,69 @@
         "tv_channels": []
     },
     {
+        "match_id": 5113070,
+        "kickoff": 1789174800,
+        "fixture": "Gimnasia y Tiro vs Tristán Suárez",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio El Gigante del Norte",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113067,
+        "kickoff": 1789236000,
+        "fixture": "Atlanta vs Atlético Güemes",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Don León Kolbovski",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113068,
+        "kickoff": 1789236000,
+        "fixture": "Colegiales vs Nueva Chicago",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio de Colegiales",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113453,
+        "kickoff": 1789237800,
+        "fixture": "All Boys vs San Telmo",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Islas Malvinas",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113066,
+        "kickoff": 1789237800,
+        "fixture": "Almagro vs Deportivo Maipú",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Tres de Febrero",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113457,
+        "kickoff": 1789239600,
+        "fixture": "Ciudad de Bolívar vs Central Norte",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Municipal Eva Perón",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5113073,
+        "kickoff": 1789243200,
+        "fixture": "Quilmes vs San Martín San Juan",
+        "league_id": 8965,
+        "league": "Primera Nacional",
+        "venue": "Estadio Centenario Ciudad de Quilmes",
+        "tv_channels": []
+    },
+    {
         "match_id": 5833573,
         "kickoff": 1789150500,
         "fixture": "Nk Brinje Grosuplje vs Nafta",
@@ -5805,6 +5796,42 @@
         "tv_channels": []
     },
     {
+        "match_id": 5849642,
+        "kickoff": 1789142400,
+        "fixture": "Argentina U20 (W) vs Mexico U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. A",
+        "venue": "Arena Katowice",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5849643,
+        "kickoff": 1789142400,
+        "fixture": "Benin U20 (W) vs Poland U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. A",
+        "venue": "Stadion Miejski",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852053,
+        "kickoff": 1789218000,
+        "fixture": "Italy U20 (W) vs Japan U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. D",
+        "venue": "Stadion Miejski im. Władysława Króla",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852054,
+        "kickoff": 1789218000,
+        "fixture": "New Zealand U20 (W) vs USA U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. D",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
         "match_id": 5981634,
         "kickoff": 1789213500,
         "fixture": "West Ham United (W) vs London City Lionesses (W)",
@@ -6300,24 +6327,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 1000021031,
-        "kickoff": 1789171200,
-        "fixture": "Esan Fighter FC vs Pitchaya Bundit College FC",
-        "league_id": 11024,
-        "league": "League Cup",
-        "venue": "SAT Stadium Udon Thani",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000021016,
-        "kickoff": 1789171200,
-        "fixture": "Udon Banchan United vs Ubon Kruan Apat",
-        "league_id": 11024,
-        "league": "League Cup",
-        "venue": "Udon Thani Institute of PE Stadium",
-        "tv_channels": []
-    },
-    {
         "match_id": 1000021017,
         "kickoff": 1789171200,
         "fixture": "Khonkaen FC/Udon United vs Khonkaen Mordindang/Roi Et United FC",
@@ -6327,84 +6336,12 @@
         "tv_channels": []
     },
     {
-        "match_id": 1000021018,
-        "kickoff": 1789171200,
-        "fixture": "Banbueng FC vs Cha Choeng Sao",
-        "league_id": 11024,
-        "league": "League Cup",
-        "venue": "Chang Football Park Stadium",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000021019,
-        "kickoff": 1789171200,
-        "fixture": "Pluak Daeng United vs MOF Customs United",
-        "league_id": 11024,
-        "league": "League Cup",
-        "venue": "CK Stadium",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000021020,
-        "kickoff": 1789171200,
-        "fixture": "Padriew City vs Siam Navy FC",
-        "league_id": 11024,
-        "league": "League Cup",
-        "venue": "Stadium Chachoengsao",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000021021,
-        "kickoff": 1789171200,
-        "fixture": "Burapha United vs Marines",
-        "league_id": 11024,
-        "league": "League Cup",
-        "venue": "Banbueng Municipality Stadium",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000021022,
-        "kickoff": 1789171200,
-        "fixture": "Bangkok FC vs Thonburi United",
-        "league_id": 11024,
-        "league": "League Cup",
-        "venue": "Bang MOD Stadium",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000021023,
-        "kickoff": 1789171200,
-        "fixture": "Thap Luang United vs Samut Songkhram",
-        "league_id": 11024,
-        "league": "League Cup",
-        "venue": "Thapluang United Janded Stadium",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000021024,
-        "kickoff": 1789171200,
-        "fixture": "Samut Sakhon FC vs Suphanburi FC",
-        "league_id": 11024,
-        "league": "League Cup",
-        "venue": "National Sports University Stadium Samut Sakhon Campus",
-        "tv_channels": []
-    },
-    {
         "match_id": 1000021025,
         "kickoff": 1789171200,
         "fixture": "Hua Hin City/VRN Muangnont vs Phetchaburi FC",
         "league_id": 11024,
         "league": "League Cup",
         "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000021026,
-        "kickoff": 1789171200,
-        "fixture": "Royal Thai Fleet vs Pattaya City",
-        "league_id": 11024,
-        "league": "League Cup",
-        "venue": "Battleship Stadium",
         "tv_channels": []
     },
     {
@@ -6441,6 +6378,51 @@
         "league_id": 11024,
         "league": "League Cup",
         "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021031,
+        "kickoff": 1789201800,
+        "fixture": "Esan Fighter FC vs Pitchaya Bundit College FC",
+        "league_id": 11024,
+        "league": "League Cup",
+        "venue": "SAT Stadium Udon Thani",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021016,
+        "kickoff": 1789201800,
+        "fixture": "Udon Banchan United vs Ubon Kruan Apat",
+        "league_id": 11024,
+        "league": "League Cup",
+        "venue": "Udon Thani Institute of PE Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021024,
+        "kickoff": 1789201800,
+        "fixture": "Samut Sakhon FC vs Suphanburi FC",
+        "league_id": 11024,
+        "league": "League Cup",
+        "venue": "National Sports University Stadium Samut Sakhon Campus",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021023,
+        "kickoff": 1789210800,
+        "fixture": "Thap Luang United vs Samut Songkhram",
+        "league_id": 11024,
+        "league": "League Cup",
+        "venue": "Thapluang United Janded Stadium",
+        "tv_channels": []
+    },
+    {
+        "match_id": 1000021022,
+        "kickoff": 1789212600,
+        "fixture": "Bangkok FC vs Thonburi United",
+        "league_id": 11024,
+        "league": "League Cup",
+        "venue": "Bang MOD Stadium",
         "tv_channels": []
     },
     {
@@ -6994,7 +6976,7 @@
     },
     {
         "match_id": 1000015126,
-        "kickoff": 1789171200,
+        "kickoff": 1789144200,
         "fixture": "Železničar Pančevo vs Mačva Šabac",
         "league_id": 182,
         "league": "Super Liga",
@@ -7003,7 +6985,7 @@
     },
     {
         "match_id": 1000015127,
-        "kickoff": 1789171200,
+        "kickoff": 1789230600,
         "fixture": "Čukarički vs Novi Pazar",
         "league_id": 182,
         "league": "Super Liga",
@@ -7011,44 +6993,8 @@
         "tv_channels": []
     },
     {
-        "match_id": 1000015128,
-        "kickoff": 1789171200,
-        "fixture": "FK Zemun vs FK Radnik Surdulica",
-        "league_id": 182,
-        "league": "Super Liga",
-        "venue": "Stadion Dragan Dzajić",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000015129,
-        "kickoff": 1789171200,
-        "fixture": "Partizan Beograd vs Vojvodina",
-        "league_id": 182,
-        "league": "Super Liga",
-        "venue": "Stadion Partizana",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000015130,
-        "kickoff": 1789171200,
-        "fixture": "FK IMT Beograd vs FK Crvena Zvezda",
-        "league_id": 182,
-        "league": "Super Liga",
-        "venue": "Stadion Lagator",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000015131,
-        "kickoff": 1789171200,
-        "fixture": "Radnički Niš vs OFK Beograd",
-        "league_id": 182,
-        "league": "Super Liga",
-        "venue": "Gradski Stadion Čair",
-        "tv_channels": []
-    },
-    {
         "match_id": 1000015132,
-        "kickoff": 1789171200,
+        "kickoff": 1789237800,
         "fixture": "FK Radnički 1923 vs Mladost Lučani",
         "league_id": 182,
         "league": "Super Liga",
@@ -7686,168 +7632,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 5113453,
-        "kickoff": 1789243200,
-        "fixture": "All Boys vs San Telmo",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "Estadio Islas Malvinas",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113066,
-        "kickoff": 1789243200,
-        "fixture": "Almagro vs Deportivo Maipú",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "Estadio Tres de Febrero",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113454,
-        "kickoff": 1789243200,
-        "fixture": "Almirante Brown vs Ferro Carril Oeste",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113067,
-        "kickoff": 1789243200,
-        "fixture": "Atlanta vs Atlético Güemes",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "Estadio Don León Kolbovski",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113458,
-        "kickoff": 1789243200,
-        "fixture": "CA Defensores de Belgrano vs Deportivo Madryn",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113071,
-        "kickoff": 1789243200,
-        "fixture": "CA Ferrocarril Midland vs Chacarita Juniors",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113457,
-        "kickoff": 1789243200,
-        "fixture": "Ciudad de Bolívar vs Central Norte",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "Estadio Municipal Eva Perón",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113455,
-        "kickoff": 1789243200,
-        "fixture": "Club Atlético Estudiantes vs Acassuso",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113456,
-        "kickoff": 1789243200,
-        "fixture": "Club Atlético Mitre vs CA Chaco For Ever",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113068,
-        "kickoff": 1789243200,
-        "fixture": "Colegiales vs Nueva Chicago",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "Estadio de Colegiales",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113069,
-        "kickoff": 1789243200,
-        "fixture": "Gimnasia Jujuy vs Atlético Rafaela",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113070,
-        "kickoff": 1789243200,
-        "fixture": "Gimnasia y Tiro vs Tristán Suárez",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113459,
-        "kickoff": 1789243200,
-        "fixture": "Godoy Cruz vs Colón",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113460,
-        "kickoff": 1789243200,
-        "fixture": "Los Andes vs CA San Miguel",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113072,
-        "kickoff": 1789243200,
-        "fixture": "Patronato de Parana vs Temperley",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113073,
-        "kickoff": 1789243200,
-        "fixture": "Quilmes vs San Martín San Juan",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "Estadio Centenario Ciudad de Quilmes",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113461,
-        "kickoff": 1789243200,
-        "fixture": "Racing de Córdoba vs Deportivo Morón",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5113074,
-        "kickoff": 1789243200,
-        "fixture": "San Martín de Tucumán vs Agropecuario",
-        "league_id": 8965,
-        "league": "Primera Nacional",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
         "match_id": 5804934,
         "kickoff": 1789225200,
         "fixture": "Arsimi vs KF Shkendija",
@@ -8025,6 +7809,24 @@
         "league_id": 51,
         "league": "Veikkausliiga Championship Group",
         "venue": "OTC Stadion",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5849981,
+        "kickoff": 1789228800,
+        "fixture": "Ghana U20 (W) vs France U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. C",
+        "venue": "ArcelorMittal Park",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5849982,
+        "kickoff": 1789228800,
+        "fixture": "South Korea U20 (W) vs Ecuador U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. C",
+        "venue": "Stadion Miejski im. Władysława Króla",
         "tv_channels": []
     },
     {

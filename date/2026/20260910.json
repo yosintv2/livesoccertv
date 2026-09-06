@@ -419,7 +419,7 @@
         "fixture": "Levadiakos vs Aris Thessaloniki",
         "league_id": 145,
         "league": "Cup Group Stage",
-        "venue": "TBA",
+        "venue": "Dimotiko Stadio Levadias Lambros Katsonis",
         "tv_channels": []
     },
     {
@@ -428,7 +428,7 @@
         "fixture": "OFI Crete vs Nestos Chrisoupolis",
         "league_id": 145,
         "league": "Cup Group Stage",
-        "venue": "TBA",
+        "venue": "Pankritio Stadio",
         "tv_channels": []
     },
     {
@@ -546,78 +546,6 @@
         "league_id": 439,
         "league": "Erovnuli Liga",
         "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5849980,
-        "kickoff": 1788969600,
-        "fixture": "France U20 (W) vs Ecuador U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. C",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852061,
-        "kickoff": 1789056000,
-        "fixture": "China U20 (W) vs Nigeria U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. C",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852052,
-        "kickoff": 1788969600,
-        "fixture": "Japan U20 (W) vs USA U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. D",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852061,
-        "kickoff": 1789056000,
-        "fixture": "China U20 (W) vs Nigeria U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. D",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852067,
-        "kickoff": 1789045200,
-        "fixture": "North Korea U20 (W) vs Costa Rica U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. E",
-        "venue": "Stadion Miejski im. Władysława Króla",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852061,
-        "kickoff": 1789056000,
-        "fixture": "China U20 (W) vs Nigeria U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. E",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852060,
-        "kickoff": 1789045200,
-        "fixture": "Spain U20 (W) vs New Caledonia U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. F",
-        "venue": "ArcelorMittal Park",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5852061,
-        "kickoff": 1789056000,
-        "fixture": "China U20 (W) vs Nigeria U20 (W)",
-        "league_id": 10369,
-        "league": "Women's World Cup U20 Grp. F",
-        "venue": "ArcelorMittal Park",
         "tv_channels": []
     },
     {
@@ -1008,6 +936,60 @@
         "tv_channels": []
     },
     {
+        "match_id": 5849980,
+        "kickoff": 1788969600,
+        "fixture": "France U20 (W) vs Ecuador U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. C",
+        "venue": "ArcelorMittal Park",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852052,
+        "kickoff": 1788969600,
+        "fixture": "Japan U20 (W) vs USA U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. D",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852067,
+        "kickoff": 1789045200,
+        "fixture": "North Korea U20 (W) vs Costa Rica U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. E",
+        "venue": "Stadion Miejski im. Władysława Króla",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852068,
+        "kickoff": 1789056000,
+        "fixture": "Colombia U20 (W) vs Portugal U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. E",
+        "venue": "Stadion Miejski im. Władysława Króla",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852060,
+        "kickoff": 1789045200,
+        "fixture": "Spain U20 (W) vs New Caledonia U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. F",
+        "venue": "ArcelorMittal Park",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5852061,
+        "kickoff": 1789056000,
+        "fixture": "China U20 (W) vs Nigeria U20 (W)",
+        "league_id": 10369,
+        "league": "Women's World Cup U20 Grp. F",
+        "venue": "ArcelorMittal Park",
+        "tv_channels": []
+    },
+    {
         "match_id": 1000020030,
         "kickoff": 1788991200,
         "fixture": "Palmeiras vs LDU de Quito",
@@ -1143,6 +1125,15 @@
         "tv_channels": []
     },
     {
+        "match_id": 1000013680,
+        "kickoff": 1788985800,
+        "fixture": "Independiente Valle del Cauca vs Deportes Quindío",
+        "league_id": 9125,
+        "league": "Primera B",
+        "venue": "Estadio Deportivo Cali",
+        "tv_channels": []
+    },
+    {
         "match_id": 1000007307,
         "kickoff": 1788987600,
         "fixture": "Deportes Recoleta vs San Marcos",
@@ -1167,15 +1158,6 @@
         "league_id": 9126,
         "league": "Primera B",
         "venue": "Estadio Tierra de Campeones Ramón Estay Saavedra",
-        "tv_channels": []
-    },
-    {
-        "match_id": 1000013680,
-        "kickoff": 1788994800,
-        "fixture": "Independiente Valle del Cauca vs Deportes Quindío",
-        "league_id": 9125,
-        "league": "Primera B",
-        "venue": "Estadio Deportivo Cali",
         "tv_channels": []
     },
     {
@@ -1324,7 +1306,7 @@
     },
     {
         "match_id": 1000021093,
-        "kickoff": 1788998400,
+        "kickoff": 1789038000,
         "fixture": "Fenerbahçe U19 vs Roma U19",
         "league_id": 9741,
         "league": "UEFA Youth League League Stage",
@@ -1386,51 +1368,6 @@
         "tv_channels": []
     },
     {
-        "match_id": 5127573,
-        "kickoff": 1789061400,
-        "fixture": "Enköping vs Assyriska FF",
-        "league_id": 169,
-        "league": "Ettan Norra",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5989817,
-        "kickoff": 1789066800,
-        "fixture": "ES Ben Aknoun vs US Biskra",
-        "league_id": 516,
-        "league": "Ligue 1",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5989815,
-        "kickoff": 1789066800,
-        "fixture": "USM Alger vs JS El Biar",
-        "league_id": 516,
-        "league": "Ligue 1",
-        "venue": "TBA",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5910844,
-        "kickoff": 1789059600,
-        "fixture": "BFC Dynamo vs Tasmania Berlin",
-        "league_id": 512,
-        "league": "Regionalliga Northeast",
-        "venue": "Sportforum Berlin",
-        "tv_channels": []
-    },
-    {
-        "match_id": 5837157,
-        "kickoff": 1789066800,
-        "fixture": "Stevenage vs Luton",
-        "league_id": 108,
-        "league": "League One",
-        "venue": "SPORTA Arena",
-        "tv_channels": []
-    },
-    {
         "match_id": 5820432,
         "kickoff": 1789059600,
         "fixture": "IFK Haninge BRB vs Djurgården",
@@ -1440,12 +1377,21 @@
         "tv_channels": []
     },
     {
-        "match_id": 5886522,
-        "kickoff": 1789065900,
-        "fixture": "Cannes vs Amiens",
-        "league_id": 8970,
-        "league": "Ligue 3",
+        "match_id": 5127573,
+        "kickoff": 1789061400,
+        "fixture": "Enköping vs Assyriska FF",
+        "league_id": 169,
+        "league": "Ettan Norra",
         "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5837157,
+        "kickoff": 1789066800,
+        "fixture": "Stevenage vs Luton",
+        "league_id": 108,
+        "league": "League One",
+        "venue": "SPORTA Arena",
         "tv_channels": []
     },
     {
@@ -1503,6 +1449,42 @@
         "tv_channels": []
     },
     {
+        "match_id": 5989817,
+        "kickoff": 1789066800,
+        "fixture": "ES Ben Aknoun vs US Biskra",
+        "league_id": 516,
+        "league": "Ligue 1",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5989815,
+        "kickoff": 1789066800,
+        "fixture": "USM Alger vs JS El Biar",
+        "league_id": 516,
+        "league": "Ligue 1",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5886522,
+        "kickoff": 1789065900,
+        "fixture": "Cannes vs Amiens",
+        "league_id": 8970,
+        "league": "Ligue 3",
+        "venue": "TBA",
+        "tv_channels": []
+    },
+    {
+        "match_id": 5910844,
+        "kickoff": 1789059600,
+        "fixture": "BFC Dynamo vs Tasmania Berlin",
+        "league_id": 512,
+        "league": "Regionalliga Northeast",
+        "venue": "Sportforum Berlin",
+        "tv_channels": []
+    },
+    {
         "match_id": 5943229,
         "kickoff": 1789063200,
         "fixture": "Panathinaikos vs Kifisia FC",
@@ -1540,7 +1522,7 @@
     },
     {
         "match_id": 1000015084,
-        "kickoff": 1789063200,
+        "kickoff": 1789059600,
         "fixture": "FK Radnik Surdulica vs FK Crvena Zvezda",
         "league_id": 182,
         "league": "Super Liga",
